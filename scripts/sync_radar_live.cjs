@@ -474,6 +474,9 @@ async function runLiveSync() {
     let maxPrice = 0;
     let availableCount = 0;
 
+    let minExternalPrice = Infinity;
+    let bestExternalOffer = null;
+
     for (const [sId, offer] of Object.entries(bd)) {
       // Normalize store names to strictly English
       offer.storeName = normalizeStoreName(offer.storeName, sId);
@@ -494,6 +497,20 @@ async function runLiveSync() {
             minCorePrice = offer.price;
             minCoreStore = offer.storeNameEn;
           }
+        } else {
+          // Track external stores outside the 9
+          if (offer.price < minExternalPrice) {
+            minExternalPrice = offer.price;
+            bestExternalOffer = {
+              storeId: sId,
+              storeName: offer.storeNameEn || offer.storeName,
+              storeNameEn: offer.storeNameEn || offer.storeName,
+              price: offer.price,
+              originalPrice: offer.originalPrice || null,
+              url: offer.url || '#',
+              image: offer.image || p.image || ''
+            };
+          }
         }
       }
     }
@@ -506,11 +523,18 @@ async function runLiveSync() {
       p.highestPrice = maxPrice > minPrice ? maxPrice : minPrice;
       p.maxSavings = Math.max(0, p.highestPrice - p.lowestPrice);
       p.availableCount = availableCount;
-      p.externalCheaper = (minPrice < (minCorePrice !== Infinity ? minCorePrice : Infinity));
+
+      if (bestExternalOffer && minPrice === minExternalPrice && (minCorePrice === Infinity || minPrice < minCorePrice)) {
+        bestExternalOffer.savingsVsCore = (minCorePrice !== Infinity) ? Math.max(0, minCorePrice - minPrice) : 0;
+        p.externalCheaper = bestExternalOffer;
+      } else {
+        p.externalCheaper = false;
+      }
     } else {
       // Clean up if currently out of stock everywhere
       p.cheapestStore = normalizeStoreName(p.cheapestStore, '');
       p.cheapestCoreStore = normalizeStoreName(p.cheapestCoreStore, '');
+      p.externalCheaper = false;
     }
   }
 
