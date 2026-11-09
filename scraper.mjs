@@ -20,11 +20,30 @@ const KNOWN_BRANDS = [
   'Grenade', 'EHP Labs', 'BPI Sports', 'Evogen'
 ];
 
+const BRAND_ALIASES = {
+  'c4': 'Cellucor',
+  'gold standard': 'Optimum Nutrition',
+  'nitrotech': 'MuscleTech',
+  'nitro tech': 'MuscleTech',
+  'hydroxycut': 'MuscleTech',
+  'iso100': 'Dymatize',
+  'iso 100': 'Dymatize',
+  'the curse': 'JNX Sports',
+  'animal pak': 'Animal',
+  'animal cuts': 'Animal',
+  'animal whey': 'Animal',
+  'anabolic iso': 'Kevin Levrone',
+  'total war': 'Redcon1'
+};
+
 function detectBrand(title, vendor) {
   if (vendor && vendor !== 'Unknown' && vendor !== 'Default' && vendor.length > 2) {
     return vendor.trim();
   }
   const lower = title.toLowerCase();
+  for (const [alias, canonical] of Object.entries(BRAND_ALIASES)) {
+    if (lower.includes(alias)) return canonical;
+  }
   for (const b of KNOWN_BRANDS) {
     if (lower.includes(b.toLowerCase())) return b;
   }

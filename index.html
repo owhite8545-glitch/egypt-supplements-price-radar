@@ -714,8 +714,10 @@
         // Update stats
         document.getElementById('statTotalRaw').innerText = (rawCatalogData.metadata?.totalRawProducts || allProducts.length).toLocaleString('ar-EG');
         document.getElementById('statTotalCompared').innerText = (rawCatalogData.metadata?.totalComparedItems || allProducts.length).toLocaleString('ar-EG');
-        document.getElementById('statExclusives').innerText = (rawCatalogData.metadata?.exclusiveItemsCount || 0).toLocaleString('ar-EG');
-        document.getElementById('statExternalDeals').innerText = (rawCatalogData.metadata?.externalDealsFound || 0).toLocaleString('ar-EG');
+        const extCount = allProducts.filter(p => p.externalCheaper).length || (rawCatalogData.metadata?.externalDealsFound || 0);
+        document.getElementById('statExternalDeals').innerText = extCount.toLocaleString('ar-EG');
+        const exclCount = allProducts.filter(p => p.isExclusive).length || (rawCatalogData.metadata?.exclusiveItemsCount || 0);
+        document.getElementById('statExclusives').innerText = exclCount.toLocaleString('ar-EG');
         
         const dateStr = rawCatalogData.metadata?.generatedAt ? new Date(rawCatalogData.metadata.generatedAt).toLocaleString('ar-EG') : 'الآن';
         document.getElementById('headerLastUpdate').innerText = `آخر تحديث: ${dateStr}`;
