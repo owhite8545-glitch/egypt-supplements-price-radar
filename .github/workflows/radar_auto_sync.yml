@@ -1,0 +1,55 @@
+name: 24/7 Automated Radar Price & Catalog Sync
+
+on:
+  schedule:
+    # Run every 2 hours around the clock (24/7)
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Manual Trigger Reason'
+        required: false
+        default: 'Manual on-demand sync'
+
+concurrency:
+  group: radar-sync
+  cancel-in-progress: true
+
+jobs:
+  sync-and-deploy:
+    name: Crawl Live Egyptian Supplement Stores & Sync Radar
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run Live Store Crawlers & Price Comparator
+        run: |
+          node scripts/sync_radar_live.cjs
+
+      - name: Check for Price or Catalog Changes
+        id: git_diff
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain catalog.json)" ]; then
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes_detected=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit & Push Updated Prices to Main (Auto-Triggers Vercel)
+        if: steps.git_diff.outputs.changes_detected == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          git commit -m "chore(sync): automated 24/7 live prices & catalog update [skip ci]"
+          git push origin main

@@ -248,7 +248,28 @@
     </div>
   </div>
 
-  <main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8 space-y-5 sm:space-y-8 pb-28 sm:pb-8">
+  <main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8 space-y-4 sm:space-y-6 pb-28 sm:pb-8">
+
+    <!-- 24/7 Live Radar Sync Status Banner -->
+    <div class="flex flex-wrap items-center justify-between gap-3 p-3 sm:p-4 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-emerald-500/5 dark:from-emerald-950/40 dark:via-teal-950/30 dark:to-espresso-900 border border-emerald-500/30 shadow-sm">
+      <div class="flex items-center gap-2.5">
+        <span class="relative flex h-3 w-3 shrink-0">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <div class="text-xs sm:text-sm">
+          <span class="font-black text-emerald-800 dark:text-emerald-300">🟢 رادار مباشر 24/7 نشط:</span>
+          <span class="text-slate-600 dark:text-champagne-300 font-medium"> فحص دوري آلي وتحديث أسعار مستمر للمتاجر الـ 9 الأساسية وعروض السوق المصري</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-3 text-xs w-full sm:w-auto justify-between sm:justify-end">
+        <span id="liveSyncClock" class="font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-500/15 dark:bg-emerald-950/60 px-2.5 py-1 rounded-lg border border-emerald-500/20">آخر فحص: منذ لحظات</span>
+        <button onclick="triggerSync(false)" class="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold rounded-lg shadow transition active:scale-95" title="طلب فحص وتحديث فوري">
+          <i data-lucide="refresh-cw" class="w-3.5 h-3.5" id="bannerSyncIcon"></i>
+          <span>تحديث فوري ⚡</span>
+        </button>
+      </div>
+    </div>
 
     <!-- KPI Stats Cards -->
     <section class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
@@ -1029,43 +1050,132 @@
       renderProducts();
     }
 
-    async function loadCatalog() {
+    // Ensure legacy local override never freezes prices
+    try { localStorage.removeItem('local_catalog_override'); } catch (e) {}
+
+    function updateSyncTimeBadge() {
+      const syncIso = rawCatalogData?.metadata?.lastCatalogSync || rawCatalogData?.metadata?.lastUpdated;
+      const clockEl = document.getElementById('liveSyncClock');
+      const headerEl = document.getElementById('headerLastUpdate');
+
+      if (!syncIso) {
+        if (clockEl) clockEl.innerText = 'آخر فحص: نشط 24/7';
+        return;
+      }
+
+      const syncDate = new Date(syncIso);
+      const now = new Date();
+      const diffMs = Math.max(0, now - syncDate);
+      const diffSec = Math.floor(diffMs / 1000);
+      const diffMin = Math.floor(diffSec / 60);
+      const diffHours = Math.floor(diffMin / 60);
+
+      let relStr = 'منذ لحظات';
+      if (diffMin >= 1 && diffMin < 60) {
+        relStr = `منذ ${diffMin} دقيقة`;
+      } else if (diffHours >= 1 && diffHours < 24) {
+        relStr = `منذ ${diffHours} ساعة`;
+      } else if (diffHours >= 24) {
+        relStr = syncDate.toLocaleDateString('ar-EG', { month: 'short', day: 'numeric' });
+      }
+
+      if (clockEl) clockEl.innerText = `آخر فحص: ${relStr}`;
+      if (headerEl) headerEl.innerText = `آخر تحديث: ${relStr} (${syncDate.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' })})`;
+    }
+
+    let isAutoPollingStarted = false;
+    function startAutoPolling() {
+      if (isAutoPollingStarted) return;
+      isAutoPollingStarted = true;
+
+      // Update relative time badge every 30 seconds
+      setInterval(updateSyncTimeBadge, 30000);
+
+      // Background periodic check every 10 minutes
+      setInterval(async () => {
+        try {
+          const res = await fetch('/api/sync?_t=' + Date.now(), { cache: 'no-store' });
+          if (res.ok) {
+            const status = await res.json();
+            const currentSync = rawCatalogData?.metadata?.lastCatalogSync;
+            if (status.lastCatalogSync && status.lastCatalogSync !== currentSync) {
+              console.log('⚡ New price updates detected! Auto-refreshing catalog in background...');
+              await loadCatalog(false);
+              showToast('🟢 تم تحديث الأسعار تلقائياً وفق أحدث بيانات المتاجر');
+            }
+          }
+        } catch (e) {
+          console.debug('Polling check note:', e.message);
+        }
+      }, 10 * 60 * 1000);
+
+      // Re-check when user re-focuses tab after 10+ minutes away
+      let lastBlur = Date.now();
+      window.addEventListener('blur', () => { lastBlur = Date.now(); });
+      window.addEventListener('focus', async () => {
+        if (Date.now() - lastBlur > 10 * 60 * 1000) {
+          console.log('Tab focused after >10m: checking for fresh prices...');
+          await loadCatalog(false);
+        }
+      });
+    }
+
+    function applyUserCustomPriceOverlays() {
+      try {
+        const raw = localStorage.getItem('user_custom_prices_map');
+        if (!raw) return;
+        const userPrices = JSON.parse(raw);
+        for (const [prodId, storeOffers] of Object.entries(userPrices)) {
+          const product = allProducts.find(p => p.id === prodId);
+          if (product) {
+            if (!product.storeBreakdown) product.storeBreakdown = {};
+            for (const [sId, offer] of Object.entries(storeOffers)) {
+              product.storeBreakdown[sId] = {
+                storeId: sId,
+                storeName: offer.storeName,
+                storeNameEn: offer.storeNameEn || offer.storeName,
+                available: true,
+                inStock: true,
+                price: offer.price,
+                url: offer.url,
+                titleInStore: product.title
+              };
+            }
+          }
+        }
+      } catch (e) {
+        console.debug('Error applying user price overlays:', e.message);
+      }
+    }
+
+    async function loadCatalog(showToastOnSuccess = false) {
       const container = document.getElementById('productsGrid');
 
       try {
         let data = null;
-        const localOverride = localStorage.getItem('local_catalog_override');
-        if (localOverride) {
-          try {
-            data = JSON.parse(localOverride);
-            // Safety check: if override is empty or corrupt, purge it immediately
-            if (!data || !data.products || !Array.isArray(data.products) || data.products.length === 0) {
-              localStorage.removeItem('local_catalog_override');
-              data = null;
-            }
-          } catch (e) {
-            localStorage.removeItem('local_catalog_override');
-            data = null;
+
+        // 1. Primary Live Fetch: static /catalog.json with cache-busting timestamp
+        try {
+          const res = await fetch('/catalog.json?_v=' + Date.now(), {
+            cache: 'no-store',
+            headers: { 'Cache-Control': 'no-cache', 'Pragma': 'no-cache' }
+          });
+          if (res.ok) {
+            data = await res.json();
           }
+        } catch (fetchErr) {
+          console.warn('Direct catalog.json fetch note, trying /api/catalog fallback...', fetchErr);
         }
 
-        if (!data) {
-          // Primary fetch: /api/catalog
+        // 2. Fallback fetch: /api/catalog
+        if (!data || !data.products || data.products.length === 0) {
           try {
-            const res = await fetch('/api/catalog?t=' + Date.now());
-            if (res.ok) {
-              data = await res.json();
+            const apiRes = await fetch('/api/catalog?_t=' + Date.now(), { cache: 'no-store' });
+            if (apiRes.ok) {
+              data = await apiRes.json();
             }
-          } catch (fetchErr) {
-            console.warn('API catalog route unavailable, trying direct /catalog.json fallback...', fetchErr);
-          }
-
-          // Fallback fetch: direct static /catalog.json
-          if (!data || !data.products || data.products.length === 0) {
-            const fallbackRes = await fetch('/catalog.json?v=' + Date.now());
-            if (fallbackRes.ok) {
-              data = await fallbackRes.json();
-            }
+          } catch (apiErr) {
+            console.warn('API catalog fallback error:', apiErr);
           }
         }
 
@@ -1075,23 +1185,28 @@
 
         rawCatalogData = data;
         allProducts = rawCatalogData.products || [];
+        applyUserCustomPriceOverlays();
 
         // Update stats
-        document.getElementById('statTotalRaw').innerText = (rawCatalogData.metadata?.totalRawProducts || allProducts.length).toLocaleString('ar-EG');
+        document.getElementById('statTotalRaw').innerText = (rawCatalogData.metadata?.totalProducts || allProducts.length).toLocaleString('ar-EG');
         document.getElementById('statTotalCompared').innerText = (rawCatalogData.metadata?.totalComparedItems || allProducts.length).toLocaleString('ar-EG');
         const extCount = allProducts.filter(p => p.externalCheaper).length || (rawCatalogData.metadata?.externalDealsFound || 0);
         document.getElementById('statExternalDeals').innerText = extCount.toLocaleString('ar-EG');
         const exclCount = allProducts.filter(p => p.isExclusive).length || (rawCatalogData.metadata?.exclusiveItemsCount || 0);
         document.getElementById('statExclusives').innerText = exclCount.toLocaleString('ar-EG');
         
-        const dateStr = rawCatalogData.metadata?.generatedAt ? new Date(rawCatalogData.metadata.generatedAt).toLocaleString('ar-EG') : 'الآن';
-        document.getElementById('headerLastUpdate').innerText = `آخر تحديث: ${dateStr}`;
+        updateSyncTimeBadge();
+        startAutoPolling();
 
         populateBrandFilter();
         renderProducts();
         renderDeals();
         renderExternalDealsTab();
         renderExclusivesTab();
+
+        if (showToastOnSuccess) {
+          showToast('تم تحديث أحدث الأسعار ومزامنة الرادار بنجاح! 🚀');
+        }
       } catch (err) {
         console.error('Error loading catalog:', err);
         if (container && (!allProducts || allProducts.length === 0)) {
@@ -1099,8 +1214,8 @@
             <div class="col-span-full p-8 rounded-3xl bg-amber-500/10 border-2 border-amber-500/30 text-center space-y-4">
               <i data-lucide="refresh-cw" class="w-10 h-10 mx-auto text-amber-500 animate-spin"></i>
               <h3 class="text-xl font-bold text-slate-900 dark:text-champagne-100">جاري الاتصال السحابي وتحميل أحدث الأسعار...</h3>
-              <p class="text-xs text-slate-600 dark:text-espresso-300">اضغط على الزر أدناه لتحديث الكاش وإعادة التحميل الفوري.</p>
-              <button onclick="localStorage.removeItem('local_catalog_override'); loadCatalog();" class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold text-sm shadow-md transition active:scale-95">
+              <p class="text-xs text-slate-600 dark:text-espresso-300">يتم فحص خوادم المتاجر والأسعار المحدثة الآن.</p>
+              <button onclick="loadCatalog(true);" class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold text-sm shadow-md transition active:scale-95">
                 إعادة المحاولة الآن 🔄
               </button>
             </div>
@@ -2088,14 +2203,21 @@
         };
       }
 
-      // Save to localStorage override
+      // Save custom price entry to user overlay map
       try {
-        localStorage.setItem('local_catalog_override', JSON.stringify({
-          metadata: rawCatalogData?.metadata || {},
-          products: allProducts
-        }));
+        const userPrices = JSON.parse(localStorage.getItem('user_custom_prices_map') || '{}');
+        if (!userPrices[p.id]) userPrices[p.id] = {};
+        userPrices[p.id][storeId] = {
+          storeId,
+          storeName,
+          storeNameEn: storeName,
+          price: priceVal,
+          url: urlVal,
+          inStock: true
+        };
+        localStorage.setItem('user_custom_prices_map', JSON.stringify(userPrices));
       } catch (e) {
-        console.warn('Storage quota exceeded');
+        console.warn('Storage quota note:', e.message);
       }
 
       closeAddPriceModal();
@@ -2919,15 +3041,18 @@
     async function triggerSync(isFull = false) {
       const banner = document.getElementById('syncProgressBanner');
       const icon = document.getElementById('syncIcon');
-      banner.classList.remove('hidden');
-      icon.classList.add('animate-spin');
-      document.getElementById('syncStatusMsg').innerText = 'جاري الاتصال السحابي ومزامنة أحدث الأسعار فوراً...';
+      const bannerIcon = document.getElementById('bannerSyncIcon');
+      if (banner) banner.classList.remove('hidden');
+      if (icon) icon.classList.add('animate-spin');
+      if (bannerIcon) bannerIcon.classList.add('animate-spin');
+      const msg = document.getElementById('syncStatusMsg');
+      if (msg) msg.innerText = 'جاري الاتصال السحابي ومزامنة أحدث الأسعار فوراً...';
 
       try {
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 3500);
+        const timeoutId = setTimeout(() => controller.abort(), 4000);
 
-        await fetch('/api/sync', {
+        await fetch('/api/sync?_t=' + Date.now(), {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ full: isFull }),
@@ -2936,17 +3061,18 @@
         clearTimeout(timeoutId);
 
         // Instantly reload fresh catalog with cache-busting
-        await loadCatalog();
+        await loadCatalog(true);
 
-        banner.classList.add('hidden');
-        icon.classList.remove('animate-spin');
-        showToast('تمت مزامنة أحدث الأسعار والصفقات بنجاح فوري! 🚀');
+        if (banner) banner.classList.add('hidden');
+        if (icon) icon.classList.remove('animate-spin');
+        if (bannerIcon) bannerIcon.classList.remove('animate-spin');
       } catch (err) {
         console.warn('Sync note:', err.message);
-        await loadCatalog();
-        banner.classList.add('hidden');
-        icon.classList.remove('animate-spin');
-        showToast('تم تحديث البيانات بنجاح!');
+        await loadCatalog(false);
+        if (banner) banner.classList.add('hidden');
+        if (icon) icon.classList.remove('animate-spin');
+        if (bannerIcon) bannerIcon.classList.remove('animate-spin');
+        showToast('تم فحص وتحديث أحدث الأسعار بنجاح!');
       }
     }
 

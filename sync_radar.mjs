@@ -51,8 +51,14 @@ async function fetchWooCommerceAll(store) {
 
       for (const p of list) {
         const rawPrice = p.prices?.price ? parseInt(p.prices.price, 10) : 0;
-        const divisor = Math.pow(10, p.prices?.currency_minor_unit || 2);
-        const price = rawPrice / divisor;
+        const minorUnit = (p.prices?.currency_minor_unit !== undefined && p.prices?.currency_minor_unit !== null) ? Number(p.prices.currency_minor_unit) : 2;
+        const divisor = Math.pow(10, minorUnit);
+        let price = rawPrice / divisor;
+        const lowerName = (p.name || '').toLowerCase();
+        const isSnack = lowerName.includes('bar') || lowerName.includes('snack') || lowerName.includes('chips') || lowerName.includes('spread');
+        if (price < 70 && rawPrice >= 500 && !isSnack) {
+          price = rawPrice;
+        }
         const inStock = p.is_in_stock ?? true;
 
         if (price > 0 && inStock) {

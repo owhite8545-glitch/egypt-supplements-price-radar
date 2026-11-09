@@ -306,12 +306,21 @@ async function fetchWooCommerceStore(store, maxPages = 4) {
 
       for (const p of list) {
         const rawPrice = p.prices?.price ? parseInt(p.prices.price, 10) : 0;
-        const divisor = Math.pow(10, p.prices?.currency_minor_unit || 2);
-        const price = rawPrice / divisor;
+        const minorUnit = (p.prices?.currency_minor_unit !== undefined && p.prices?.currency_minor_unit !== null) ? Number(p.prices.currency_minor_unit) : 2;
+        const divisor = Math.pow(10, minorUnit);
+        let price = rawPrice / divisor;
+        const lowerName = (p.name || '').toLowerCase();
+        const isSnack = lowerName.includes('bar') || lowerName.includes('snack') || lowerName.includes('chips') || lowerName.includes('spread');
+        if (price < 70 && rawPrice >= 500 && !isSnack) {
+          price = rawPrice;
+        }
         if (!price || price <= 0) continue;
 
         const rawReg = p.prices?.regular_price ? parseInt(p.prices.regular_price, 10) : 0;
-        const regPrice = rawReg / divisor;
+        let regPrice = rawReg > 0 ? rawReg / divisor : 0;
+        if (regPrice < 70 && rawReg >= 500 && !isSnack) {
+          regPrice = rawReg;
+        }
         const brandAttr = p.attributes?.find(a => a.name?.toLowerCase().includes('brand'))?.terms?.[0]?.name;
         const brand = detectBrand(p.name, brandAttr);
         const size = canonicalizeSize(parseSize(p.name));

@@ -8,7 +8,8 @@
     "start": "node server.mjs",
     "scrape": "node scraper.mjs",
     "scrape:full": "node scraper.mjs --all",
-    "radar:sync": "node sync_radar.mjs",
+    "radar:sync": "node scripts/sync_radar_live.cjs",
+    "sync:live": "node scripts/sync_radar_live.cjs",
     "py:scrape": "python scraper.py --all"
   },
   "keywords": [
