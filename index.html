@@ -760,9 +760,13 @@
     // Initialize
     async function init() {
       lucide.createIcons();
-      await loadStores();
-      await loadCoupons();
-      await loadCatalog();
+
+      // Parallel non-blocking initialization
+      await Promise.allSettled([
+        loadCatalog(),
+        loadStores(),
+        loadCoupons()
+      ]);
 
       // Read URL Params
       const urlParams = new URLSearchParams(window.location.search);
@@ -780,21 +784,47 @@
     }
 
     async function loadCatalog() {
+      const container = document.getElementById('productsGrid');
+
       try {
         let data = null;
         const localOverride = localStorage.getItem('local_catalog_override');
         if (localOverride) {
           try {
             data = JSON.parse(localOverride);
+            // Safety check: if override is empty or corrupt, purge it immediately
+            if (!data || !data.products || !Array.isArray(data.products) || data.products.length === 0) {
+              localStorage.removeItem('local_catalog_override');
+              data = null;
+            }
           } catch (e) {
             localStorage.removeItem('local_catalog_override');
+            data = null;
           }
         }
 
         if (!data) {
-          const res = await fetch('/api/catalog?t=' + Date.now());
-          if (!res.ok) throw new Error('فشل جلب الكتالوج');
-          data = await res.json();
+          // Primary fetch: /api/catalog
+          try {
+            const res = await fetch('/api/catalog?t=' + Date.now());
+            if (res.ok) {
+              data = await res.json();
+            }
+          } catch (fetchErr) {
+            console.warn('API catalog route unavailable, trying direct /catalog.json fallback...', fetchErr);
+          }
+
+          // Fallback fetch: direct static /catalog.json
+          if (!data || !data.products || data.products.length === 0) {
+            const fallbackRes = await fetch('/catalog.json?v=' + Date.now());
+            if (fallbackRes.ok) {
+              data = await fallbackRes.json();
+            }
+          }
+        }
+
+        if (!data || !data.products || data.products.length === 0) {
+          throw new Error('لم يتم استلام كتالوج صالح من السيرفر');
         }
 
         rawCatalogData = data;
@@ -818,12 +848,26 @@
         renderExclusivesTab();
       } catch (err) {
         console.error('Error loading catalog:', err);
+        if (container && (!allProducts || allProducts.length === 0)) {
+          container.innerHTML = `
+            <div class="col-span-full p-8 rounded-3xl bg-amber-500/10 border-2 border-amber-500/30 text-center space-y-4">
+              <i data-lucide="refresh-cw" class="w-10 h-10 mx-auto text-amber-500 animate-spin"></i>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-champagne-100">جاري الاتصال السحابي وتحميل أحدث الأسعار...</h3>
+              <p class="text-xs text-slate-600 dark:text-espresso-300">اضغط على الزر أدناه لتحديث الكاش وإعادة التحميل الفوري.</p>
+              <button onclick="localStorage.removeItem('local_catalog_override'); loadCatalog();" class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold text-sm shadow-md transition active:scale-95">
+                إعادة المحاولة الآن 🔄
+              </button>
+            </div>
+          `;
+          lucide.createIcons();
+        }
       }
     }
 
     async function loadStores() {
       try {
-        const res = await fetch('/api/stores');
+        let res = await fetch('/api/stores').catch(() => null);
+        if (!res || !res.ok) res = await fetch('/stores.json?v=' + Date.now());
         const data = await res.json();
         coreStoresData = data.coreStores || data;
         externalStoresData = data.externalStores || [];
@@ -836,7 +880,8 @@
 
     async function loadCoupons() {
       try {
-        const res = await fetch('/api/coupons');
+        let res = await fetch('/api/coupons').catch(() => null);
+        if (!res || !res.ok) res = await fetch('/coupons.json?v=' + Date.now());
         couponsData = await res.json();
         renderCoupons();
       } catch (err) {
@@ -1628,23 +1673,23 @@
         let externalBannerHtml = '';
         if (p.externalCheaper) {
           externalBannerHtml = `
-            <a href="${p.externalCheaper.url}" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-2xl bg-gradient-to-r from-purple-50 via-fuchsia-50/80 to-purple-50 border-2 border-purple-400 text-purple-900 dark:from-purple-950/70 dark:via-[#2d153b] dark:to-purple-950/70 dark:border-purple-500/80 dark:text-purple-200 shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-purple-200 hover:border-purple-400 transition group active:scale-[0.99]">
+            <a href="${p.externalCheaper.url}" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-2xl bg-gradient-to-r from-purple-50 via-fuchsia-50/80 to-purple-50 border-2 border-purple-400 text-purple-950 dark:from-purple-950/70 dark:via-[#2d153b] dark:to-purple-950/70 dark:border-purple-500/80 dark:text-purple-200 shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 hover:border-purple-500 transition group active:scale-[0.99]">
               <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-xl bg-purple-600/30 text-purple-300 flex items-center justify-center shrink-0">
-                  <i data-lucide="radar" class="w-4 h-4 text-purple-300"></i>
+                <div class="w-8 h-8 rounded-xl bg-purple-100 dark:bg-purple-600/30 text-purple-700 dark:text-purple-300 flex items-center justify-center shrink-0">
+                  <i data-lucide="radar" class="w-4 h-4 text-purple-600 dark:text-purple-300"></i>
                 </div>
                 <div>
                   <div class="flex items-center gap-1.5">
                     <span class="px-2 py-0.5 rounded text-[10px] font-black bg-purple-600 text-white">رادار السوق الخارجي 💜</span>
-                    <span class="text-xs font-bold text-champagne-200">${escapeHtml(p.externalCheaper.storeName)}</span>
+                    <span class="text-xs font-bold text-slate-900 dark:text-champagne-200">${escapeHtml(p.externalCheaper.storeName)}</span>
                   </div>
-                  <span class="text-[11px] text-purple-300 font-semibold block">أرخص سعر تم رصده في مصر لهذا المنتج!</span>
+                  <span class="text-[11px] text-purple-900 dark:text-purple-300 font-semibold block">أرخص سعر تم رصده في مصر لهذا المنتج!</span>
                 </div>
               </div>
               <div class="flex items-center justify-between w-full sm:w-auto gap-3 shrink-0">
                 <div class="text-right sm:text-left">
-                  <span class="text-base font-black text-purple-300 font-outfit block">${p.externalCheaper.price} ج.م</span>
-                  ${p.externalCheaper.savingsVsCore > 0 ? `<span class="text-[10px] text-emerald-400 font-bold block">(وفر ${p.externalCheaper.savingsVsCore} ج.م عن الـ 6)</span>` : ''}
+                  <span class="text-base font-black text-purple-900 dark:text-purple-300 font-outfit block">${p.externalCheaper.price} ج.م</span>
+                  ${p.externalCheaper.savingsVsCore > 0 ? `<span class="text-[10px] text-emerald-700 dark:text-emerald-400 font-bold block">(وفر ${p.externalCheaper.savingsVsCore} ج.م عن الـ 6)</span>` : ''}
                 </div>
                 <div class="px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs flex items-center gap-1 shadow">
                   <span>شراء من المتجر</span>
@@ -1656,13 +1701,13 @@
         }
 
         return `
-          <div class="card-espresso p-6 rounded-3xl border border-slate-200 dark:border-espresso-700/80 dark:border-espresso-700/80 shadow-lg space-y-5 transition hover:border-gold-500/50">
+          <div class="card-espresso p-6 rounded-3xl border border-slate-200 dark:border-espresso-700/80 shadow-lg space-y-5 transition hover:border-gold-500/50">
             <!-- Top Section: Image, Title, Main Stats -->
-            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 pb-4 border-b border-slate-100 dark:border-espresso-700/60 dark:border-espresso-700/60">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 pb-4 border-b border-slate-100 dark:border-espresso-700/60">
               <div class="flex items-start sm:items-center gap-4 w-full lg:w-auto">
-                <a href="${bestStoreUrl}" target="_blank" rel="noopener noreferrer" class="w-20 h-20 rounded-2xl bg-white dark:bg-[#201914] p-2 flex items-center justify-center shrink-0 border border-slate-200 dark:border-espresso-700/80 dark:border-espresso-700 shadow-sm group/img relative overflow-hidden" title="عرض في ${escapeHtml(bestStoreName)}">
+                <a href="${bestStoreUrl}" target="_blank" rel="noopener noreferrer" class="w-20 h-20 rounded-2xl bg-white dark:bg-[#201914] p-2 flex items-center justify-center shrink-0 border border-slate-200 dark:border-espresso-700 shadow-sm group/img relative overflow-hidden" title="عرض في ${escapeHtml(bestStoreName)}">
                   ${p.image ? `<img src="${p.image}" class="max-w-full max-h-full object-contain group-hover/img:scale-105 transition duration-300">` : '<i data-lucide="package" class="w-8 h-8 text-bronze-400"></i>'}
-                  <div class="absolute inset-0 bg-slate-900 dark:bg-espresso-950/40 opacity-0 group-hover/img:opacity-100 transition flex items-center justify-center">
+                  <div class="absolute inset-0 bg-slate-900/20 dark:bg-espresso-950/40 opacity-0 group-hover/img:opacity-100 transition flex items-center justify-center">
                     <i data-lucide="external-link" class="w-4 h-4 text-white"></i>
                   </div>
                 </a>
@@ -1674,9 +1719,9 @@
                       <span>تخفيض وتوفير قوي 🔥</span>
                     </span>
                     <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/20">${escapeHtml(p.brand || 'ماركة معتمدة')}</span>
-                    ${p.weight ? `<span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 dark:bg-espresso-800 dark:bg-espresso-800 text-slate-600 dark:text-espresso-400 dark:text-espresso-300 font-outfit">${escapeHtml(p.weight)}</span>` : ''}
+                    ${p.weight ? `<span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 dark:bg-espresso-800 text-slate-600 dark:text-champagne-300 font-outfit">${escapeHtml(p.weight)}</span>` : ''}
                   </div>
-                  <h3 class="font-extrabold text-base md:text-lg text-slate-900 dark:text-champagne-100 dark:text-champagne-100 leading-snug">
+                  <h3 class="font-extrabold text-base md:text-lg text-slate-900 dark:text-champagne-100 leading-snug">
                     <a href="${bestStoreUrl}" target="_blank" rel="noopener noreferrer" class="hover:text-gold-500 hover:underline transition">
                       ${escapeHtml(p.title)}
                     </a>
@@ -1690,19 +1735,19 @@
               </div>
 
               <!-- Price Box & Savings -->
-              <div class="flex items-center justify-between sm:justify-end gap-5 w-full lg:w-auto bg-slate-50 dark:bg-[#201914] dark:bg-[#16110e] p-4 rounded-2xl border border-slate-200 dark:border-espresso-700/80 dark:border-espresso-800/80 shrink-0">
+              <div class="flex items-center justify-between sm:justify-end gap-5 w-full lg:w-auto bg-slate-50 dark:bg-[#16110e] p-4 rounded-2xl border border-slate-200 dark:border-espresso-700/80 shrink-0">
                 <div class="text-right">
-                  <span class="text-[11px] text-slate-500 dark:text-espresso-400 dark:text-espresso-400 block font-bold">أرخص سعر حالياً في مصر</span>
+                  <span class="text-[11px] text-slate-500 dark:text-espresso-400 block font-bold">أرخص سعر حالياً في مصر</span>
                   <div class="text-2xl font-black text-emerald-600 dark:text-emerald-400 font-outfit">
                     ${currentLowest ? currentLowest.toLocaleString('ar-EG') + ' ج.م' : ''}
                   </div>
                   <span class="text-[10px] text-slate-400 dark:text-espresso-400">في ${escapeHtml(bestStoreName)}</span>
                 </div>
 
-                <div class="h-10 w-px bg-slate-100 hover:bg-slate-200 dark:bg-espresso-800 dark:bg-espresso-700/60"></div>
+                <div class="h-10 w-px bg-slate-200 dark:bg-espresso-700/60"></div>
 
                 <div class="text-right">
-                  <span class="text-[11px] text-slate-500 dark:text-espresso-400 dark:text-espresso-400 block font-bold">قيمة التوفير في مصر</span>
+                  <span class="text-[11px] text-slate-500 dark:text-espresso-400 block font-bold">قيمة التوفير في مصر</span>
                   <div class="text-xl font-black text-red-500 font-outfit">
                     وفر ${marketSavings ? marketSavings.toLocaleString('ar-EG') + ' ج.م' : 'خصم خاص'}
                   </div>
@@ -1713,7 +1758,7 @@
 
             <!-- Middle Section: Market Price Distribution Across Egyptian Stores -->
             <div class="space-y-3">
-              <div class="flex items-center justify-between text-xs font-bold text-slate-700 dark:text-espresso-300 dark:text-espresso-300">
+              <div class="flex items-center justify-between text-xs font-bold text-slate-700 dark:text-champagne-300">
                 <div class="flex items-center gap-1.5">
                   <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold-500"></i>
                   <span>أسعار وتوافر المنتج في المتاجر والأسواق المصرية:</span>
@@ -1729,14 +1774,14 @@
             </div>
 
             <!-- Bottom Action Toolbar -->
-            <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-espresso-700/60 dark:border-espresso-700/60">
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-espresso-700/60">
               <div class="flex flex-wrap items-center gap-2">
                 <a href="${bestStoreUrl}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-black text-xs shadow-md shadow-emerald-950/30 flex items-center gap-1.5 transition active:scale-95">
                   <span>شراء من ${escapeHtml(bestStoreName)} مباشرة</span>
                   <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                 </a>
 
-                <button onclick="viewInRadar('${encodedId}')" class="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-espresso-800 dark:bg-espresso-800 hover:bg-slate-100 hover:bg-slate-200 dark:bg-espresso-800 dark:hover:bg-slate-300 dark:bg-espresso-700 text-slate-700 dark:text-champagne-300 dark:text-champagne-300 font-bold text-xs border border-slate-300 dark:border-espresso-700 dark:border-espresso-700 flex items-center gap-1.5 transition active:scale-95" title="عرض في جدول مقارنة الـ 6 متاجر">
+                <button onclick="viewInRadar('${encodedId}')" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-[#201914] dark:hover:bg-[#2b211b] text-slate-700 dark:text-champagne-200 font-bold text-xs border border-slate-300 dark:border-espresso-700 flex items-center gap-1.5 transition active:scale-95" title="عرض في جدول مقارنة الـ 6 متاجر">
                   <i data-lucide="scan-line" class="w-3.5 h-3.5 text-gold-500"></i>
                   <span>مقارنة الـ 6 متاجر</span>
                 </button>

@@ -441,14 +441,7 @@ export async function runScraper(options = { full: false }) {
         }
       } else {
         storeBreakdown[store.id] = {
-          storeId: store.id,
-          storeName: store.nameAr,
-          storeNameEn: store.name,
-          platform: store.platform,
-          available: false,
-          inStock: false,
-          price: null,
-          reason: 'غير متوفر في هذا المتجر'
+          available: false
         };
       }
     }
