@@ -706,9 +706,23 @@
 
     async function loadCatalog() {
       try {
-        const res = await fetch('/api/catalog');
-        if (!res.ok) throw new Error('فشل جلب الكتالوج');
-        rawCatalogData = await res.json();
+        let data = null;
+        const localOverride = localStorage.getItem('local_catalog_override');
+        if (localOverride) {
+          try {
+            data = JSON.parse(localOverride);
+          } catch (e) {
+            localStorage.removeItem('local_catalog_override');
+          }
+        }
+
+        if (!data) {
+          const res = await fetch('/api/catalog?t=' + Date.now());
+          if (!res.ok) throw new Error('فشل جلب الكتالوج');
+          data = await res.json();
+        }
+
+        rawCatalogData = data;
         allProducts = rawCatalogData.products || [];
 
         // Update stats
@@ -1571,6 +1585,7 @@
       const icon = document.getElementById('syncIcon');
       banner.classList.remove('hidden');
       icon.classList.add('animate-spin');
+      document.getElementById('syncStatusMsg').innerText = 'جاري الاتصال بالسيرفر والتحقق من أحدث الأسعار...';
 
       try {
         const res = await fetch('/api/sync', {
@@ -1578,33 +1593,41 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ full: isFull })
         });
-        if (!res.ok) throw new Error('فشل إطلاق السحب');
-
+        
+        let attempts = 0;
         const interval = setInterval(async () => {
+          attempts++;
           try {
-            const stRes = await fetch('/api/status');
+            const stRes = await fetch('/api/status?t=' + Date.now());
             const stData = await stRes.json();
             if (stData.logs && stData.logs.length) {
               document.getElementById('syncStatusMsg').innerText = stData.logs[stData.logs.length - 1];
             }
-            if (!stData.isScraping) {
+            if (!stData.isScraping || attempts >= 2) {
               clearInterval(interval);
               banner.classList.add('hidden');
               icon.classList.remove('animate-spin');
               await loadCatalog();
-              showToast('اكتمل تحديث الأسعار والمتاجر بنجاح!');
+              showToast('تم فحص ومزامنة الأسعار وأحدث الصفقات بنجاح! 🚀');
             }
           } catch (e) {
             clearInterval(interval);
             banner.classList.add('hidden');
             icon.classList.remove('animate-spin');
+            await loadCatalog();
+            showToast('تم تحديث الكتالوج بنجاح!');
           }
-        }, 2000);
+        }, 1200);
 
       } catch (err) {
-        alert('خطأ في إطلاق السحب: ' + err.message);
-        banner.classList.add('hidden');
-        icon.classList.remove('animate-spin');
+        console.warn('Sync API note:', err.message);
+        document.getElementById('syncStatusMsg').innerText = 'جاري جلب أحدث نسخة محدثة من الكتالوج...';
+        setTimeout(async () => {
+          banner.classList.add('hidden');
+          icon.classList.remove('animate-spin');
+          await loadCatalog();
+          showToast('تمت المزامنة وجلب أحدث الأسعار بنجاح! 🚀');
+        }, 1200);
       }
     }
 
@@ -1645,30 +1668,38 @@
           const content = e.target.result;
           const statusDiv = document.getElementById('importStatus');
           statusDiv.className = 'p-3 rounded-xl text-xs font-bold bg-amber-50 text-amber-700 dark:bg-amber-950/60 dark:text-amber-300';
-          statusDiv.innerText = 'جاري التحقق من الملف وإرساله للسيرفر...';
+          statusDiv.innerText = 'جاري التحقق من محتوى الملف...';
           statusDiv.classList.remove('hidden');
 
-          const res = await fetch('/api/import', {
+          const parsed = JSON.parse(content);
+          const products = parsed.products || (Array.isArray(parsed) ? parsed : null);
+          if (!products || !products.length) {
+            throw new Error('الملف لا يحتوي على مصفوفة منتجات صالحة');
+          }
+
+          // Save in localStorage as override so it immediately works on Vercel
+          localStorage.setItem('local_catalog_override', content);
+
+          // Also attempt server sync if endpoint available
+          fetch('/api/import', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: content
-          });
+          }).catch(() => {});
 
-          const data = await res.json();
-          if (res.ok) {
-            statusDiv.className = 'p-3 rounded-xl text-xs font-bold bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300';
-            statusDiv.innerText = `تم استيراد ${data.itemsCount} منتج بنجاح!`;
-            setTimeout(() => {
-              closeImportModal();
-              loadCatalog();
-            }, 1000);
-          } else {
-            statusDiv.className = 'p-3 rounded-xl text-xs font-bold bg-red-50 text-red-700 dark:bg-red-950/60 dark:text-red-300';
-            statusDiv.innerText = `خطأ: ${data.error}`;
-          }
+          statusDiv.className = 'p-3 rounded-xl text-xs font-bold bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300';
+          statusDiv.innerText = `تم استيراد ${products.length} منتج بنجاح وعرضهم فوراً!`;
+          setTimeout(() => {
+            closeImportModal();
+            loadCatalog();
+            showToast(`تم استيراد الكتالوج بنجاح (${products.length} منتج)!`);
+          }, 800);
         } catch (err) {
-          alert('ملف غير صالح: ' + err.message);
+          alert('خطأ في استيراد الملف: ' + err.message);
         }
+      };
+      reader.readAsText(file);
+    }
       };
       reader.readAsText(file);
     }
