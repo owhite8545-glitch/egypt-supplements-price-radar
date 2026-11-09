@@ -93,6 +93,52 @@
   ],
   "externalStores": [
     {
+      "id": "train_hard",
+      "name": "Train Hard",
+      "nameAr": "ترين هارد",
+      "url": "https://trainhardeg.com",
+      "platform": "WooCommerce",
+      "type": "woocommerce",
+      "apiUrl": "https://trainhardeg.com/wp-json/wc/store/v1/products",
+      "verifiedEgypt": true,
+      "shippingInfo": "متجر مصري معتمد - مدينة نصر، القاهرة - شحن فوري 24-48 ساعة",
+      "totalProducts": 350
+    },
+    {
+      "id": "fitness_tech",
+      "name": "Fitness Tech",
+      "nameAr": "فتنس تك سبلمنت",
+      "url": "https://fitnesstechsupplements.com",
+      "platform": "WooCommerce",
+      "type": "woocommerce",
+      "apiUrl": "https://fitnesstechsupplements.com/wp-json/wc/store/v1/products",
+      "verifiedEgypt": true,
+      "shippingInfo": "متجر مصري مسجل - شحن لجميع محافظات مصر",
+      "totalProducts": 420
+    },
+    {
+      "id": "protein_we_vitamin",
+      "name": "Protein We Vitamin",
+      "nameAr": "بروتين وي فيتامين",
+      "url": "https://proteinwevitamin.com",
+      "platform": "WooCommerce",
+      "type": "woocommerce",
+      "verifiedEgypt": true,
+      "shippingInfo": "متجر وموزع مكملات معتمد في مصر - شحن لكافة المحافظات",
+      "totalProducts": 180
+    },
+    {
+      "id": "add_to_spot",
+      "name": "Add to Spot",
+      "nameAr": "آد تو سبوت",
+      "url": "https://suppspot.com",
+      "platform": "WooCommerce",
+      "type": "woocommerce",
+      "verifiedEgypt": true,
+      "shippingInfo": "متجر مكملات مصري - شحن سريع في مصر",
+      "totalProducts": 210
+    },
+    {
       "id": "gofit_egypt",
       "name": "GoFit Egypt",
       "nameAr": "جو فيت مصر",
