@@ -215,7 +215,7 @@
 
     <!-- KPI Stats Cards -->
     <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4">
+      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-emerald-500 transition active:scale-[0.99]" onclick="switchTab('radar')" title="عرض جميع المنتجات المسحوبة">
         <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
           <i data-lucide="layers" class="w-6 h-6"></i>
         </div>
@@ -225,7 +225,7 @@
         </div>
       </div>
 
-      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4">
+      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-amber-500 transition active:scale-[0.99]" onclick="switchTab('radar')" title="عرض مجموعات مقارنة الأسعار">
         <div class="w-12 h-12 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center">
           <i data-lucide="scale" class="w-6 h-6"></i>
         </div>
@@ -235,7 +235,7 @@
         </div>
       </div>
 
-      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-purple-500 transition" onclick="switchTab('external')">
+      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-purple-500 transition active:scale-[0.99]" onclick="switchTab('external')" title="عرض صفقات المتاجر الخارجية الأرخص">
         <div class="w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-950/40 border border-purple-500/30 text-purple-600 dark:text-purple-400 flex items-center justify-center">
           <i data-lucide="radar" class="w-6 h-6"></i>
         </div>
@@ -245,7 +245,7 @@
         </div>
       </div>
 
-      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-gold-500 transition" onclick="switchTab('exclusives')" title="عرض المنتجات الحصرية لكل متجر">
+      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-gold-500 transition active:scale-[0.99]" onclick="switchTab('exclusives')" title="عرض المنتجات الحصرية لكل متجر">
         <div class="w-12 h-12 rounded-2xl bg-gold-50 dark:bg-gold-950/40 border border-gold-500/20 text-gold-500 dark:text-gold-300 flex items-center justify-center">
           <i data-lucide="gem" class="w-6 h-6 text-gold-500"></i>
         </div>
@@ -740,6 +740,27 @@
         .replace(/'/g, '&#039;');
     }
 
+    // Safe ClassList manipulation helper (prevents DOMException on space-separated tokens)
+    function safeAddClass(el, ...tokens) {
+      if (!el) return;
+      tokens.forEach(tok => {
+        if (!tok) return;
+        tok.toString().trim().split(/\s+/).forEach(c => {
+          if (c) el.classList.add(c);
+        });
+      });
+    }
+
+    function safeRemoveClass(el, ...tokens) {
+      if (!el) return;
+      tokens.forEach(tok => {
+        if (!tok) return;
+        tok.toString().trim().split(/\s+/).forEach(c => {
+          if (c) el.classList.remove(c);
+        });
+      });
+    }
+
     function showToast(msg, isSuccess = true) {
       const toast = document.getElementById('toastNotification');
       const toastMsg = document.getElementById('toastMsg');
@@ -908,32 +929,51 @@
     }
 
     function switchTab(tabId) {
-      ['radar', 'external', 'exclusives', 'deals', 'tech', 'coupons', 'stores'].forEach(t => {
+      const allTabs = ['radar', 'external', 'exclusives', 'deals', 'tech', 'coupons', 'stores'];
+      allTabs.forEach(t => {
         const el = document.getElementById(`tab-${t}`);
         if (el) el.classList.add('hidden');
         const btn = document.getElementById(`tabBtn-${t}`);
         if (btn) {
-          btn.classList.remove('border-gold-500', 'text-gold-600', 'dark:text-gold-400');
-          btn.classList.add('border-transparent', 'text-slate-500 dark:text-espresso-400');
+          safeRemoveClass(btn, 'border-gold-500', 'text-gold-600', 'dark:text-gold-400');
+          safeAddClass(btn, 'border-transparent', 'text-slate-500', 'dark:text-espresso-400');
         }
       });
 
-      const activeEl = document.getElementById(`tab-${tabId}`);
+      const targetId = allTabs.includes(tabId) ? tabId : 'radar';
+      const activeEl = document.getElementById(`tab-${targetId}`);
       if (activeEl) activeEl.classList.remove('hidden');
-      const activeBtn = document.getElementById(`tabBtn-${tabId}`);
+      const activeBtn = document.getElementById(`tabBtn-${targetId}`);
       if (activeBtn) {
-        activeBtn.classList.remove('border-transparent', 'text-slate-500 dark:text-espresso-400');
-        activeBtn.classList.add('border-gold-500', 'text-gold-600', 'dark:text-gold-400');
+        safeRemoveClass(activeBtn, 'border-transparent', 'text-slate-500', 'dark:text-espresso-400');
+        safeAddClass(activeBtn, 'border-gold-500', 'text-gold-600', 'dark:text-gold-400');
       }
 
-      if (tabId === 'exclusives') {
-        renderExclusivesTab();
-      } else if (tabId === 'deals') {
-        renderDeals();
-      } else if (tabId === 'external') {
-        renderExternalDealsTab();
+      try {
+        if (targetId === 'exclusives') {
+          renderExclusivesTab();
+        } else if (targetId === 'deals') {
+          renderDeals();
+        } else if (targetId === 'external') {
+          renderExternalDealsTab();
+        } else if (targetId === 'radar') {
+          renderProducts();
+        } else if (targetId === 'tech') {
+          renderStoresTech();
+        } else if (targetId === 'coupons') {
+          renderCoupons();
+        } else if (targetId === 'stores') {
+          renderStoresDirectory();
+        }
+      } catch (err) {
+        console.error('Error rendering tab ' + targetId + ':', err);
       }
-      lucide.createIcons();
+
+      try {
+        if (window.lucide && typeof lucide.createIcons === 'function') {
+          lucide.createIcons();
+        }
+      } catch (e) {}
     }
 
     function setCategoryFilter(cat) {
@@ -1542,13 +1582,13 @@
     function setDealsFilter(filterType) {
       currentDealsFilter = filterType;
       document.querySelectorAll('.deal-filter-btn').forEach(btn => {
-        btn.classList.remove('bg-red-600', 'text-white');
-        btn.classList.add('bg-slate-100 dark:bg-espresso-800', 'dark:bg-[#201914]', 'text-slate-600 dark:text-espresso-400', 'dark:text-champagne-200');
+        safeRemoveClass(btn, 'bg-red-600', 'text-white');
+        safeAddClass(btn, 'bg-slate-100', 'dark:bg-espresso-800', 'dark:bg-[#201914]', 'text-slate-600', 'dark:text-espresso-400', 'dark:text-champagne-200');
       });
       const activeBtn = document.getElementById(`dealFilterBtn_${filterType}`);
       if (activeBtn) {
-        activeBtn.classList.remove('bg-slate-100 dark:bg-espresso-800', 'dark:bg-[#201914]', 'text-slate-600 dark:text-espresso-400', 'dark:text-champagne-200');
-        activeBtn.classList.add('bg-red-600', 'text-white');
+        safeRemoveClass(activeBtn, 'bg-slate-100', 'dark:bg-espresso-800', 'dark:bg-[#201914]', 'text-slate-600', 'dark:text-espresso-400', 'dark:text-champagne-200');
+        safeAddClass(activeBtn, 'bg-red-600', 'text-white');
       }
       renderDeals();
     }
@@ -1564,8 +1604,8 @@
         const el = document.getElementById(`prod_${id}`);
         if (el) {
           el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          el.classList.add('ring-4', 'ring-gold-500', 'ring-offset-2', 'ring-offset-white dark:ring-offset-[#130f0c]');
-          setTimeout(() => el.classList.remove('ring-4', 'ring-gold-500', 'ring-offset-2', 'ring-offset-white dark:ring-offset-[#130f0c]'), 3500);
+          safeAddClass(el, 'ring-4', 'ring-gold-500', 'ring-offset-2', 'ring-offset-white', 'dark:ring-offset-[#130f0c]');
+          setTimeout(() => safeRemoveClass(el, 'ring-4', 'ring-gold-500', 'ring-offset-2', 'ring-offset-white', 'dark:ring-offset-[#130f0c]'), 3500);
         }
       }, 250);
     }
