@@ -89,9 +89,7 @@
       "techDetails": "Shopify Hosted Cloud (Global CDN)",
       "strengths": "فروع في مدينة نصر والمعادي و6 أكتوبر، عروض Black Friday وتخفيضات مستمرة.",
       "weaknesses": "كتالوج المنتجات على الويبسايت صغير (137 منتج) ويحتاج رفع باقي أصناف الفروع."
-    }
-  ],
-  "externalStores": [
+    },
     {
       "id": "train_hard",
       "name": "Train Hard",
@@ -126,18 +124,9 @@
       "verifiedEgypt": true,
       "shippingInfo": "متجر وموزع مكملات معتمد في مصر - شحن لكافة المحافظات",
       "totalProducts": 180
-    },
-    {
-      "id": "add_to_spot",
-      "name": "Add to Spot",
-      "nameAr": "آد تو سبوت",
-      "url": "https://suppspot.com",
-      "platform": "WooCommerce",
-      "type": "woocommerce",
-      "verifiedEgypt": true,
-      "shippingInfo": "متجر مكملات مصري - شحن سريع في مصر",
-      "totalProducts": 210
-    },
+    }
+  ],
+  "externalStores": [
     {
       "id": "gofit_egypt",
       "name": "GoFit Egypt",
@@ -185,6 +174,26 @@
       "verifiedEgypt": true,
       "shippingInfo": "متجر مصري للمكملات الأصلية - شحن سريع في مصر",
       "totalProducts": 250
+    },
+    {
+      "id": "social_media",
+      "name": "Social Media & Pages (Facebook / Instagram / TikTok)",
+      "nameAr": "صفحات وجروبات السوشيال ميديا الموثقة بمصر",
+      "url": "https://facebook.com",
+      "platform": "Social Commerce",
+      "type": "social",
+      "verifiedEgypt": true,
+      "shippingInfo": "صفحات ومتاجر سوشيال ميديا ومجموعات الجيم المعتمدة في مصر"
+    },
+    {
+      "id": "olx_egypt",
+      "name": "OLX Egypt & Open Market (السوق المفتوح)",
+      "nameAr": "أوليكس مصر والسوق المفتوح",
+      "url": "https://www.dubizzle.com.eg",
+      "platform": "Marketplace",
+      "type": "marketplace",
+      "verifiedEgypt": true,
+      "shippingInfo": "إعلانات وعروض المكملات الأصلية في السوق المصري"
     }
   ]
 }

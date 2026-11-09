@@ -9,132 +9,27 @@
     "externalDealsFound": 14,
     "externalProductsCount": 480,
     "lastRadarSync": "2026-11-09T04:42:16.172Z",
-    "totalProducts": 2667,
+    "totalProducts": 2645,
     "lastCatalogSync": "2026-11-09T04:48:28.513Z"
   },
   "coreStores": [
-    {
-      "id": "super_supplement",
-      "name": "Super Supplement",
-      "nameAr": "سوبر سبلمنت",
-      "url": "https://super-eg.com",
-      "platform": "WooCommerce",
-      "type": "woocommerce",
-      "apiUrl": "https://super-eg.com/wp-json/wc/store/v1/products",
-      "logo": "https://super-eg.com/wp-content/uploads/2021/04/cropped-super-logo-1.png",
-      "totalProducts": 900,
-      "cdn": "Cloudflare",
-      "techDetails": "WordPress 6.x + WooCommerce REST API (PHP 8.2)",
-      "strengths": "كتالوج واسع (900+ منتج)، متواجد داخل صالات جيم كبرى ومولات في مصر.",
-      "weaknesses": "سرعة استجابة السيرفر أبطأ من شوبيفاي، الواجهة كلاسيكية ووردبريس.",
-      "isExternalRadar": false
-    },
-    {
-      "id": "mf_supplement",
-      "name": "MF Supplement",
-      "nameAr": "إم إف سبلمنت",
-      "url": "https://mfsupps.com",
-      "platform": "WooCommerce",
-      "type": "woocommerce",
-      "apiUrl": "https://mfsupps.com/wp-json/wc/store/v1/products",
-      "logo": "https://mfsupps.com/wp-content/uploads/2022/01/logo-mf.png",
-      "totalProducts": 1045,
-      "cdn": "Cloudflare",
-      "techDetails": "WordPress + WooCommerce Store API (PHP 8.5)",
-      "strengths": "أكبر مخزون منتجات بين المنافسين (1045 منتج)، تنوع عالي في الماركات.",
-      "weaknesses": "تحديث المخزون بطيء نسبيًا، كثرة المنتجات غير المتوفرة (Out of stock).",
-      "isExternalRadar": false
-    },
-    {
-      "id": "max_muscle",
-      "name": "Max Muscle Elite",
-      "nameAr": "ماكس مسل إيليت",
-      "url": "https://maxmuscleelite.com",
-      "platform": "Shopify",
-      "type": "shopify",
-      "apiUrl": "https://maxmuscleelite.com/products.json",
-      "logo": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/logo.png",
-      "totalProducts": 658,
-      "cdn": "Shopify CDN / Cloudflare",
-      "techDetails": "Shopify Hosted Cloud (Global CDN)",
-      "strengths": "من أقدم وأقوى البراندات في مصر، فروع متعددة، بنية تحتية سريعة جداً على شوبيفاي.",
-      "weaknesses": "الأسعار تميل لأن تكون أعلى من متوسط السوق لبعض المنتجات المستوردة.",
-      "isExternalRadar": false
-    },
-    {
-      "id": "power_fit",
-      "name": "Power Fit Supplement",
-      "nameAr": "باور فيت سبلمنت",
-      "url": "https://powerfitsupplements.com",
-      "platform": "Shopify",
-      "type": "shopify",
-      "apiUrl": "https://powerfitsupplements.com/products.json",
-      "logo": "https://cdn.shopify.com/s/files/1/0681/1513/6744/files/logo.png",
-      "totalProducts": 384,
-      "cdn": "Shopify CDN / Cloudflare",
-      "techDetails": "Shopify Hosted Cloud (Global CDN)",
-      "strengths": "متجر سريع جداً، صور منتجات عالية الجودة، تركيز على الماركات الأمريكية الشهيرة.",
-      "weaknesses": "تنوع المنتجات أقل (384 منتج مقارنة بـ 900+ عند سوبر سبلمنت).",
-      "isExternalRadar": false
-    },
-    {
-      "id": "the_coach",
-      "name": "The Coach",
-      "nameAr": "ذا كوتش",
-      "url": "https://www.thecoachsupp.com",
-      "platform": "Shopify",
-      "type": "shopify",
-      "apiUrl": "https://www.thecoachsupp.com/products.json",
-      "logo": "https://www.thecoachsupp.com/cdn/shop/files/logo.png",
-      "totalProducts": 161,
-      "cdn": "Shopify CDN / Cloudflare",
-      "techDetails": "Shopify Hosted Cloud (Global CDN)",
-      "strengths": "واجهة عصرية مبسطة، شحن سريع وعروض دورية على البروتينات.",
-      "weaknesses": "حجم الكتالوج محدود (161 منتج) ويركز فقط على فئات محددة.",
-      "isExternalRadar": false
-    },
-    {
-      "id": "power_store",
-      "name": "Power Store",
-      "nameAr": "باور ستور",
-      "url": "https://powerstore-eg.com",
-      "platform": "Shopify",
-      "type": "shopify",
-      "apiUrl": "https://powerstore-eg.com/products.json",
-      "logo": "https://powerstore-eg.com/cdn/shop/files/logo.png",
-      "totalProducts": 137,
-      "cdn": "Shopify CDN / Cloudflare",
-      "techDetails": "Shopify Hosted Cloud (Global CDN)",
-      "strengths": "فروع في مدينة نصر والمعادي و6 أكتوبر، عروض Black Friday وتخفيضات مستمرة.",
-      "weaknesses": "كتالوج المنتجات على الويبسايت صغير (137 منتج) ويحتاج رفع باقي أصناف الفروع.",
-      "isExternalRadar": false
-    }
+    "super_supplement",
+    "mf_supplement",
+    "max_muscle",
+    "power_fit",
+    "the_coach",
+    "power_store",
+    "train_hard",
+    "fitness_tech",
+    "protein_we_vitamin"
   ],
   "externalStores": [
-    {
-      "id": "gofit_egypt",
-      "name": "GoFit Egypt",
-      "nameAr": "جو فيت مصر",
-      "url": "https://gofit-eg.com",
-      "platform": "WooCommerce",
-      "type": "woocommerce",
-      "apiUrl": "https://gofit-eg.com/wp-json/wc/store/v1/products",
-      "verifiedEgypt": true,
-      "shippingInfo": "متجر مصري مسجل - شحن لجميع المحافظات",
-      "totalProducts": 166
-    },
-    {
-      "id": "ifit_egypt",
-      "name": "iFIT Egypt",
-      "nameAr": "آي فيت مصر",
-      "url": "https://ifit-eg.com",
-      "platform": "WooCommerce",
-      "type": "woocommerce",
-      "apiUrl": "https://ifit-eg.com/wp-json/wc/store/v1/products",
-      "verifiedEgypt": true,
-      "shippingInfo": "متجر مصري معتمد - شحن داخل مصر",
-      "totalProducts": 583
-    }
+    "gofit_egypt",
+    "ifit_egypt",
+    "fit_spot",
+    "zero_fat",
+    "social_media",
+    "olx_egypt"
   ],
   "products": [
     {
@@ -479,15 +374,6 @@
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Nutrex-Research-Whey-Protein-1.webp",
           "titleInStore": "Nutrex Research Whey Protein",
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2835,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutrex-research-100-whey-protein-900g-26-servings",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -554,15 +440,6 @@
           "url": "https://powerstore-eg.com/products/yava-labs-cream-of-rice-1kg?variant=44194579218483",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/34f07e8c-5db6-4eb9-80a2-a508122f325b.png?v=1775913084",
           "titleInStore": "Yava Labs.-Cream Of Rice.-1Kg",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1200,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/yava-labs-cream-of-rice-1kg",
           "isCheapest": true
         }
       },
@@ -631,15 +508,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/611uzQ3nNKL._AC.jpg?v=1748549352",
           "titleInStore": "Marvelous Nutrition Big Extreme Weight Gainer.-30Serv.-3kg",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2300,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-big-extreme-weight-gainer-3kg",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -5104,8 +4972,8 @@
       "form": "capsule",
       "category": "Vitamins &amp; Health",
       "image": "https://super-eg.com/wp-content/uploads/2026/08/file_000000007364824387f4818821547c6f.jpg",
-      "lowestPrice": 1200,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 1350,
+      "cheapestStore": "Super Supplement",
       "lowestCorePrice": 1350,
       "cheapestCoreStore": "سوبر سبلمنت",
       "highestPrice": 1350,
@@ -5146,15 +5014,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1200,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/superior-14-joint-guard-90-capsules",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -5633,15 +5492,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1900,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/superior-14-cla-l-carnitine",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -37602,8 +37452,8 @@
       "form": "powder",
       "category": "Mass Gainer",
       "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/nutriversum-pure-gainer-pro-71serv-5000g-vanilla-5999107126797.jpg?v=1791016597",
-      "lowestPrice": 3400,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 3500,
+      "cheapestStore": "Max Muscle Elite",
       "lowestCorePrice": 3500,
       "cheapestCoreStore": "ماكس مسل إيليت",
       "highestPrice": 3500,
@@ -37644,15 +37494,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3400,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutriversum-gainer-pro-71serv-5000g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -37770,15 +37611,6 @@
           "url": "https://powerstore-eg.com/products/nutriversum-basic-creatine-monohydrate-500g?variant=43365040324659",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_6019.jpg?v=1748549962",
           "titleInStore": "Nutriversum Basic Creatine Monohydrate-147Serv.-500G",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1400,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutriversum-basic-creatine-monohydrate-500g",
           "isCheapest": true
         }
       },
@@ -39488,15 +39320,6 @@
           "url": "https://powerstore-eg.com/products/nutrabolics-mass-fusion-5-44kg?variant=43365011816499",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Nutrabolics-Mass-Fusion-Gainer.-22Serv.-5.44KG.-Extreme-Chocolate.jpg?v=1748549512",
           "titleInStore": "Nutrabolics Mass Fusion Gainer.-22Serv.-5.44KG",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3800,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutrabolics-mass-fusion-gainer-22serv-5-44kg",
           "isCheapest": true
         }
       },
@@ -48265,8 +48088,8 @@
       "form": "capsule",
       "category": "Amino Acids",
       "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/6fad2923-bc74-4980-bf9c-1521feabf49d.jpg?v=1757778725",
-      "lowestPrice": 1800,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 1900,
+      "cheapestStore": "Power Fit Supplement",
       "lowestCorePrice": 1900,
       "cheapestCoreStore": "باور فيت سبلمنت",
       "highestPrice": 1900,
@@ -48307,15 +48130,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1800,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/musclemeds-carnivor-beef-aminos-300-tablets",
-          "isCheapest": true
         },
         "fit_spot": {
           "storeName": "Fit Spot",
@@ -56467,15 +56281,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1350,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/farah-secret-citrulline-malate-300g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -56533,15 +56338,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/farah-secrets-gain-secret-5kg",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -56557,8 +56353,8 @@
       "form": "snack",
       "category": "Protein",
       "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/New_Template_87_27778275-58b5-4ae1-9c30-6b6f8f571a43.jpg?v=1783883606",
-      "lowestPrice": 4000,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 4950,
+      "cheapestStore": "Power Fit Supplement",
       "lowestCorePrice": 4950,
       "cheapestCoreStore": "باور فيت سبلمنت",
       "highestPrice": 4950,
@@ -56599,15 +56395,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/farah-secrets-whey-secret-2-3kg",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -56664,15 +56451,6 @@
         },
         "power_store": {
           "available": false,
-          "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/farah-secret-creatine-secret-60-servings-300g",
           "isCheapest": false
         }
       },
@@ -59538,8 +59316,8 @@
       "form": "capsule",
       "category": "Vitamins",
       "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/95ffe213-3702-48db-bc81-0cb5f9fcdf9c_6afe7d15-2b7a-4f35-bde4-1a54846beb01.jpg?v=1770583036",
-      "lowestPrice": 1300,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 1500,
+      "cheapestStore": "Power Fit Supplement",
       "lowestCorePrice": 1500,
       "cheapestCoreStore": "باور فيت سبلمنت",
       "highestPrice": 1500,
@@ -59580,15 +59358,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1300,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/muscletech-platinum-multivitamin-90-tablets",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -61149,8 +60918,8 @@
       "form": "powder",
       "category": "Creatine",
       "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/NewTemplate_7_520e37ae-18e3-46b4-96b6-46eb633cdbd1.jpg?v=1761067232",
-      "lowestPrice": 1200,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 1250,
+      "cheapestStore": "Power Fit Supplement",
       "lowestCorePrice": 1250,
       "cheapestCoreStore": "باور فيت سبلمنت",
       "highestPrice": 1250,
@@ -61191,15 +60960,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1200,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/kevin-levrone-gold-creatine-monohydrate-300g",
-          "isCheapest": true
         },
         "fit_spot": {
           "storeName": "Fit Spot",
@@ -63081,15 +62841,6 @@
         "power_store": {
           "available": false,
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/bsn-amino-x-bcaa-435g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -63567,15 +63318,6 @@
         },
         "power_store": {
           "available": false,
-          "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2400,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/muscletech-platinum-100-creatine-400g",
           "isCheapest": false
         },
         "fit_spot": {
@@ -69800,15 +69542,6 @@
           "available": false,
           "isCheapest": false
         },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 6300,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/optimum-nutrition-gold-standard-100-whey-2270g",
-          "isCheapest": false
-        },
         "fit_spot": {
           "storeName": "Fit Spot",
           "storeNameEn": "Fit Spot",
@@ -73506,15 +73239,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/WhatsAppImage2026-10-31at4.11.36PM.jpg?v=1793456751",
           "titleInStore": "Black Friday - Creatine",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1700,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/black-friday-creatine",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -73572,15 +73296,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/MuscleTech-Nitro-Tech-Whey-Protein.-41Serv.-1.81Kg.-vanilla-Cream.jpg?v=1748550162",
           "titleInStore": "MuscleTech Nitro-Tech Whey Protein.-41Serv.-1.81Kg.-Vanilla Cream",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3800,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/muscletech-nitro-tech-whey-protein-41serv-1-81kg-vanilla-cream",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -73637,15 +73352,6 @@
           "url": "https://powerstore-eg.com/products/azgard-nutrition-100-whey-high-quality-cfm-whey-protein-65serv-2270g?variant=43365035769907",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Azgard-whey-banana-split.jpg?v=1748549917",
           "titleInStore": "Azgard Nutrition 100% Whey High Quality CFM Whey Protein-65Serv.-2270G",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/azgard-nutrition-100-whey-protein-2270g",
           "isCheapest": true
         }
       },
@@ -73755,15 +73461,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Cellucor-C4-Performance-Energy-Explosive-Drink-Zero-Sugar-500ml-Millions-Strawberry.png?v=1793098673",
           "titleInStore": "C4 Original Sugar Free Energy Drink | Pre Workout Performance Drink",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 160,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/c4-original-sugar-free-energy-drink-pre-workout-performance-drink",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -73820,15 +73517,6 @@
           "url": "https://powerstore-eg.com/products/jnx-sports-the-curse-pre-workout-275g?variant=44915623133235",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/images_7.jpg?v=1790267353",
           "titleInStore": "JNX Sports, The Curse! Pre-Workout, 275g, 50 Servings",
-          "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1800,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/jnx-sports-the-curse-pre-workout-275g",
           "isCheapest": false
         },
         "fit_spot": {
@@ -73896,15 +73584,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/masstech.jpg?v=1788284499",
           "titleInStore": "MuscleTech Mass Tech 2.72kg Triple Chocolate Brownie",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2200,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/muscletech-mass-tech-extreme-2000-2720g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -73961,15 +73640,6 @@
           "url": "https://powerstore-eg.com/products/animal-pak-30-packs?variant=44769180352563",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/1_61Fz7POdV_L_desktop.webp?v=1787500097",
           "titleInStore": "Universal Animal Pak-15Serv.-30Packs",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/animal-pak-multivitamin-30-packs",
           "isCheapest": true
         }
       },
@@ -74079,15 +73749,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/AnimalFLEX_44Pack_600.webp?v=1754597906",
           "titleInStore": "Universal Animal Flex-22Serv.-44Pack",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/universal-animal-flex-22serv-44pack-copy",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -74196,15 +73857,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/727cd22f-51a3-4128-b73e-88d7eebf30ee.jpg?v=1784821668",
           "titleInStore": "Core Champs, YOHIMBINE HCL, 5mg, 120 Capsules, 120 Serving (120COUNT)",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/core-champs-yohimbine-hcl-5mg-120-capsules",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -74275,15 +73927,6 @@
           "url": "https://fitnesstechsupplements.com/product/superior-14-100-hydro-whey/",
           "image": "https://i0.wp.com/fitnesstechsupplements.com/wp-content/uploads/2026/10/hydro-whey-superior-14-Hazelnut-chocolate-5999570284048.png?fit=600%2C600&ssl=1",
           "titleInStore": "سوبيريور 14 هيدرو واي – Superior 14 100% Hydro Whey",
-          "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4900,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/superior14-100-hydro-whey-2270g",
           "isCheapest": false
         }
       },
@@ -74356,15 +73999,6 @@
           "image": "https://i0.wp.com/fitnesstechsupplements.com/wp-content/uploads/2026/07/5999570280620-superior-creatine-.png?fit=600%2C600&ssl=1",
           "titleInStore": "سوبريور 14 كرياتين – Superior 14 100% Creatine Monohydrate",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/superior-14-creatine-monohydrate-300g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -74472,15 +74106,6 @@
           "url": "https://powerstore-eg.com/products/superior-14-omega-3-fish-oil-1000mg?variant=44580926652467",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/4737.webp?v=1784654430",
           "titleInStore": "Superior 14 Omega 3",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 750,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/superior-14-omega-3-fish-oil-1000mg-120-softgels",
           "isCheapest": true
         }
       },
@@ -74692,15 +74317,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/98.avif?v=1784133431",
           "titleInStore": "Muscletech Nitrotech 100% Whey Gold-69Serv.-2.27KG",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4900,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/muscletech-nitro-tech-whey-gold-2270g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -74823,15 +74439,6 @@
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Black-Spider-Cloma-Pharma-100-Capsules-1.webp",
           "titleInStore": "Black Spider 25 EPHEDRA Cloma Pharma 100 Capsules",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/cloma-pharma-black-spider-25-ephedra-100-capsules",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -74889,15 +74496,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/b339d183-19d2-4156-a964-271b20f52c6b.png?v=1782833965",
           "titleInStore": "Tribulus + ZMA 90COMP (Quamtrax).",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1400,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/quamtrax-tribulus-zma-90-tablets",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -74969,15 +74567,6 @@
           "image": "https://i0.wp.com/fitnesstechsupplements.com/wp-content/uploads/2026/07/8436574338362-pure-creatine-quamtrax.png?fit=600%2C600&ssl=1",
           "titleInStore": "كومتريكس كرياتين – Quamtrax Pure Creatine 300gm",
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1200,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/quamtrax-pure-creatine-200-mesh-300g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -75085,15 +74674,6 @@
           "url": "https://powerstore-eg.com/products/cellucor-c4-original-pre-workout-455g?variant=44442355728435",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/71aVMg3oZCL.jpg?v=1781627891",
           "titleInStore": "Cellucor C4 Original Pre-Workout-50Serv.-455G",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2850,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/cellucor-c4-original-pre-workout-455g",
           "isCheapest": true
         }
       },
@@ -75254,15 +74834,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Strong-Muscles-Crea-Power-Creatine-150g-30-Servings.png-2.webp?v=1760013437",
           "titleInStore": "Crea Power Creatine-30Serv.-150gm.-Unflavored",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 600,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/crea-power-creatine-monohydrate-150g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -75320,15 +74891,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/859400007580_3d999868-5677-405a-9208-946591f743f0.webp?v=1779374400",
           "titleInStore": "Nutrex Research Isofit-70Serv.-2261g",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 5400,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/nutrex-isofit-whey-protein-2261g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -75385,15 +74947,6 @@
           "url": "https://powerstore-eg.com/products/nutrex-isofit-whey-isolate-1kg?variant=44333214367795",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IsoFit-30-CS.webp?v=1779359612",
           "titleInStore": "Nutrex Research Isofit -30Serv.-1Kg-",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutrex-isofit-whey-protein-isolate-1kg",
           "isCheapest": true
         }
       },
@@ -75452,15 +75005,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/images_4.jpg?v=1777984205",
           "titleInStore": "Core Champs L-Citrulline Malate-90Serv.-180G",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/core-champs-l-citrulline-malate-180g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -75517,15 +75061,6 @@
           "url": "https://powerstore-eg.com/products/mhp-xpel-herbal-diuretic-80-capsules?variant=44254469914675",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/81.avif?v=1777981198",
           "titleInStore": "Mhp Xpel Diuretic 80 CAP",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/mhp-xpel-diuretic-80-capsules",
           "isCheapest": true
         }
       },
@@ -75635,15 +75170,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/71fEXTlvteL.jpg?v=1771840774",
           "titleInStore": "KEVIN LEVRONE.-GOLD GLUTAMINE.-300g.-Unflavored",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1250,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/kevin-levrone-gold-glutamine-300g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -75751,15 +75277,6 @@
           "url": "https://powerstore-eg.com/products/nutrex-100-whey-protein-2270g?variant=43679565774899",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Nutrex-Research-100-Whey-Protein-2.2kg-64-Servings-Chocolate.webp?v=1760359833",
           "titleInStore": "Nutrex Research Whey Protein.-64Serv.- 2272g.",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 5000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutrex-100-whey-protein-2270g",
           "isCheapest": true
         }
       },
@@ -75869,15 +75386,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Farah-Secret-ARGININE-ALPHA-KETOGLUTARATE-300g-100-Servings.webp?v=1758228393",
           "titleInStore": "Farah Secret.-ARGININE ALPHA KETOGLUTARATE.-100 Servings.-300g.",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1100,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/farah-secret-aakg-arginine-300g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -76241,15 +75749,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/748927023824_OptimumNutritionSeriousMass-16Serv.-5_68f2d62c-a485-409f-a3b8-4fb6639b5b41.jpg?v=1760448962",
           "titleInStore": "Optimum Nutrition Serious Mass-16Serv.-5.44KG",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 5700,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/optimum-nutrition-serious-mass-5-45kg",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -76372,15 +75871,6 @@
           "titleInStore": "Muscletech Nitrotech Whey Protein -40Serv.-1.81KG-Milk Chocolate",
           "isCheapest": true
         },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4200,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/muscletech-nitro-tech-whey-protein-1810g",
-          "isCheapest": false
-        },
         "fit_spot": {
           "storeName": "Fit Spot",
           "storeNameEn": "Fit Spot",
@@ -76446,15 +75936,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_5895.jpg?v=1748550386",
           "titleInStore": "Run Alone Nutrition Pure Creatine.-30Serv.-150Gm.-Unflavored",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-nutrition-pure-creatine-30serv-150gm-unflavored",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -76511,15 +75992,6 @@
           "url": "https://powerstore-eg.com/products/run-alone-creatine-monohydrate-300g?variant=43365082136627",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_5898.jpg?v=1748550378",
           "titleInStore": "Run Alone Nutrition Pure Creatine.-60Serv.-300Gm.-Unflavored",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 723,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-nutrition-pure-creatine-60serv-300gm-unflavored",
           "isCheapest": true
         }
       },
@@ -76578,15 +76050,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_5893.jpg?v=1748550371",
           "titleInStore": "Run Alone Nutrition Vita-Men.-30Serv.-60 capsules",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 450,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-nutrition-vita-men-30serv-60-capsules",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -76644,15 +76107,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/om_jpg.webp?v=1748550285",
           "titleInStore": "TruFuel Omega 3-90Serv.-90Softgels",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/trufuel-omega-3-fish-oil-90-softgels",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -76709,15 +76163,6 @@
           "url": "https://powerstore-eg.com/products/trufuel-zma-90-capsules?variant=43365072142387",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/zma_jpg.webp?v=1748550261",
           "titleInStore": "TruFuel ZMA.-90Serv.-90 cap",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1100,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/trufuel-zma-90-capsules",
           "isCheapest": true
         }
       },
@@ -76776,15 +76221,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Universal-Animal-M-Stack-21Serv-21-Pack.jpg?v=1748550246",
           "titleInStore": "Universal Animal M-Stack 21Serv-21 Pack",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/animal-m-stak-21-packs",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -76842,15 +76278,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Universal-Animal-Cuts-21Serv-42-Pack.jpg?v=1748550241",
           "titleInStore": "Universal Animal Cuts-21Serv-42 Pack",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3650,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/animal-cuts-42-packs",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -76907,15 +76334,6 @@
           "url": "https://powerstore-eg.com/products/crea-power-creatine-monohydrate-250g?variant=43365068341299",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Crea-Power-Creatine-50Serv.-250gm.-Unflavored.jpg?v=1748550202",
           "titleInStore": "Crea Power Creatine-50Serv.-250gm.-Unflavored",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 875,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/crea-power-creatine-monohydrate-250g",
           "isCheapest": true
         }
       },
@@ -76974,15 +76392,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/A54DDE9F-90B9-48BE-92DC-71D4F15B5A4E.jpg?v=1748550067",
           "titleInStore": "Bpi Sports Cla+Carnitine-50Serv.-320G",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1850,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/bpi-sports-cla-carnitine-320g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -77039,15 +76448,6 @@
           "url": "https://powerstore-eg.com/products/dorian-yates-blood-and-guts-pre-workout-380g?variant=43365045862451",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Dorian-Yates-Blood-_-guts-20-Serv.-380g.--Watermelon.jpg?v=1748550004",
           "titleInStore": "Dorian Yates Blood & guts-20 Serv.-380g",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1700,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/dorian-yates-blood-guts-pre-workout-380g",
           "isCheapest": true
         }
       },
@@ -77106,15 +76506,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_6023.jpg?v=1748549966",
           "titleInStore": "Nutriversum Iso Pro Pure-80Serv.-2000G-Sourcherry-Yogurt (2KG)",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4200,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutriversum-iso-pro-pure-2kg-sour-cherry-yogurt",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -77171,15 +76562,6 @@
           "url": "https://powerstore-eg.com/products/nutriversum-bcaa-2-1-1-flow-360g-pear?variant=43365039865907",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_6045.jpg?v=1748549948",
           "titleInStore": "Nutriversum BCAA 2:1:1 Flow-360G-30Serv.-Pear",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutriversum-bcaa-2-1-1-flow-360g",
           "isCheapest": true
         }
       },
@@ -77238,15 +76620,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/nutriversum-amino-tablet-350tablet-641g-orange-flavor-5999107131838_1.webp?v=1793292212",
           "titleInStore": "Nutriversum Amino Tablet-350Tabs.-Orange Flavor (350SERV)",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1650,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutriversum-amino-tablet-350-tablets",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -77355,15 +76728,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_6695_b3eaf390-ad5c-420b-a6cf-a0e30cd1b78b.jpg?v=1748549884",
           "titleInStore": "Novogen Pharma Creatine Monohydrate-60Serv.-300G",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 800,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/novogen-pharma-creatine-monohydrate-60serv-300g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -77420,15 +76784,6 @@
           "url": "https://powerstore-eg.com/products/crea-power-creatine-80serv-400gm-unflavored?variant=43365029838899",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Crea-Power-Creatine-80Serv.-400gm.-Unflavored.jpg?v=1748549836",
           "titleInStore": "Crea Power Creatine-80Serv.-400gm.-Unflavored",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1350,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/crea-power-creatine-80serv-400gm-unflavored",
           "isCheapest": true
         }
       },
@@ -77487,15 +76842,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/74E29220-0E5D-4643-AF0B-729644A08C7E.jpg?v=1748549821",
           "titleInStore": "Nutrex Research Lipo-6 HardCore.-60Serv.",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1300,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutrex-research-lipo-6-hardcore-60serv",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -77553,15 +76899,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_7672.jpg?v=1748549786",
           "titleInStore": "Marvelous Nutrition Vitamin Loaded Ingredients-60Serv.-60Capsules",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 850,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-nutrition-vitamin-loaded-ingredients-60serv-60capsules",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -77577,8 +76914,8 @@
       "form": "powder",
       "category": "Creatine",
       "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/creatine-mockup-copy-1024x768-1.png?v=1753113249",
-      "lowestPrice": 1000,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 1200,
+      "cheapestStore": "Power Store",
       "lowestCorePrice": 1200,
       "cheapestCoreStore": "باور ستور",
       "highestPrice": 1200,
@@ -77619,15 +76956,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/creatine-mockup-copy-1024x768-1.png?v=1753113249",
           "titleInStore": "Marvelous Nutrition Creatine -60Serv.-300G.-Unflavored",
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-nutrition-creatine-old-school-formula-60serv-300g-unflavored",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -77685,15 +77013,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Marvelous-Nutrition-Arginine.-75Serv.-300Gm.jpg?v=1748549741",
           "titleInStore": "Marvelous Nutrition Arginine.-75Serv.-300Gm",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1200,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-nutrition-arginine-75serv-300gm",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -77751,15 +77070,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_7654.jpg?v=1748549721",
           "titleInStore": "Marvelous Nutrition Beta Alanine.-100Serv.-300g",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1300,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-nutrition-beta-alanine-100serv-300g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -77817,15 +77127,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Novogen-Pharma-mass-gainer-16Serv.-5.4KG-Double-Chocolate.jpg?v=1748549626",
           "titleInStore": "Novogen Pharma Mass Gainer-16Serv.-5.4KG",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3100,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/novogen-pharma-mass-gainer-16serv-5-4kg",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -78036,15 +77337,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Marvelous-Nutrition-Bulk-Whey-Protein-Isolate.-67Serv.-2Kg.-Cookies-Cream.jpg?v=1748549523",
           "titleInStore": "Marvelous Nutrition Bulk Whey Protein Isolate.-67Serv.-2KG",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-nutrition-bulk-whey-protein-isolate-67serv-2kg",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -78153,15 +77445,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_7262.jpg?v=1748549492",
           "titleInStore": "Run Alone Nutrition Eaa Run.-30Serv.-435G.-Watermelon",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 800,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-eaa-run-435g-watermelon",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -78228,8 +77511,8 @@
       "form": "powder",
       "category": "General",
       "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_7235.jpg?v=1748549466",
-      "lowestPrice": 500,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 550,
+      "cheapestStore": "Power Store",
       "lowestCorePrice": 550,
       "cheapestCoreStore": "باور ستور",
       "highestPrice": 550,
@@ -78270,15 +77553,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_7235.jpg?v=1748549466",
           "titleInStore": "Run Alone Nutrition Carb Run.-50Serv.-1500G.-Pineapple",
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-carb-run-1500g-pineapple",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -78336,15 +77610,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_7621.jpg?v=1748549451",
           "titleInStore": "Marvelous Nutrition Bulk Whey Protein Isolate.-67Serv.-2Kg.-Strawberry",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 5500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-bulk-whey-protein-isolate-2kg",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -78401,15 +77666,6 @@
           "url": "https://powerstore-eg.com/products/core-champs-multivitamin-90-tablets?variant=43365006671923",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Untitled_20250211_224305.png?v=1748549387",
           "titleInStore": "Core Champs Multivitamin-90Serv.-90Tablets.",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 900,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/core-champs-multivitamin-90-tablets",
           "isCheapest": true
         }
       },
@@ -78468,15 +77724,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/codex-mockup-f-copy.png?v=1748549362",
           "titleInStore": "Marvelous .CodeX Multi Vitamins.-30Serv-7Caps",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2100,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-codex-multivitamin",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -78534,15 +77781,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/testman-catalog-m-copy.png?v=1748549358",
           "titleInStore": "Marvelous Nutrition -.Testoman-.30Serv-.120Caps",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-testoman-120-capsules",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -78600,15 +77838,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_7556_d5683db1-ad66-4fff-919f-457cb3d4b305.jpg?v=1748549341",
           "titleInStore": "Marvelous Nutrition Lean A.F 100% fm Whey Protein Isolate-80Serv.-2Kg.-Cookies",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4600,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-lean-af-whey-isolate-2kg",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -78624,8 +77853,8 @@
       "form": "powder",
       "category": "General",
       "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/SAVIOR-min-600x600-1.png?v=1748549334",
-      "lowestPrice": 1785,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 2100,
+      "cheapestStore": "Power Store",
       "lowestCorePrice": 2100,
       "cheapestCoreStore": "باور ستور",
       "highestPrice": 2100,
@@ -78666,15 +77895,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/SAVIOR-min-600x600-1.png?v=1748549334",
           "titleInStore": "Marvelous Nutrition Savior Anabolic Recovery Rormula.-24Serv.-950g.-FruitPunch",
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1785,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-savior-anabolic-recovery-950g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -78732,15 +77952,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Nutrabolics-Anabolic-State-21Serv-378G-Grape-Lollipop.png?v=1748549306",
           "titleInStore": "Nutrabolics Anabolic State-21Serv-378G-Grape Lollipop",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutrabolics-anabolic-state-378g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -78798,15 +78009,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/631656710496_MuscletechNitrotech100-WheyGold-69Serv.-2.jpg?v=1748549289",
           "titleInStore": "MuscleTech Nitro-Tech 100% Whey Gold-69Serv.-2.27KG-Double Rich Chocolate",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4900,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/muscletech-nitro-tech-whey-gold-2270g-double-rich-chocolate",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -78864,15 +78066,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/850026029543_NutrexResearchL-Arginine1000-60Ser.jpg?v=1748549271",
           "titleInStore": "Nutrex Research L-Arginine 1000-60Ser.-120Capsules (60SERV)",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1300,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutrex-l-arginine-1000mg-120-capsules",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -78929,15 +78122,6 @@
           "url": "https://powerstore-eg.com/products/run-alone-casein-run-dark-chocolate-30serv-1kg?variant=43364999036979",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/bb3c7ace-1074-42a6-8061-0953732928ed.png?v=1748549239",
           "titleInStore": "Run Alone Casein run dark chocolate 30serv 1kg",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-casein-run-1kg",
           "isCheapest": true
         }
       },
@@ -78996,15 +78180,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/RunAlone-Another-One-Tropical-Fruits.png?v=1748549236",
           "titleInStore": "Run Alone Nutrition Another One Pre-Workout.-60Serv.-645G",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1200,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-another-one-pre-workout-645g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -79062,15 +78237,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Runalone-Carb-Run-Cola-new-patch.png?v=1748549228",
           "titleInStore": "Run Alone Nutrition Carb Run.-50Serv.-1500G.-Cola",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 550,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-carb-run-maltodextrin-1500g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -79127,15 +78293,6 @@
           "url": "https://powerstore-eg.com/products/run-alone-nutrition-whey-run-30serv-1050gm-cocobisce?variant=43364996841523",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Runalone-Another-whey-run-Coco-Bisce-New-Patch.png?v=1748549219",
           "titleInStore": "Run Alone Nutrition Whey Run.-30Serv.-1050Gm.-cocobisce",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1411,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-whey-run-1050g",
           "isCheapest": true
         }
       },
@@ -79194,15 +78351,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/WhatsApp_Image_2026-10-19_at_3.09.20_PM.jpg?v=1792411883",
           "titleInStore": "Yava Lab Creatine pure-.300g-.60Serv",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1200,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/yava-labs-creatine-pure-300g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -79260,15 +78408,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/eaa_complex_300g_mojito_01.png?v=1748549198",
           "titleInStore": "Yava Labs Eaa Complex -.300g-.34Serv",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1400,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/yava-labs-eaa-complex-300g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -79326,15 +78465,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/yava_elite_vanilla_01.png?v=1748549188",
           "titleInStore": "Yava Labs Elite Whey Protein.-66Serv.-2kg.-Vanilla Ice Cream",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/yava-labs-elite-whey-protein-2kg",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -79392,15 +78522,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/yava_iso_camp_2kg_vanilla_01.png?v=1748549183",
           "titleInStore": "Yava Labs iso Camp +Creatine.-66Serv.-2kg.-Vanilla  Ice Cream",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/yava-labs-iso-camp-creatine-2kg",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -79509,15 +78630,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/yava_pure_iso_cookies_01.png?v=1748549173",
           "titleInStore": "Yava Labs Pure iso Whey Protein.-66Serv.-2kg",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4800,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/yava-labs-pure-iso-whey-protein-2kg",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -79575,15 +78687,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/yava_whey_camp_straw_01_650x_2x_9904d6b6-6c41-4f1e-95c5-33af52676c7e.png?v=1748549167",
           "titleInStore": "Yava Labs Whey Camp +Creatine.-66Serv.-2kg.-Strawberry Ice Cream",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/yava-labs-whey-camp-creatine-2kg",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -89349,15 +88452,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/853237000745.jpg?v=1753104148",
           "titleInStore": "Nutrex Research Creatine drive monohydrate-60Serv.-300G",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1100,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutrex-creatine-drive-monohydrate-300g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -94990,15 +94084,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/1000168844_1.jpg?v=1784136420",
           "titleInStore": "Strong Muscles, L-Citrulline DL- Malate, 150g, 46 servings",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 550,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/strong-muscles-l-citrulline-dl-malate-150g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -95055,15 +94140,6 @@
           "url": "https://powerstore-eg.com/products/zoomad-labs-one-raw-pocket-creatine-150g?variant=43682963390515",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/CREATINE-150GR.jpg?v=1760526090",
           "titleInStore": "Zoomad Labs ONE RAW® POCKET CREATINE 200 Mesh 50 servings – 150g",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 550,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/zoomad-labs-one-raw-pocket-creatine-150g",
           "isCheapest": true
         }
       },
@@ -95182,8 +94258,8 @@
       "form": "powder",
       "category": "Creatine",
       "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Optimum-Nutrition-Micronized-Creatine-Powder-300-g.png?v=1760455094",
-      "lowestPrice": 2000,
-      "cheapestStore": "Add to Spot",
+      "lowestPrice": 2100,
+      "cheapestStore": "Power Store",
       "lowestCorePrice": 2100,
       "cheapestCoreStore": "باور ستور",
       "highestPrice": 2100,
@@ -95238,15 +94314,6 @@
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/ON_Micronized_Creatine_Powder_300g_google_ready-300x300-1-1.webp",
           "titleInStore": "Optimum Nutrition Micronized Creatine Powder 300g – Unflavored",
           "isCheapest": false
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2000,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/optimum-nutrition-micronized-creatine-300g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -95303,15 +94370,6 @@
           "url": "https://powerstore-eg.com/products/optimum-nutrition-amino-energy-electrolytes-285g?variant=43681219182643",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/on-amino-energy-electrolytes_Image_01.webp?v=1760451548",
           "titleInStore": "Optimum Nutrition Essential Amino Energy+Electrolytes-30Serv.-285G.",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/optimum-nutrition-amino-energy-electrolytes-285g",
           "isCheapest": true
         }
       },
@@ -95421,15 +94479,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/0c147b034a49de7fb42b81b133463070_jpg_720x720q80_jpg.webp?v=1765888665",
           "titleInStore": "Optimum Nutrition Platinum Hydro Whey-20Serv.-794G.",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3700,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/optimum-nutrition-platinum-hydro-whey-794g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -95487,15 +94536,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Azgard-Nutrition-Hulk-Mass-Extreme-4.54KG-30-Servings-Chocolate.webp?v=1758821642",
           "titleInStore": "Azgard Nutrition, Hulk Mass Extreme.-30 Servings.-4.54KG",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3250,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/azgard-nutrition-hulk-mass-extreme-30-servings-4-54kg",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -95552,15 +94592,6 @@
           "url": "https://powerstore-eg.com/products/azgard-whey-isolate-2270g-chocolate-peanut-butter?variant=43643005304883",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/5999569360418_Azgard_Nutrition_100_Whey_Isolate_High_Quality_Whey_Protein_Isolate-70Serv.-2270G.png?v=1758821446",
           "titleInStore": "Azgard Nutrition 100% Whey Isolate High Quality Whey Protein Isolate-70Serv.-2270G.-Chocolate-Peanut Butter",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 5100,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/azgard-nutrition-100-whey-isolate-high-quality-whey-protein-isolate-70serv-2270g-chocolate-peanut-butter",
           "isCheapest": true
         }
       },
@@ -95772,15 +94803,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_6840.jpg?v=1748550365",
           "titleInStore": "Skeleton Nutrition All Out Naked Creatine Monohydrate.-100Serv.-300g.-Unflavored",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 800,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/skeleton-nutrition-all-out-naked-creatine-monohydrate-100serv-300g-unflavored",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -95838,15 +94860,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_6956.jpg?v=1748549974",
           "titleInStore": "Kevin Levrone Anabolic Diuretic.-90TAB (90SERV)",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 700,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/kevin-levrone-anabolic-diuretic-90-tablets",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -95903,15 +94916,6 @@
           "url": "https://powerstore-eg.com/products/novogen-pharma-whey-isolate-2kg?variant=43365033738291",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Novogen-Pharma-Whey-Isolate-60Serv.-2Kg-Double-Chocolate.jpg?v=1748549898",
           "titleInStore": "Novogen Pharma Whey Isolate-60Serv.-2Kg",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 3500,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/novogen-pharma-whey-isolate-60serv-2kg",
           "isCheapest": true
         }
       },
@@ -96021,15 +95025,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Novogen-Pharma-Carb_.-50Serv.--2100G.--Mango.jpg?v=1748549864",
           "titleInStore": "Novogen Pharma Carb+.-50Serv.- 2100G",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 750,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/novogen-pharma-carb-50serv-2100g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -96087,15 +95082,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/BCAA-front-Lemon-Lime_f6267939-3dbc-4950-81fa-dbfee991de26.webp?v=1753736180",
           "titleInStore": "Big Ramy Labs Bcaa -30Serv.-300g",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1050,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/big-ramy-labs-bcaa-30serv-300g",
-          "isCheapest": false
         }
       },
       "externalCheaper": null,
@@ -96152,15 +95138,6 @@
           "url": "https://powerstore-eg.com/products/run-alone-nutrition-amino-beef-300-tablets?variant=43365027086387",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Run-Alon-Nnutrition-Amino-Beef.-100Serv.-300-Tablets.jpg?v=1748549776",
           "titleInStore": "Run Alone Nutrition Amino Beef.-100Serv.-300 Tablets",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 950,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/run-alone-nutrition-amino-beef-100serv-300-tablets",
           "isCheapest": true
         }
       },
@@ -96219,15 +95196,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/618UQgJVFwL_b24fa817-0e68-43f6-81e5-c35724c3d7e9.jpg?v=1753737403",
           "titleInStore": "Big Ramy Labs Beef Mass Plus-8Serv.-2728g",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1700,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/big-ramy-labs-beef-mass-plus-8serv-2728g",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -96284,15 +95252,6 @@
           "url": "https://powerstore-eg.com/products/dorian-yates-shadowhey-concentrate-2kg?variant=43365016404019",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Dorian-Yates-Shadowhey-Concentrate-66Serv.-2-kg.-Chocolate_3b2cb5bd-b4e1-498b-b22c-1fd10edb45f4.jpg?v=1748549570",
           "titleInStore": "Dorian Yates Shadowhey Concentrate-66Serv.-2KG",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4300,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/dorian-yates-shadowhey-concentrate-66serv-2kg",
           "isCheapest": true
         }
       },
@@ -96351,15 +95310,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_7223.jpg?v=1748549483",
           "titleInStore": "Run Alone Nutrition L-ARGININE 1000mg.-100Serv.-100Capsules",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 450,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-l-arginine-1000mg-100-capsules",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -96416,15 +95366,6 @@
           "url": "https://powerstore-eg.com/products/dorian-yates-creatine-60serv-300-gm-unflavored?variant=43365005951027",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/DY_CREATINEmonohydrate_2025_010000_1800x1800_f44e3f1f-45db-49fe-b06d-95338a152a82.jpg?v=1753113199",
           "titleInStore": "Dorian Yates Creatine.-60Serv.-300 gm.-Unflavored (300G)",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1300,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/dorian-yates-creatine-monohydrate-300g",
           "isCheapest": true
         }
       },
@@ -96483,15 +95424,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/image_1024.jpg?v=1748549317",
           "titleInStore": "Novogen Pharma Mass Gainer Build Muscle-8Serv.-2.7Kg.",
           "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1550,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/novogen-pharma-mass-gainer-2-7kg",
-          "isCheapest": true
         }
       },
       "externalCheaper": null,
@@ -96548,15 +95480,6 @@
           "url": "https://powerstore-eg.com/products/run-alone-nutrition-bulk-run-mass-gainer-25serv-5kg-chocolate?variant=43364999069747",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/IMG_7486.jpg?v=1748549247",
           "titleInStore": "Run Alone Nutrition Bulk Run Mass Gainer-25Serv.-5Kg.-Chocolate",
-          "isCheapest": true
-        },
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2200,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/run-alone-bulk-run-mass-gainer-5kg",
           "isCheapest": true
         }
       },
@@ -108951,556 +107874,6 @@
       },
       "lastUpdated": "2026-11-09T04:42:16.157Z",
       "arabicSearchTerms": "ماسل تك ماسلتك تيك ماس جاينر تضخيم وزن ماستك جينر زيادة كالوري عالي ضخامة ماسيل"
-    },
-    {
-      "id": "add_to_spot_1794199706631_ge5dbf",
-      "title": "Black Friday - Iso",
-      "brand": "Supp Spot",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 6000,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/bannerArtboard4.jpg?v=1793474748",
-      "arabicSearchTerms": "",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 6000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/black-friday-iso",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.631Z"
-    },
-    {
-      "id": "add_to_spot_1794199706635_s1kcz5",
-      "title": "Black Friday - Omega3",
-      "brand": "Supp Spot",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 1750,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/bannerArtboard5.jpg?v=1793474610",
-      "arabicSearchTerms": "اوميجا 3 زيت سمك صحة القلب مفاصل",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1750,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/black-friday-omega3",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.635Z"
-    },
-    {
-      "id": "add_to_spot_1794199706659_hzs1fp",
-      "title": "Quamtrax l-citrulline malate, 500g, 100 serving",
-      "brand": "Supp Spot",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 1700,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/WhatsAppImage2026-08-17at12.28.20PM.jpg?v=1786960981",
-      "arabicSearchTerms": "",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1700,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/quamtrax-l-citrulline-malate-500g",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.659Z"
-    },
-    {
-      "id": "add_to_spot_1794199706671_5ptq69",
-      "title": "Superior Multivitamin - 120 tabs",
-      "brand": "Superior 14",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 1100,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/New_Template_78.webp?v=1784555590",
-      "arabicSearchTerms": "",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1100,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/superior-14-multivitamin-120-tablets",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.671Z"
-    },
-    {
-      "id": "add_to_spot_1794199706686_podzzc",
-      "title": "Dymatize ISO100-76Serv.-2.3KG-Cookies and Cream",
-      "brand": "Dymatize",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 6500,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/81nBvFc5pxL.jpg?v=1781444662",
-      "arabicSearchTerms": "ديماتايز دايماتايز",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 6500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/dymatize-iso100-76serv-2-3kg-cookies-and-cream",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.686Z"
-    },
-    {
-      "id": "add_to_spot_1794199706702_jbm2ey",
-      "title": "Zoomad Labs ZMB-30Serv.-90Capsules",
-      "brand": "Supp Spot",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 1000,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/Zoomad-labs-ZMB-OK_jpg.webp?v=1776192188",
-      "arabicSearchTerms": "",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/zoomad-labs-zmb-90-capsules",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.702Z"
-    },
-    {
-      "id": "add_to_spot_1794199706722_na5k9w",
-      "title": "Rule One Creatine Monohydrate-75Serv.-390G.",
-      "brand": "Rule One Proteins",
-      "category": "Creatine (كرياتين)",
-      "lowestPrice": 1950,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/Rule-One-Creatine-Monohydrate-375g-75-Serving.webp?v=1758824182",
-      "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1950,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/rule-one-r1-creatine-monohydrate-كرياتين-ميكرونايزد-نقي-يوفر-5-جم-كرياتين-لكل-حصة-لدعم-القوة-والأداء-أثناء-التمرين-عبوة-390-جم",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.722Z"
-    },
-    {
-      "id": "add_to_spot_1794199706725_egwiod",
-      "title": "Azgard Nutrition, ODIN BCAA + GLUTAMINE.-50 Servings.-500g",
-      "brand": "Azgard Nutrition",
-      "category": "Amino & BCAA",
-      "lowestPrice": 1750,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/Odin-BCAAGlutamine-Strawberry.jpg?v=1758823673",
-      "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1750,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/azgard-odin-bcaa-glutamine-500g",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.725Z"
-    },
-    {
-      "id": "add_to_spot_1794199706733_zm39pt",
-      "title": "Redcon1 Total War Preworkout-30Serv.-441G.",
-      "brand": "Redcon1",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 2100,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/TW_RAINBOWCANDY_30SERV_FLV-2023.webp?v=1760007872",
-      "arabicSearchTerms": "",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2100,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/redcon1-total-war-pre-workout-441g",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.734Z"
-    },
-    {
-      "id": "add_to_spot_1794199706744_6fh8au",
-      "title": "Supp Spot Shaker",
-      "brand": "Supp Spot",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 250,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/IMG-20250813-WA0042.png?v=1755437639",
-      "arabicSearchTerms": "",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 250,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/suppspot-shaker",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.744Z"
-    },
-    {
-      "id": "add_to_spot_1794199706773_mztj4z",
-      "title": "Run Alone Nutrition Vita-woman.-30Serv.-60 capsules",
-      "brand": "Run Alone Nutrition",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 400,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/VITAWOMAN.png?v=1747314778",
-      "arabicSearchTerms": "",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 400,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/run-alone-vita-woman-60-tablets",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.773Z"
-    },
-    {
-      "id": "add_to_spot_1794199706785_k1dpgn",
-      "title": "Nutrex Research Lipo-6 Hers Ultra Concentrate – Women’s Fat Burner – 60 Capsules",
-      "brand": "Nutrex Research",
-      "category": "Fat Burners & حوارق",
-      "lowestPrice": 1100,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/853237000721_NutrexResearchLipo6BlackHersUltraConcentrate-60Serv.jpg?v=1747313856",
-      "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 نيوتركس نوتركس نيوتريكس",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1100,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutrex-lipo-6-hers-ultra-concentrate-60-capsules",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.785Z"
-    },
-    {
-      "id": "add_to_spot_1794199706788_sm79us",
-      "title": "Nutrex Research Lipo-6 Black Ultra Concentrate.-60Serv. Capsules",
-      "brand": "Nutrex Research",
-      "category": "Fat Burners & حوارق",
-      "lowestPrice": 1300,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/10845_e5be54dd-f3d5-4154-896f-518d44cde252.jpg?v=1766415231",
-      "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 نيوتركس نوتركس نيوتريكس",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1300,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/nutrex-lipo-6-black-ultra-concentrate-60-capsules",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.788Z"
-    },
-    {
-      "id": "add_to_spot_1794199706793_tr71ij",
-      "title": "Nutrex Research EAA Hydration Refuel. Build-30Serv.-390g",
-      "brand": "Nutrex Research",
-      "category": "Amino & BCAA",
-      "lowestPrice": 1790,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/EAA-BO.png?v=1747313403",
-      "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري نيوتركس نوتركس نيوتريكس",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1790,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/nutrex-eaa-hydration-390g",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.793Z"
-    },
-    {
-      "id": "add_to_spot_1794199706826_mvqhmg",
-      "title": "Marvelous Nutritio n Hydro100% Hydrolyzed Whey Protein Isolate-67Serv.-2KG",
-      "brand": "Marvelous Nutrition",
-      "category": "Isolate (معزول)",
-      "lowestPrice": 5000,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/IMG_7597.jpg?v=1752157771",
-      "arabicSearchTerms": "واي بروتين مصل اللبن بودر عضلات صافية وي ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر فات",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 5000,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-nutrition-hydro-100-hydrolyzed-whey-protein-isolate-67serv-2kg",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.826Z"
-    },
-    {
-      "id": "add_to_spot_1794199706832_h2hjmb",
-      "title": "MuscleTech Nitro-Tech 100% Whey Protein -40Serv.-1.81Kg.-Strawberry",
-      "brand": "MuscleTech",
-      "category": "Whey Protein",
-      "lowestPrice": 4200,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/MuscleTech-Nitro-Tech-100_-Whey-Protein--40Serv.-1.81Kg.-Strawberry.jpg?v=1745847604",
-      "arabicSearchTerms": "واي بروتين مصل اللبن بودر عضلات صافية وي ماسل تك ماسيل ماستك",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4200,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/muscletech-nitro-tech-100-whey-protein-40serv-1-81kg-strawberry",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.832Z"
-    },
-    {
-      "id": "add_to_spot_1794199706835_c7ozf8",
-      "title": "Marvelous Nutrition Musscle 100%Whey Protein Concentrate-67Serv.-2KG",
-      "brand": "Marvelous Nutrition",
-      "category": "Whey Protein",
-      "lowestPrice": 4500,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/IMG_7560.jpg?v=1742320110",
-      "arabicSearchTerms": "واي بروتين مصل اللبن بودر عضلات صافية وي",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 4500,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-nutrition-muscles-100-whey-protein-concentrate-67serv-2kg",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.835Z"
-    },
-    {
-      "id": "add_to_spot_1794199706840_u2ktfi",
-      "title": "Big Ramy Labs Beef Mass-14Serv.-2722g.-chocolate",
-      "brand": "Big Ramy Labs",
-      "category": "Mass Gainer",
-      "lowestPrice": 2200,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/907A0E44-4241-4B0B-AA36-795DAFB31382.jpg?v=1742319289",
-      "arabicSearchTerms": "ماس جينر تضخيم زيادة وزن كالوري عالي ضخامة",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 2200,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/big-ramy-labs-beef-mass-14serv-2722g-chocolate",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.840Z"
-    },
-    {
-      "id": "add_to_spot_1794199706846_ij6hu4",
-      "title": "Marvelous Nutrition Maze Anabolic Amino Acid Formula-25Serv.-400G",
-      "brand": "Marvelous Nutrition",
-      "category": "Amino & BCAA",
-      "lowestPrice": 1300,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/MAZE-mockup-copy.png?v=1754580029",
-      "arabicSearchTerms": "انابول انابوليك بناء عضلات محفز بنائي هاردكور نيوتركس nutrex امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1300,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/marvelous-nutrition-maze-anabolic-amino-acid-formula-25serv-400g",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.846Z"
-    },
-    {
-      "id": "add_to_spot_1794199706865_zlv1gu",
-      "title": "Novogen Pharma Whey Protein-30Serv.-1kg-Vanilla Ice Cream",
-      "brand": "Novogen Pharma",
-      "category": "Whey Protein",
-      "lowestPrice": 1500,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/Novogen-Pharma-Whey-Protein-30Serv.-1kg-Vanila-Ice-Cream.jpg?v=1745848571",
-      "arabicSearchTerms": "واي بروتين مصل اللبن بودر عضلات صافية وي",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1500,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/novogen-pharma-whey-protein-30serv-1kg-vanilla-ice-cream",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.865Z"
-    },
-    {
-      "id": "add_to_spot_1794199706872_l6ai8t",
-      "title": "Nutriversum L-Carnitine Liquid.-20Serv.-2500mg.-Pineapple",
-      "brand": "Nutriversum",
-      "category": "مكملات غذائية متنوعة",
-      "lowestPrice": 1400,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/nutriversum-liquid-l-carnitine-20serv-500ml-orange-5999107131821_04d01f2c-977e-44ae-a98e-e2700d5e4b7c_1.webp?v=1793292783",
-      "arabicSearchTerms": "",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 1400,
-          "available": true,
-          "inStock": true,
-          "url": "https://suppspot.com/products/nutriversum-l-carnitine-liquid-2500mg-pineapple",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.872Z"
-    },
-    {
-      "id": "add_to_spot_1794199706888_1m80kw",
-      "title": "MuscleTech IsoWhey 100% Whey Protein Isolate.-72Serv.-2.27 kg.-Chocolate",
-      "brand": "MuscleTech",
-      "category": "Isolate (معزول)",
-      "lowestPrice": 5500,
-      "cheapestStore": "Add to Spot",
-      "availableCount": 1,
-      "maxSavings": 0,
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0690/2281/0281/files/MuscleTech-IsoWhey-100_-Whey-Protein-Isolate.-72Serv.-2.27-kg.-Chocolate.jpg?v=1745847361",
-      "arabicSearchTerms": "واي بروتين مصل اللبن بودر عضلات صافية وي ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر فات ماسل تك ماسيل ماستك",
-      "arabicTitle": "",
-      "storeBreakdown": {
-        "add_to_spot": {
-          "storeName": "Add to Spot",
-          "storeNameEn": "Add to Spot",
-          "price": 5500,
-          "available": true,
-          "inStock": false,
-          "url": "https://suppspot.com/products/muscletech-isowhey-100-whey-protein-isolate-2270g",
-          "isCheapest": true
-        }
-      },
-      "lastUpdated": "2026-11-09T04:48:26.888Z"
     },
     {
       "id": "fit_spot_1794199706909_83h7sg",
