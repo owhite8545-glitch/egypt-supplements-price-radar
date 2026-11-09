@@ -5,8 +5,7 @@
   "rewrites": [
     { "source": "/api/catalog", "destination": "/catalog.json" },
     { "source": "/api/stores", "destination": "/stores.json" },
-    { "source": "/api/coupons", "destination": "/coupons.json" },
-    { "source": "/api/status", "destination": "/api/status.js" }
+    { "source": "/api/coupons", "destination": "/coupons.json" }
   ],
   "headers": [
     {
