@@ -2,7 +2,12 @@
 <html lang="ar" dir="rtl" class="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#130f0c" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>أرخص سعر | رادار ومقارن أسعار مكملات الجيم في مصر</title>
   <!-- Google Fonts: Cairo & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,11 +68,17 @@
     }
   </script>
   <style>
+    html {
+      -webkit-tap-highlight-color: transparent;
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Cairo', sans-serif;
       transition: background-color 0.25s ease, color 0.25s ease;
       background-color: #f8fafc;
       color: #0f172a;
+      overflow-x: hidden;
+      touch-action: manipulation;
     }
     .dark body {
       background-color: #0d0a08;
@@ -76,6 +87,26 @@
     .badge-exclusive {
       background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
       box-shadow: 0 4px 14px 0 rgba(217, 119, 6, 0.35);
+    }
+    /* Mobile Utilities & Safe Area insets */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .pb-safe {
+      padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+    }
+    .pt-safe {
+      padding-top: max(0.5rem, env(safe-area-inset-top, 0px));
+    }
+    /* Prevent iOS auto zoom on input focus */
+    @media (max-width: 768px) {
+      input, select, textarea {
+        font-size: 16px !important;
+      }
     }
     /* Card Styles: Crisp & Luxurious in Light Mode, Rich Espresso & Bronze in Dark Mode */
     .card-espresso {
@@ -131,19 +162,19 @@
 <body class="bg-slate-50 dark:bg-[#0d0a08] text-slate-800 dark:text-champagne-200 min-h-screen flex flex-col antialiased">
 
   <!-- Top Announcement Bar (Espresso Bronze Bar) -->
-  <header class="bg-amber-500/10 dark:bg-gradient-to-r dark:from-[#17120e] dark:via-[#241c16] dark:to-[#17120e] text-slate-700 dark:text-champagne-200 text-xs border-b border-amber-200/60 dark:border-espresso-700/60 py-2.5 px-4 shadow-sm backdrop-blur-md transition">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-      <div class="flex items-center gap-2.5">
-        <span class="inline-block w-2.5 h-2.5 rounded-full bg-gold-500 animate-pulse shadow-sm shadow-gold-500/50"></span>
-        <span class="font-extrabold text-amber-900 dark:text-bronze-300">رادار المكملات الفاخر في مصر:</span>
-        <span class="text-slate-600 dark:text-espresso-300">متابعة المتاجر الـ 6 الأساسية + رادار السوق لرصد أي سعر أرخص في مصر 🇪🇬</span>
+  <header class="bg-amber-500/10 dark:bg-gradient-to-r dark:from-[#17120e] dark:via-[#241c16] dark:to-[#17120e] text-slate-700 dark:text-champagne-200 text-xs border-b border-amber-200/60 dark:border-espresso-700/60 py-2 px-3 sm:px-4 shadow-sm backdrop-blur-md transition">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2 truncate">
+        <span class="inline-block w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-gold-500 animate-pulse shadow-sm shadow-gold-500/50 shrink-0"></span>
+        <span class="font-extrabold text-amber-900 dark:text-bronze-300 shrink-0 text-[11px] sm:text-xs">رادار المكملات بمصر 🇪🇬</span>
+        <span class="text-slate-600 dark:text-espresso-300 hidden sm:inline truncate">متابعة المتاجر الـ 6 الأساسية + رادار السوق لرصد أي سعر أرخص</span>
       </div>
-      <div class="flex items-center gap-4 text-slate-600 dark:text-espresso-300">
-        <span id="headerLastUpdate" class="font-mono text-[11px] text-amber-700 dark:text-bronze-400 font-bold">آخر فحص: جاري التحميل...</span>
-        <div class="h-3 w-px bg-slate-300 dark:bg-espresso-700"></div>
-        <button onclick="toggleDarkMode()" class="p-1 hover:opacity-80 transition flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-bronze-300">
+      <div class="flex items-center gap-2.5 sm:gap-4 text-slate-600 dark:text-espresso-300 shrink-0">
+        <span id="headerLastUpdate" class="font-mono text-[10px] sm:text-[11px] text-amber-700 dark:text-bronze-400 font-bold">آخر فحص: جاري التحميل...</span>
+        <div class="h-3 w-px bg-slate-300 dark:bg-espresso-700 hidden sm:block"></div>
+        <button onclick="toggleDarkMode()" class="p-1 hover:opacity-80 transition flex items-center gap-1 text-[11px] sm:text-xs font-bold text-slate-700 dark:text-bronze-300">
           <i id="themeIcon" data-lucide="moon" class="w-3.5 h-3.5 text-amber-600 dark:text-bronze-400"></i>
-          <span id="themeText">الوضع الليلي (Dark)</span>
+          <span id="themeText" class="hidden sm:inline">الوضع الليلي (Dark)</span>
         </button>
       </div>
     </div>
@@ -151,35 +182,41 @@
 
   <!-- Navbar -->
   <nav class="sticky top-0 z-40 bg-white/95 dark:bg-[#130f0c]/95 backdrop-blur-md border-b border-slate-200/90 dark:border-espresso-700/80 shadow-sm transition">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
       
       <!-- Brand Logo -->
-      <div class="flex items-center gap-3.5 cursor-pointer" onclick="clearSearch()">
-        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-gold-600 via-bronze-600 to-espresso-900 border border-gold-500/30 flex items-center justify-center text-white shadow-lg shadow-gold-600/20">
-          <i data-lucide="crown" class="w-6 h-6 text-gold-400"></i>
+      <div class="flex items-center gap-2.5 sm:gap-3.5 cursor-pointer" onclick="clearSearch()">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-gold-600 via-bronze-600 to-espresso-900 border border-gold-500/30 flex items-center justify-center text-white shadow-lg shadow-gold-600/20 shrink-0">
+          <i data-lucide="crown" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-400"></i>
         </div>
         <div>
-          <div class="flex items-center gap-2">
-            <h1 class="text-2xl font-black tracking-tight text-slate-900 dark:text-champagne-100">أرخص سعر</h1>
-            <span class="px-2.5 py-0.5 text-[11px] font-black rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/20">مصر v3.5</span>
+          <div class="flex items-center gap-1.5 sm:gap-2">
+            <h1 class="text-xl sm:text-2xl font-black tracking-tight text-slate-900 dark:text-champagne-100">أرخص سعر</h1>
+            <span class="px-2 py-0.5 text-[10px] sm:text-[11px] font-black rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/20">مصر v3.5</span>
           </div>
-          <p class="text-xs text-slate-500 dark:text-espresso-400 font-medium">المتاجر الـ 6 الأساسية + رادار صفقات السوق المصري</p>
+          <p class="hidden sm:block text-xs text-slate-500 dark:text-espresso-400 font-medium">المتاجر الـ 6 الأساسية + رادار صفقات السوق المصري</p>
         </div>
       </div>
 
       <!-- Quick Action Buttons -->
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-1.5 sm:gap-2">
         <!-- Live Sync Button -->
-        <button onclick="triggerSync(false)" id="syncBtn" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold text-sm shadow-md shadow-emerald-900/30 transition active:scale-95">
-          <i data-lucide="refresh-cw" class="w-4 h-4" id="syncIcon"></i>
-          <span>سحب وتحديث الأسعار الآن</span>
+        <button onclick="triggerSync(false)" id="syncBtn" class="flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold text-xs sm:text-sm shadow-md shadow-emerald-900/30 transition active:scale-95" title="سحب وتحديث الأسعار من المتاجر">
+          <i data-lucide="refresh-cw" class="w-3.5 h-3.5 sm:w-4 sm:h-4" id="syncIcon"></i>
+          <span class="hidden sm:inline">سحب وتحديث الأسعار الآن</span>
+          <span class="sm:hidden font-black">تحديث</span>
         </button>
 
         <!-- Cart Optimizer Toggle Button -->
-        <button onclick="toggleCartDrawer()" class="relative flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-gold-600 to-bronze-600 hover:from-gold-500 hover:to-bronze-500 text-white text-xs font-black shadow-md shadow-gold-700/20 transition active:scale-95">
-          <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+        <button onclick="toggleCartDrawer()" class="relative flex items-center gap-1.5 sm:gap-2 px-2.5 py-2 sm:px-3.5 sm:py-2.5 rounded-xl bg-gradient-to-r from-gold-600 to-bronze-600 hover:from-gold-500 hover:to-bronze-500 text-white text-xs font-black shadow-md shadow-gold-700/20 transition active:scale-95" title="سلة التوفير الذكية">
+          <i data-lucide="shopping-bag" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
           <span class="hidden sm:inline">سلة التوفير</span>
-          <span id="cartCountBadge" class="w-5 h-5 rounded-full bg-slate-900 dark:bg-espresso-950 text-gold-400 text-[11px] flex items-center justify-center font-bold">0</span>
+          <span id="cartCountBadge" class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-slate-900 dark:bg-espresso-950 text-gold-400 text-[10px] sm:text-[11px] flex items-center justify-center font-bold">0</span>
+        </button>
+
+        <!-- Theme Toggle Mobile Quick Button -->
+        <button onclick="toggleDarkMode()" class="sm:hidden p-2 rounded-xl bg-slate-100 dark:bg-espresso-800 text-slate-700 dark:text-champagne-200 border border-slate-200 dark:border-espresso-700 active:scale-95 transition" title="تبديل الوضع">
+          <i data-lucide="sun-moon" class="w-4 h-4 text-gold-500"></i>
         </button>
 
         <!-- Download JSON -->
@@ -189,7 +226,7 @@
         </button>
 
         <!-- Import JSON -->
-        <button onclick="openImportModal()" class="flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-slate-100 dark:bg-espresso-800 hover:bg-slate-200 dark:hover:bg-slate-300 dark:bg-espresso-700 text-slate-700 dark:text-champagne-200 text-xs font-bold border border-slate-200 dark:border-espresso-700 transition" title="استيراد كتالوج كامل">
+        <button onclick="openImportModal()" class="hidden sm:flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-slate-100 dark:bg-espresso-800 hover:bg-slate-200 dark:hover:bg-slate-300 dark:bg-espresso-700 text-slate-700 dark:text-champagne-200 text-xs font-bold border border-slate-200 dark:border-espresso-700 transition" title="استيراد كتالوج كامل">
           <i data-lucide="upload" class="w-3.5 h-3.5"></i>
           <span class="hidden sm:inline">استيراد</span>
         </button>
@@ -211,123 +248,137 @@
     </div>
   </div>
 
-  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+  <main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8 space-y-5 sm:space-y-8 pb-28 sm:pb-8">
 
     <!-- KPI Stats Cards -->
-    <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-emerald-500 transition active:scale-[0.99]" onclick="switchTab('radar')" title="عرض جميع المنتجات المسحوبة">
-        <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
-          <i data-lucide="layers" class="w-6 h-6"></i>
+    <section class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
+      <div class="p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-2.5 sm:gap-4 cursor-pointer hover:border-emerald-500 transition active:scale-[0.98]" onclick="switchTab('radar')" title="عرض جميع المنتجات المسحوبة">
+        <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+          <i data-lucide="layers" class="w-5 h-5 sm:w-6 sm:h-6"></i>
         </div>
-        <div>
-          <p class="text-xs text-slate-500 dark:text-espresso-400 font-semibold">إجمالي المنتجات المسحوبة</p>
-          <h3 id="statTotalRaw" class="text-2xl font-black text-slate-900 dark:text-champagne-100 font-outfit">...</h3>
-        </div>
-      </div>
-
-      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-amber-500 transition active:scale-[0.99]" onclick="switchTab('radar')" title="عرض مجموعات مقارنة الأسعار">
-        <div class="w-12 h-12 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center">
-          <i data-lucide="scale" class="w-6 h-6"></i>
-        </div>
-        <div>
-          <p class="text-xs text-slate-500 dark:text-espresso-400 font-semibold">مجموعات المقارنة المطابقة</p>
-          <h3 id="statTotalCompared" class="text-2xl font-black text-slate-900 dark:text-champagne-100 font-outfit">...</h3>
+        <div class="min-w-0">
+          <p class="text-[11px] sm:text-xs text-slate-500 dark:text-espresso-400 font-bold truncate">المنتجات المسحوبة</p>
+          <h3 id="statTotalRaw" class="text-xl sm:text-2xl font-black text-slate-900 dark:text-champagne-100 font-outfit">...</h3>
         </div>
       </div>
 
-      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-purple-500 transition active:scale-[0.99]" onclick="switchTab('external')" title="عرض صفقات المتاجر الخارجية الأرخص">
-        <div class="w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-950/40 border border-purple-500/30 text-purple-600 dark:text-purple-400 flex items-center justify-center">
-          <i data-lucide="radar" class="w-6 h-6"></i>
+      <div class="p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-2.5 sm:gap-4 cursor-pointer hover:border-amber-500 transition active:scale-[0.98]" onclick="switchTab('radar')" title="عرض مجموعات مقارنة الأسعار">
+        <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+          <i data-lucide="scale" class="w-5 h-5 sm:w-6 sm:h-6"></i>
         </div>
-        <div>
-          <p class="text-xs text-slate-500 dark:text-espresso-400 font-semibold">صفقات أرخص خارج الـ 6 💜</p>
-          <h3 id="statExternalDeals" class="text-2xl font-black text-purple-500 dark:text-purple-400 font-outfit">...</h3>
+        <div class="min-w-0">
+          <p class="text-[11px] sm:text-xs text-slate-500 dark:text-espresso-400 font-bold truncate">مجموعات المقارنة</p>
+          <h3 id="statTotalCompared" class="text-xl sm:text-2xl font-black text-slate-900 dark:text-champagne-100 font-outfit">...</h3>
         </div>
       </div>
 
-      <div class="p-5 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-4 cursor-pointer hover:border-gold-500 transition active:scale-[0.99]" onclick="switchTab('exclusives')" title="عرض المنتجات الحصرية لكل متجر">
-        <div class="w-12 h-12 rounded-2xl bg-gold-50 dark:bg-gold-950/40 border border-gold-500/20 text-gold-500 dark:text-gold-300 flex items-center justify-center">
-          <i data-lucide="gem" class="w-6 h-6 text-gold-500"></i>
+      <div class="p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-2.5 sm:gap-4 cursor-pointer hover:border-purple-500 transition active:scale-[0.98]" onclick="switchTab('external')" title="عرض صفقات المتاجر الخارجية الأرخص">
+        <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-purple-50 dark:bg-purple-950/40 border border-purple-500/30 text-purple-600 dark:text-purple-400 flex items-center justify-center shrink-0">
+          <i data-lucide="radar" class="w-5 h-5 sm:w-6 sm:h-6"></i>
         </div>
-        <div>
-          <p class="text-xs text-slate-500 dark:text-espresso-400 font-semibold">منتجات حصرية في مصر 💎</p>
-          <h3 id="statExclusives" class="text-2xl font-black text-gold-600 dark:text-gold-400 font-outfit">...</h3>
+        <div class="min-w-0">
+          <p class="text-[11px] sm:text-xs text-slate-500 dark:text-espresso-400 font-bold truncate">أرخص خارج الـ 6 💜</p>
+          <h3 id="statExternalDeals" class="text-xl sm:text-2xl font-black text-purple-500 dark:text-purple-400 font-outfit">...</h3>
+        </div>
+      </div>
+
+      <div class="p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/60 shadow-sm flex items-center gap-2.5 sm:gap-4 cursor-pointer hover:border-gold-500 transition active:scale-[0.98]" onclick="switchTab('exclusives')" title="عرض المنتجات الحصرية لكل متجر">
+        <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gold-50 dark:bg-gold-950/40 border border-gold-500/20 text-gold-500 dark:text-gold-300 flex items-center justify-center shrink-0">
+          <i data-lucide="gem" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-500"></i>
+        </div>
+        <div class="min-w-0">
+          <p class="text-[11px] sm:text-xs text-slate-500 dark:text-espresso-400 font-bold truncate">منتجات حصرية 💎</p>
+          <h3 id="statExclusives" class="text-xl sm:text-2xl font-black text-gold-600 dark:text-gold-400 font-outfit">...</h3>
         </div>
       </div>
     </section>
 
     <!-- Navigation Tabs -->
-    <div class="border-b border-slate-200/90 dark:border-espresso-700/70 flex items-center gap-2 overflow-x-auto pb-1 text-sm font-bold">
-      <button onclick="switchTab('radar')" id="tabBtn-radar" class="tab-btn flex items-center gap-2 pb-3 px-4 border-b-2 border-gold-500 text-gold-600 dark:text-gold-400">
+    <div class="border-b border-slate-200/90 dark:border-espresso-700/70 flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar scroll-smooth pb-1 text-xs sm:text-sm font-bold whitespace-nowrap">
+      <button onclick="switchTab('radar')" id="tabBtn-radar" class="tab-btn flex items-center gap-1.5 sm:gap-2 pb-2.5 sm:pb-3 px-3 sm:px-4 border-b-2 border-gold-500 text-gold-600 dark:text-gold-400 shrink-0">
         <i data-lucide="radar" class="w-4 h-4"></i>
         <span>رادار المقارنة والبحث المباشر</span>
       </button>
-      <button onclick="switchTab('exclusives')" id="tabBtn-exclusives" class="tab-btn flex items-center gap-2 pb-3 px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200">
+      <button onclick="switchTab('exclusives')" id="tabBtn-exclusives" class="tab-btn flex items-center gap-1.5 sm:gap-2 pb-2.5 sm:pb-3 px-3 sm:px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200 shrink-0">
         <i data-lucide="gem" class="w-4 h-4 text-gold-400"></i>
         <span>منتجات حصرية في مصر 💎</span>
       </button>
-      <button onclick="switchTab('external')" id="tabBtn-external" class="tab-btn flex items-center gap-2 pb-3 px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200">
+      <button onclick="switchTab('external')" id="tabBtn-external" class="tab-btn flex items-center gap-1.5 sm:gap-2 pb-2.5 sm:pb-3 px-3 sm:px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200 shrink-0">
         <i data-lucide="sparkles" class="w-4 h-4 text-purple-400"></i>
         <span>صفقات خارج الـ 6 متاجر (بنفسجي) 💜</span>
       </button>
-      <button onclick="switchTab('deals')" id="tabBtn-deals" class="tab-btn flex items-center gap-2 pb-3 px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200">
+      <button onclick="switchTab('deals')" id="tabBtn-deals" class="tab-btn flex items-center gap-1.5 sm:gap-2 pb-2.5 sm:pb-3 px-3 sm:px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200 shrink-0">
         <i data-lucide="flame" class="w-4 h-4 text-red-500"></i>
         <span>العروض وهبوط الأسعار 🔥</span>
       </button>
-      <button onclick="switchTab('tech')" id="tabBtn-tech" class="tab-btn flex items-center gap-2 pb-3 px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200">
+      <button onclick="switchTab('tech')" id="tabBtn-tech" class="tab-btn flex items-center gap-1.5 sm:gap-2 pb-2.5 sm:pb-3 px-3 sm:px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200 shrink-0">
         <i data-lucide="cpu" class="w-4 h-4"></i>
         <span>فحص أنظمة المنافسين التقنية</span>
       </button>
-      <button onclick="switchTab('coupons')" id="tabBtn-coupons" class="tab-btn flex items-center gap-2 pb-3 px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200">
+      <button onclick="switchTab('coupons')" id="tabBtn-coupons" class="tab-btn flex items-center gap-1.5 sm:gap-2 pb-2.5 sm:pb-3 px-3 sm:px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200 shrink-0">
         <i data-lucide="ticket" class="w-4 h-4"></i>
         <span>كوبونات وعروض المتاجر</span>
       </button>
-      <button onclick="switchTab('stores')" id="tabBtn-stores" class="tab-btn flex items-center gap-2 pb-3 px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200">
+      <button onclick="switchTab('stores')" id="tabBtn-stores" class="tab-btn flex items-center gap-1.5 sm:gap-2 pb-2.5 sm:pb-3 px-3 sm:px-4 border-b-2 border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-champagne-200 shrink-0">
         <i data-lucide="building-2" class="w-4 h-4"></i>
         <span>دليل المتاجر والمخزون</span>
       </button>
     </div>
 
     <!-- TAB 1: RADAR & SEARCH -->
-    <div id="tab-radar" class="space-y-6">
+    <div id="tab-radar" class="space-y-4 sm:space-y-6">
       
       <!-- Search & Filters Container -->
-      <div class="p-6 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/80 shadow-sm space-y-5">
+      <div class="p-3.5 sm:p-6 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200/90 dark:border-espresso-700/80 shadow-sm space-y-3 sm:space-y-5">
         <!-- Big Search Input -->
         <div class="relative">
           <input 
             type="text" 
             id="searchInput" 
             oninput="handleSearch()" 
-            placeholder="ابحث باسم المكمل أو الماركة (مثال: C4, Whey, Creatine, Nitrotech, Iso 100, MuscleTech, Dymatize)..." 
-            class="w-full h-16 pr-14 pl-28 text-lg font-bold rounded-2xl bg-white dark:bg-[#201914] border-2 border-slate-200 dark:border-espresso-700 focus:border-amber-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition shadow-sm placeholder-slate-400 dark:placeholder-espresso-400 text-slate-900 dark:text-champagne-100"
+            placeholder="ابحث باسم المكمل أو الماركة (مثال: C4, Whey, Creatine, Iso 100, MuscleTech)..." 
+            class="w-full h-12 sm:h-16 pr-11 sm:pr-14 pl-20 sm:pl-28 text-base sm:text-lg font-bold rounded-xl sm:rounded-2xl bg-white dark:bg-[#201914] border-2 border-slate-200 dark:border-espresso-700 focus:border-amber-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition shadow-sm placeholder-slate-400 dark:placeholder-espresso-400 text-slate-900 dark:text-champagne-100"
           >
-          <div class="absolute right-4 top-1/2 -translate-y-1/2 text-bronze-400">
-            <i data-lucide="search" class="w-6 h-6"></i>
+          <div class="absolute right-3.5 sm:right-4 top-1/2 -translate-y-1/2 text-bronze-400 pointer-events-none">
+            <i data-lucide="search" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </div>
           <button 
             onclick="clearSearch()" 
             id="clearSearchBtn" 
-            class="hidden absolute left-4 top-1/2 -translate-y-1/2 px-3 py-1.5 text-xs font-bold text-slate-500 hover:text-white bg-slate-100 hover:bg-slate-700 dark:bg-espresso-700 rounded-lg transition"
+            class="hidden absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 px-2.5 py-1 sm:px-3 sm:py-1.5 text-xs font-bold text-slate-500 hover:text-white bg-slate-100 hover:bg-slate-700 dark:bg-espresso-700 rounded-lg transition"
           >
             مسح
           </button>
         </div>
 
         <!-- Category Quick Chips -->
-        <div class="flex items-center gap-2 overflow-x-auto pb-1 text-xs font-bold">
-          <span class="text-slate-400 dark:text-espresso-400 shrink-0">التصنيفات:</span>
-          <button onclick="setCategoryFilter('all')" class="cat-chip px-3.5 py-1.5 rounded-xl bg-gold-600 text-white font-extrabold shadow-sm" data-cat="all">الكل</button>
-          <button onclick="setCategoryFilter('energy')" class="cat-chip px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60" data-cat="energy">مشروبات طاقة & C4 ⚡</button>
-          <button onclick="setCategoryFilter('whey')" class="cat-chip px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60" data-cat="whey">Whey Protein</button>
-          <button onclick="setCategoryFilter('isolate')" class="cat-chip px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60" data-cat="isolate">Isolate (معزول)</button>
-          <button onclick="setCategoryFilter('creatine')" class="cat-chip px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60" data-cat="creatine">Creatine (كرياتين)</button>
-          <button onclick="setCategoryFilter('pre-workout')" class="cat-chip px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60" data-cat="pre-workout">Pre-Workout</button>
-          <button onclick="setCategoryFilter('mass')" class="cat-chip px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60" data-cat="mass">Mass Gainer</button>
+        <div class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar pb-1 text-xs font-bold scroll-smooth">
+          <span class="text-slate-400 dark:text-espresso-400 shrink-0 text-[11px] sm:text-xs">التصنيفات:</span>
+          <button onclick="setCategoryFilter('all')" class="cat-chip shrink-0 px-3 py-1.5 sm:px-3.5 rounded-xl bg-gold-600 text-white font-extrabold shadow-sm active:scale-95 transition" data-cat="all">الكل</button>
+          <button onclick="setCategoryFilter('energy')" class="cat-chip shrink-0 px-3 py-1.5 sm:px-3.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60 active:scale-95 transition" data-cat="energy">مشروبات طاقة & C4 ⚡</button>
+          <button onclick="setCategoryFilter('whey')" class="cat-chip shrink-0 px-3 py-1.5 sm:px-3.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60 active:scale-95 transition" data-cat="whey">Whey Protein</button>
+          <button onclick="setCategoryFilter('isolate')" class="cat-chip shrink-0 px-3 py-1.5 sm:px-3.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60 active:scale-95 transition" data-cat="isolate">Isolate (معزول)</button>
+          <button onclick="setCategoryFilter('creatine')" class="cat-chip shrink-0 px-3 py-1.5 sm:px-3.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60 active:scale-95 transition" data-cat="creatine">Creatine (كرياتين)</button>
+          <button onclick="setCategoryFilter('pre-workout')" class="cat-chip shrink-0 px-3 py-1.5 sm:px-3.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60 active:scale-95 transition" data-cat="pre-workout">Pre-Workout</button>
+          <button onclick="setCategoryFilter('mass')" class="cat-chip shrink-0 px-3 py-1.5 sm:px-3.5 rounded-xl bg-slate-100 dark:bg-[#231b15] text-slate-700 dark:text-espresso-300 hover:bg-slate-200 dark:hover:bg-[#2d231b] border border-slate-200 dark:border-espresso-700/60 active:scale-95 transition" data-cat="mass">Mass Gainer</button>
         </div>
 
-        <!-- Filter Row & Smart Toggles -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 pt-3 border-t border-slate-100 dark:border-espresso-700/60 text-xs">
+        <!-- Mobile Quick Filter Toggle Bar (Visible on mobile, hidden on desktop md:hidden) -->
+        <div class="flex md:hidden items-center justify-between gap-2 pt-2 border-t border-slate-100 dark:border-espresso-700/60">
+          <button onclick="toggleMobileFilters()" id="mobileFilterToggleBtn" type="button" class="flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-slate-100 dark:bg-[#201914] text-slate-800 dark:text-champagne-200 text-xs font-black border border-slate-200 dark:border-espresso-700 shadow-sm active:scale-95 transition">
+            <i data-lucide="sliders-horizontal" class="w-4 h-4 text-gold-500"></i>
+            <span>تصفية وفرز متقدم</span>
+            <span id="mobileActiveFilterCount" class="hidden px-1.5 py-0.2 rounded-full text-[10px] bg-gold-600 text-white font-black">0</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform duration-200" id="filterChevron"></i>
+          </button>
+          <label class="flex items-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/25 text-xs font-bold shrink-0 cursor-pointer active:scale-95 transition">
+            <input type="checkbox" id="mobileInStockQuickCheck" onchange="syncMobileInStock(this.checked)" class="w-3.5 h-3.5 text-emerald-600 rounded">
+            <span>متوفر فقط 🟢</span>
+          </label>
+        </div>
+
+        <!-- Filter Row & Smart Toggles (Hidden by default on mobile, expandable; always visible on desktop) -->
+        <div id="filterRowContainer" class="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 pt-3 border-t border-slate-100 dark:border-espresso-700/60 text-xs">
           <!-- Brand filter -->
           <div>
             <label class="block font-bold text-slate-600 dark:text-espresso-400 mb-1">الماركة العالمية:</label>
@@ -375,12 +426,23 @@
 
           <!-- Toggles Column -->
           <div class="flex flex-col justify-end gap-1.5">
-            <label class="flex items-center gap-1.5 cursor-pointer font-bold text-purple-600 dark:text-purple-300 bg-purple-500/10 p-1.5 rounded-xl border border-purple-500/30">
+            <label class="flex items-center gap-1.5 cursor-pointer font-bold text-purple-600 dark:text-purple-300 bg-purple-500/10 p-1.5 rounded-xl border border-purple-500/30 active:scale-95 transition">
               <input type="checkbox" id="externalOnlyCheck" onchange="renderProducts()" class="w-4 h-4 text-purple-600 rounded">
               <span>صفقات خارج الـ 6 💜</span>
             </label>
             <div class="flex items-center gap-2">
-              <label class="flex items-center gap-1 cursor-pointer font-bold text-slate-700 dark:text-espresso-300 dark:text-espresso-300">
+              <label class="flex items-center gap-1 cursor-pointer font-bold text-slate-700 dark:text-espresso-300">
+                <input type="checkbox" id="simulateCouponsCheck" onchange="renderProducts()" class="w-3.5 h-3.5 text-gold-600 rounded">
+                <span>كوبونات 🎟️</span>
+              </label>
+              <label class="flex items-center gap-1 cursor-pointer font-bold text-slate-700 dark:text-espresso-300">
+                <input type="checkbox" id="inStockOnlyCheck" onchange="renderProducts()" class="w-3.5 h-3.5 text-emerald-600 rounded">
+                <span>متوفر فقط 🟢</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
                 <input type="checkbox" id="simulateCouponsCheck" onchange="renderProducts()" class="w-3.5 h-3.5 text-gold-600 rounded">
                 <span>كوبونات 🎟️</span>
               </label>
@@ -575,23 +637,23 @@
   </main>
 
   <!-- SMART CART OPTIMIZER DRAWER -->
-  <div id="cartDrawer" class="fixed inset-y-0 left-0 z-50 w-full max-w-md bg-white dark:bg-[#18130f] border-r border-slate-200 dark:border-espresso-700 shadow-2xl transform -translate-x-full transition-transform duration-300 flex flex-col">
-    <div class="p-5 border-b border-slate-200 dark:border-espresso-700 flex items-center justify-between bg-slate-50 dark:bg-[#201914]">
+  <div id="cartDrawer" class="fixed inset-y-0 left-0 z-50 w-full sm:max-w-md bg-white dark:bg-[#18130f] border-r border-slate-200 dark:border-espresso-700 shadow-2xl transform -translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-4 sm:p-5 border-b border-slate-200 dark:border-espresso-700 flex items-center justify-between bg-slate-50 dark:bg-[#201914]">
       <div class="flex items-center gap-2.5">
-        <div class="w-9 h-9 rounded-xl bg-gold-600 text-white flex items-center justify-center">
+        <div class="w-9 h-9 rounded-xl bg-gold-600 text-white flex items-center justify-center shrink-0">
           <i data-lucide="shopping-cart" class="w-5 h-5"></i>
         </div>
         <div>
-          <h3 class="font-black text-base text-slate-900 dark:text-champagne-100">سلة التوفير الذكية متعددة المتاجر</h3>
-          <p class="text-xs text-slate-500 dark:text-espresso-400 dark:text-espresso-400">حساب أفضل خطة شراء لتوفير أكبر مبلغ كاش</p>
+          <h3 class="font-black text-sm sm:text-base text-slate-900 dark:text-champagne-100">سلة التوفير الذكية متعددة المتاجر</h3>
+          <p class="text-[11px] sm:text-xs text-slate-500 dark:text-espresso-400">حساب أفضل خطة شراء لتوفير أكبر مبلغ كاش</p>
         </div>
       </div>
-      <button onclick="toggleCartDrawer()" class="p-1.5 text-slate-400 dark:text-slate-400 hover:text-slate-700 dark:text-espresso-400 dark:hover:text-white rounded-lg">
+      <button onclick="toggleCartDrawer()" class="p-1.5 text-slate-400 hover:text-slate-700 dark:text-espresso-400 dark:hover:text-white rounded-lg active:scale-95 transition">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
     </div>
 
-    <div class="flex-1 overflow-y-auto p-5 space-y-5">
+    <div class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4 sm:space-y-5">
       <div id="cartItemsContainer" class="space-y-3"></div>
       <div id="cartOptimizationCard" class="hidden p-4 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-300 text-amber-950 dark:from-espresso-900 dark:to-[#221a14] dark:border-gold-500/30 dark:text-white space-y-3">
         <div class="flex items-center gap-2 text-gold-400 text-xs font-bold">
@@ -602,16 +664,16 @@
       </div>
     </div>
 
-    <div class="p-5 border-t border-slate-200 dark:border-espresso-700 bg-slate-50 dark:bg-[#201914] space-y-3">
+    <div class="p-4 sm:p-5 pb-safe border-t border-slate-200 dark:border-espresso-700 bg-slate-50 dark:bg-[#201914] space-y-3">
       <div class="flex justify-between items-center text-sm">
-        <span class="font-bold text-slate-600 dark:text-espresso-400 dark:text-espresso-400">إجمالي السعر الأرخص:</span>
+        <span class="font-bold text-slate-600 dark:text-espresso-400">إجمالي السعر الأرخص:</span>
         <span id="cartTotalPrice" class="font-black text-xl text-emerald-600 dark:text-emerald-400 font-outfit">0 ج.م</span>
       </div>
       <div class="flex justify-between items-center text-xs text-gold-600 dark:text-gold-400 font-bold">
         <span>إجمالي ما ستوفره عن أعلى سعر:</span>
         <span id="cartTotalSavings" class="font-outfit font-black text-sm">0 ج.م</span>
       </div>
-      <button onclick="clearCart()" class="w-full py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-espresso-800 dark:hover:bg-slate-300 dark:bg-espresso-700 text-slate-700 dark:text-champagne-200 text-xs font-bold transition border border-slate-200 dark:border-espresso-700">
+      <button onclick="clearCart()" class="w-full py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-espresso-800 dark:hover:bg-slate-300 text-slate-700 dark:text-champagne-200 text-xs font-bold transition border border-slate-200 dark:border-espresso-700 active:scale-95">
         تفريغ السلة
       </button>
     </div>
@@ -696,8 +758,65 @@
     </div>
   </div>
 
+  <!-- Floating Back-to-Top Action Button -->
+  <button 
+    id="backToTopBtn" 
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 
+    class="fixed bottom-20 left-4 md:bottom-8 md:left-8 z-30 w-11 h-11 rounded-2xl bg-gradient-to-tr from-gold-600 to-amber-500 text-white shadow-xl shadow-gold-700/30 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 active:scale-90"
+    title="العودة لأعلى الصفحة"
+  >
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- LUXURY MOBILE BOTTOM APP BAR (Fixed for mobile screens < 768px) -->
+  <nav class="fixed bottom-0 inset-x-0 z-40 bg-white/95 dark:bg-[#130f0c]/95 backdrop-blur-xl border-t border-slate-200/90 dark:border-espresso-700/80 pb-safe shadow-[0_-8px_30px_rgba(0,0,0,0.12)] md:hidden">
+    <div class="grid grid-cols-5 h-16 items-center px-1">
+      <!-- 1. Radar -->
+      <button onclick="switchTab('radar')" id="mobileNav-radar" class="mobile-nav-btn flex flex-col items-center justify-center gap-1 text-gold-600 dark:text-gold-400 font-black transition active:scale-95">
+        <i data-lucide="radar" class="w-5 h-5"></i>
+        <span class="text-[10px] tracking-tight">الرادار</span>
+      </button>
+
+      <!-- 2. Exclusives -->
+      <button onclick="switchTab('exclusives')" id="mobileNav-exclusives" class="mobile-nav-btn flex flex-col items-center justify-center gap-1 text-slate-500 dark:text-espresso-400 font-medium transition active:scale-95">
+        <div class="relative">
+          <i data-lucide="gem" class="w-5 h-5 text-gold-500"></i>
+          <span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-gold-500"></span>
+        </div>
+        <span class="text-[10px] tracking-tight">الحصري 💎</span>
+      </button>
+
+      <!-- 3. External Purple Deals -->
+      <button onclick="switchTab('external')" id="mobileNav-external" class="mobile-nav-btn flex flex-col items-center justify-center gap-1 text-slate-500 dark:text-espresso-400 font-medium transition active:scale-95">
+        <div class="relative">
+          <i data-lucide="sparkles" class="w-5 h-5 text-purple-500"></i>
+          <span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-purple-500"></span>
+        </div>
+        <span class="text-[10px] tracking-tight">خارج الـ 6 💜</span>
+      </button>
+
+      <!-- 4. Flash Deals -->
+      <button onclick="switchTab('deals')" id="mobileNav-deals" class="mobile-nav-btn flex flex-col items-center justify-center gap-1 text-slate-500 dark:text-espresso-400 font-medium transition active:scale-95">
+        <div class="relative">
+          <i data-lucide="flame" class="w-5 h-5 text-red-500"></i>
+          <span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+        </div>
+        <span class="text-[10px] tracking-tight">العروض 🔥</span>
+      </button>
+
+      <!-- 5. Smart Multi-Store Cart -->
+      <button onclick="toggleCartDrawer()" class="mobile-nav-btn flex flex-col items-center justify-center gap-1 text-slate-500 dark:text-espresso-400 font-medium transition active:scale-95 relative">
+        <div class="relative">
+          <i data-lucide="shopping-bag" class="w-5 h-5 text-gold-500"></i>
+          <span id="mobileCartCountBadge" class="absolute -top-1.5 -right-2 px-1.5 min-w-[18px] h-[18px] rounded-full bg-gold-600 text-white text-[9px] font-black flex items-center justify-center shadow-sm">0</span>
+        </div>
+        <span class="text-[10px] tracking-tight">السلة</span>
+      </button>
+    </div>
+  </nav>
+
   <!-- Floating Toast Notification -->
-  <div id="toastNotification" class="fixed bottom-6 left-6 z-50 transform translate-y-24 opacity-0 pointer-events-none p-4 rounded-2xl bg-slate-900 dark:bg-espresso-900 border border-gold-500/40 text-white shadow-2xl flex items-center gap-3">
+  <div id="toastNotification" class="fixed bottom-20 left-4 sm:bottom-6 sm:left-6 z-50 transform translate-y-24 opacity-0 pointer-events-none p-3.5 sm:p-4 rounded-2xl bg-slate-900 dark:bg-espresso-900 border border-gold-500/40 text-white shadow-2xl flex items-center gap-3">
     <div id="toastIcon" class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
       <i data-lucide="check" class="w-4 h-4"></i>
     </div>
@@ -949,6 +1068,21 @@
         safeAddClass(activeBtn, 'border-gold-500', 'text-gold-600', 'dark:text-gold-400');
       }
 
+      // Sync Mobile Bottom App Bar
+      const mobileNavTabs = ['radar', 'exclusives', 'external', 'deals'];
+      mobileNavTabs.forEach(t => {
+        const mBtn = document.getElementById(`mobileNav-${t}`);
+        if (mBtn) {
+          if (t === targetId) {
+            safeRemoveClass(mBtn, 'text-slate-500', 'dark:text-espresso-400', 'font-medium');
+            safeAddClass(mBtn, 'text-gold-600', 'dark:text-gold-400', 'font-black', 'scale-105');
+          } else {
+            safeRemoveClass(mBtn, 'text-gold-600', 'dark:text-gold-400', 'font-black', 'scale-105');
+            safeAddClass(mBtn, 'text-slate-500', 'dark:text-espresso-400', 'font-medium');
+          }
+        }
+      });
+
       try {
         if (targetId === 'exclusives') {
           renderExclusivesTab();
@@ -975,6 +1109,71 @@
         }
       } catch (e) {}
     }
+
+    function toggleMobileFilters() {
+      const container = document.getElementById('filterRowContainer');
+      const chevron = document.getElementById('filterChevron');
+      if (!container) return;
+      const isHidden = container.classList.contains('hidden');
+      if (isHidden) {
+        container.classList.remove('hidden');
+        if (chevron) chevron.style.transform = 'rotate(180deg)';
+      } else {
+        container.classList.add('hidden');
+        if (chevron) chevron.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function syncMobileInStock(checked) {
+      const mainCheck = document.getElementById('inStockOnlyCheck');
+      if (mainCheck) mainCheck.checked = checked;
+      renderProducts();
+      updateActiveFilterCount();
+    }
+
+    function updateActiveFilterCount() {
+      let count = 0;
+      const b = document.getElementById('brandSelect');
+      if (b && b.value) count++;
+      const s = document.getElementById('storeSelect');
+      if (s && s.value) count++;
+      const bg = document.getElementById('budgetSelect');
+      if (bg && bg.value && bg.value !== 'all') count++;
+      const sort = document.getElementById('sortSelect');
+      if (sort && sort.value && sort.value !== 'price_asc') count++;
+      const ext = document.getElementById('externalOnlyCheck');
+      if (ext && ext.checked) count++;
+      const coup = document.getElementById('simulateCouponsCheck');
+      if (coup && coup.checked) count++;
+      const stk = document.getElementById('inStockOnlyCheck');
+      if (stk && stk.checked) count++;
+
+      const badge = document.getElementById('mobileActiveFilterCount');
+      if (badge) {
+        if (count > 0) {
+          badge.innerText = count;
+          badge.classList.remove('hidden');
+        } else {
+          badge.classList.add('hidden');
+        }
+      }
+
+      const mobStk = document.getElementById('mobileInStockQuickCheck');
+      if (mobStk && stk) mobStk.checked = stk.checked;
+    }
+
+    // Scroll listener for floating Back-to-Top Button
+    window.addEventListener('scroll', () => {
+      const btn = document.getElementById('backToTopBtn');
+      if (!btn) return;
+      if (window.scrollY > 350) {
+        btn.classList.remove('opacity-0', 'pointer-events-none');
+        btn.classList.add('opacity-100', 'pointer-events-auto');
+      } else {
+        btn.classList.add('opacity-0', 'pointer-events-none');
+        btn.classList.remove('opacity-100', 'pointer-events-auto');
+      }
+    }, { passive: true });
 
     function setCategoryFilter(cat) {
       activeCategory = cat;
@@ -1263,18 +1462,18 @@
             const btnText = !isInStock ? 'نفد (صفحة المتجر)' : 'شراء من المتجر';
 
             return `
-              <div class="p-3 rounded-2xl ${cardBorder} flex flex-col justify-between transition hover:border-gold-500/60">
-                <div class="flex items-center justify-between gap-1 mb-1.5">
-                  <span class="font-extrabold text-xs text-slate-900 dark:text-champagne-200 truncate">${sName}</span>
-                  ${isLowestAmong6 ? '<span class="px-1.5 py-0.5 rounded text-[10px] font-black bg-emerald-600 text-white shrink-0">أرخص في الـ 6!</span>' : ''}
+              <div class="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl ${cardBorder} flex flex-col justify-between transition hover:border-gold-500/60">
+                <div class="flex items-center justify-between gap-1 mb-1">
+                  <span class="font-extrabold text-[11px] sm:text-xs text-slate-900 dark:text-champagne-200 truncate">${sName}</span>
+                  ${isLowestAmong6 ? '<span class="px-1.5 py-0.5 rounded text-[9px] sm:text-[10px] font-black bg-emerald-600 text-white shrink-0">أرخص في الـ 6!</span>' : ''}
                 </div>
                 <div class="my-1">
-                  <div class="text-sm font-black font-outfit ${priceColor}">
+                  <div class="text-xs sm:text-sm font-black font-outfit ${priceColor}">
                     ${priceText} ${oldPriceText}
                   </div>
                   ${stockBadge}
                 </div>
-                <a href="${st.url}" target="_blank" rel="noopener noreferrer" class="mt-2 text-center text-xs font-bold py-1.5 px-2 rounded-xl ${btnClass} transition flex items-center justify-center gap-1">
+                <a href="${st.url}" target="_blank" rel="noopener noreferrer" class="mt-2 text-center text-xs font-bold py-2 px-2 rounded-xl ${btnClass} transition flex items-center justify-center gap-1 min-h-[38px] active:scale-95">
                   <span>${btnText}</span>
                   <i data-lucide="external-link" class="w-3 h-3"></i>
                 </a>
@@ -1282,17 +1481,17 @@
             `;
           } else {
             return `
-              <div class="p-3 rounded-2xl bg-slate-50/50 dark:bg-[#140f0c]/60 border border-dashed border-slate-200 dark:border-espresso-800 flex flex-col justify-between opacity-60">
-                <div class="flex items-center justify-between gap-1 mb-1.5">
-                  <span class="font-bold text-xs text-slate-400 dark:text-espresso-500 truncate">${sName}</span>
+              <div class="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-slate-50/50 dark:bg-[#140f0c]/60 border border-dashed border-slate-200 dark:border-espresso-800 flex flex-col justify-between opacity-60">
+                <div class="flex items-center justify-between gap-1 mb-1">
+                  <span class="font-bold text-[11px] sm:text-xs text-slate-400 dark:text-espresso-500 truncate">${sName}</span>
                 </div>
                 <div class="my-2 text-center">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-espresso-800/60 text-slate-500 dark:text-espresso-400 text-xs font-bold">
-                    <i data-lucide="minus-circle" class="w-3.5 h-3.5"></i>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-espresso-800/60 text-slate-500 dark:text-espresso-400 text-[11px] font-bold">
+                    <i data-lucide="minus-circle" class="w-3 h-3"></i>
                     <span>غير معروض</span>
                   </span>
                 </div>
-                <div class="text-[10px] text-center text-slate-400 dark:text-espresso-400 mt-2">غير معروض بالمتجر</div>
+                <div class="text-[10px] text-center text-slate-400 dark:text-espresso-400 mt-1">غير معروض بالمتجر</div>
               </div>
             `;
           }
@@ -1302,28 +1501,28 @@
         let purpleBoxHtml = '';
         if (p.externalCheaper) {
           purpleBoxHtml = `
-            <div class="p-4 rounded-2xl bg-gradient-to-r from-purple-50 via-fuchsia-50/70 to-purple-50 dark:from-purple-950/80 dark:via-[#2a1338] dark:to-purple-950/80 border-2 border-purple-400 dark:border-purple-500/80 shadow-md shadow-purple-500/10 dark:shadow-purple-950/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition hover:border-purple-500">
-              <div class="flex items-center gap-3.5">
-                <div class="w-11 h-11 rounded-2xl bg-purple-100 border border-purple-200 text-purple-700 dark:bg-purple-600/30 dark:border-purple-400/40 dark:text-purple-300 flex items-center justify-center shrink-0">
-                  <i data-lucide="radar" class="w-6 h-6 animate-pulse"></i>
+            <div class="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-r from-purple-50 via-fuchsia-50/70 to-purple-50 dark:from-purple-950/80 dark:via-[#2a1338] dark:to-purple-950/80 border-2 border-purple-400 dark:border-purple-500/80 shadow-md shadow-purple-500/10 dark:shadow-purple-950/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 transition hover:border-purple-500">
+              <div class="flex items-center gap-2.5 sm:gap-3.5">
+                <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-purple-100 border border-purple-200 text-purple-700 dark:bg-purple-600/30 dark:border-purple-400/40 dark:text-purple-300 flex items-center justify-center shrink-0">
+                  <i data-lucide="radar" class="w-5 h-5 sm:w-6 sm:h-6 animate-pulse"></i>
                 </div>
                 <div>
-                  <div class="flex flex-wrap items-center gap-2">
+                  <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
                     <span class="px-2 py-0.5 rounded-md text-[10px] font-black bg-purple-600 text-white shadow-sm flex items-center gap-1">
                       <i data-lucide="sparkles" class="w-3 h-3"></i>
-                      رادار السوق المصري: متجر أرخص خارج الـ 6!
+                      متجر أرخص خارج الـ 6!
                     </span>
-                    <span class="text-xs text-purple-700 dark:text-purple-300 font-bold">🇪🇬 متجر مصري معتمد - شحن وتوصيل محلي</span>
+                    <span class="text-[11px] sm:text-xs text-purple-700 dark:text-purple-300 font-bold">🇪🇬 متجر مصري معتمد</span>
                   </div>
-                  <p class="text-sm font-black text-purple-950 dark:text-slate-900 dark:text-champagne-100 mt-1">
+                  <p class="text-xs sm:text-sm font-black text-purple-950 dark:text-champagne-100 mt-1">
                     متوفر في <span class="text-purple-700 dark:text-purple-300 font-extrabold underline underline-offset-2">${escapeHtml(p.externalCheaper.storeName)}</span> بسعر: 
-                    <span class="text-emerald-600 dark:text-emerald-400 font-black font-outfit text-base mr-1">${p.externalCheaper.price} ج.م</span>
-                    ${p.externalCheaper.savingsVsCore > 0 ? `<span class="text-xs font-bold text-purple-700 dark:text-purple-200 mr-1.5">(وفر ${p.externalCheaper.savingsVsCore} ج.م إضافية عن أرخص متجر في الـ 6!)</span>` : ''}
+                    <span class="text-emerald-600 dark:text-emerald-400 font-black font-outfit text-sm sm:text-base mr-1">${p.externalCheaper.price} ج.م</span>
+                    ${p.externalCheaper.savingsVsCore > 0 ? `<span class="text-[11px] sm:text-xs font-bold text-purple-700 dark:text-purple-200 mr-1">(وفر ${p.externalCheaper.savingsVsCore} ج.م إضافية!)</span>` : ''}
                   </p>
                 </div>
               </div>
-              <a href="${p.externalCheaper.url}" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-black text-xs shadow-md shadow-purple-600/20 transition flex items-center justify-center gap-1.5 shrink-0 active:scale-95">
-                <span>شراء من ${escapeHtml(p.externalCheaper.storeName)} مباشرة</span>
+              <a href="${p.externalCheaper.url}" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-4 sm:px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-black text-xs shadow-md shadow-purple-600/20 transition flex items-center justify-center gap-1.5 shrink-0 active:scale-95">
+                <span>شراء من ${escapeHtml(p.externalCheaper.storeName)}</span>
                 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
               </a>
             </div>
@@ -1331,62 +1530,67 @@
         }
 
         return `
-          <div class="card-espresso p-6 rounded-3xl space-y-5" id="prod_${encodedId}">
+          <div class="card-espresso p-3.5 sm:p-6 rounded-2xl sm:rounded-3xl space-y-3.5 sm:space-y-5" id="prod_${encodedId}">
             <!-- Top Card Header -->
-            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-espresso-700/60">
-              <div class="flex items-start gap-4">
-                <div class="w-20 h-20 rounded-2xl bg-white dark:bg-[#201914] border border-slate-200/90 dark:border-espresso-700/80 p-2 flex items-center justify-center shrink-0 overflow-hidden shadow-sm">
+            <div class="flex flex-col gap-3 pb-3 sm:pb-4 border-b border-slate-100 dark:border-espresso-700/60">
+              <div class="flex items-start gap-3 sm:gap-4">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl bg-white dark:bg-[#201914] border border-slate-200/90 dark:border-espresso-700/80 p-1.5 sm:p-2 flex items-center justify-center shrink-0 overflow-hidden shadow-sm">
                   ${p.image ? `<img src="${p.image}" alt="${escapedTitle}" class="max-w-full max-h-full object-contain" onerror="this.onerror=null; this.parentElement.innerHTML='<i data-lucide=\\'package\\' class=\\'w-8 h-8 text-bronze-400\\'></i>'; lucide.createIcons();">` : '<i data-lucide="package" class="w-8 h-8 text-bronze-400"></i>'}
                 </div>
-                <div class="space-y-1.5">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-0.5 rounded-full text-xs font-black bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/20">${escapedBrand}</span>
-                    ${p.weight ? `<span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 dark:bg-espresso-800 text-slate-700 dark:text-espresso-300 border border-slate-200 dark:border-espresso-700 font-outfit">${escapeHtml(p.weight)}</span>` : ''}
-                    ${unitMetric ? `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-black bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">${unitMetric}</span>` : ''}
+                <div class="space-y-1 flex-1 min-w-0">
+                  <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                    <span class="px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-black bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/20">${escapedBrand}</span>
+                    ${p.weight ? `<span class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold bg-slate-100 dark:bg-espresso-800 text-slate-700 dark:text-espresso-300 border border-slate-200 dark:border-espresso-700 font-outfit">${escapeHtml(p.weight)}</span>` : ''}
+                    ${unitMetric ? `<span class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-black bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">${unitMetric}</span>` : ''}
                     ${isCompletelyOutOfStock ? 
-                      '<span class="px-2.5 py-0.5 rounded-full text-xs font-black bg-rose-600 text-white shadow-sm flex items-center gap-1 animate-pulse"><i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>نفد من المخزون 🔴 (Out of Stock)</span>' : 
+                      '<span class="px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-black bg-rose-600 text-white shadow-sm flex items-center gap-1 animate-pulse"><i data-lucide="alert-circle" class="w-3 h-3"></i>نفد المخزون 🔴</span>' : 
                       (isCheapestInStock ? 
-                        '<span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>متوفر بالمخزون 🟢</span>' : 
-                        '<span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-400 border border-amber-500/30 flex items-center gap-1">متوفر بمتاجر أخرى</span>')
+                        '<span class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>متوفر 🟢</span>' : 
+                        '<span class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-400 border border-amber-500/30 flex items-center gap-1">متوفر بغيره</span>')
                     }
-                    ${p.externalCheaper ? `<span class="px-2.5 py-0.5 rounded-full text-xs font-black bg-purple-600 text-white shadow-sm flex items-center gap-1"><i data-lucide="radar" class="w-3 h-3"></i>يوجد سعر أرخص بالخارج</span>` : ''}
+                    ${p.externalCheaper ? `<span class="px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-black bg-purple-600 text-white shadow-sm flex items-center gap-1"><i data-lucide="radar" class="w-3 h-3"></i>سعر أرخص بالخارج</span>` : ''}
                   </div>
-                  <h3 class="text-lg font-bold text-slate-900 dark:text-champagne-100 leading-snug">${escapedTitle}</h3>
+                  <h3 class="text-sm sm:text-lg font-bold text-slate-900 dark:text-champagne-100 leading-snug break-words">${escapedTitle}</h3>
                 </div>
               </div>
 
-              <!-- Price Highlight Badges & Quick Tools -->
-              <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-3 w-full sm:w-auto shrink-0">
-                <div class="text-right sm:text-left ${!isCheapestInStock ? 'bg-rose-50 dark:bg-rose-950/40 border-2 border-rose-500 shadow-md shadow-rose-500/10' : (p.externalCheaper ? 'bg-purple-50 dark:bg-purple-950/40 border border-purple-300 dark:border-purple-500/50' : 'bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-300/80 dark:border-emerald-800/80')} p-3.5 rounded-2xl">
-                  <div class="flex items-center justify-between sm:justify-start gap-2 mb-1">
-                    <span class="text-xs font-bold ${!isCheapestInStock ? 'text-rose-700 dark:text-rose-300' : (p.externalCheaper ? 'text-purple-800 dark:text-purple-300' : 'text-emerald-800 dark:text-emerald-300')} block">
-                      ${p.externalCheaper ? 'أرخص سعر في مصر (خارج الـ 6)' : 'أرخص سعر في مصر'}
-                    </span>
-                    ${!isCheapestInStock ? 
-                      '<span class="px-2 py-0.5 rounded-md text-[10px] font-black bg-rose-600 text-white shadow-sm flex items-center gap-1 animate-pulse"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>نفد من المخزون 🔴 Out of Stock</span>' : 
-                      '<span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-600/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>متوفر 🟢</span>'
-                    }
+              <!-- Hero Price Box & Quick Action Toolbar -->
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-4 p-3 sm:p-3.5 rounded-xl sm:rounded-2xl ${!isCheapestInStock ? 'bg-rose-50 dark:bg-rose-950/40 border-2 border-rose-500 shadow-md shadow-rose-500/10' : (p.externalCheaper ? 'bg-purple-50 dark:bg-purple-950/40 border border-purple-300 dark:border-purple-500/50' : 'bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-300/80 dark:border-emerald-800/80')}">
+                
+                <!-- Price Details -->
+                <div class="flex items-center justify-between sm:flex-col sm:items-start gap-1">
+                  <div>
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-[11px] sm:text-xs font-bold ${!isCheapestInStock ? 'text-rose-700 dark:text-rose-300' : (p.externalCheaper ? 'text-purple-800 dark:text-purple-300' : 'text-emerald-800 dark:text-emerald-300')}">
+                        ${p.externalCheaper ? 'أرخص سعر في مصر (خارج الـ 6)' : 'أرخص سعر في مصر'}
+                      </span>
+                      ${!isCheapestInStock ? 
+                        '<span class="px-1.5 py-0.5 rounded text-[9px] sm:text-[10px] font-black bg-rose-600 text-white shadow-sm flex items-center gap-1 animate-pulse"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>نفد من المخزون 🔴 Out of Stock</span>' : 
+                        '<span class="px-1.5 py-0.5 rounded text-[9px] sm:text-[10px] font-bold bg-emerald-600/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>متوفر 🟢</span>'
+                      }
+                    </div>
+                    <div class="text-[11px] font-bold text-slate-700 dark:text-champagne-300 mt-0.5 flex flex-wrap items-center gap-1">
+                      <span>لدى: <strong class="${!isCheapestInStock ? 'text-rose-700 dark:text-rose-300 underline font-extrabold' : 'text-slate-900 dark:text-champagne-100 font-extrabold'}">${escapeHtml(p.cheapestStore || 'غير محدد')}</strong></span>
+                      ${!isCheapestInStock ? '<span class="text-[10px] text-rose-600 dark:text-rose-400 font-black">(غير متوفر حالياً بالمتجر)</span>' : ''}
+                      ${p.lowestCorePrice && p.externalCheaper ? `<span class="text-emerald-500 mr-1 text-[10px]">(أرخص في الـ 6: ${p.lowestCorePrice} ج.م)</span>` : ''}
+                    </div>
                   </div>
-                  <div class="text-2xl font-black ${!isCheapestInStock ? 'text-rose-600 dark:text-rose-400' : (p.externalCheaper ? 'text-purple-700 dark:text-purple-400' : 'text-emerald-600 dark:text-emerald-400')} font-outfit">
+                  <div class="text-xl sm:text-2xl font-black ${!isCheapestInStock ? 'text-rose-600 dark:text-rose-400' : (p.externalCheaper ? 'text-purple-700 dark:text-purple-400' : 'text-emerald-600 dark:text-emerald-400')} font-outfit text-left sm:text-right shrink-0">
                     ${lowestPriceFormatted}
-                  </div>
-                  <div class="text-[11px] font-bold text-slate-700 dark:text-champagne-300 mt-1 flex flex-wrap items-center gap-1">
-                    <span>لدى: <strong class="${!isCheapestInStock ? 'text-rose-700 dark:text-rose-300 underline font-extrabold' : 'text-slate-900 dark:text-champagne-100 font-extrabold'}">${escapeHtml(p.cheapestStore || 'غير محدد')}</strong></span>
-                    ${!isCheapestInStock ? '<span class="text-[10px] text-rose-600 dark:text-rose-400 font-black">(غير متوفر حالياً بالمتجر)</span>' : ''}
-                    ${p.lowestCorePrice && p.externalCheaper ? `<span class="text-emerald-500 mr-1">(أرخص في الـ 6: ${p.lowestCorePrice} ج.م)</span>` : ''}
                   </div>
                 </div>
 
-                <div class="flex items-center gap-1.5">
-                  <button onclick="addToCart('${encodedId}')" class="p-2 sm:px-2.5 sm:py-2 rounded-xl bg-gold-600/15 hover:bg-gold-600/30 text-gold-600 dark:text-gold-400 border border-gold-500/30 text-xs font-extrabold transition flex items-center gap-1 active:scale-95" title="إضافة لسلة التوفير الذكية">
+                <!-- Quick Action Buttons Toolbar -->
+                <div class="flex items-center gap-1.5 pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-200/60 dark:border-espresso-700/40">
+                  <button onclick="addToCart('${encodedId}')" class="flex-1 sm:flex-initial py-2 px-3 rounded-xl bg-gold-600 hover:bg-gold-500 text-white text-xs font-black shadow-sm transition flex items-center justify-center gap-1.5 active:scale-95" title="إضافة لسلة التوفير الذكية">
                     <i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i>
-                    <span class="hidden sm:inline">أضف للسلة</span>
+                    <span>أضف للسلة</span>
                   </button>
-                  <button onclick="shareOnWhatsApp('${encodedId}')" class="p-2 sm:px-2.5 sm:py-2 rounded-xl bg-emerald-600/15 hover:bg-emerald-600/30 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 text-xs font-extrabold transition flex items-center gap-1 active:scale-95" title="مشاركة العرض بالواتساب">
+                  <button onclick="shareOnWhatsApp('${encodedId}')" class="py-2 px-3 rounded-xl bg-emerald-600/15 hover:bg-emerald-600/30 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 text-xs font-extrabold transition flex items-center justify-center gap-1 active:scale-95" title="مشاركة بالواتساب">
                     <i data-lucide="send" class="w-3.5 h-3.5"></i>
                     <span class="hidden sm:inline">واتساب</span>
                   </button>
-                  <button onclick="openAdGenerator('${encodedId}')" class="p-2 sm:px-2.5 sm:py-2 rounded-xl bg-bronze-600/15 hover:bg-bronze-600/30 text-bronze-600 dark:text-bronze-300 border border-bronze-500/30 text-xs font-extrabold transition flex items-center gap-1 active:scale-95" title="توليد بوست وإعلان منافسة">
+                  <button onclick="openAdGenerator('${encodedId}')" class="py-2 px-3 rounded-xl bg-bronze-600/15 hover:bg-bronze-600/30 text-bronze-600 dark:text-bronze-300 border border-bronze-500/30 text-xs font-extrabold transition flex items-center justify-center gap-1 active:scale-95" title="توليد إعلان">
                     <i data-lucide="megaphone" class="w-3.5 h-3.5"></i>
                     <span class="hidden sm:inline">إعلان</span>
                   </button>
@@ -1399,14 +1603,14 @@
 
             <!-- 6 Core Stores Comparison Grid -->
             <div>
-              <p class="text-xs font-bold text-slate-500 dark:text-espresso-400 mb-2.5 flex items-center justify-between">
+              <p class="text-xs font-bold text-slate-500 dark:text-espresso-400 mb-2 flex items-center justify-between">
                 <span class="flex items-center gap-1.5">
                   <i data-lucide="layers" class="w-3.5 h-3.5 text-gold-500"></i>
-                  <span>مقارنة المتاجر الستة الأساسية (اللون الأخضر لأرخصهم):</span>
+                  <span>مقارنة المتاجر الستة الأساسية:</span>
                 </span>
-                <span class="text-[11px] text-emerald-500 font-extrabold">المتجر الأخضر = أرخص متجر بين الـ 6</span>
+                <span class="text-[10px] sm:text-[11px] text-emerald-600 dark:text-emerald-400 font-extrabold">المتجر الأخضر = أرخص متجر في الـ 6</span>
               </p>
-              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3">
                 ${storeCardsHtml}
               </div>
             </div>
@@ -1414,6 +1618,7 @@
         `;
       }).join('');
 
+      try { updateActiveFilterCount(); } catch(e) {}
       lucide.createIcons();
     }
 
@@ -2111,7 +2316,10 @@
     }
 
     function updateCartUI() {
-      document.getElementById('cartCountBadge').innerText = smartCart.length;
+      const b1 = document.getElementById('cartCountBadge');
+      if (b1) b1.innerText = smartCart.length;
+      const b2 = document.getElementById('mobileCartCountBadge');
+      if (b2) b2.innerText = smartCart.length;
       const container = document.getElementById('cartItemsContainer');
       const optCard = document.getElementById('cartOptimizationCard');
       const optDetails = document.getElementById('cartOptimizationDetails');
