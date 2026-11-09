@@ -161,6 +161,30 @@
       "verifiedEgypt": true,
       "shippingInfo": "متجر مصري معتمد - شحن داخل مصر",
       "totalProducts": 583
+    },
+    {
+      "id": "fit_spot",
+      "name": "Fit Spot",
+      "nameAr": "فيت سبوت",
+      "url": "https://fitspot-eg.com",
+      "platform": "Shopify",
+      "type": "shopify",
+      "apiUrl": "https://fitspot-eg.com/products.json",
+      "verifiedEgypt": true,
+      "shippingInfo": "متجر مصري معتمد - الدفع عند الاستلام وإنستاباي",
+      "totalProducts": 250
+    },
+    {
+      "id": "zero_fat",
+      "name": "Zero Fat Supplements",
+      "nameAr": "زيرو فات",
+      "url": "https://zerofatsupplements.com",
+      "platform": "Shopify",
+      "type": "shopify",
+      "apiUrl": "https://zerofatsupplements.com/products.json",
+      "verifiedEgypt": true,
+      "shippingInfo": "متجر مصري للمكملات الأصلية - شحن سريع في مصر",
+      "totalProducts": 250
     }
   ]
 }

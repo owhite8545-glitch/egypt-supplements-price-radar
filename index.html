@@ -472,14 +472,30 @@
         <p id="paginationCounter" class="text-xs text-slate-400 dark:text-espresso-400 mt-2 font-medium"></p>
       </div>
 
-      <!-- Empty State -->
-      <div id="emptyState" class="hidden text-center py-20 p-8 rounded-3xl bg-white dark:bg-[#18130f] border border-slate-200 dark:border-espresso-700 shadow-sm">
-        <div class="w-20 h-20 mx-auto mb-4 rounded-3xl bg-slate-100 dark:bg-espresso-800 flex items-center justify-center text-amber-500">
-          <i data-lucide="package-x" class="w-10 h-10"></i>
+      <!-- Empty State / Smart Radar Assistant -->
+      <div id="emptyState" class="hidden text-center py-12 p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#18130f] border-2 border-dashed border-gold-500/30 shadow-sm space-y-4">
+        <div class="w-16 h-16 mx-auto rounded-3xl bg-gold-500/10 text-gold-500 flex items-center justify-center">
+          <i data-lucide="radar" class="w-8 h-8 animate-pulse text-gold-500"></i>
         </div>
-        <h3 class="text-xl font-bold text-slate-900 dark:text-champagne-100">لم يتم العثور على منتجات مطابقة</h3>
-        <p class="text-sm text-slate-500 dark:text-espresso-400 mt-2">جرب البحث بكلمات أبسط مثل "C4" أو "Whey" أو "Creatine".</p>
-        <button onclick="clearSearch()" class="mt-4 px-5 py-2.5 rounded-xl bg-gold-600 hover:bg-gold-700 text-white font-bold text-sm shadow-md">مسح جميع الفلاتر</button>
+        <div class="space-y-1">
+          <h3 class="text-lg sm:text-xl font-black text-slate-900 dark:text-champagne-100">رادار المكملات الذكي: لم يتم العثور على نتائج مباشرة</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-espresso-400 max-w-md mx-auto">
+            تبحث عن مكمل معين في مصر؟ اضغط على الأزرار أدناه للبحث العميق في السوق المصري أو طلب رصده وإضافته فوراً!
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-2 pt-2">
+          <button onclick="searchWebDirectly()" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-black text-xs shadow-md transition flex items-center gap-1.5 active:scale-95">
+            <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+            <span>بحث عميق في السوق المصري والسوشيال 🇪🇬</span>
+          </button>
+          <button onclick="requestMissingProduct()" class="px-4 py-2.5 rounded-xl bg-gold-600 hover:bg-gold-500 text-white font-black text-xs shadow-md transition flex items-center gap-1.5 active:scale-95">
+            <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+            <span>طلب رصد وإضافة المكمل ➕</span>
+          </button>
+          <button onclick="clearSearch()" class="px-4 py-2.5 rounded-xl border border-slate-300 dark:border-espresso-750 text-slate-700 dark:text-espresso-300 font-bold text-xs hover:bg-slate-50 dark:hover:bg-espresso-800 transition">
+            مسح الفلاتر 🔄
+          </button>
+        </div>
       </div>
 
     </div>
@@ -838,8 +854,8 @@
 
       <div class="space-y-3 text-xs font-bold text-slate-700 dark:text-espresso-300">
         <div>
-          <label class="block mb-1">اسم المنتج:</label>
-          <input type="text" id="modalProductName" class="w-full p-2.5 rounded-xl bg-slate-50 dark:bg-[#1a1410] border border-slate-200 dark:border-espresso-700 outline-none text-slate-800 dark:text-champagne-100 font-semibold" readonly>
+          <label class="block mb-1">اسم المنتج أو المكمل:</label>
+          <input type="text" id="modalProductName" placeholder="اسم المكمل بالإنجليزية أو العربية" class="w-full p-2.5 rounded-xl bg-slate-50 dark:bg-[#1a1410] border border-slate-200 dark:border-espresso-700 outline-none text-slate-800 dark:text-champagne-100 font-semibold focus:border-amber-500">
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -848,8 +864,18 @@
             <select id="modalStoreSelect" class="w-full p-2.5 rounded-xl bg-white dark:bg-[#201914] border border-slate-200 dark:border-espresso-700 outline-none text-slate-800 dark:text-champagne-100 font-semibold">
               <option value="Train Hard">Train Hard</option>
               <option value="Fitness Tech">Fitness Tech</option>
-              <option value="Protein We Vitamin">Protein We Vitamin</option>
               <option value="Add to Spot">Add to Spot</option>
+              <option value="Fit Spot">Fit Spot</option>
+              <option value="Zero Fat Supplements">Zero Fat Supplements</option>
+              <option value="Protein We Vitamin">Protein We Vitamin</option>
+              <option value="Super Supplement">Super Supplement</option>
+              <option value="MF Supplements">MF Supplements</option>
+              <option value="Max Muscle Elite">Max Muscle Elite</option>
+              <option value="Power Fit">Power Fit</option>
+              <option value="The Coach">The Coach</option>
+              <option value="Power Store">Power Store</option>
+              <option value="GoFit Egypt">GoFit Egypt</option>
+              <option value="iFIT Egypt">iFIT Egypt</option>
               <option value="Facebook Store">صفحة فيسبوك موثوقة (Facebook)</option>
               <option value="Instagram Shop">متجر إنستجرام (Instagram)</option>
               <option value="OLX Egypt">أوليكس مصر (OLX)</option>
@@ -1354,8 +1380,275 @@
       return price;
     }
 
+    // ==========================================
+    // ADVANCED BILINGUAL EGYPTIAN SEARCH ENGINE
+    // ==========================================
+    function normalizeArabic(text) {
+      if (!text) return '';
+      return text
+        .toString()
+        .toLowerCase()
+        .replace(/[\u064B-\u065F\u0670]/g, '') // remove tashkeel
+        .replace(/\u0640/g, '') // remove tatweel
+        .replace(/[أإآٱ]/g, 'ا') // normalize alef
+        .replace(/ة/g, 'ه') // normalize taa marbuta
+        .replace(/[ىئ]/g, 'ي') // normalize yaa & hamza on yaa
+        .replace(/ؤ/g, 'و') // normalize hamza on waw
+        .replace(/[-_.,\/#!$%\^&\*;:{}=\+~()\[\]]/g, ' ') // punctuation to space
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    const BILINGUAL_THESAURUS = {
+      // Product Types / Categories
+      'واي': ['واي', 'whey', 'وي', 'واى'],
+      'whey': ['whey', 'واي', 'وي', 'واى'],
+      'بروتين': ['بروتين', 'protein'],
+      'protein': ['protein', 'بروتين'],
+      'ايزو': ['ايزو', 'iso', 'isolate', 'ايزوليت', 'ايزولايت'],
+      'iso': ['iso', 'isolate', 'ايزو', 'ايزوليت'],
+      'isolate': ['isolate', 'iso', 'ايزو', 'ايزوليت'],
+      'كرياتين': ['كرياتين', 'creatine', 'كراتين', 'كريتين', 'كيرياتين'],
+      'creatine': ['creatine', 'كرياتين', 'كراتين', 'كريتين', 'كيرياتين'],
+      'ماس': ['ماس', 'mass', 'جينر', 'gainer'],
+      'mass': ['mass', 'ماس', 'جينر', 'gainer'],
+      'جينر': ['جينر', 'gainer', 'ماس', 'mass'],
+      'gainer': ['gainer', 'جينر', 'ماس', 'mass'],
+      'بري': ['بري', 'pre', 'preworkout', 'طاقة', 'بمب', 'باور'],
+      'pre': ['pre', 'preworkout', 'بري', 'طاقة', 'بمب'],
+      'بمب': ['بمب', 'pump', 'طاقة'],
+      'pump': ['pump', 'بمب', 'طاقة'],
+      'طاقة': ['طاقة', 'energy', 'power', 'c4'],
+      'energy': ['energy', 'طاقة', 'power', 'c4'],
+      'امينو': ['امينو', 'amino', 'bcaa', 'eaa'],
+      'amino': ['amino', 'امينو', 'bcaa', 'eaa'],
+      'بي سي ايه': ['bcaa', 'بي سي اي اي', 'امينو'],
+      'bcaa': ['bcaa', 'بي سي ايه', 'بي سي اي اي', 'amino', 'امينو'],
+      'جلوتامين': ['جلوتامين', 'glutamine'],
+      'glutamine': ['glutamine', 'جلوتامين'],
+      'كولاجين': ['كولاجين', 'collagen'],
+      'collagen': ['collagen', 'كولاجين'],
+      'اوميجا': ['اوميجا', 'omega', 'fish oil', 'زيت سمك'],
+      'omega': ['omega', 'اوميجا', 'fish oil'],
+      'حارق': ['حارق', 'حوارق', 'fat burner', 'تخسيس', 'تنحيف'],
+      'تخسيس': ['تخسيس', 'حارق', 'fat burner', 'slimming', 'weight loss'],
+      'ليبو': ['ليبو', 'lipo', 'lipo6', 'lipo 6'],
+      'lipo': ['lipo', 'ليبو', 'lipo6', 'lipo 6'],
+      'كازين': ['كازين', 'casein'],
+      'casein': ['casein', 'كازين'],
+      'سناك': ['سناك', 'snack', 'bar', 'بار', 'بروتين بار'],
+      'بار': ['بار', 'bar', 'سناك', 'snack', 'protein bar'],
+      'bar': ['bar', 'بار', 'snack', 'سناك'],
+      'كوكيز': ['كوكيز', 'cookies', 'cookie'],
+      'شوكولاته': ['شوكولاته', 'chocolate', 'choco', 'سبريد', 'spread'],
+      'chocolate': ['chocolate', 'شوكولاته', 'choco', 'spread', 'سبريد'],
+
+      // Active Ingredients & Specifics
+      'انابول': ['انابول', 'anabol', 'anabolic', 'انابوليك', 'hardcore', 'هاردكور', 'nutrex'],
+      'anabol': ['anabol', 'انابول', 'anabolic', 'انابوليك', 'hardcore', 'هاردكور', 'nutrex'],
+      'انابوليك': ['انابوليك', 'anabolic', 'انابول', 'anabol'],
+      'anabolic': ['anabolic', 'انابوليك', 'anabol', 'انابول'],
+      'هاردكور': ['هاردكور', 'hardcore', 'anabol', 'lipo'],
+      'hardcore': ['hardcore', 'هاردكور', 'anabol', 'lipo'],
+      'اشواغاندا': ['اشواغاندا', 'اشواجندا', 'ashwagandha'],
+      'ashwagandha': ['ashwagandha', 'اشواغاندا', 'اشواجندا'],
+      'زنك': ['زنك', 'zinc'],
+      'zinc': ['zinc', 'زنك'],
+      'ماغنسيوم': ['ماغنسيوم', 'magnesium'],
+      'magnesium': ['magnesium', 'ماغنسيوم'],
+      'ميلاتونين': ['ميلاتونين', 'melatonin', 'نوم'],
+      'melatonin': ['melatonin', 'ميلاتونين'],
+      'كارنتين': ['كارنتين', 'carnitine', 'l-carnitine', 'ال كارنتين'],
+      'carnitine': ['carnitine', 'كارنتين', 'l-carnitine'],
+      'ارجنين': ['ارجنين', 'arginine', 'l-arginine'],
+      'arginine': ['arginine', 'ارجنين', 'l-arginine'],
+      'سترولين': ['سترولين', 'citrulline'],
+      'citrulline': ['citrulline', 'سترولين'],
+
+      // Brands & Popular Gym Names in Egypt
+      'ماسل': ['ماسل', 'muscle', 'muscletech', 'ماسل تك', 'ماسيل'],
+      'تك': ['تك', 'tech', 'muscletech', 'ماسل تك'],
+      'ماستك': ['muscletech', 'ماسل تك', 'ماستك', 'ماسل'],
+      'muscletech': ['muscletech', 'ماسل تك', 'ماستك', 'ماسل'],
+      'اوبتيموم': ['اوبتيموم', 'optimum', 'on', 'جولد ستاندرد', 'gold standard'],
+      'اوبتيمم': ['اوبتيمم', 'optimum', 'on', 'جولد ستاندرد'],
+      'optimum': ['optimum', 'اوبتيموم', 'اوبتيمم', 'on', 'جولد ستاندرد', 'gold standard'],
+      'on': ['on', 'optimum', 'اوبتيموم', 'اوبتيمم', 'gold standard'],
+      'جولد': ['جولد', 'gold', 'gold standard', 'اوبتيموم', 'optimum'],
+      'gold': ['gold', 'جولد', 'gold standard', 'optimum'],
+      'ديماتايز': ['ديماتايز', 'دايماتايز', 'dymatize', 'iso 100', 'ايزو 100'],
+      'دايماتايز': ['ديماتايز', 'دايماتايز', 'dymatize', 'iso 100'],
+      'dymatize': ['dymatize', 'ديماتايز', 'دايماتايز', 'iso 100', 'ايزو 100'],
+      'نيوتركس': ['نيوتركس', 'نيوتريكس', 'نوتركس', 'nutrex', 'anabol', 'lipo'],
+      'نوتركس': ['نوتركس', 'نيوتركس', 'nutrex', 'anabol'],
+      'nutrex': ['nutrex', 'نيوتركس', 'نوتركس', 'نيوتريكس', 'anabol', 'انابول'],
+      'ابلايد': ['ابلايد', 'applied', 'applied nutrition', 'ايبك', 'abe'],
+      'applied': ['applied', 'ابلايد', 'applied nutrition', 'abe'],
+      'ليفرون': ['ليفرون', 'ليفروني', 'levrone', 'kevin levrone'],
+      'levrone': ['levrone', 'ليفرون', 'ليفروني', 'kevin levrone'],
+      'رول': ['رول', 'rule', 'rule 1', 'rule one', 'r1'],
+      'rule': ['rule', 'رول', 'rule 1', 'rule one', 'r1'],
+      'سيلوكور': ['سيلوكور', 'cellucor', 'c4', 'سي فور'],
+      'سل كور': ['سل كور', 'cellucor', 'c4', 'سي فور'],
+      'cellucor': ['cellucor', 'سيلوكور', 'سل كور', 'c4', 'سي فور'],
+      'سي فور': ['سي فور', 'c4', 'سيفور', 'cellucor'],
+      'سيفور': ['سيفور', 'c4', 'سي فور', 'cellucor'],
+      'c4': ['c4', 'سي فور', 'سيفور', 'cellucor'],
+      'اورجانيك': ['اورجانيك', 'organic', 'organic nation'],
+      'نيشن': ['نيشن', 'nation', 'organic nation'],
+      'organic': ['organic', 'اورجانيك', 'organic nation'],
+      'تريجو': ['تريجو', 'trigo', 'trigo bar', 'كرنش'],
+      'trigo': ['trigo', 'تريجو', 'trigo bar', 'crunch bar'],
+      'يونيفرسال': ['يونيفرسال', 'universal', 'animal', 'انيمال'],
+      'انيمال': ['انيمال', 'animal', 'universal'],
+      'animal': ['animal', 'انيمال', 'universal'],
+      'ريد': ['ريد', 'red', 'red rex', 'ريد ريكس'],
+      'ريكس': ['ريكس', 'rex', 'red rex', 'ريد ريكس'],
+      'بي بي اي': ['بي بي اي', 'bpi', 'bpi sports'],
+      'bpi': ['bpi', 'بي بي اي'],
+      'بايوتك': ['بايوتك', 'biotech', 'biotechusa'],
+      'biotech': ['biotech', 'بايوتك', 'biotechusa']
+    };
+
+    function getSearchVariants(token) {
+      const norm = normalizeArabic(token);
+      const variants = new Set([norm]);
+      if (norm.startsWith('ال') && norm.length > 3) {
+        variants.add(norm.slice(2));
+      }
+      for (const [key, syns] of Object.entries(BILINGUAL_THESAURUS)) {
+        const normKey = normalizeArabic(key);
+        if (norm === normKey || (norm.startsWith('ال') && norm.slice(2) === normKey)) {
+          syns.forEach(s => variants.add(normalizeArabic(s)));
+        }
+      }
+      return Array.from(variants);
+    }
+
+    function matchVariantInText(text, variant) {
+      if (!text || !variant) return false;
+      if (variant.length <= 2) {
+        // Boundary/word match for short tokens like 'on', 'c4', 'r1'
+        const words = text.split(/\s+/);
+        return words.includes(variant);
+      }
+      return text.includes(variant);
+    }
+
+    function evaluateProductSearchScore(product, query) {
+      const normQuery = normalizeArabic(query);
+      if (!normQuery) return 1;
+
+      const rawTokens = normQuery.split(' ').filter(t => t.length > 0);
+      if (rawTokens.length === 0) return 1;
+
+      const titleNorm = normalizeArabic(product.title);
+      const brandNorm = normalizeArabic(product.brand);
+      const catNorm = normalizeArabic(product.category);
+      const arabicTermsNorm = normalizeArabic(product.arabicSearchTerms);
+      const arabicTitleNorm = normalizeArabic(product.arabicTitle);
+      const fullHaystack = `${titleNorm} ${brandNorm} ${catNorm} ${arabicTermsNorm} ${arabicTitleNorm}`;
+
+      const tokenVariants = rawTokens.map(t => getSearchVariants(t));
+      let matchedTokensCount = 0;
+      let score = 0;
+
+      for (const variants of tokenVariants) {
+        let bestTokenScore = 0;
+        for (const v of variants) {
+          let s = 0;
+          if (matchVariantInText(titleNorm, v)) {
+            s = 40;
+          } else if (matchVariantInText(brandNorm, v)) {
+            s = 35;
+          } else if (matchVariantInText(arabicTermsNorm, v) || matchVariantInText(arabicTitleNorm, v)) {
+            s = 30;
+          } else if (matchVariantInText(fullHaystack, v)) {
+            s = 15;
+          }
+          if (s > bestTokenScore) bestTokenScore = s;
+        }
+        if (bestTokenScore > 0) {
+          matchedTokensCount++;
+          score += bestTokenScore;
+        }
+      }
+
+      // Exact all tokens match or high-confidence partial for long queries
+      const isFullMatch = (matchedTokensCount === rawTokens.length);
+      const isStrongPartial = (rawTokens.length >= 3 && matchedTokensCount >= rawTokens.length - 1);
+
+      if (!isFullMatch && !isStrongPartial) {
+        return 0; // Filtered out
+      }
+
+      if (isFullMatch) {
+        score += 150; // Massive bonus for all-token match
+      }
+
+      // Bonus for exact multi-token sequence
+      if (titleNorm.includes(normQuery) || arabicTermsNorm.includes(normQuery)) {
+        score += 100;
+      }
+
+      // In stock bonus
+      const hasInStock = Object.values(product.storeBreakdown || {}).some(st => st.available && st.inStock !== false) || !!product.externalCheaper;
+      if (hasInStock) score += 10;
+
+      return score;
+    }
+
+    function searchWebDirectly() {
+      const q = document.getElementById('searchInput')?.value?.trim() || '';
+      const queryStr = q ? `${q} مكملات غذائية مصر اسعار` : 'مكملات غذائية مصر اسعار أرخص سعر';
+      const url = `https://www.google.com/search?q=${encodeURIComponent(queryStr)}`;
+      window.open(url, '_blank');
+    }
+
+    function requestMissingProduct() {
+      const q = document.getElementById('searchInput')?.value?.trim() || '';
+      const tempId = 'custom_req_' + Date.now();
+      const newCustom = {
+        id: tempId,
+        title: q || 'مكمل غذائي جديد للرصد',
+        brand: 'مكمل جديد',
+        category: 'مكملات غذائية متنوعة',
+        lowestPrice: 0,
+        cheapestStore: 'في انتظار الرصد',
+        availableCount: 0,
+        storeBreakdown: {},
+        arabicSearchTerms: normalizeArabic(q)
+      };
+      allProducts.unshift(newCustom);
+      openAddPriceModal(encodeURIComponent(tempId));
+      const nameInput = document.getElementById('modalProductName');
+      if (nameInput) {
+        nameInput.removeAttribute('readonly');
+        nameInput.focus();
+      }
+    }
+
+    function formatStoreNameEn(s) {
+      if (!s) return 'Store';
+      const sLower = s.toLowerCase();
+      if (sLower.includes('train')) return 'Train Hard';
+      if (sLower.includes('fitness')) return 'Fitness Tech';
+      if (sLower.includes('super') || sLower.includes('سوبر')) return 'Super Supplement';
+      if (sLower.includes('mf') || sLower.includes('إم إف') || sLower.includes('ام اف')) return 'MF Supplements';
+      if (sLower.includes('max') || sLower.includes('ماكس')) return 'Max Muscle Elite';
+      if (sLower.includes('power fit') || sLower.includes('باور فيت')) return 'Power Fit';
+      if (sLower.includes('coach') || sLower.includes('كوتش')) return 'The Coach';
+      if (sLower.includes('power store') || sLower.includes('باور ستور')) return 'Power Store';
+      if (sLower.includes('protein we') || sLower.includes('بروتين وي') || sLower.includes('بروتين وفيتامين')) return 'Protein We Vitamin';
+      if (sLower.includes('spot') || sLower.includes('سبوت')) return 'Add to Spot';
+      if (sLower.includes('zero') || sLower.includes('زيرو')) return 'Zero Fat Supplements';
+      if (sLower.includes('gofit') || sLower.includes('جو فيت')) return 'GoFit Egypt';
+      if (sLower.includes('ifit') || sLower.includes('آي فيت') || sLower.includes('اي فيت')) return 'iFIT Egypt';
+      return s;
+    }
+
     function renderProducts() {
-      const searchVal = document.getElementById('searchInput').value.toLowerCase().trim();
+      const searchVal = document.getElementById('searchInput').value.trim();
       const brandVal = document.getElementById('brandSelect').value;
       const storeVal = document.getElementById('storeSelect').value;
       const budgetVal = document.getElementById('budgetSelect')?.value || 'all';
@@ -1366,12 +1659,11 @@
 
       let filtered = allProducts.filter(p => {
         if (searchVal) {
-          const matchTitle = (p.title || '').toLowerCase().includes(searchVal);
-          const matchBrand = (p.brand || '').toLowerCase().includes(searchVal);
-          const matchCategory = (p.category || '').toLowerCase().includes(searchVal);
-          const matchArabic = (p.arabicSearchTerms || '').toLowerCase().includes(searchVal);
-          const matchArabicTitle = (p.arabicTitle || '').toLowerCase().includes(searchVal);
-          if (!matchTitle && !matchBrand && !matchCategory && !matchArabic && !matchArabicTitle) return false;
+          const score = evaluateProductSearchScore(p, searchVal);
+          if (score <= 0) return false;
+          p._searchScore = score;
+        } else {
+          p._searchScore = 0;
         }
 
         if (activeCategory !== 'all') {
@@ -1433,14 +1725,26 @@
         return copy;
       });
 
-      if (sortVal === 'price_asc') {
-        processed.sort((a, b) => (a.lowestPrice || 999999) - (b.lowestPrice || 999999));
-      } else if (sortVal === 'price_desc') {
-        processed.sort((a, b) => (b.lowestPrice || 0) - (a.lowestPrice || 0));
-      } else if (sortVal === 'savings_desc') {
-        processed.sort((a, b) => (b.maxSavings || 0) - (a.maxSavings || 0));
-      } else if (sortVal === 'avail_desc') {
-        processed.sort((a, b) => (b.availableCount || 0) - (a.availableCount || 0));
+      if (searchVal) {
+        if (sortVal === 'price_asc') {
+          processed.sort((a, b) => (b._searchScore || 0) - (a._searchScore || 0) || (a.lowestPrice || 999999) - (b.lowestPrice || 999999));
+        } else if (sortVal === 'price_desc') {
+          processed.sort((a, b) => (b._searchScore || 0) - (a._searchScore || 0) || (b.lowestPrice || 0) - (a.lowestPrice || 0));
+        } else if (sortVal === 'savings_desc') {
+          processed.sort((a, b) => (b._searchScore || 0) - (a._searchScore || 0) || (b.maxSavings || 0) - (a.maxSavings || 0));
+        } else {
+          processed.sort((a, b) => (b._searchScore || 0) - (a._searchScore || 0) || (a.lowestPrice || 999999) - (b.lowestPrice || 999999));
+        }
+      } else {
+        if (sortVal === 'price_asc') {
+          processed.sort((a, b) => (a.lowestPrice || 999999) - (b.lowestPrice || 999999));
+        } else if (sortVal === 'price_desc') {
+          processed.sort((a, b) => (b.lowestPrice || 0) - (a.lowestPrice || 0));
+        } else if (sortVal === 'savings_desc') {
+          processed.sort((a, b) => (b.maxSavings || 0) - (a.maxSavings || 0));
+        } else if (sortVal === 'avail_desc') {
+          processed.sort((a, b) => (b.availableCount || 0) - (a.availableCount || 0));
+        }
       }
 
       filteredProductsCount = processed.length;
@@ -1489,6 +1793,8 @@
           'fitness_tech': 'Fitness Tech',
           'protein_we_vitamin': 'Protein We Vitamin',
           'add_to_spot': 'Add to Spot',
+          'fit_spot': 'Fit Spot',
+          'zero_fat': 'Zero Fat Supplements',
           'gofit_egypt': 'GoFit Egypt',
           'ifit_egypt': 'iFIT Egypt',
           'facebook': 'Facebook Store',
@@ -1557,11 +1863,11 @@
         const availableStoresCount = storesList.length;
 
         // Cheapest store name in English
-        let cheapestStoreEn = 'مصر';
+        let cheapestStoreEn = 'Store';
         if (storesList.length > 0) {
           cheapestStoreEn = storesList[0].storeNameEn;
         } else if (p.cheapestStore) {
-          cheapestStoreEn = p.cheapestStore;
+          cheapestStoreEn = formatStoreNameEn(p.cheapestStore);
         }
 
         // Render vertical list of stores (matching reference screenshot)
@@ -1753,7 +2059,10 @@
         titleInStore: p.title
       };
 
-      if (priceVal < p.lowestPrice) {
+      const editedTitle = document.getElementById('modalProductName')?.value?.trim();
+      if (editedTitle) p.title = editedTitle;
+
+      if (!p.lowestPrice || priceVal < p.lowestPrice) {
         p.lowestPrice = priceVal;
         p.cheapestStore = storeName;
         p.externalCheaper = {
