@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { detectBrand, parseSize, canonicalizeSize, detectForm, detectCategory } from './scraper.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,43 +12,23 @@ const storesPath = path.join(__dirname, 'stores.json');
 const catalogData = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
 const storesConfig = JSON.parse(fs.readFileSync(storesPath, 'utf8'));
 
-const CORE_STORES = storesConfig.coreStores || [];
 const EXTERNAL_STORES = storesConfig.externalStores || [];
 
-const BRAND_ALIASES = {
-  'c4': 'Cellucor',
-  'gold standard': 'Optimum Nutrition',
-  'nitrotech': 'MuscleTech',
-  'nitro tech': 'MuscleTech',
-  'hydroxycut': 'MuscleTech',
-  'iso100': 'Dymatize',
-  'iso 100': 'Dymatize',
-  'the curse': 'JNX Sports',
-  'animal pak': 'Animal',
-  'animal cuts': 'Animal',
-  'animal whey': 'Animal',
-  'anabolic iso': 'Kevin Levrone',
-  'total war': 'Redcon1'
-};
-
-function extractSize(title) {
-  const match = title.match(/(\d+(?:\.\d+)?\s*(?:kg|g|gm|lbs|lb|servings|serv|capsules|caps|tablets|tabs|ml|pack|can))/i);
-  if (!match) return '';
-  return match[0].toLowerCase().replace(/\s+/g, '');
-}
-
-function cleanTokens(title) {
+function cleanTokens(title, brand = '') {
   const stopWords = new Set([
     'egypt', 'powder', 'supplement', 'supplements', 'flavor', 'flavour', '100%', '100',
     'original', 'free', 'with', 'and', 'the', 'box', 'pack', 'sugar', 'drink', 'explosive',
-    'energy', 'premium', 'ultra', 'pure', 'food', 'nutrition', 'shaker', 'diet', 'protein'
+    'energy', 'premium', 'ultra', 'pure', 'food', 'nutrition', 'shaker', 'diet', 'protein',
+    'zero', 'added', 'flavour', 'bottle', 'tub', 'serv', 'servings'
   ]);
   
-  return title.toLowerCase()
+  const brandWords = new Set((brand || '').toLowerCase().split(/\s+/));
+
+  return (title || '').toLowerCase()
     .replace(/[–—\-_/|,()]/g, ' ')
     .replace(/[^a-z0-9\s]/g, '')
     .split(/\s+/)
-    .filter(w => w.length >= 2 && !stopWords.has(w));
+    .filter(w => w.length >= 2 && !stopWords.has(w) && !brandWords.has(w));
 }
 
 async function fetchWooCommerceAll(store) {
@@ -69,15 +50,25 @@ async function fetchWooCommerceAll(store) {
       if (!Array.isArray(list) || list.length === 0) break;
 
       for (const p of list) {
-        const rawPrice = p.prices?.price ? parseInt(p.prices.price) : 0;
+        const rawPrice = p.prices?.price ? parseInt(p.prices.price, 10) : 0;
         const divisor = Math.pow(10, p.prices?.currency_minor_unit || 2);
         const price = rawPrice / divisor;
         const inStock = p.is_in_stock ?? true;
 
-        if (price > 0) {
+        if (price > 0 && inStock) {
+          const brandAttr = p.attributes?.find(a => a.name?.toLowerCase().includes('brand'))?.terms?.[0]?.name;
+          const brand = detectBrand(p.name, brandAttr);
+          const size = canonicalizeSize(parseSize(p.name));
+          const form = detectForm(p.name);
+          const category = detectCategory(p.name);
+
           products.push({
             id: `${store.id}_${p.id}`,
             name: p.name,
+            brand,
+            size,
+            form,
+            category,
             price,
             url: p.permalink,
             image: p.images?.[0]?.src || '',
@@ -85,8 +76,7 @@ async function fetchWooCommerceAll(store) {
             storeId: store.id,
             storeName: store.name,
             storeNameAr: store.nameAr || store.name,
-            size: extractSize(p.name),
-            tokens: cleanTokens(p.name)
+            tokens: cleanTokens(p.name, brand)
           });
         }
       }
@@ -99,12 +89,12 @@ async function fetchWooCommerceAll(store) {
     }
   }
 
-  console.log(`  اكتمل ${store.name}: الإجمالي ${products.length} منتج`);
+  console.log(`  اكتمل ${store.name}: الإجمالي ${products.length} منتج متوفر.`);
   return products;
 }
 
 export async function runRadarSync() {
-  console.log('--- بدء تحديث رادار الصفقات الخارجية ---');
+  console.log('--- بدء تحديث رادار الصفقات الخارجية بالتحقق الصارم الشامل ---');
   
   const allExternal = [];
   for (const store of EXTERNAL_STORES) {
@@ -124,78 +114,93 @@ export async function runRadarSync() {
       p.lowestCorePrice = p.lowestPrice;
       p.cheapestCoreStore = p.cheapestStore;
     }
-    p.size = extractSize(p.title);
-    p.tokens = cleanTokens(p.title);
+    p.brand = p.brand || detectBrand(p.title);
+    p.size = p.size || canonicalizeSize(parseSize(p.title));
+    p.form = p.form || detectForm(p.title);
+    p.category = p.category || detectCategory(p.title);
+    p.tokens = cleanTokens(p.title, p.brand);
   }
 
-  // Exact & Fuzzy Matcher
+  // Exact & High-Precision Matcher
   for (const ext of allExternal) {
-    if (!ext.inStock) continue;
+    if (!ext.inStock || ext.price <= 0) continue;
 
-    // Check specific known deals first (like C4 Drink 500ml)
     const extLower = ext.name.toLowerCase();
-    
-    let matchedProduct = null;
-    let bestScore = 0;
 
     for (const core of products) {
+      const corePrice = core.lowestCorePrice || core.lowestPrice;
+      if (!corePrice || ext.price >= corePrice) continue;
+
+      // Anti-anomaly gate: External price cannot be an unrealistic fraction of core price
+      if (ext.price < corePrice * 0.40) continue;
+
+      // Special priority: Exact C4 Drink 500ml match
       const coreLower = core.title.toLowerCase();
+      const isC4Match = (extLower.includes('c4') && extLower.includes('500ml') && coreLower.includes('c4') && coreLower.includes('500ml'));
 
-      // Check special high priority exact matches:
-      if (extLower.includes('c4') && extLower.includes('500ml') && coreLower.includes('c4') && coreLower.includes('500ml')) {
-        matchedProduct = core;
-        break;
-      }
-
-      // Check size compatibility if both specify size
-      if (ext.size && core.size && ext.size !== core.size) {
-        continue;
-      }
-
-      // Token overlap
-      let common = 0;
-      for (const t of ext.tokens) {
-        if (core.tokens.includes(t)) common++;
-      }
-
-      const score = common / Math.max(ext.tokens.length, core.tokens.length, 1);
-      if (score >= 0.48 && score > bestScore) {
-        bestScore = score;
-        matchedProduct = core;
-      }
-    }
-
-    if (matchedProduct) {
-      const corePrice = matchedProduct.lowestCorePrice || matchedProduct.lowestPrice;
-      if (corePrice && ext.price < corePrice) {
-        const savingsVsCore = Math.round((corePrice - ext.price) * 10) / 10;
-        
-        // If this external deal is cheaper than any previously attached external deal
-        if (!matchedProduct.externalCheaper || ext.price < matchedProduct.externalCheaper.price) {
-          matchedProduct.externalCheaper = {
-            found: true,
-            storeId: ext.storeId,
-            storeName: ext.storeName,
-            storeNameAr: ext.storeNameAr,
-            price: ext.price,
-            url: ext.url,
-            savingsVsCore,
-            titleInStore: ext.name,
-            verifiedEgypt: true,
-            shippingInfo: 'متجر مصري موثوق - شحن لجميع المحافظات'
-          };
-          matchedProduct.lowestPrice = ext.price;
-          matchedProduct.cheapestStore = ext.storeName;
+      if (!isC4Match) {
+        // Gate 1: Brand Verification
+        const coreBrandLower = (core.brand || '').toLowerCase();
+        const extBrandLower = (ext.brand || '').toLowerCase();
+        if (coreBrandLower !== extBrandLower && !coreLowerMatchesBrand(core.title, ext.brand) && !coreLowerMatchesBrand(ext.name, core.brand)) {
+          continue;
         }
+
+        // Gate 2: Form Verification (drink vs powder vs spread vs snack vs capsule)
+        if (ext.form && core.form && ext.form !== core.form) {
+          continue;
+        }
+
+        // Gate 3: Category Verification (creatine cannot match whey protein, etc.)
+        if (ext.category && core.category && ext.category !== 'General' && core.category !== 'General' && ext.category !== core.category) {
+          continue;
+        }
+
+        // Gate 4: Size Verification
+        if (ext.size && core.size && ext.size !== core.size) {
+          continue;
+        }
+
+        // Gate 5: Token Specificity Match
+        if (ext.tokens.length === 0 || core.tokens.length === 0) continue;
+
+        let common = 0;
+        for (const t of ext.tokens) {
+          if (core.tokens.includes(t)) common++;
+        }
+
+        const score = common / Math.max(ext.tokens.length, core.tokens.length);
+        if (score < 0.70) continue;
+      }
+
+      // Attach deal if cheaper than any existing external deal attached
+      const savingsVsCore = Math.round((corePrice - ext.price) * 10) / 10;
+      if (!core.externalCheaper || ext.price < core.externalCheaper.price) {
+        core.externalCheaper = {
+          found: true,
+          storeId: ext.storeId,
+          storeName: ext.storeName,
+          storeNameAr: ext.storeNameAr,
+          price: ext.price,
+          url: ext.url,
+          savingsVsCore,
+          titleInStore: ext.name,
+          verifiedEgypt: true,
+          shippingInfo: 'متجر مصري موثوق - شحن لجميع المحافظات'
+        };
+        core.lowestPrice = ext.price;
+        core.cheapestStore = ext.storeName;
+        core.isExclusive = false;
       }
     }
   }
 
   // Clean helper properties from products
   for (const p of products) {
-    delete p.size;
     delete p.tokens;
-    if (p.externalCheaper) dealsCount++;
+    if (p.externalCheaper) {
+      dealsCount++;
+    }
   }
 
   catalogData.metadata.externalDealsFound = dealsCount;
@@ -206,9 +211,16 @@ export async function runRadarSync() {
   fs.writeFileSync(catalogPath, JSON.stringify(catalogData, null, 2), 'utf8');
 
   console.log(`\n=========================================`);
-  console.log(`✅ تم تحديث catalog.json بنجاح!`);
-  console.log(`- صفقات تم رصدها أرخص خارج المتاجر الـ 6 (باللون البنفسجي): ${dealsCount}`);
+  console.log(`✅ تم تحديث catalog.json برادار الصفقات الخارجية بنجاح!`);
+  console.log(`- صفقات حقيقية مؤكدة أرخص خارج المتاجر الـ 6 (باللون البنفسجي): ${dealsCount}`);
   console.log(`=========================================\n`);
 }
 
-runRadarSync();
+function coreLowerMatchesBrand(title, brand) {
+  if (!brand || brand === 'ماركة معتمدة') return false;
+  return (title || '').toLowerCase().includes(brand.toLowerCase());
+}
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  runRadarSync();
+}
