@@ -1118,7 +1118,10 @@
         }
 
         if (externalOnly && !p.externalCheaper) return false;
-        if (inStockOnly && p.availableCount === 0 && !p.externalCheaper) return false;
+        if (inStockOnly) {
+          const hasInStock = Object.values(p.storeBreakdown || {}).some(st => st.available && st.inStock !== false) || !!p.externalCheaper;
+          if (!hasInStock) return false;
+        }
 
         return true;
       });
@@ -1199,11 +1202,28 @@
           'power_store': 'باور ستور'
         };
 
+        // Stock check
+        const anyCoreInStock = Object.values(p.storeBreakdown || {}).some(st => st.available && st.inStock !== false);
+        const isCompletelyOutOfStock = !anyCoreInStock && !p.externalCheaper;
+
+        // Check if cheapest store is in stock
+        let cheapestStoreObj = null;
+        if (p.externalCheaper && p.lowestPrice === p.externalCheaper.price) {
+          cheapestStoreObj = { inStock: true, storeName: p.externalCheaper.storeName };
+        } else {
+          const entries = Object.values(p.storeBreakdown || {});
+          cheapestStoreObj = entries.find(st => st.available && st.price === p.lowestPrice) ||
+                             entries.find(st => st.available && st.storeName === p.cheapestStore) ||
+                             entries.find(st => st.available);
+        }
+        const isCheapestInStock = cheapestStoreObj ? (cheapestStoreObj.inStock !== false) : true;
+
         const storeCardsHtml = storeKeys.map(k => {
           const st = p.storeBreakdown?.[k];
           const sName = storeNamesAr[k];
           const curPrice = (simulateCoupons && st?.discountedPrice) ? st.discountedPrice : st?.price;
           const isLowestAmong6 = st?.available && curPrice === p.lowestCorePrice && p.lowestCorePrice > 0;
+          const isInStock = st?.available && (st.inStock !== false);
 
           if (st && st.available) {
             const priceText = curPrice ? curPrice.toLocaleString('ar-EG') + ' ج.م' : 'اتصل بالسعر';
@@ -1214,23 +1234,48 @@
               oldPriceText = `<span class="line-through text-slate-400 dark:text-espresso-400 text-[10px] mr-1">${st.originalPrice.toLocaleString('ar-EG')} ج.م</span>`;
             }
 
+            const cardBorder = !isInStock
+              ? 'bg-rose-50/70 dark:bg-rose-950/30 border-2 border-rose-500 shadow-sm shadow-rose-500/10'
+              : (isLowestAmong6 ? 'bg-emerald-50/90 dark:bg-emerald-950/60 border-2 border-emerald-500 shadow-sm shadow-emerald-500/10' : 'bg-slate-50/90 dark:bg-[#201914] border border-slate-200/90 dark:border-espresso-700/60 hover:border-amber-400/60 hover:bg-white');
+
+            const priceColor = !isInStock
+              ? 'text-rose-600 dark:text-rose-400 font-extrabold'
+              : (isLowestAmong6 ? 'text-emerald-700 dark:text-emerald-400 font-extrabold' : 'text-slate-900 dark:text-champagne-100');
+
+            const stockBadge = isInStock
+              ? `
+                <div class="flex items-center gap-1 text-[11px] text-emerald-600 dark:text-emerald-400 font-bold mt-0.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>متوفر في المخزون 🟢</span>
+                </div>
+              `
+              : `
+                <div class="flex items-center gap-1 text-[11px] text-rose-600 dark:text-rose-400 font-black mt-0.5">
+                  <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                  <span class="bg-rose-500/15 text-rose-600 dark:text-rose-300 px-1.5 py-0.5 rounded-md border border-rose-500/30 font-black">نفد من المخزون 🔴 Out of Stock</span>
+                </div>
+              `;
+
+            const btnClass = !isInStock
+              ? 'bg-rose-100 hover:bg-rose-200 dark:bg-rose-950/60 dark:hover:bg-rose-900/80 text-rose-700 dark:text-rose-300 border border-rose-300 dark:border-rose-800'
+              : (isLowestAmong6 ? 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm' : 'bg-white dark:bg-espresso-800 hover:bg-slate-100 dark:hover:bg-slate-300 text-slate-700 dark:text-champagne-200 border border-slate-200 dark:border-espresso-700 shadow-sm');
+
+            const btnText = !isInStock ? 'نفد (صفحة المتجر)' : 'شراء من المتجر';
+
             return `
-              <div class="p-3 rounded-2xl ${isLowestAmong6 ? 'bg-emerald-50/90 dark:bg-emerald-950/60 border-2 border-emerald-500 shadow-sm shadow-emerald-500/10' : 'bg-slate-50/90 dark:bg-[#201914] border border-slate-200/90 dark:border-espresso-700/60 hover:border-amber-400/60 hover:bg-white'} flex flex-col justify-between transition hover:border-gold-500/60">
+              <div class="p-3 rounded-2xl ${cardBorder} flex flex-col justify-between transition hover:border-gold-500/60">
                 <div class="flex items-center justify-between gap-1 mb-1.5">
                   <span class="font-extrabold text-xs text-slate-900 dark:text-champagne-200 truncate">${sName}</span>
                   ${isLowestAmong6 ? '<span class="px-1.5 py-0.5 rounded text-[10px] font-black bg-emerald-600 text-white shrink-0">أرخص في الـ 6!</span>' : ''}
                 </div>
                 <div class="my-1">
-                  <div class="text-sm font-black font-outfit ${isLowestAmong6 ? 'text-emerald-700 dark:text-emerald-400 font-extrabold' : 'text-slate-900 dark:text-champagne-100'}">
+                  <div class="text-sm font-black font-outfit ${priceColor}">
                     ${priceText} ${oldPriceText}
                   </div>
-                  <div class="flex items-center gap-1 text-[11px] text-emerald-600 dark:text-emerald-400 font-bold mt-0.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                    <span>متوفر في المخزون</span>
-                  </div>
+                  ${stockBadge}
                 </div>
-                <a href="${st.url}" target="_blank" rel="noopener noreferrer" class="mt-2 text-center text-xs font-bold py-1.5 px-2 rounded-xl ${isLowestAmong6 ? 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm' : 'bg-white dark:bg-espresso-800 hover:bg-slate-100 dark:hover:bg-slate-300 dark:bg-espresso-700 text-slate-700 dark:text-champagne-200 border border-slate-200 dark:border-espresso-700 shadow-sm'} transition flex items-center justify-center gap-1">
-                  <span>شراء</span>
+                <a href="${st.url}" target="_blank" rel="noopener noreferrer" class="mt-2 text-center text-xs font-bold py-1.5 px-2 rounded-xl ${btnClass} transition flex items-center justify-center gap-1">
+                  <span>${btnText}</span>
                   <i data-lucide="external-link" class="w-3 h-3"></i>
                 </a>
               </div>
@@ -1242,9 +1287,9 @@
                   <span class="font-bold text-xs text-slate-400 dark:text-espresso-500 truncate">${sName}</span>
                 </div>
                 <div class="my-2 text-center">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-red-50 dark:bg-red-950/40 text-red-700 dark:text-red-400 border border-red-200/50 dark:border-transparent text-xs font-bold">
-                    <i data-lucide="x-circle" class="w-3.5 h-3.5"></i>
-                    <span>غير متوفر</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-espresso-800/60 text-slate-500 dark:text-espresso-400 text-xs font-bold">
+                    <i data-lucide="minus-circle" class="w-3.5 h-3.5"></i>
+                    <span>غير معروض</span>
                   </span>
                 </div>
                 <div class="text-[10px] text-center text-slate-400 dark:text-espresso-400 mt-2">غير معروض بالمتجر</div>
@@ -1298,6 +1343,12 @@
                     <span class="px-2.5 py-0.5 rounded-full text-xs font-black bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/20">${escapedBrand}</span>
                     ${p.weight ? `<span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 dark:bg-espresso-800 text-slate-700 dark:text-espresso-300 border border-slate-200 dark:border-espresso-700 font-outfit">${escapeHtml(p.weight)}</span>` : ''}
                     ${unitMetric ? `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-black bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">${unitMetric}</span>` : ''}
+                    ${isCompletelyOutOfStock ? 
+                      '<span class="px-2.5 py-0.5 rounded-full text-xs font-black bg-rose-600 text-white shadow-sm flex items-center gap-1 animate-pulse"><i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>نفد من المخزون 🔴 (Out of Stock)</span>' : 
+                      (isCheapestInStock ? 
+                        '<span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>متوفر بالمخزون 🟢</span>' : 
+                        '<span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-400 border border-amber-500/30 flex items-center gap-1">متوفر بمتاجر أخرى</span>')
+                    }
                     ${p.externalCheaper ? `<span class="px-2.5 py-0.5 rounded-full text-xs font-black bg-purple-600 text-white shadow-sm flex items-center gap-1"><i data-lucide="radar" class="w-3 h-3"></i>يوجد سعر أرخص بالخارج</span>` : ''}
                   </div>
                   <h3 class="text-lg font-bold text-slate-900 dark:text-champagne-100 leading-snug">${escapedTitle}</h3>
@@ -1306,16 +1357,23 @@
 
               <!-- Price Highlight Badges & Quick Tools -->
               <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-3 w-full sm:w-auto shrink-0">
-                <div class="text-right sm:text-left ${p.externalCheaper ? 'bg-purple-50 dark:bg-purple-950/40 border border-purple-300 dark:border-purple-500/50' : 'bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-300/80 dark:border-emerald-800/80'} p-3.5 rounded-2xl">
-                  <span class="text-xs font-bold ${p.externalCheaper ? 'text-purple-800 dark:text-purple-300' : 'text-emerald-800 dark:text-emerald-300'} block">
-                    ${p.externalCheaper ? 'أرخص سعر في مصر (خارج الـ 6)' : 'أرخص سعر في مصر'}
-                  </span>
-                  <div class="text-2xl font-black ${p.externalCheaper ? 'text-purple-700 dark:text-purple-400' : 'text-emerald-600 dark:text-emerald-400'} font-outfit">
+                <div class="text-right sm:text-left ${!isCheapestInStock ? 'bg-rose-50 dark:bg-rose-950/40 border-2 border-rose-500 shadow-md shadow-rose-500/10' : (p.externalCheaper ? 'bg-purple-50 dark:bg-purple-950/40 border border-purple-300 dark:border-purple-500/50' : 'bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-300/80 dark:border-emerald-800/80')} p-3.5 rounded-2xl">
+                  <div class="flex items-center justify-between sm:justify-start gap-2 mb-1">
+                    <span class="text-xs font-bold ${!isCheapestInStock ? 'text-rose-700 dark:text-rose-300' : (p.externalCheaper ? 'text-purple-800 dark:text-purple-300' : 'text-emerald-800 dark:text-emerald-300')} block">
+                      ${p.externalCheaper ? 'أرخص سعر في مصر (خارج الـ 6)' : 'أرخص سعر في مصر'}
+                    </span>
+                    ${!isCheapestInStock ? 
+                      '<span class="px-2 py-0.5 rounded-md text-[10px] font-black bg-rose-600 text-white shadow-sm flex items-center gap-1 animate-pulse"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>نفد من المخزون 🔴 Out of Stock</span>' : 
+                      '<span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-600/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>متوفر 🟢</span>'
+                    }
+                  </div>
+                  <div class="text-2xl font-black ${!isCheapestInStock ? 'text-rose-600 dark:text-rose-400' : (p.externalCheaper ? 'text-purple-700 dark:text-purple-400' : 'text-emerald-600 dark:text-emerald-400')} font-outfit">
                     ${lowestPriceFormatted}
                   </div>
-                  <div class="text-[11px] font-bold text-slate-600 dark:text-espresso-400 mt-0.5">
-                    لدى: <span class="text-slate-900 dark:text-champagne-200 font-extrabold">${escapeHtml(p.cheapestStore || 'غير محدد')}</span>
-                    ${p.lowestCorePrice ? `<span class="text-emerald-500 mr-1">(أرخص في الـ 6: ${p.lowestCorePrice} ج.م)</span>` : ''}
+                  <div class="text-[11px] font-bold text-slate-700 dark:text-champagne-300 mt-1 flex flex-wrap items-center gap-1">
+                    <span>لدى: <strong class="${!isCheapestInStock ? 'text-rose-700 dark:text-rose-300 underline font-extrabold' : 'text-slate-900 dark:text-champagne-100 font-extrabold'}">${escapeHtml(p.cheapestStore || 'غير محدد')}</strong></span>
+                    ${!isCheapestInStock ? '<span class="text-[10px] text-rose-600 dark:text-rose-400 font-black">(غير متوفر حالياً بالمتجر)</span>' : ''}
+                    ${p.lowestCorePrice && p.externalCheaper ? `<span class="text-emerald-500 mr-1">(أرخص في الـ 6: ${p.lowestCorePrice} ج.م)</span>` : ''}
                   </div>
                 </div>
 
@@ -1454,15 +1512,17 @@
         const encodedId = encodeURIComponent(p.id);
         const storeName = p.cheapestCoreStore || p.cheapestStore || 'متجر معتمد';
 
-        // Find direct URL
+        // Find direct URL and check stock
         let storeUrl = '';
         const entries = Object.values(p.storeBreakdown || {});
         const matched = entries.find(st => st.available && st.url) || entries.find(st => st.url);
         if (matched) storeUrl = matched.url;
         if (!storeUrl) storeUrl = '#';
 
+        const isExclusiveInStock = matched ? (matched.inStock !== false) : true;
+
         return `
-          <div class="card-espresso p-5 rounded-3xl border border-slate-200 dark:border-espresso-700/80 dark:border-espresso-700/80 shadow-md flex flex-col justify-between space-y-4 hover:border-gold-500/60 transition group">
+          <div class="card-espresso p-5 rounded-3xl ${!isExclusiveInStock ? 'border-2 border-rose-400/70 dark:border-rose-500/50 bg-rose-50/20' : 'border border-slate-200 dark:border-espresso-700/80'} shadow-md flex flex-col justify-between space-y-4 hover:border-gold-500/60 transition group">
             <div class="space-y-3">
               <!-- Top Badges -->
               <div class="flex items-center justify-between gap-2">
@@ -1470,9 +1530,15 @@
                   <i data-lucide="gem" class="w-3 h-3 text-slate-900 dark:text-champagne-100"></i>
                   <span>حصري لدى ${escapeHtml(storeName)}</span>
                 </span>
-                <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 dark:bg-espresso-800 text-slate-700 dark:text-champagne-300 font-outfit truncate max-w-[120px]">
-                  ${escapeHtml(p.brand || 'ماركة معتمدة')}
-                </span>
+                <div class="flex items-center gap-1.5">
+                  ${!isExclusiveInStock ? 
+                    '<span class="px-2 py-0.5 rounded-full text-[10px] font-black bg-rose-600 text-white shadow-sm flex items-center gap-1 animate-pulse"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>نفد 🔴</span>' : 
+                    '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">متوفر 🟢</span>'
+                  }
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 dark:bg-espresso-800 text-slate-700 dark:text-champagne-300 font-outfit truncate max-w-[120px]">
+                    ${escapeHtml(p.brand || 'ماركة معتمدة')}
+                  </span>
+                </div>
               </div>
 
               <!-- Product Image -->
@@ -1488,7 +1554,7 @@
 
               <!-- Product Title -->
               <div>
-                <h4 class="font-bold text-sm text-slate-800 dark:text-champagne-200 dark:text-champagne-100 line-clamp-2 leading-snug">
+                <h4 class="font-bold text-sm text-slate-800 dark:text-champagne-100 line-clamp-2 leading-snug">
                   <a href="${storeUrl}" target="_blank" rel="noopener noreferrer" class="hover:text-gold-500 transition">
                     ${escapeHtml(p.title)}
                   </a>
@@ -1497,9 +1563,9 @@
               </div>
 
               <!-- Exclusivity Guarantee Note -->
-              <div class="p-2.5 rounded-xl bg-gold-500/5 dark:bg-gold-500/10 border border-gold-500/20 text-[11px] text-slate-600 dark:text-espresso-400 dark:text-champagne-300 font-medium flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-gold-500 shrink-0"></i>
-                <span class="truncate">غير متوفر في أي متجر آخر من المنافسين في مصر</span>
+              <div class="p-2.5 rounded-xl ${!isExclusiveInStock ? 'bg-rose-500/10 border border-rose-500/30 text-rose-700 dark:text-rose-300' : 'bg-gold-500/5 dark:bg-gold-500/10 border border-gold-500/20 text-slate-600 dark:text-champagne-300'} text-[11px] font-medium flex items-center gap-2">
+                <i data-lucide="${!isExclusiveInStock ? 'alert-circle' : 'check-circle-2'}" class="w-3.5 h-3.5 ${!isExclusiveInStock ? 'text-rose-500' : 'text-gold-500'} shrink-0"></i>
+                <span class="truncate">${!isExclusiveInStock ? 'المنتج حصري لهذا المتجر ولكنه نفد من المخزون حالياً 🔴' : 'غير متوفر في أي متجر آخر من المنافسين في مصر'}</span>
               </div>
             </div>
 
@@ -1508,7 +1574,7 @@
               <div class="flex items-center justify-between">
                 <div>
                   <span class="text-[10px] text-slate-400 dark:text-espresso-400 block font-bold">السعر بالمتجر الحصري</span>
-                  <span class="text-xl font-black text-gold-500 font-outfit">${p.lowestPrice ? p.lowestPrice.toLocaleString('ar-EG') + ' ج.م' : 'متاح'}</span>
+                  <span class="text-xl font-black ${!isExclusiveInStock ? 'text-rose-600 dark:text-rose-400' : 'text-gold-500'} font-outfit">${p.lowestPrice ? p.lowestPrice.toLocaleString('ar-EG') + ' ج.م' : 'متاح'}</span>
                 </div>
                 <div class="flex items-center gap-1">
                   <button onclick="addToCart('${encodedId}')" class="p-2 rounded-xl bg-gold-600/15 hover:bg-gold-600/30 text-gold-600 dark:text-gold-400 border border-gold-500/30 transition active:scale-95" title="أضف للسلة">
@@ -1520,8 +1586,8 @@
                 </div>
               </div>
 
-              <a href="${storeUrl}" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-gold-600 to-bronze-600 hover:from-gold-500 hover:to-bronze-500 text-white font-black text-xs shadow-md flex items-center justify-center gap-1.5 transition active:scale-95">
-                <span>طلب المنتج من ${escapeHtml(storeName)} مباشرة</span>
+              <a href="${storeUrl}" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl ${!isExclusiveInStock ? 'bg-rose-100 hover:bg-rose-200 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 border border-rose-300 dark:border-rose-800' : 'bg-gradient-to-r from-gold-600 to-bronze-600 hover:from-gold-500 hover:to-bronze-500 text-white shadow-md'} font-black text-xs flex items-center justify-center gap-1.5 transition active:scale-95">
+                <span>${!isExclusiveInStock ? `عرض المنتج بـ ${escapeHtml(storeName)} (نفد بالمخزون)` : `طلب المنتج من ${escapeHtml(storeName)} مباشرة`}</span>
                 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
               </a>
             </div>
@@ -1681,20 +1747,54 @@
         const highestPrice = p.highestPrice || currentLowest;
         const marketSavings = p.maxSavings > 0 ? p.maxSavings : (p.externalCheaper ? p.externalCheaper.savingsVsCore : 0);
 
+        // Check best store stock status
+        let bestStoreInStock = true;
+        if (p.externalCheaper && p.lowestPrice === p.externalCheaper.price) {
+          bestStoreInStock = true;
+        } else {
+          const matchedEntry = Object.values(p.storeBreakdown || {}).find(st => st.available && st.url === bestStoreUrl);
+          if (matchedEntry && matchedEntry.inStock === false) {
+            bestStoreInStock = false;
+          }
+        }
+
         // Build Market Overview Pills for all 6 stores
         const storePillsHtml = coreStoresKeys.map(s => {
           const st = p.storeBreakdown?.[s.id];
           if (st && st.available) {
             const isLowest = (st.price === p.lowestCorePrice && p.lowestCorePrice > 0);
+            const isInStock = st.inStock !== false;
+
+            let pillStyle = '';
+            let pillDot = '';
+            let priceStyle = '';
+            let badgeHtml = '';
+
+            if (!isInStock) {
+              pillStyle = 'bg-rose-50/70 dark:bg-rose-950/30 border-2 border-rose-400/60 dark:border-rose-500/50 text-rose-900 dark:text-rose-200';
+              pillDot = 'bg-rose-500 animate-pulse';
+              priceStyle = 'text-rose-600 dark:text-rose-400 font-extrabold';
+              badgeHtml = '<span class="px-1.5 py-0.5 rounded text-[9px] bg-rose-600 text-white font-black">نفد 🔴</span>';
+            } else if (isLowest) {
+              pillStyle = 'bg-emerald-950/40 border-2 border-emerald-500 shadow-sm shadow-emerald-950/30 text-emerald-300';
+              pillDot = 'bg-emerald-400';
+              priceStyle = 'text-emerald-400 text-sm font-extrabold';
+              badgeHtml = '<span class="px-1.5 py-0.5 rounded text-[9px] bg-emerald-600 text-white font-black">الأرخص 🟢</span>';
+            } else {
+              pillStyle = 'bg-slate-50 dark:bg-[#1f1813] border border-slate-200 dark:border-espresso-700/80 text-slate-800 dark:text-champagne-200 hover:border-amber-400';
+              pillDot = 'bg-slate-400 dark:bg-espresso-400';
+              priceStyle = 'text-slate-700 dark:text-champagne-300';
+            }
+
             return `
-              <a href="${st.url || '#'}" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl ${isLowest ? 'bg-emerald-950/40 border-2 border-emerald-500 shadow-sm shadow-emerald-950/30 text-emerald-300' : 'bg-slate-50 dark:bg-[#1f1813] border border-slate-200 dark:border-espresso-700/80 text-slate-800 dark:text-champagne-200 hover:border-amber-400'} flex items-center justify-between gap-2 hover:border-gold-500/80 transition group" title="شراء من ${s.name}">
+              <a href="${st.url || '#'}" target="_blank" rel="noopener noreferrer" class="p-3 rounded-2xl ${pillStyle} flex items-center justify-between gap-2 hover:border-gold-500/80 transition group" title="شراء من ${s.name}">
                 <div class="flex items-center gap-1.5 truncate">
-                  <span class="w-2 h-2 rounded-full ${isLowest ? 'bg-emerald-400' : 'bg-slate-400 dark:bg-espresso-400'} shrink-0"></span>
+                  <span class="w-2 h-2 rounded-full ${pillDot} shrink-0"></span>
                   <span class="font-bold text-xs truncate">${s.name}</span>
                 </div>
                 <div class="flex items-center gap-1.5 shrink-0">
-                  <span class="font-black font-outfit text-xs ${isLowest ? 'text-emerald-400 text-sm' : 'text-slate-700 dark:text-espresso-300 dark:text-champagne-300'}">${st.price ? st.price.toLocaleString('ar-EG') + ' ج.م' : 'متاح'}</span>
-                  ${isLowest ? '<span class="px-1.5 py-0.2 rounded text-[9px] bg-emerald-600 text-white font-black">الأرخص 🟢</span>' : ''}
+                  <span class="font-black font-outfit text-xs ${priceStyle}">${st.price ? st.price.toLocaleString('ar-EG') + ' ج.م' : 'متاح'}</span>
+                  ${badgeHtml}
                   <i data-lucide="external-link" class="w-3 h-3 text-slate-400 dark:text-espresso-400 group-hover:text-gold-400 transition"></i>
                 </div>
               </a>
