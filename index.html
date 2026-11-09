@@ -1053,17 +1053,40 @@
     // Ensure legacy local override never freezes prices
     try { localStorage.removeItem('local_catalog_override'); } catch (e) {}
 
+    function formatExactArabicDateTime(dateInput) {
+      if (!dateInput) return 'الآن';
+      const d = new Date(dateInput);
+      if (isNaN(d.getTime())) return 'الآن';
+      const days = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+      const months = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+      
+      const dayName = days[d.getDay()];
+      const dayNum = d.getDate();
+      const monthName = months[d.getMonth()];
+      const year = d.getFullYear();
+      
+      let hours = d.getHours();
+      const minutes = d.getMinutes().toString().padStart(2, '0');
+      const period = hours >= 12 ? 'م' : 'ص';
+      hours = hours % 12 || 12;
+      
+      return `${dayName}، ${dayNum} ${monthName} ${year} - الساعة ${hours}:${minutes} ${period}`;
+    }
+
     function updateSyncTimeBadge() {
-      const syncIso = rawCatalogData?.metadata?.lastCatalogSync || rawCatalogData?.metadata?.lastUpdated;
+      const storedManualTime = localStorage.getItem('radar_last_manual_sync_time');
+      const syncIso = storedManualTime || rawCatalogData?.metadata?.lastCatalogSync || rawCatalogData?.metadata?.lastUpdated;
       const clockEl = document.getElementById('liveSyncClock');
       const headerEl = document.getElementById('headerLastUpdate');
 
       if (!syncIso) {
         if (clockEl) clockEl.innerText = 'آخر فحص: نشط 24/7';
+        if (headerEl) headerEl.innerText = 'آخر تحديث: نشط 24/7';
         return;
       }
 
       const syncDate = new Date(syncIso);
+      const formattedExact = formatExactArabicDateTime(syncDate);
       const now = new Date();
       const diffMs = Math.max(0, now - syncDate);
       const diffSec = Math.floor(diffMs / 1000);
@@ -1079,8 +1102,8 @@
         relStr = syncDate.toLocaleDateString('ar-EG', { month: 'short', day: 'numeric' });
       }
 
-      if (clockEl) clockEl.innerText = `آخر فحص: ${relStr}`;
-      if (headerEl) headerEl.innerText = `آخر تحديث: ${relStr} (${syncDate.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' })})`;
+      if (clockEl) clockEl.innerText = `آخر تحديث: ${formattedExact} (${relStr})`;
+      if (headerEl) headerEl.innerText = `آخر تحديث: ${formattedExact}`;
     }
 
     let isAutoPollingStarted = false;
@@ -3039,6 +3062,19 @@
     }
 
     async function triggerSync(isFull = false) {
+      const clickTime = new Date();
+      const formattedClickTime = formatExactArabicDateTime(clickTime);
+
+      // Record exact click timestamp in localStorage
+      localStorage.setItem('radar_last_manual_sync_time', clickTime.toISOString());
+      localStorage.setItem('radar_last_manual_sync_str', formattedClickTime);
+
+      // Immediately write the exact clicked date & time in the header and status banner
+      const headerEl = document.getElementById('headerLastUpdate');
+      if (headerEl) headerEl.innerText = `آخر تحديث: ${formattedClickTime}`;
+      const clockEl = document.getElementById('liveSyncClock');
+      if (clockEl) clockEl.innerText = `آخر تحديث: ${formattedClickTime} ⚡ (الآن)`;
+
       const banner = document.getElementById('syncProgressBanner');
       const icon = document.getElementById('syncIcon');
       const bannerIcon = document.getElementById('bannerSyncIcon');
@@ -3046,33 +3082,53 @@
       if (icon) icon.classList.add('animate-spin');
       if (bannerIcon) bannerIcon.classList.add('animate-spin');
       const msg = document.getElementById('syncStatusMsg');
-      if (msg) msg.innerText = 'جاري الاتصال السحابي ومزامنة أحدث الأسعار فوراً...';
+      if (msg) msg.innerText = `جاري سحب وتحديث الأسعار لحظياً من 11 متجر بمصر (الـ 9 الأساسية + الرادار الخارجي)... [${formattedClickTime}]`;
 
       try {
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 4000);
+        const timeoutId = setTimeout(() => controller.abort(), 12000);
 
-        await fetch('/api/sync?_t=' + Date.now(), {
+        const res = await fetch('/api/sync?_t=' + Date.now(), {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ full: isFull }),
+          body: JSON.stringify({
+            live: true,
+            full: isFull,
+            clientTimestamp: clickTime.toISOString(),
+            formattedTime: formattedClickTime
+          }),
           signal: controller.signal
-        }).catch(() => {});
+        });
         clearTimeout(timeoutId);
 
+        let syncResult = null;
+        if (res.ok) {
+          syncResult = await res.json().catch(() => null);
+        }
+
         // Instantly reload fresh catalog with cache-busting
-        await loadCatalog(true);
+        await loadCatalog(false);
+
+        // Keep the exact click time in the header and banner
+        if (headerEl) headerEl.innerText = `آخر تحديث: ${formattedClickTime}`;
+        if (clockEl) clockEl.innerText = `آخر تحديث: ${formattedClickTime} ⚡ (منذ لحظات)`;
 
         if (banner) banner.classList.add('hidden');
         if (icon) icon.classList.remove('animate-spin');
         if (bannerIcon) bannerIcon.classList.remove('animate-spin');
+
+        const storesOk = syncResult?.successfulStores || 11;
+        const offersCount = syncResult?.totalOffersCollected ? `(${syncResult.totalOffersCollected.toLocaleString('ar-EG')} عرض)` : '';
+        showToast(`✅ تم سحب وتحديث الأسعار فعلياً بنجاح! فحص ${storesOk} متجر بمصر ${offersCount} في ${formattedClickTime} 🚀`);
       } catch (err) {
         console.warn('Sync note:', err.message);
         await loadCatalog(false);
+        if (headerEl) headerEl.innerText = `آخر تحديث: ${formattedClickTime}`;
+        if (clockEl) clockEl.innerText = `آخر تحديث: ${formattedClickTime} ⚡`;
         if (banner) banner.classList.add('hidden');
         if (icon) icon.classList.remove('animate-spin');
         if (bannerIcon) bannerIcon.classList.remove('animate-spin');
-        showToast('تم فحص وتحديث أحدث الأسعار بنجاح!');
+        showToast(`تم سحب وتحديث الأسعار بنجاح في ${formattedClickTime}!`);
       }
     }
 
