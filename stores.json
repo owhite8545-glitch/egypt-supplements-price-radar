@@ -1,0 +1,120 @@
+{
+  "coreStores": [
+    {
+      "id": "super_supplement",
+      "name": "Super Supplement",
+      "nameAr": "سوبر سبلمنت",
+      "url": "https://super-eg.com",
+      "platform": "WooCommerce",
+      "type": "woocommerce",
+      "apiUrl": "https://super-eg.com/wp-json/wc/store/v1/products",
+      "logo": "https://super-eg.com/wp-content/uploads/2021/04/cropped-super-logo-1.png",
+      "totalProducts": 900,
+      "cdn": "Cloudflare",
+      "techDetails": "WordPress 6.x + WooCommerce REST API (PHP 8.2)",
+      "strengths": "كتالوج واسع (900+ منتج)، متواجد داخل صالات جيم كبرى ومولات في مصر.",
+      "weaknesses": "سرعة استجابة السيرفر أبطأ من شوبيفاي، الواجهة كلاسيكية ووردبريس."
+    },
+    {
+      "id": "mf_supplement",
+      "name": "MF Supplement",
+      "nameAr": "إم إف سبلمنت",
+      "url": "https://mfsupps.com",
+      "platform": "WooCommerce",
+      "type": "woocommerce",
+      "apiUrl": "https://mfsupps.com/wp-json/wc/store/v1/products",
+      "logo": "https://mfsupps.com/wp-content/uploads/2022/01/logo-mf.png",
+      "totalProducts": 1045,
+      "cdn": "Cloudflare",
+      "techDetails": "WordPress + WooCommerce Store API (PHP 8.5)",
+      "strengths": "أكبر مخزون منتجات بين المنافسين (1045 منتج)، تنوع عالي في الماركات.",
+      "weaknesses": "تحديث المخزون بطيء نسبيًا، كثرة المنتجات غير المتوفرة (Out of stock)."
+    },
+    {
+      "id": "max_muscle",
+      "name": "Max Muscle Elite",
+      "nameAr": "ماكس مسل إيليت",
+      "url": "https://maxmuscleelite.com",
+      "platform": "Shopify",
+      "type": "shopify",
+      "apiUrl": "https://maxmuscleelite.com/products.json",
+      "logo": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/logo.png",
+      "totalProducts": 658,
+      "cdn": "Shopify CDN / Cloudflare",
+      "techDetails": "Shopify Hosted Cloud (Global CDN)",
+      "strengths": "من أقدم وأقوى البراندات في مصر، فروع متعددة، بنية تحتية سريعة جداً على شوبيفاي.",
+      "weaknesses": "الأسعار تميل لأن تكون أعلى من متوسط السوق لبعض المنتجات المستوردة."
+    },
+    {
+      "id": "power_fit",
+      "name": "Power Fit Supplement",
+      "nameAr": "باور فيت سبلمنت",
+      "url": "https://powerfitsupplements.com",
+      "platform": "Shopify",
+      "type": "shopify",
+      "apiUrl": "https://powerfitsupplements.com/products.json",
+      "logo": "https://cdn.shopify.com/s/files/1/0681/1513/6744/files/logo.png",
+      "totalProducts": 384,
+      "cdn": "Shopify CDN / Cloudflare",
+      "techDetails": "Shopify Hosted Cloud (Global CDN)",
+      "strengths": "متجر سريع جداً، صور منتجات عالية الجودة، تركيز على الماركات الأمريكية الشهيرة.",
+      "weaknesses": "تنوع المنتجات أقل (384 منتج مقارنة بـ 900+ عند سوبر سبلمنت)."
+    },
+    {
+      "id": "the_coach",
+      "name": "The Coach",
+      "nameAr": "ذا كوتش",
+      "url": "https://www.thecoachsupp.com",
+      "platform": "Shopify",
+      "type": "shopify",
+      "apiUrl": "https://www.thecoachsupp.com/products.json",
+      "logo": "https://www.thecoachsupp.com/cdn/shop/files/logo.png",
+      "totalProducts": 161,
+      "cdn": "Shopify CDN / Cloudflare",
+      "techDetails": "Shopify Hosted Cloud (Global CDN)",
+      "strengths": "واجهة عصرية مبسطة، شحن سريع وعروض دورية على البروتينات.",
+      "weaknesses": "حجم الكتالوج محدود (161 منتج) ويركز فقط على فئات محددة."
+    },
+    {
+      "id": "power_store",
+      "name": "Power Store",
+      "nameAr": "باور ستور",
+      "url": "https://powerstore-eg.com",
+      "platform": "Shopify",
+      "type": "shopify",
+      "apiUrl": "https://powerstore-eg.com/products.json",
+      "logo": "https://powerstore-eg.com/cdn/shop/files/logo.png",
+      "totalProducts": 137,
+      "cdn": "Shopify CDN / Cloudflare",
+      "techDetails": "Shopify Hosted Cloud (Global CDN)",
+      "strengths": "فروع في مدينة نصر والمعادي و6 أكتوبر، عروض Black Friday وتخفيضات مستمرة.",
+      "weaknesses": "كتالوج المنتجات على الويبسايت صغير (137 منتج) ويحتاج رفع باقي أصناف الفروع."
+    }
+  ],
+  "externalStores": [
+    {
+      "id": "gofit_egypt",
+      "name": "GoFit Egypt",
+      "nameAr": "جو فيت مصر",
+      "url": "https://gofit-eg.com",
+      "platform": "WooCommerce",
+      "type": "woocommerce",
+      "apiUrl": "https://gofit-eg.com/wp-json/wc/store/v1/products",
+      "verifiedEgypt": true,
+      "shippingInfo": "متجر مصري مسجل - شحن لجميع المحافظات",
+      "totalProducts": 166
+    },
+    {
+      "id": "ifit_egypt",
+      "name": "iFIT Egypt",
+      "nameAr": "آي فيت مصر",
+      "url": "https://ifit-eg.com",
+      "platform": "WooCommerce",
+      "type": "woocommerce",
+      "apiUrl": "https://ifit-eg.com/wp-json/wc/store/v1/products",
+      "verifiedEgypt": true,
+      "shippingInfo": "متجر مصري معتمد - شحن داخل مصر",
+      "totalProducts": 583
+    }
+  ]
+}

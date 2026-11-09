@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/api/catalog", "destination": "/catalog.json" },
+    { "source": "/api/stores", "destination": "/stores.json" },
+    { "source": "/api/coupons", "destination": "/coupons.json" },
+    { "source": "/api/status", "destination": "/api/status.js" }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "public, max-age=60, s-maxage=300" }
+      ]
+    }
+  ]
+}

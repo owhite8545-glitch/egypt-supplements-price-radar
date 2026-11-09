@@ -1,0 +1,23 @@
+{
+  "name": "egypt-supplements-price-radar",
+  "version": "1.0.0",
+  "description": "منصة أرخص سعر - رادار ومقارن أسعار مكملات الجيم في مصر",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "scrape": "node scraper.mjs",
+    "scrape:full": "node scraper.mjs --all",
+    "py:scrape": "python scraper.py --all"
+  },
+  "keywords": [
+    "supplements",
+    "egypt",
+    "price-comparison",
+    "scraper",
+    "shopify",
+    "woocommerce"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}

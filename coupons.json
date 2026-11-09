@@ -1,0 +1,74 @@
+[
+  {
+    "storeId": "max_muscle",
+    "storeName": "ماكس مسل إيليت",
+    "code": "MAX10",
+    "discount": "خصم 10% إضافي",
+    "type": "percentage",
+    "value": 10,
+    "description": "كود خصم حصري على جميع منتجات البروتين والكرياتين",
+    "minOrder": 1500,
+    "expiry": "2026-12-31",
+    "active": true
+  },
+  {
+    "storeId": "super_supplement",
+    "storeName": "سوبر سبلمنت",
+    "code": "SUPER5",
+    "discount": "خصم 5% مع شحن مجاني",
+    "type": "percentage",
+    "value": 5,
+    "description": "شحن مجاني على الطلبات فوق 2000 جنيه + خصم 5%",
+    "minOrder": 2000,
+    "expiry": "2026-11-30",
+    "active": true
+  },
+  {
+    "storeId": "the_coach",
+    "storeName": "ذا كوتش",
+    "code": "COACH15",
+    "discount": "خصم 15% على DY Nutrition",
+    "type": "percentage",
+    "value": 15,
+    "description": "عرض خاص على منتجات دوريان ييتس وكولاجين",
+    "minOrder": 1000,
+    "expiry": "2026-11-25",
+    "active": true
+  },
+  {
+    "storeId": "mf_supplement",
+    "storeName": "إم إف سبلمنت",
+    "code": "MFBLACK",
+    "discount": "خصم 10% عروض الجمعة البيضاء",
+    "type": "percentage",
+    "value": 10,
+    "description": "تخفيضات موسمية على جميع المكملات المستوردة",
+    "minOrder": 1200,
+    "expiry": "2026-12-05",
+    "active": true
+  },
+  {
+    "storeId": "power_fit",
+    "storeName": "باور فيت سبلمنت",
+    "code": "POWERFIT",
+    "discount": "خصم 7% على MuscleTech",
+    "type": "percentage",
+    "value": 7,
+    "description": "خصم مباشر عند الدفع أونلاين بالفيزا",
+    "minOrder": 1800,
+    "expiry": "2026-12-15",
+    "active": true
+  },
+  {
+    "storeId": "power_store",
+    "storeName": "باور ستور",
+    "code": "POWEREG",
+    "discount": "خصم 100 جنيه فوري",
+    "type": "fixed",
+    "value": 100,
+    "description": "خصم فوري عند الشراء لأول مرة من الموقع",
+    "minOrder": 1000,
+    "expiry": "2026-12-31",
+    "active": true
+  }
+]
