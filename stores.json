@@ -100,7 +100,11 @@
       "apiUrl": "https://trainhardeg.com/wp-json/wc/store/v1/products",
       "verifiedEgypt": true,
       "shippingInfo": "متجر مصري معتمد - مدينة نصر، القاهرة - شحن فوري 24-48 ساعة",
-      "totalProducts": 350
+      "totalProducts": 372,
+      "cdn": "Cloudflare",
+      "techDetails": "WordPress + WooCommerce Store API",
+      "strengths": "أسعار قوية على مكملات الطاقة والأمينو وتوصيل سريع في القاهرة.",
+      "weaknesses": "كتالوج أصغر نسبياً من المتاجر العملاقة."
     },
     {
       "id": "fitness_tech",
@@ -112,7 +116,11 @@
       "apiUrl": "https://fitnesstechsupplements.com/wp-json/wc/store/v1/products",
       "verifiedEgypt": true,
       "shippingInfo": "متجر مصري مسجل - شحن لجميع محافظات مصر",
-      "totalProducts": 420
+      "totalProducts": 420,
+      "cdn": "Cloudflare",
+      "techDetails": "WordPress + WooCommerce Store API",
+      "strengths": "عروض تنافسية على Nutrex و Anabol و MuscleTech.",
+      "weaknesses": "تحديث المخزون قد يتأخر لبعض الأصناف النادرة."
     },
     {
       "id": "protein_we_vitamin",
@@ -123,7 +131,43 @@
       "type": "woocommerce",
       "verifiedEgypt": true,
       "shippingInfo": "متجر وموزع مكملات معتمد في مصر - شحن لكافة المحافظات",
-      "totalProducts": 180
+      "totalProducts": 180,
+      "cdn": "Cloudflare",
+      "techDetails": "Direct Store & Social Distribution",
+      "strengths": "توزيع متنوع للمكملات والفيتامينات بأسعار مناسبة.",
+      "weaknesses": "الطلب والأسعار الحية متابعة جزئياً عبر الرادار."
+    },
+    {
+      "id": "ox_muscle",
+      "name": "Ox Muscle",
+      "nameAr": "أوكس مصل",
+      "url": "https://oxmuscleeg.com",
+      "platform": "Shopify",
+      "type": "shopify",
+      "apiUrl": "https://oxmuscleeg.com/products.json",
+      "verifiedEgypt": true,
+      "shippingInfo": "متجر مصري مسجل - شارع الملك فيصل، الجيزة - شحن لجميع المحافظات",
+      "totalProducts": 1085,
+      "cdn": "Shopify CDN / Cloudflare",
+      "techDetails": "Shopify Hosted Cloud (JSON Products API)",
+      "strengths": "كتالوج ضخم (+1,085 منتج) وتشكيلة قوية من Red Rex و Kevin Levrone و Nutriville.",
+      "weaknesses": "نفاد سريع لبعض الأحجام الكبيرة من Gold Standard و ISO 100."
+    },
+    {
+      "id": "galaxy_supps",
+      "name": "Galaxy Supps",
+      "nameAr": "جالاكسي سابليمنتس",
+      "url": "https://galaxysupps.com",
+      "platform": "WooCommerce",
+      "type": "woocommerce",
+      "apiUrl": "https://galaxysupps.com/wp-json/wc/store/v1/products",
+      "verifiedEgypt": true,
+      "shippingInfo": "شركة جالاكسي للمكملات - شراكات صيدليات مرخصة وشحن داخل مصر",
+      "totalProducts": 671,
+      "cdn": "WordPress / WooCommerce CDN",
+      "techDetails": "WordPress + WooCommerce Store API (Dual AR/EN)",
+      "strengths": "أسعار ممتازة على الفيتامينات والمكملات مثل NOW Foods و Redcon1 Total War.",
+      "weaknesses": "يعرض نسخاً عربية وإنجليزية مزدوجة ويتم توحيدها تلقائياً في الرادار."
     }
   ],
   "externalStores": [

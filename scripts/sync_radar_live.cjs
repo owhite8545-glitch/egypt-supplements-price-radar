@@ -21,6 +21,8 @@ const STORE_NAME_EN = {
   'train_hard': 'Train Hard',
   'fitness_tech': 'Fitness Tech',
   'protein_we_vitamin': 'Protein & Vitamin',
+  'ox_muscle': 'Ox Muscle',
+  'galaxy_supps': 'Galaxy Supps',
   'ifit_egypt': 'iFIT Egypt',
   'fit_spot': 'Fit Spot',
   'zero_fat': 'Zero Fat Supplements',
@@ -39,11 +41,27 @@ const ARABIC_TO_EN_STORE = {
   'ترين هارد': 'Train Hard',
   'فتنس تك سبلمنت': 'Fitness Tech',
   'بروتين وي فيتامين': 'Protein & Vitamin',
+  'أوكس مصل': 'Ox Muscle',
+  'جالاكسي سابليمنتس': 'Galaxy Supps',
   'آي فيت مصر': 'iFIT Egypt',
   'فيت سبوت': 'Fit Spot',
   'زيرو فات': 'Zero Fat Supplements',
   'جو فيت مصر': 'GoFit Egypt'
 };
+
+function decodeHtmlEntities(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&#038;|&amp;/g, '&')
+    .replace(/&#8211;|&#8212;/g, '–')
+    .replace(/&#8217;|&#039;|&apos;/g, "'")
+    .replace(/&#8220;|&#8221;|&quot;/g, '"')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 function normalizeStoreName(name, storeId) {
   if (STORE_NAME_EN[storeId]) return STORE_NAME_EN[storeId];
@@ -95,7 +113,7 @@ function detectBrand(title) {
   const t = (title || '').toLowerCase();
   const brands = [
     { name: 'Optimum Nutrition', keys: ['optimum nutrition', 'gold standard', 'optimum'] },
-    { name: 'MuscleTech', keys: ['muscletech', 'nitro-tech', 'nitrotech', 'cell-tech', 'hydroxycut'] },
+    { name: 'MuscleTech', keys: ['muscletech', 'muscle tech', 'nitro-tech', 'nitrotech', 'cell-tech', 'hydroxycut'] },
     { name: 'Dymatize', keys: ['dymatize', 'iso 100', 'iso-100', 'super mass'] },
     { name: 'Applied Nutrition', keys: ['applied nutrition', 'abe', 'critical whey'] },
     { name: 'Kevin Levrone', keys: ['kevin levrone', 'levrone', 'anabolic mass'] },
@@ -106,12 +124,31 @@ function detectBrand(title) {
     { name: 'BPI Sports', keys: ['bpi sports', 'best bcaa'] },
     { name: 'Redcon1', keys: ['redcon1', 'total war', 'big noise'] },
     { name: 'BioTechUSA', keys: ['biotechusa', 'biotech usa', 'biotech'] },
-    { name: 'Organic Nation', keys: ['organic nation'] },
-    { name: 'Muscle Add', keys: ['muscle add'] },
+    { name: 'NOW Foods', keys: ['now foods', 'now supplements', 'ناو فودز', 'ناو سبلمنتس', 'by now'] },
+    { name: "Puritan's Pride", keys: ["puritan's pride", 'puritan’s pride', 'puritans pride', 'بيورتنز برايد', 'بيوريتنز'] },
+    { name: 'Solgar', keys: ['solgar', 'سولجار'] },
+    { name: 'Nutricost', keys: ['nutricost'] },
+    { name: "Doctor's Best", keys: ["doctor's best", 'doctors best'] },
+    { name: 'California Gold Nutrition', keys: ['california gold'] },
+    { name: 'Big Ramy Labs', keys: ['big ramy', 'red rex'] },
+    { name: 'Body Builder', keys: ['body builder', 'bodybuilder'] },
+    { name: 'Nutriversum', keys: ['nutriversum'] },
+    { name: 'Fitness Bull', keys: ['fitness bull'] },
+    { name: 'Laperva', keys: ['laperva', 'لابيرفا'] },
+    { name: 'Muscle Rulz', keys: ['muscle rulz'] },
+    { name: 'Marvelous Nutrition', keys: ['marvelous'] },
+    { name: 'DY Nutrition', keys: ['dy nutrition', 'dorian yates'] },
+    { name: 'ALLMAX', keys: ['allmax'] },
+    { name: 'BSN', keys: ['bsn', 'syntha-6', 'aminox'] },
+    { name: 'Olimp Sport', keys: ['olimp'] },
+    { name: 'Scitec Nutrition', keys: ['scitec'] },
+    { name: 'Ronnie Coleman', keys: ['ronnie coleman', 'king whey', 'king mass'] },
+    { name: 'Organic Nation', keys: ['organic nation', 'اورجانيك نيشن'] },
+    { name: 'Muscle Add', keys: ['muscle add', 'ماسل اد'] },
     { name: 'Strong Muscles', keys: ['strong muscles'] },
-    { name: 'Trego', keys: ['trego', 'trigo'] },
+    { name: 'Trego', keys: ['trego', 'trigo', 'تريجو'] },
     { name: 'Challenger Nutrition', keys: ['challenger nutrition', 'challenger'] },
-    { name: 'Novogen Pharma', keys: ['novogen', 'novogen pharma'] },
+    { name: 'Novogen Pharma', keys: ['novogen', 'novogen pharma', 'نوفوجين'] },
     { name: 'Yava Labs', keys: ['yava labs', 'yava'] },
     { name: 'Keep Going', keys: ['keep going', 'kgoing'] }
   ];
@@ -129,15 +166,18 @@ function detectCategory(title) {
   if (t.includes('creatine') || t.includes('كرياتين') || t.includes('كراتين')) return 'Creatine (كرياتين)';
   if (t.includes('mass') || t.includes('gainer') || t.includes('تضخيم') || t.includes('جينر')) return 'Mass Gainer';
   if (t.includes('pre-workout') || t.includes('pre workout') || t.includes('pump') || t.includes('طاقة')) return 'Pre-Workout';
-  if (t.includes('bcaa') || t.includes('amino') || t.includes('امينو') || t.includes('eaa')) return 'Amino & BCAA';
+  if (t.includes('bcaa') || t.includes('amino') || t.includes('امينو') || t.includes('eaa') || t.includes('glutamine')) return 'Amino & BCAA';
   if (t.includes('fat burner') || t.includes('lipo') || t.includes('تخسيس') || t.includes('حارق')) return 'Fat Burners & حوارق';
   if (t.includes('bar') || t.includes('snack') || t.includes('بار') || t.includes('سناك') || t.includes('كوكيز')) return 'Protein Snacks & Bars';
   return 'مكملات غذائية متنوعة';
 }
 
-function generateArabicSearchTerms(title, brand, cat) {
+function generateArabicSearchTerms(title, brand, cat, extraTerms = '') {
   const terms = new Set();
-  const t = ((title || '') + ' ' + (brand || '') + ' ' + (cat || '')).toLowerCase();
+  if (extraTerms) {
+    extraTerms.split(/\s+/).filter(Boolean).forEach(x => terms.add(x));
+  }
+  const t = ((title || '') + ' ' + (brand || '') + ' ' + (cat || '') + ' ' + (extraTerms || '')).toLowerCase();
 
   if (t.includes('anabol') || t.includes('انابول')) {
     ['انابول', 'انابوليك', 'بناء عضلات', 'محفز بنائي', 'هاردكور', 'نيوتركس', 'nutrex'].forEach(x => terms.add(x));
@@ -157,29 +197,37 @@ function generateArabicSearchTerms(title, brand, cat) {
   if (t.includes('c4') || t.includes('cellucor') || t.includes('energy')) {
     ['سي فور', 'سيفور', 'طاقة', 'مشروب طاقة', 'بمب', 'باور', 'قبل التمرين'].forEach(x => terms.add(x));
   }
-  if (t.includes('pre-workout') || t.includes('pump') || t.includes('بري')) {
+  if (t.includes('total war') || t.includes('توتال وور')) {
+    ['توتال وور', 'توتال وار', 'توتل وور', 'ريدكون', 'ريدكون 1', 'redcon1'].forEach(x => terms.add(x));
+  }
+  if (t.includes('pre-workout') || t.includes('preworkout') || t.includes('pump') || t.includes('بري')) {
     ['بري وورك اوت', 'بري ورك اوت', 'طاقة', 'بمب', 'ضخ دم', 'عروق', 'تركيز'].forEach(x => terms.add(x));
   }
   if (t.includes('lipo') || t.includes('fat burner') || t.includes('حارق') || t.includes('تخسيس')) {
     ['حارق دهون', 'حوارق', 'تخسيس', 'تنحيف', 'سد شهية', 'كارنتين', 'ليبو 6'].forEach(x => terms.add(x));
   }
-  if (t.includes('bcaa') || t.includes('amino') || t.includes('امينو')) {
-    ['امينو', 'بي سي ايه', 'احماض امينية', 'استشفاء عضلي', 'ريكفري'].forEach(x => terms.add(x));
+  if (t.includes('bcaa') || t.includes('amino') || t.includes('امينو') || t.includes('glutamine') || t.includes('جلوتامين')) {
+    ['امينو', 'بي سي ايه', 'احماض امينية', 'استشفاء عضلي', 'ريكفري', 'جلوتامين'].forEach(x => terms.add(x));
   }
-  if (t.includes('omega') || t.includes('fish oil') || t.includes('زيت سمك')) {
+  if (t.includes('omega') || t.includes('fish oil') || t.includes('زيت سمك') || t.includes('اوميجا')) {
     ['اوميجا 3', 'اوميجا', 'زيت سمك', 'صحة القلب', 'مفاصل'].forEach(x => terms.add(x));
+  }
+  if (t.includes('vitamin') || t.includes('multivitamin') || t.includes('zinc') || t.includes('magnesium') || t.includes('collagen') || t.includes('فيتامين')) {
+    ['فيتامين', 'فيتامينات', 'ملتي فيتامين', 'زنك', 'ماغنيسيوم', 'كولاجين', 'مناعة'].forEach(x => terms.add(x));
   }
   if (t.includes('bar') || t.includes('snack') || t.includes('trigo') || t.includes('تريجو')) {
     ['بروتين بار', 'سناك صحي', 'شوكولاته صحية', 'سناكس', 'تريجو بار'].forEach(x => terms.add(x));
   }
 
   // Brands
-  if (t.includes('muscletech') || t.includes('ماسل تك')) ['ماسل تك', 'ماسيل تك', 'ماستك'].forEach(x => terms.add(x));
+  if (t.includes('muscletech') || t.includes('muscle tech') || t.includes('ماسل تك')) ['ماسل تك', 'ماسيل تك', 'ماستك'].forEach(x => terms.add(x));
   if (t.includes('optimum') || t.includes('اوبتيموم') || t.includes('gold standard')) ['اوبتيموم', 'اوبتيمم', 'جولد ستاندرد', 'اون'].forEach(x => terms.add(x));
   if (t.includes('dymatize') || t.includes('ديماتايز')) ['ديماتايز', 'دايماتايز'].forEach(x => terms.add(x));
   if (t.includes('applied') || t.includes('ابلايد')) ['ابلايد نيوتريشن', 'ابلايد'].forEach(x => terms.add(x));
   if (t.includes('nutrex') || t.includes('نيوتركس')) ['نيوتركس', 'نوتركس', 'نيوتريكس'].forEach(x => terms.add(x));
   if (t.includes('levrone') || t.includes('ليفرون')) ['كيفين ليفرون', 'ليفرون'].forEach(x => terms.add(x));
+  if (t.includes('now foods') || t.includes('ناو فودز')) ['ناو فودز', 'ناو'].forEach(x => terms.add(x));
+  if (t.includes('big ramy') || t.includes('red rex')) ['بيج رامي', 'ريد ريكس'].forEach(x => terms.add(x));
 
   return Array.from(terms).join(' ');
 }
@@ -200,87 +248,279 @@ async function safeFetch(url, timeoutMs = 12000) {
   }
 }
 
-// Crawl a WooCommerce store (e.g. Super Supplement, MF Supps, Train Hard, Fitness Tech, iFIT, GoFit)
-async function crawlWooCommerce(store, maxPages = 4) {
-  console.log(`[Crawl WC] ${store.name} (${store.apiUrl})...`);
-  const items = [];
-  for (let page = 1; page <= maxPages; page++) {
-    const url = `${store.apiUrl}?per_page=100&page=${page}`;
-    const data = await safeFetch(url);
-    if (!Array.isArray(data) || data.length === 0) break;
+function cleanGalaxyEnTitle(title) {
+  let clean = decodeHtmlEntities(title || '');
+  // TranslatePress literal auto-translation fixes
+  clean = clean.replace(/\bBreak Workout\b/gi, 'Pre-Workout');
+  clean = clean.replace(/\bBreak-Workout\b/gi, 'Pre-Workout');
+  return clean.trim();
+}
 
-    for (const p of data) {
-      const rawPrice = p.prices?.price ? parseInt(p.prices.price, 10) : 0;
-      const minorUnit = (p.prices?.currency_minor_unit !== undefined && p.prices?.currency_minor_unit !== null) ? Number(p.prices.currency_minor_unit) : 2;
-      const divisor = Math.pow(10, minorUnit);
-      let price = rawPrice / divisor;
+function getImageBasename(imgUrl) {
+  if (!imgUrl) return '';
+  return imgUrl.split('?')[0].split('/').pop().replace(/-\d+x\d+(?=\.[a-z0-9]+$)/i, '').toLowerCase();
+}
 
-      // Extra accuracy safeguard: If price is artificially low (< 70 EGP) while rawPrice is >= 500 EGP (except real small snacks/bars)
-      const lowerName = (p.name || '').toLowerCase();
-      const isSnack = lowerName.includes('bar') || lowerName.includes('snack') || lowerName.includes('chips') || lowerName.includes('spread');
-      if (price < 70 && rawPrice >= 500 && !isSnack) {
-        price = rawPrice;
-      }
+function isBundleTitle(t) {
+  return /\b(bundle|pack|combo|duo|stack|2x|3x)\b|باكدج|عرض مزدوج|توفير مزدوج/i.test(t || '');
+}
 
-      const rawReg = p.prices?.regular_price ? parseInt(p.prices.regular_price, 10) : 0;
-      let originalPrice = rawReg > 0 ? rawReg / divisor : null;
-      if (originalPrice && originalPrice < 70 && rawReg >= 500 && !isSnack) {
-        originalPrice = rawReg;
-      }
+const MATCH_STOP_WORDS = new Set([
+  'in', 'for', 'with', 'and', 'the', 'of', 'by', 'from', 'egypt', 'power', 'fit',
+  'supplements', 'supplement', 'store', 'sports', 'nutrition', 'original', 'new',
+  'servings', 'serving', 'serv', 'serves', 'doses', 'dose', 'caps', 'capsules',
+  'tablets', 'tabs', 'softgels', 'powder', 'liquid', 'gm', 'gram', 'grams', 'kg',
+  'lb', 'lbs', 'ml', 'mg', 'mcg', 'premium', 'extreme', 'formula', 'booster',
+  'muscle', 'growth', 'recovery', 'energy', 'focus', 'performance', 'flavor',
+  'chocolate', 'vanilla', 'strawberry', 'watermelon', 'fruit', 'punch', 'mango',
+  'unflavored', 'blue', 'raspberry', 'apple', 'orange', 'lemon', 'peach', 'berry'
+]);
 
-      if (price > 0) {
-        items.push({
-          rawId: p.id,
-          storeId: store.id,
-          storeNameEn: STORE_NAME_EN[store.id] || store.name,
-          platform: 'WooCommerce',
-          title: p.name,
-          price,
-          originalPrice: (originalPrice && originalPrice > price) ? originalPrice : null,
-          inStock: p.is_in_stock !== false,
-          url: p.permalink,
-          image: p.images?.[0]?.src || '',
-          brand: detectBrand(p.name),
-          size: canonicalizeSize(parseSize(p.name))
-        });
+function extractMatchTokens(title) {
+  const norm = normalizeTitle(title);
+  return norm
+    .split(' ')
+    .filter(w => w.length >= 2 && !MATCH_STOP_WORDS.has(w) && !/^\d+$/.test(w));
+}
+
+function findSmartMatch(offer, products, productByNormTitle) {
+  const normOffer = normalizeTitle(offer.title);
+  if (!normOffer || normOffer.length < 3) return null;
+
+  // 1. Direct normalized title match
+  const exact = productByNormTitle.get(normOffer);
+  if (exact && exact.length > 0) return exact[0];
+
+  // 2. Smart token & size & bundle match
+  const offerBundle = isBundleTitle(offer.title);
+  const offerTokens = extractMatchTokens(offer.title);
+  if (offerTokens.length < 2) return null;
+
+  const offerSize = offer.size || '';
+  const offerBrand = offer.brand || 'ماركة معتمدة';
+
+  let bestCandidate = null;
+  let bestScore = 0;
+
+  for (const p of products) {
+    if (isBundleTitle(p.title) !== offerBundle) continue;
+
+    // Brand guardrail when both brands are known
+    const pBrand = p.brand || 'ماركة معتمدة';
+    if (offerBrand !== 'ماركة معتمدة' && pBrand !== 'ماركة معتمدة' && offerBrand !== pBrand) {
+      // Allow Power Fit wrapper brands in legacy catalog
+      if (!pBrand.includes('Power Fit')) continue;
+    }
+
+    // Size guardrail when both sizes exist
+    const pSize = p.size || '';
+    if (offerSize && pSize && offerSize !== pSize) {
+      // Allow 60count vs 60serv equivalence, otherwise require match
+      const oNum = offerSize.replace(/(count|serv)$/i, '');
+      const pNum = pSize.replace(/(count|serv)$/i, '');
+      const bothCountLike = /(count|serv)$/i.test(offerSize) && /(count|serv)$/i.test(pSize);
+      if (!(bothCountLike && oNum === pNum)) continue;
+    }
+
+    const pTokens = extractMatchTokens(p.title);
+    if (pTokens.length < 2) continue;
+
+    const pTokenSet = new Set(pTokens);
+    let overlap = 0;
+    for (const tok of offerTokens) {
+      if (pTokenSet.has(tok)) overlap++;
+    }
+
+    const unionSize = new Set([...offerTokens, ...pTokens]).size;
+    const jaccard = unionSize > 0 ? (overlap / unionSize) : 0;
+    const containment = Math.min(offerTokens.length, pTokens.length) > 0
+      ? (overlap / Math.min(offerTokens.length, pTokens.length))
+      : 0;
+
+    if (overlap >= 3 && jaccard >= 0.55 && containment >= 0.75) {
+      const score = jaccard + containment;
+      if (score > bestScore) {
+        bestScore = score;
+        bestCandidate = p;
       }
     }
-    console.log(`  -> ${store.name} page ${page}: ${data.length} raw products`);
-    if (data.length < 100) break; // Last page
+  }
+
+  return bestCandidate;
+}
+
+// Crawl a WooCommerce store (with parallel page batches & EN/AR deduplication support)
+async function crawlWooCommerce(store, defaultMaxPages = 6) {
+  const maxPages = store.maxPages || defaultMaxPages;
+  console.log(`[Crawl WC] ${store.name} (${store.apiUrl}, maxPages=${maxPages})...`);
+
+  const rawProducts = [];
+  const batchSize = 3;
+  for (let start = 1; start <= maxPages; start += batchSize) {
+    const pageNums = [];
+    for (let i = 0; i < batchSize && (start + i) <= maxPages; i++) {
+      pageNums.push(start + i);
+    }
+    const batchResults = await Promise.all(
+      pageNums.map(p => safeFetch(`${store.apiUrl}?per_page=100&page=${p}`, 15000))
+    );
+    let reachedEnd = false;
+    for (let i = 0; i < batchResults.length; i++) {
+      const data = batchResults[i];
+      if (!Array.isArray(data) || data.length === 0) {
+        reachedEnd = true;
+        continue;
+      }
+      rawProducts.push(...data);
+      console.log(`  -> ${store.name} page ${pageNums[i]}: ${data.length} raw products`);
+      if (data.length < 100) reachedEnd = true;
+    }
+    if (reachedEnd) break;
+  }
+
+  const parsePriceAndItem = (p, overrideTitle = null, extraArabicTerms = '') => {
+    const cleanName = decodeHtmlEntities(overrideTitle || p.name);
+    const rawPrice = p.prices?.price ? parseInt(p.prices.price, 10) : 0;
+    const minorUnit = (p.prices?.currency_minor_unit !== undefined && p.prices?.currency_minor_unit !== null) ? Number(p.prices.currency_minor_unit) : 2;
+    const divisor = Math.pow(10, minorUnit);
+    let price = rawPrice / divisor;
+
+    const lowerName = cleanName.toLowerCase();
+    const isSnack = lowerName.includes('bar') || lowerName.includes('snack') || lowerName.includes('chips') || lowerName.includes('spread');
+    if (price < 70 && rawPrice >= 500 && !isSnack) {
+      price = rawPrice;
+    }
+
+    const rawReg = p.prices?.regular_price ? parseInt(p.prices.regular_price, 10) : 0;
+    let originalPrice = rawReg > 0 ? rawReg / divisor : null;
+    if (originalPrice && originalPrice < 70 && rawReg >= 500 && !isSnack) {
+      originalPrice = rawReg;
+    }
+
+    if (price <= 0) return null;
+    return {
+      rawId: p.id,
+      storeId: store.id,
+      storeNameEn: STORE_NAME_EN[store.id] || store.name,
+      platform: 'WooCommerce',
+      title: cleanName,
+      price,
+      originalPrice: (originalPrice && originalPrice > price) ? originalPrice : null,
+      inStock: p.is_in_stock !== false,
+      url: p.permalink,
+      image: p.images?.[0]?.src || '',
+      brand: detectBrand(cleanName + ' ' + extraArabicTerms),
+      size: canonicalizeSize(parseSize(cleanName)),
+      extraArabicTerms
+    };
+  };
+
+  if (store.deduplicateLang) {
+    const paired = new Map();
+    for (const p of rawProducts) {
+      const minorUnit = (p.prices?.currency_minor_unit !== undefined && p.prices?.currency_minor_unit !== null) ? Number(p.prices.currency_minor_unit) : 2;
+      const pr = p.prices?.price ? parseInt(p.prices.price, 10) / Math.pow(10, minorUnit) : 0;
+      if (pr <= 0) continue;
+
+      const imgFile = getImageBasename(p.images?.[0]?.src || '');
+      const key = imgFile ? `${imgFile}__${pr}` : `id_${p.id}`;
+      const isEn = (p.permalink || '').includes('/en/');
+
+      if (!paired.has(key)) {
+        paired.set(key, { en: isEn ? p : null, ar: !isEn ? p : null, fallback: p });
+      } else {
+        const entry = paired.get(key);
+        if (isEn && !entry.en) entry.en = p;
+        else if (!isEn && !entry.ar) entry.ar = p;
+        else paired.set(`${key}__${p.id}`, { en: isEn ? p : null, ar: !isEn ? p : null, fallback: p });
+      }
+    }
+
+    const dedupItems = [];
+    for (const entry of paired.values()) {
+      const primary = entry.en || entry.ar || entry.fallback;
+      const enTitle = entry.en ? cleanGalaxyEnTitle(entry.en.name) : decodeHtmlEntities(primary.name);
+      const arTitle = entry.ar ? decodeHtmlEntities(entry.ar.name) : '';
+      const built = parsePriceAndItem(primary, enTitle, arTitle);
+      if (built) dedupItems.push(built);
+    }
+    console.log(`  -> ${store.name} deduplicated EN/AR pairs: ${rawProducts.length} -> ${dedupItems.length} unique products`);
+    return dedupItems;
+  }
+
+  const items = [];
+  for (const p of rawProducts) {
+    const built = parsePriceAndItem(p);
+    if (built) items.push(built);
   }
   return items;
 }
 
-// Crawl a Shopify store (e.g. Max Muscle Elite, Power Fit, The Coach, Power Store, Fit Spot, Zero Fat)
-async function crawlShopify(store, maxPages = 4) {
-  console.log(`[Crawl Shopify] ${store.name} (${store.apiUrl})...`);
+// Crawl a Shopify store (with optional flavor variant consolidation)
+async function crawlShopify(store, defaultMaxPages = 6) {
+  const maxPages = store.maxPages || defaultMaxPages;
+  console.log(`[Crawl Shopify] ${store.name} (${store.apiUrl}, maxPages=${maxPages})...`);
   const items = [];
   for (let page = 1; page <= maxPages; page++) {
     const url = `${store.apiUrl}?limit=250&page=${page}`;
-    const data = await safeFetch(url);
+    const data = await safeFetch(url, 15000);
     if (!data || !Array.isArray(data.products) || data.products.length === 0) break;
 
     for (const p of data.products) {
-      for (const v of (p.variants || [])) {
-        const price = parseFloat(v.price) || 0;
-        const comparePrice = parseFloat(v.compare_at_price) || 0;
-        const fullTitle = (p.title + (v.title && v.title !== 'Default Title' ? ` - ${v.title}` : '')).trim();
+      const cleanProdTitle = decodeHtmlEntities(p.title);
+      if (store.consolidateFlavors) {
+        // Group flavor-only variants by canonical size so same product doesn't duplicate across flavors
+        const bySize = new Map();
+        for (const v of (p.variants || [])) {
+          const price = parseFloat(v.price) || 0;
+          if (price <= 0) continue;
+          const vSize = canonicalizeSize(parseSize(cleanProdTitle, v.title));
+          const key = vSize || 'default';
+          const avail = v.available !== false;
+          const existing = bySize.get(key);
+          if (!existing || (avail && !existing.inStock) || (avail === existing.inStock && price < existing.price)) {
+            const comparePrice = parseFloat(v.compare_at_price) || 0;
+            const hasDistinctVariantSize = parseSize('', v.title) !== '';
+            const fullTitle = (cleanProdTitle + (hasDistinctVariantSize && v.title !== 'Default Title' ? ` - ${decodeHtmlEntities(v.title)}` : '')).trim();
+            bySize.set(key, {
+              rawId: `${p.id}_${v.id}`,
+              storeId: store.id,
+              storeNameEn: STORE_NAME_EN[store.id] || store.name,
+              platform: 'Shopify',
+              title: fullTitle,
+              price,
+              originalPrice: (comparePrice > price) ? comparePrice : null,
+              inStock: avail,
+              url: `https://${new URL(store.url).hostname}/products/${p.handle}`,
+              image: p.images?.[0]?.src || '',
+              brand: detectBrand(fullTitle + ' ' + (p.vendor || '')),
+              size: key === 'default' ? '' : key
+            });
+          }
+        }
+        for (const item of bySize.values()) items.push(item);
+      } else {
+        for (const v of (p.variants || [])) {
+          const price = parseFloat(v.price) || 0;
+          const comparePrice = parseFloat(v.compare_at_price) || 0;
+          const fullTitle = (cleanProdTitle + (v.title && v.title !== 'Default Title' ? ` - ${decodeHtmlEntities(v.title)}` : '')).trim();
 
-        if (price > 0) {
-          items.push({
-            rawId: `${p.id}_${v.id}`,
-            storeId: store.id,
-            storeNameEn: STORE_NAME_EN[store.id] || store.name,
-            platform: 'Shopify',
-            title: fullTitle,
-            price,
-            originalPrice: (comparePrice > price) ? comparePrice : null,
-            inStock: v.available !== false,
-            url: `https://${new URL(store.url).hostname}/products/${p.handle}`,
-            image: p.images?.[0]?.src || '',
-            brand: detectBrand(fullTitle),
-            size: canonicalizeSize(parseSize(fullTitle, v.title))
-          });
+          if (price > 0) {
+            items.push({
+              rawId: `${p.id}_${v.id}`,
+              storeId: store.id,
+              storeNameEn: STORE_NAME_EN[store.id] || store.name,
+              platform: 'Shopify',
+              title: fullTitle,
+              price,
+              originalPrice: (comparePrice > price) ? comparePrice : null,
+              inStock: v.available !== false,
+              url: `https://${new URL(store.url).hostname}/products/${p.handle}`,
+              image: p.images?.[0]?.src || '',
+              brand: detectBrand(fullTitle + ' ' + (p.vendor || '')),
+              size: canonicalizeSize(parseSize(fullTitle, v.title))
+            });
+          }
         }
       }
     }
@@ -320,17 +560,19 @@ async function runLiveSync() {
 
   // Active stores to crawl
   const activeStores = [
-    { id: 'super_supplement', name: 'Super Supplement', type: 'woocommerce', apiUrl: 'https://super-eg.com/wp-json/wc/store/v1/products', url: 'https://super-eg.com' },
-    { id: 'mf_supplement', name: 'MF Supplement', type: 'woocommerce', apiUrl: 'https://mfsupps.com/wp-json/wc/store/v1/products', url: 'https://mfsupps.com' },
-    { id: 'max_muscle', name: 'Max Muscle Elite', type: 'shopify', apiUrl: 'https://maxmuscleelite.com/products.json', url: 'https://maxmuscleelite.com' },
-    { id: 'power_fit', name: 'Power Fit', type: 'shopify', apiUrl: 'https://powerfitsupplements.com/products.json', url: 'https://powerfitsupplements.com' },
-    { id: 'the_coach', name: 'The Coach', type: 'shopify', apiUrl: 'https://www.thecoachsupp.com/products.json', url: 'https://www.thecoachsupp.com' },
-    { id: 'power_store', name: 'Power Store', type: 'shopify', apiUrl: 'https://powerstore-eg.com/products.json', url: 'https://powerstore-eg.com' },
-    { id: 'train_hard', name: 'Train Hard', type: 'woocommerce', apiUrl: 'https://trainhardeg.com/wp-json/wc/store/v1/products', url: 'https://trainhardeg.com' },
-    { id: 'fitness_tech', name: 'Fitness Tech', type: 'woocommerce', apiUrl: 'https://fitnesstechsupplements.com/wp-json/wc/store/v1/products', url: 'https://fitnesstechsupplements.com' },
-    { id: 'ifit_egypt', name: 'iFIT Egypt', type: 'woocommerce', apiUrl: 'https://ifit-eg.com/wp-json/wc/store/v1/products', url: 'https://ifit-eg.com' },
-    { id: 'fit_spot', name: 'Fit Spot', type: 'shopify', apiUrl: 'https://fitspot-eg.com/products.json', url: 'https://fitspot-eg.com' },
-    { id: 'zero_fat', name: 'Zero Fat Supplements', type: 'shopify', apiUrl: 'https://zerofatsupplements.com/products.json', url: 'https://zerofatsupplements.com' }
+    { id: 'super_supplement', name: 'Super Supplement', type: 'woocommerce', apiUrl: 'https://super-eg.com/wp-json/wc/store/v1/products', url: 'https://super-eg.com', maxPages: 6 },
+    { id: 'mf_supplement', name: 'MF Supplement', type: 'woocommerce', apiUrl: 'https://mfsupps.com/wp-json/wc/store/v1/products', url: 'https://mfsupps.com', maxPages: 6 },
+    { id: 'max_muscle', name: 'Max Muscle Elite', type: 'shopify', apiUrl: 'https://maxmuscleelite.com/products.json', url: 'https://maxmuscleelite.com', maxPages: 4 },
+    { id: 'power_fit', name: 'Power Fit', type: 'shopify', apiUrl: 'https://powerfitsupplements.com/products.json', url: 'https://powerfitsupplements.com', maxPages: 4 },
+    { id: 'the_coach', name: 'The Coach', type: 'shopify', apiUrl: 'https://www.thecoachsupp.com/products.json', url: 'https://www.thecoachsupp.com', maxPages: 4 },
+    { id: 'power_store', name: 'Power Store', type: 'shopify', apiUrl: 'https://powerstore-eg.com/products.json', url: 'https://powerstore-eg.com', maxPages: 4 },
+    { id: 'train_hard', name: 'Train Hard', type: 'woocommerce', apiUrl: 'https://trainhardeg.com/wp-json/wc/store/v1/products', url: 'https://trainhardeg.com', maxPages: 5 },
+    { id: 'fitness_tech', name: 'Fitness Tech', type: 'woocommerce', apiUrl: 'https://fitnesstechsupplements.com/wp-json/wc/store/v1/products', url: 'https://fitnesstechsupplements.com', maxPages: 6 },
+    { id: 'ox_muscle', name: 'Ox Muscle', type: 'shopify', apiUrl: 'https://oxmuscleeg.com/products.json', url: 'https://oxmuscleeg.com', maxPages: 6, consolidateFlavors: true },
+    { id: 'galaxy_supps', name: 'Galaxy Supps', type: 'woocommerce', apiUrl: 'https://galaxysupps.com/wp-json/wc/store/v1/products', url: 'https://galaxysupps.com', maxPages: 16, deduplicateLang: true },
+    { id: 'ifit_egypt', name: 'iFIT Egypt', type: 'woocommerce', apiUrl: 'https://ifit-eg.com/wp-json/wc/store/v1/products', url: 'https://ifit-eg.com', maxPages: 6 },
+    { id: 'fit_spot', name: 'Fit Spot', type: 'shopify', apiUrl: 'https://fitspot-eg.com/products.json', url: 'https://fitspot-eg.com', maxPages: 4 },
+    { id: 'zero_fat', name: 'Zero Fat Supplements', type: 'shopify', apiUrl: 'https://zerofatsupplements.com/products.json', url: 'https://zerofatsupplements.com', maxPages: 4 }
   ];
 
   let totalOffersCollected = 0;
@@ -345,7 +587,7 @@ async function runLiveSync() {
       if (store.type === 'shopify') {
         offers = await crawlShopify(store, 4);
       } else {
-        offers = await crawlWooCommerce(store, 4);
+        offers = await crawlWooCommerce(store, 6);
       }
 
       if (offers && offers.length > 0) {
@@ -355,27 +597,7 @@ async function runLiveSync() {
 
         // Merge offers into catalog
         for (const offer of offers) {
-          const normOffer = normalizeTitle(offer.title);
-          let targetProduct = null;
-
-          // 1. Direct normalized match
-          const candidates = productByNormTitle.get(normOffer);
-          if (candidates && candidates.length > 0) {
-            targetProduct = candidates[0];
-          }
-
-          // 2. Fuzzy size and brand match if direct match not found
-          if (!targetProduct && offer.size) {
-            for (const p of products) {
-              if (p.brand === offer.brand && p.size === offer.size) {
-                const normP = normalizeTitle(p.title);
-                if (normP.includes(normOffer.slice(0, 15)) || normOffer.includes(normP.slice(0, 15))) {
-                  targetProduct = p;
-                  break;
-                }
-              }
-            }
-          }
+          const targetProduct = findSmartMatch(offer, products, productByNormTitle);
 
           if (targetProduct) {
             // Update existing product's storeBreakdown
@@ -397,17 +619,28 @@ async function runLiveSync() {
               titleInStore: offer.title
             };
 
+            if (offer.extraArabicTerms) {
+              const existingTerms = new Set((targetProduct.arabicSearchTerms || '').split(/\s+/).filter(Boolean));
+              offer.extraArabicTerms.split(/\s+/).filter(Boolean).forEach(t => existingTerms.add(t));
+              targetProduct.arabicSearchTerms = Array.from(existingTerms).join(' ');
+            }
+
             if (priceChanged) {
               pricesUpdatedCount++;
               targetProduct.lastUpdated = new Date().toISOString();
             }
           } else {
             // It's a completely NEW product on the store! Add it to the radar!
-            const newId = `${offer.storeId}_${normalizeTitle(offer.title).replace(/\s+/g, '_').slice(0, 40)}`;
+            let baseId = `${offer.storeId}_${normalizeTitle(offer.title).replace(/\s+/g, '_').slice(0, 40)}`;
+            let newId = baseId;
+            let suffix = 2;
+            while (productById.has(newId)) {
+              newId = `${baseId}_${suffix++}`;
+            }
             const brand = offer.brand || detectBrand(offer.title);
             const size = offer.size || canonicalizeSize(parseSize(offer.title));
             const category = detectCategory(offer.title);
-            const arabicTerms = generateArabicSearchTerms(offer.title, brand, category);
+            const arabicTerms = generateArabicSearchTerms(offer.title, brand, category, offer.extraArabicTerms || '');
 
             const newProduct = {
               id: newId,
@@ -459,20 +692,26 @@ async function runLiveSync() {
     }
   }
 
-  // Recalculate lowest price, cheapest store, and clean names for ALL products
+  // Recalculate lowest price, cheapest store, exclusives, and clean names for ALL products
   const CORE_STORE_IDS = new Set([
     'super_supplement', 'mf_supplement', 'max_muscle', 'power_fit',
-    'the_coach', 'power_store', 'train_hard', 'fitness_tech', 'protein_we_vitamin'
+    'the_coach', 'power_store', 'train_hard', 'fitness_tech', 'protein_we_vitamin',
+    'ox_muscle', 'galaxy_supps'
   ]);
+
+  let externalDealsFound = 0;
+  let exclusiveItemsCount = 0;
 
   for (const p of products) {
     const bd = p.storeBreakdown || {};
-    let minPrice = Infinity;
-    let minStore = null;
+    let minInStockPrice = Infinity;
+    let minInStockStore = null;
+    let minAnyPrice = Infinity;
+    let minAnyStore = null;
     let minCorePrice = Infinity;
     let minCoreStore = null;
     let maxPrice = 0;
-    let availableCount = 0;
+    let listedStoresCount = 0;
 
     let minExternalPrice = Infinity;
     let bestExternalOffer = null;
@@ -482,56 +721,69 @@ async function runLiveSync() {
       offer.storeName = normalizeStoreName(offer.storeName, sId);
       offer.storeNameEn = normalizeStoreName(offer.storeNameEn || offer.storeName, sId);
 
-      if (offer.available && offer.inStock && offer.price > 0) {
-        availableCount++;
-        if (offer.price < minPrice) {
-          minPrice = offer.price;
-          minStore = offer.storeNameEn;
+      if (offer.available && offer.price > 0) {
+        listedStoresCount++;
+        if (offer.price < minAnyPrice) {
+          minAnyPrice = offer.price;
+          minAnyStore = offer.storeNameEn;
         }
         if (offer.price > maxPrice) {
           maxPrice = offer.price;
         }
 
-        if (CORE_STORE_IDS.has(sId)) {
-          if (offer.price < minCorePrice) {
-            minCorePrice = offer.price;
-            minCoreStore = offer.storeNameEn;
+        if (offer.inStock !== false) {
+          if (offer.price < minInStockPrice) {
+            minInStockPrice = offer.price;
+            minInStockStore = offer.storeNameEn;
           }
-        } else {
-          // Track external stores outside the 9
-          if (offer.price < minExternalPrice) {
-            minExternalPrice = offer.price;
-            bestExternalOffer = {
-              storeId: sId,
-              storeName: offer.storeNameEn || offer.storeName,
-              storeNameEn: offer.storeNameEn || offer.storeName,
-              price: offer.price,
-              originalPrice: offer.originalPrice || null,
-              url: offer.url || '#',
-              image: offer.image || p.image || ''
-            };
+
+          if (CORE_STORE_IDS.has(sId)) {
+            if (offer.price < minCorePrice) {
+              minCorePrice = offer.price;
+              minCoreStore = offer.storeNameEn;
+            }
+          } else {
+            // Track external stores outside the 11
+            if (offer.price < minExternalPrice) {
+              minExternalPrice = offer.price;
+              bestExternalOffer = {
+                storeId: sId,
+                storeName: offer.storeNameEn || offer.storeName,
+                storeNameEn: offer.storeNameEn || offer.storeName,
+                price: offer.price,
+                originalPrice: offer.originalPrice || null,
+                url: offer.url || '#',
+                image: offer.image || p.image || ''
+              };
+            }
           }
         }
       }
     }
 
-    if (minPrice !== Infinity) {
-      p.lowestPrice = minPrice;
-      p.cheapestStore = minStore;
-      p.lowestCorePrice = (minCorePrice !== Infinity) ? minCorePrice : minPrice;
-      p.cheapestCoreStore = (minCoreStore !== null) ? minCoreStore : minStore;
-      p.highestPrice = maxPrice > minPrice ? maxPrice : minPrice;
-      p.maxSavings = Math.max(0, p.highestPrice - p.lowestPrice);
-      p.availableCount = availableCount;
+    p.availableCount = listedStoresCount;
+    p.isExclusive = (listedStoresCount === 1);
+    if (p.isExclusive) exclusiveItemsCount++;
 
-      if (bestExternalOffer && minPrice === minExternalPrice && (minCorePrice === Infinity || minPrice < minCorePrice)) {
-        bestExternalOffer.savingsVsCore = (minCorePrice !== Infinity) ? Math.max(0, minCorePrice - minPrice) : 0;
+    const effectiveMinPrice = (minInStockPrice !== Infinity) ? minInStockPrice : minAnyPrice;
+    const effectiveMinStore = (minInStockPrice !== Infinity) ? minInStockStore : minAnyStore;
+
+    if (effectiveMinPrice !== Infinity) {
+      p.lowestPrice = effectiveMinPrice;
+      p.cheapestStore = effectiveMinStore;
+      p.lowestCorePrice = (minCorePrice !== Infinity) ? minCorePrice : effectiveMinPrice;
+      p.cheapestCoreStore = (minCoreStore !== null) ? minCoreStore : effectiveMinStore;
+      p.highestPrice = maxPrice > effectiveMinPrice ? maxPrice : effectiveMinPrice;
+      p.maxSavings = Math.max(0, p.highestPrice - p.lowestPrice);
+
+      if (bestExternalOffer && effectiveMinPrice === minExternalPrice && (minCorePrice === Infinity || effectiveMinPrice < minCorePrice)) {
+        bestExternalOffer.savingsVsCore = (minCorePrice !== Infinity) ? Math.max(0, minCorePrice - effectiveMinPrice) : 0;
         p.externalCheaper = bestExternalOffer;
+        externalDealsFound++;
       } else {
         p.externalCheaper = false;
       }
     } else {
-      // Clean up if currently out of stock everywhere
       p.cheapestStore = normalizeStoreName(p.cheapestStore, '');
       p.cheapestCoreStore = normalizeStoreName(p.cheapestCoreStore, '');
       p.externalCheaper = false;
@@ -545,6 +797,10 @@ async function runLiveSync() {
     lastCatalogSync: nowIso,
     lastUpdated: nowIso,
     totalProducts: products.length,
+    totalComparedItems: products.length,
+    externalDealsFound,
+    exclusiveItemsCount,
+    monitoredCoreStores: 11,
     syncEngineStatus: '24/7 Live Active',
     stats: {
       storesChecked: activeStores.length,

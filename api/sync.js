@@ -10,6 +10,8 @@ const LIVE_STORES = [
   { id: 'power_store', name: 'Power Store', type: 'shopify', apiUrl: 'https://powerstore-eg.com/products.json?limit=50' },
   { id: 'train_hard', name: 'Train Hard', type: 'woocommerce', apiUrl: 'https://trainhardeg.com/wp-json/wc/store/v1/products?per_page=50' },
   { id: 'fitness_tech', name: 'Fitness Tech', type: 'woocommerce', apiUrl: 'https://fitnesstechsupplements.com/wp-json/wc/store/v1/products?per_page=50' },
+  { id: 'ox_muscle', name: 'Ox Muscle', type: 'shopify', apiUrl: 'https://oxmuscleeg.com/products.json?limit=50' },
+  { id: 'galaxy_supps', name: 'Galaxy Supps', type: 'woocommerce', apiUrl: 'https://galaxysupps.com/wp-json/wc/store/v1/products?per_page=50' },
   { id: 'ifit_egypt', name: 'iFIT Egypt', type: 'woocommerce', apiUrl: 'https://ifit-eg.com/wp-json/wc/store/v1/products?per_page=50' },
   { id: 'fit_spot', name: 'Fit Spot', type: 'shopify', apiUrl: 'https://fitspot-eg.com/products.json?limit=50' },
   { id: 'zero_fat', name: 'Zero Fat Supplements', type: 'shopify', apiUrl: 'https://zerofatsupplements.com/products.json?limit=50' }
@@ -131,7 +133,7 @@ export default async function handler(req, res) {
       syncEngine: '24/7 Automated Periodic Radar Active',
       lastCatalogSync: metadata.lastCatalogSync || metadata.lastUpdated || new Date().toISOString(),
       totalProducts,
-      monitoredCoreStores: 9,
+      monitoredCoreStores: 11,
       timestamp: new Date().toISOString()
     });
   } catch (err) {
