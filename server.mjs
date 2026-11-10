@@ -91,7 +91,7 @@ const server = http.createServer(async (req, res) => {
 
 const LIVE_STORES = [
   { id: 'super_supplement', name: 'Super Supplement', type: 'woocommerce', apiUrl: 'https://super-eg.com/wp-json/wc/store/v1/products?per_page=50' },
-  { id: 'mf_supplement', name: 'MF Supplement', type: 'woocommerce', apiUrl: 'https://mfsupps.com/wp-json/wc/store/v1/products?per_page=50' },
+  { id: 'mf_supplement', name: 'MF Supplement', type: 'woocommerce', apiUrl: 'https://mfsupps.com/wp-json/wc/store/v1/products?per_page=15' },
   { id: 'max_muscle', name: 'Max Muscle Elite', type: 'shopify', apiUrl: 'https://maxmuscleelite.com/products.json?limit=50' },
   { id: 'power_fit', name: 'Power Fit', type: 'shopify', apiUrl: 'https://powerfitsupplements.com/products.json?limit=50' },
   { id: 'the_coach', name: 'The Coach', type: 'shopify', apiUrl: 'https://www.thecoachsupp.com/products.json?limit=50' },
@@ -102,7 +102,8 @@ const LIVE_STORES = [
   { id: 'galaxy_supps', name: 'Galaxy Supps', type: 'woocommerce', apiUrl: 'https://galaxysupps.com/wp-json/wc/store/v1/products?per_page=50' },
   { id: 'ifit_egypt', name: 'iFIT Egypt', type: 'woocommerce', apiUrl: 'https://ifit-eg.com/wp-json/wc/store/v1/products?per_page=50' },
   { id: 'fit_spot', name: 'Fit Spot', type: 'shopify', apiUrl: 'https://fitspot-eg.com/products.json?limit=50' },
-  { id: 'zero_fat', name: 'Zero Fat Supplements', type: 'shopify', apiUrl: 'https://zerofatsupplements.com/products.json?limit=50' }
+  { id: 'zero_fat', name: 'Zero Fat Supplements', type: 'shopify', apiUrl: 'https://zerofatsupplements.com/products.json?limit=50' },
+  { id: 'gofit_egypt', name: 'GoFit Egypt', type: 'woocommerce', apiUrl: 'https://gofit-eg.com/wp-json/wc/store/v1/products?per_page=50' }
 ];
 
 async function performRealLiveStoreCrawl() {

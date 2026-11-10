@@ -1012,14 +1012,21 @@
       if (p.externalCheaper && typeof p.externalCheaper === 'object' && p.externalCheaper.price > 0) {
         return p.externalCheaper;
       }
-      const lowestCore = p.lowestCorePrice || p.lowestPrice || 0;
       if (!p.storeBreakdown || typeof p.storeBreakdown !== 'object') return null;
+
+      let minCoreInStock = Infinity;
+      for (const [sKey, offer] of Object.entries(p.storeBreakdown)) {
+        if (CORE_STORE_IDS.includes(sKey) && offer && offer.available && offer.inStock !== false && offer.price > 0) {
+          if (offer.price < minCoreInStock) minCoreInStock = offer.price;
+        }
+      }
+      if (minCoreInStock === Infinity) return null;
 
       let bestExt = null;
       for (const [sKey, offer] of Object.entries(p.storeBreakdown)) {
         if (CORE_STORE_IDS.includes(sKey)) continue;
-        if (!offer || !offer.available || !offer.price || offer.price <= 0) continue;
-        if (lowestCore > 0 && offer.price >= lowestCore) continue;
+        if (!offer || !offer.available || offer.inStock === false || !offer.price || offer.price <= 0) continue;
+        if (offer.price >= minCoreInStock) continue;
         if (!bestExt || offer.price < bestExt.price) {
           bestExt = {
             storeId: sKey,
@@ -1029,7 +1036,7 @@
             originalPrice: offer.originalPrice || null,
             url: offer.url || '#',
             image: offer.image || p.image || null,
-            savingsVsCore: lowestCore > 0 ? (lowestCore - offer.price) : 0
+            savingsVsCore: minCoreInStock - offer.price
           };
         }
       }
@@ -1695,7 +1702,15 @@
       'بي بي اي': ['بي بي اي', 'bpi', 'bpi sports'],
       'bpi': ['bpi', 'بي بي اي'],
       'بايوتك': ['بايوتك', 'biotech', 'biotechusa'],
-      'biotech': ['biotech', 'بايوتك', 'biotechusa']
+      'biotech': ['biotech', 'بايوتك', 'biotechusa'],
+      'رايس': ['رايس', 'rice', 'rice cake', 'rice cakes', 'رايس كيك'],
+      'كيك': ['كيك', 'cake', 'cakes', 'rice cakes'],
+      'ملح': ['ملح', 'salt', 'هيمالايا', 'himalayan', 'pink salt'],
+      'هيمالايا': ['هيمالايا', 'himalayan', 'pink salt', 'ملح', 'shilajit', 'شيلاجيت'],
+      'شيلاجيت': ['شيلاجيت', 'shilajit'],
+      'توتال': ['توتال', 'total', 'total war'],
+      'ناو': ['ناو', 'now', 'now foods'],
+      'فيتامين': ['فيتامين', 'vitamin', 'vitamins', 'multivitamin']
     };
 
     function getSearchVariants(token) {
@@ -1735,7 +1750,8 @@
       const catNorm = normalizeArabic(product.category);
       const arabicTermsNorm = normalizeArabic(product.arabicSearchTerms);
       const arabicTitleNorm = normalizeArabic(product.arabicTitle);
-      const fullHaystack = `${titleNorm} ${brandNorm} ${catNorm} ${arabicTermsNorm} ${arabicTitleNorm}`;
+      const storeNamesNorm = normalizeArabic(Object.values(product.storeBreakdown || {}).map(s => `${s.storeNameEn || s.storeName || ''} ${s.storeId || ''}`).join(' '));
+      const fullHaystack = `${titleNorm} ${brandNorm} ${catNorm} ${arabicTermsNorm} ${arabicTitleNorm} ${storeNamesNorm}`;
 
       const tokenVariants = rawTokens.map(t => getSearchVariants(t));
       let matchedTokensCount = 0;
@@ -1976,8 +1992,6 @@
       }
 
       container.innerHTML = toDisplay.map(p => {
-        const lowestPriceFormatted = p.lowestPrice ? p.lowestPrice.toLocaleString('ar-EG') + ' ج.م' : 'السعر غير متاح';
-        const unitMetric = calculateUnitMetric(p.title, p.lowestPrice);
         const encodedId = encodeURIComponent(p.id);
         const cleanTitle = decodeHtmlEntities(p.title);
         const escapedTitle = escapeHtml(cleanTitle);
@@ -2054,8 +2068,11 @@
           }
         }
 
-        // Sort stores by price ascending
-        storesList.sort((a, b) => a.price - b.price);
+        // Sort stores: in-stock first by lowest price, then out-of-stock by lowest price
+        storesList.sort((a, b) => {
+          if (a.inStock !== b.inStock) return a.inStock ? -1 : 1;
+          return a.price - b.price;
+        });
 
         // Mark cheapest
         if (storesList.length > 0) {
@@ -2065,6 +2082,11 @@
         const anyInStock = storesList.some(s => s.inStock);
         const isCompletelyOutOfStock = storesList.length > 0 ? !anyInStock : !p.lowestPrice;
         const availableStoresCount = storesList.length;
+
+        // Compute exact lowest price and store consistently with row #1
+        const effectiveHeroPrice = (storesList.length > 0) ? storesList[0].price : p.lowestPrice;
+        const lowestPriceFormatted = effectiveHeroPrice ? effectiveHeroPrice.toLocaleString('ar-EG') + ' ج.م' : 'السعر غير متاح';
+        const unitMetric = calculateUnitMetric(p.title, effectiveHeroPrice);
 
         // Cheapest store name in English
         let cheapestStoreEn = 'Store';
@@ -2952,10 +2974,11 @@
       if (!couponsData || couponsData.length === 0) return;
 
       container.innerHTML = couponsData.map(c => {
+        const storeNameEn = formatStoreNameEn(c.storeName || c.storeId || '');
         return `
           <div class="card-espresso p-6 rounded-3xl space-y-4">
             <div class="flex items-center justify-between">
-              <span class="font-black text-sm text-slate-900 dark:text-champagne-100 dark:text-champagne-100">${c.storeName}</span>
+              <span class="font-black text-sm text-slate-900 dark:text-champagne-100">${escapeHtml(storeNameEn)}</span>
               <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-gold-100 text-gold-800 dark:bg-gold-950/60 dark:text-gold-400">فعّال</span>
             </div>
 
@@ -3208,7 +3231,7 @@
       if (icon) icon.classList.add('animate-spin');
       if (bannerIcon) bannerIcon.classList.add('animate-spin');
       const msg = document.getElementById('syncStatusMsg');
-      if (msg) msg.innerText = `جاري سحب وتحديث الأسعار لحظياً من 13 متجر بمصر (الـ 11 الأساسية + الرادار الخارجي)... [${formattedClickTime}]`;
+      if (msg) msg.innerText = `جاري سحب وتحديث الأسعار لحظياً من 14 متجر بمصر (الـ 11 الأساسية + الرادار الخارجي)... [${formattedClickTime}]`;
 
       try {
         const controller = new AbortController();
@@ -3243,7 +3266,7 @@
         if (icon) icon.classList.remove('animate-spin');
         if (bannerIcon) bannerIcon.classList.remove('animate-spin');
 
-        const storesOk = syncResult?.successfulStores || 13;
+        const storesOk = syncResult?.successfulStores || 14;
         const offersCount = syncResult?.totalOffersCollected ? `(${syncResult.totalOffersCollected.toLocaleString('ar-EG')} عرض)` : '';
         showToast(`✅ تم سحب وتحديث الأسعار فعلياً بنجاح! فحص ${storesOk} متجر بمصر ${offersCount} في ${formattedClickTime} 🚀`);
       } catch (err) {

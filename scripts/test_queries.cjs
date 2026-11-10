@@ -43,7 +43,13 @@ const testQueries = [
   'تريجو',
   'شوكولاته سبريد',
   'اورجانيك نيشن',
-  'بروتين بار'
+  'بروتين بار',
+  'mini rice cakes',
+  'رايس كيك',
+  'pink himalayan salt',
+  'ملح هيمالايا',
+  'توتال وور',
+  'ox muscle'
 ];
 
 console.log(`Testing ${testQueries.length} real queries on ${allProducts.length} products:\n`);
