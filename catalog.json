@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "lastCatalogSync": "2026-11-11T21:17:25.323Z",
-    "lastUpdated": "2026-11-11T21:17:25.323Z",
-    "totalProducts": 5894,
-    "totalComparedItems": 5894,
+    "lastCatalogSync": "2026-11-12T02:49:00.811Z",
+    "lastUpdated": "2026-11-12T02:49:00.811Z",
+    "totalProducts": 5896,
+    "totalComparedItems": 5896,
     "externalDealsFound": 67,
-    "exclusiveItemsCount": 5203,
+    "exclusiveItemsCount": 5205,
     "monitoredCoreStores": 11,
     "syncEngineStatus": "24/7 Live Active",
     "stats": {
       "storesChecked": 14,
       "storesSuccessful": 13,
-      "totalOffersCollected": 6288,
-      "pricesUpdatedCount": 133,
-      "newProductsAddedCount": 32,
+      "totalOffersCollected": 6290,
+      "pricesUpdatedCount": 92,
+      "newProductsAddedCount": 50,
       "durationSeconds": 73
     }
   },
@@ -14496,7 +14496,7 @@
           "titleInStore": "Yava Labs Fat Burner Extreme 60 capsules"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.417Z",
+      "lastUpdated": "2026-11-12T02:48:18.299Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6",
       "externalCheaper": false
     },
@@ -19491,7 +19491,7 @@
           "titleInStore": "Challenger Nutrition 100% Whey Protein"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.609Z",
+      "lastUpdated": "2026-11-12T02:48:53.052Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": {
         "storeId": "ifit_egypt",
@@ -20196,7 +20196,7 @@
           "titleInStore": "Universal Nutrition Animal Flex 44 Packs"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:45.917Z",
+      "lastUpdated": "2026-11-12T02:48:22.735Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -25309,7 +25309,7 @@
           "titleInStore": "Marvelous Nutrition Creatine Monohydrate | 60 Servings | New Edition"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:38.212Z",
+      "lastUpdated": "2026-11-12T02:48:14.948Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -27854,7 +27854,7 @@
           "titleInStore": "Nutrex Lipo-6 Black Hers Ultra Concentrate"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:50.704Z",
+      "lastUpdated": "2026-11-12T02:48:27.792Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 نيوتركس نوتركس نيوتريكس",
       "externalCheaper": false
     },
@@ -33218,7 +33218,7 @@
           "titleInStore": "Universal Nutrition Animal Pak, 30 Packs"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.280Z",
+      "lastUpdated": "2026-11-12T02:48:29.528Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -34197,12 +34197,12 @@
       "image": "https://super-eg.com/wp-content/uploads/2022/03/Optimum-Nutrition-Micronized-Creatine-Powder.png",
       "lowestPrice": 1890,
       "cheapestStore": "iFIT Egypt",
-      "lowestCorePrice": 2150,
-      "cheapestCoreStore": "Super Supplement",
-      "highestPrice": 2150,
-      "maxSavings": 260,
+      "lowestCorePrice": 2100,
+      "cheapestCoreStore": "Fitness Tech",
+      "highestPrice": 2300,
+      "maxSavings": 410,
       "isExclusive": false,
-      "availableCount": 2,
+      "availableCount": 7,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -34229,9 +34229,74 @@
           "url": "https://ifit-eg.com/product/optimum-nutrition-micronized-creatine-powder/",
           "image": "https://ifit-eg.com/wp-content/uploads/2023/07/Optimum-Nutrition-Micronized-Creatine-Powder-300-g-1.webp",
           "titleInStore": "Optimum Nutrition Micronized Creatine Powder"
+        },
+        "power_store": {
+          "storeId": "power_store",
+          "storeName": "Power Store",
+          "storeNameEn": "Power Store",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": false,
+          "price": 2100,
+          "originalPrice": 2250,
+          "url": "https://powerstore-eg.com/products/optimum-nutrition-micronized-creatine-300g",
+          "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Optimum-Nutrition-Micronized-Creatine-Powder-300-g.png?v=1760455094",
+          "titleInStore": "On Optimum Nutrition Micronized Creatine Powder, Unflavored, 60 Servings, 300 Gm. - Unflavored / 60 Servings"
+        },
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 2300,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/optimum-nutrition-micronized-creatine-powder-300g-unflavored/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/ON_Micronized_Creatine_Powder_300g_google_ready-300x300-1-1.webp",
+          "titleInStore": "Optimum Nutrition Micronized Creatine Powder 300g – Unflavored"
+        },
+        "fitness_tech": {
+          "storeId": "fitness_tech",
+          "storeName": "Fitness Tech",
+          "storeNameEn": "Fitness Tech",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 2100,
+          "originalPrice": null,
+          "url": "https://fitnesstechsupplements.com/product/optimum-nutrition-micronized-creatine-300gm/",
+          "image": "https://i0.wp.com/fitnesstechsupplements.com/wp-content/uploads/2025/06/748927023848-on-Cretine-%D9%83%D8%B1%D9%8A%D8%A7%D8%AA%D9%8A%D9%86-%D8%A7%D9%88%D9%86.png?fit=600%2C600&ssl=1",
+          "titleInStore": "كرياتين اون – Optimum Nutrition Micronized Creatine 300GM"
+        },
+        "ox_muscle": {
+          "storeId": "ox_muscle",
+          "storeName": "Ox Muscle",
+          "storeNameEn": "Ox Muscle",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": false,
+          "price": 2000,
+          "originalPrice": null,
+          "url": "https://oxmuscleeg.com/products/optimum-nutrition-creatine-micronized-powder-300gm-60-servings",
+          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/73b0dea6-c33c-4e50-8bea-f8e40821e37d.webp?v=1788451228",
+          "titleInStore": "Optimum Nutrition Creatine Micronized Powder 300gm - 60 servings"
+        },
+        "fit_spot": {
+          "storeId": "fit_spot",
+          "storeName": "Fit Spot",
+          "storeNameEn": "Fit Spot",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": true,
+          "price": 2200,
+          "originalPrice": null,
+          "url": "https://fitspot-eg.com/products/optimum-nutrition-micronized-creatine",
+          "image": "https://cdn.shopify.com/s/files/1/0812/9816/1913/files/71h14RUnojL._UF1000_1000_QL80_4c1d6c3f-87d0-4477-9c7f-42680b8ebc18.jpg?v=1779499383",
+          "titleInStore": "Optimum Nutrition Micronized Creatine - 300g (60 serving)"
         }
       },
-      "lastUpdated": "2026-11-11T13:59:06.292Z",
+      "lastUpdated": "2026-11-12T02:48:54.389Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية اوبتيموم اوبتيمم جولد ستاندرد اون",
       "externalCheaper": {
         "storeId": "ifit_egypt",
@@ -34241,7 +34306,7 @@
         "originalPrice": 2100,
         "url": "https://ifit-eg.com/product/optimum-nutrition-micronized-creatine-powder/",
         "image": "https://ifit-eg.com/wp-content/uploads/2023/07/Optimum-Nutrition-Micronized-Creatine-Powder-300-g-1.webp",
-        "savingsVsCore": 260
+        "savingsVsCore": 210
       }
     },
     {
@@ -36498,10 +36563,10 @@
       "cheapestStore": "Super Supplement",
       "lowestCorePrice": 899,
       "cheapestCoreStore": "Super Supplement",
-      "highestPrice": 2000,
-      "maxSavings": 1101,
+      "highestPrice": 1500,
+      "maxSavings": 601,
       "isExclusive": false,
-      "availableCount": 7,
+      "availableCount": 5,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -36567,32 +36632,6 @@
           "url": "https://fitspot-eg.com/products/nutrex-reserch-lipo6-hardcore",
           "image": "https://cdn.shopify.com/s/files/1/0812/9816/1913/files/Lipo6-HC_png.webp?v=1779499356",
           "titleInStore": "Nutrex Reserch Lipo-6 Hardcore | 60 Capsules - 60 Capsules (60 serving)"
-        },
-        "mf_supplement": {
-          "storeId": "mf_supplement",
-          "storeName": "MF Supplement",
-          "storeNameEn": "MF Supplement",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1500,
-          "originalPrice": 1700,
-          "url": "https://mfsupps.com/product/nutrex-research-lipo-6-hardcore-60-capsules-60-servings/",
-          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Nutrex-Research-Lipo-6-Hardcore-60-Capsules-60-Servings.png",
-          "titleInStore": "Nutrex Research, Lipo-6 Hardcore, 60 Capsules, 60 Servings"
-        },
-        "max_muscle": {
-          "storeId": "max_muscle",
-          "storeName": "Max Muscle Elite",
-          "storeNameEn": "Max Muscle Elite",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": false,
-          "price": 2000,
-          "originalPrice": null,
-          "url": "https://maxmuscleelite.com/products/lipo-6-hardcore-60serv-60caps-nutrex-research",
-          "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/nutrex-research-lipo-6-hardcore-60serv-60caps-850005755654.jpg?v=1791016595",
-          "titleInStore": "Lipo 6 Hardcore.-60Serv.-60Caps | Nutrex Research"
         }
       },
       "lastUpdated": "2026-11-11T21:16:39.767Z",
@@ -38822,7 +38861,7 @@
           "titleInStore": "Universal Nutrition Animal M-Stak - 21 Packs (21 Servings)"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.292Z",
+      "lastUpdated": "2026-11-12T02:48:29.539Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -42854,7 +42893,7 @@
           "titleInStore": "XTEND Original BCAA 30 Servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:38.203Z",
+      "lastUpdated": "2026-11-12T02:48:14.942Z",
       "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين",
       "externalCheaper": false
     },
@@ -43952,7 +43991,7 @@
           "titleInStore": "DR.Mohamed Mahmoud, Evolution Preworkout DECAF, 660g, 30 Servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:38.136Z",
+      "lastUpdated": "2026-11-12T02:48:14.873Z",
       "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
       "externalCheaper": false
     },
@@ -56855,7 +56894,7 @@
           "titleInStore": "NeoCell Super Collagen Peptides"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.605Z",
+      "lastUpdated": "2026-11-12T02:48:53.049Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -57087,7 +57126,7 @@
           "titleInStore": "Organic Nation, Guilt Free High Protein Chocolate Spread, 370 gm"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:38.181Z",
+      "lastUpdated": "2026-11-12T02:48:14.934Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين اورجانيك نيشن أورجانيك نيشن",
       "externalCheaper": false
     },
@@ -57306,7 +57345,7 @@
           "titleInStore": "Guilt Free Zero Added Sugar.-350Ml | Organic Nation"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:38.181Z",
+      "lastUpdated": "2026-11-12T02:48:14.935Z",
       "arabicSearchTerms": "اورجانيك نيشن أورجانيك نيشن",
       "externalCheaper": false
     },
@@ -67400,7 +67439,7 @@
           "titleInStore": "Animal, M-Stak, Pill Packs, 21 Packs"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:38.209Z",
+      "lastUpdated": "2026-11-12T02:48:14.946Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -68731,14 +68770,14 @@
       "form": "powder",
       "category": "Creatine (كرياتين)",
       "image": "https://mfsupps.com/wp-content/uploads/2024/06/Optimum-Nutrition-Micronized-Creatine-300g-60-Servings.png",
-      "lowestPrice": 2100,
-      "cheapestStore": "Fitness Tech",
-      "lowestCorePrice": 2100,
-      "cheapestCoreStore": "Fitness Tech",
-      "highestPrice": 2300,
-      "maxSavings": 200,
-      "isExclusive": false,
-      "availableCount": 6,
+      "lowestPrice": 2000,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 2000,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 2000,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
       "storeBreakdown": {
         "mf_supplement": {
           "storeId": "mf_supplement",
@@ -68752,71 +68791,6 @@
           "url": "https://mfsupps.com/product/optimum-nutrition-creatine-micronized-300g-egypt/",
           "image": "https://mfsupps.com/wp-content/uploads/2024/06/Optimum-Nutrition-Micronized-Creatine-300g-60-Servings.png",
           "titleInStore": "Optimum Nutrition, Micronized Creatine, 300g, 60 Servings"
-        },
-        "power_store": {
-          "storeId": "power_store",
-          "storeName": "Power Store",
-          "storeNameEn": "Power Store",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": false,
-          "price": 2100,
-          "originalPrice": 2250,
-          "url": "https://powerstore-eg.com/products/optimum-nutrition-micronized-creatine-300g",
-          "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Optimum-Nutrition-Micronized-Creatine-Powder-300-g.png?v=1760455094",
-          "titleInStore": "On Optimum Nutrition Micronized Creatine Powder, Unflavored, 60 Servings, 300 Gm. - Unflavored / 60 Servings"
-        },
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 2300,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/optimum-nutrition-micronized-creatine-powder-300g-unflavored/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/ON_Micronized_Creatine_Powder_300g_google_ready-300x300-1-1.webp",
-          "titleInStore": "Optimum Nutrition Micronized Creatine Powder 300g – Unflavored"
-        },
-        "fitness_tech": {
-          "storeId": "fitness_tech",
-          "storeName": "Fitness Tech",
-          "storeNameEn": "Fitness Tech",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 2100,
-          "originalPrice": null,
-          "url": "https://fitnesstechsupplements.com/product/optimum-nutrition-micronized-creatine-300gm/",
-          "image": "https://i0.wp.com/fitnesstechsupplements.com/wp-content/uploads/2025/06/748927023848-on-Cretine-%D9%83%D8%B1%D9%8A%D8%A7%D8%AA%D9%8A%D9%86-%D8%A7%D9%88%D9%86.png?fit=600%2C600&ssl=1",
-          "titleInStore": "كرياتين اون – Optimum Nutrition Micronized Creatine 300GM"
-        },
-        "ox_muscle": {
-          "storeId": "ox_muscle",
-          "storeName": "Ox Muscle",
-          "storeNameEn": "Ox Muscle",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": false,
-          "price": 2000,
-          "originalPrice": null,
-          "url": "https://oxmuscleeg.com/products/optimum-nutrition-creatine-micronized-powder-300gm-60-servings",
-          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/73b0dea6-c33c-4e50-8bea-f8e40821e37d.webp?v=1788451228",
-          "titleInStore": "Optimum Nutrition Creatine Micronized Powder 300gm - 60 servings"
-        },
-        "fit_spot": {
-          "storeId": "fit_spot",
-          "storeName": "Fit Spot",
-          "storeNameEn": "Fit Spot",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": true,
-          "price": 2200,
-          "originalPrice": null,
-          "url": "https://fitspot-eg.com/products/optimum-nutrition-micronized-creatine",
-          "image": "https://cdn.shopify.com/s/files/1/0812/9816/1913/files/71h14RUnojL._UF1000_1000_QL80_4c1d6c3f-87d0-4477-9c7f-42680b8ebc18.jpg?v=1779499383",
-          "titleInStore": "Optimum Nutrition Micronized Creatine - 300g (60 serving)"
         }
       },
       "lastUpdated": "2026-11-10T19:46:33.926Z",
@@ -75392,7 +75366,7 @@
           "titleInStore": "Creatine Monohydrate | Nexus - 100Serv"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:39.715Z",
+      "lastUpdated": "2026-11-12T02:48:16.251Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -81739,7 +81713,7 @@
           "titleInStore": "Syntrax Goliath Protein Gainer, 5.44kg, 41 Servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.294Z",
+      "lastUpdated": "2026-11-12T02:48:29.541Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة",
       "externalCheaper": false
     },
@@ -88606,7 +88580,7 @@
           "titleInStore": "The Storm T-Shirt Cut.-Orange | Max Muscle"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:39.774Z",
+      "lastUpdated": "2026-11-12T02:48:16.309Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -89650,7 +89624,7 @@
           "titleInStore": "Arm Blaster Biceps | Max Muscle"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:39.774Z",
+      "lastUpdated": "2026-11-12T02:48:16.309Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -89830,7 +89804,7 @@
           "titleInStore": "Creatine HCL 750 | Max Muscle - 120Serv"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:39.773Z",
+      "lastUpdated": "2026-11-12T02:48:16.308Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -94114,7 +94088,7 @@
           "titleInStore": "Bruz Protein Bar-55G.-Peanut Butter Sesame"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:39.781Z",
+      "lastUpdated": "2026-11-12T02:48:16.315Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين بروتين بار سناك صحي شوكولاته صحية سناكس تريجو بار",
       "externalCheaper": false
     },
@@ -105746,7 +105720,7 @@
           "titleInStore": "Yava Labs Elite Whey Protein.-66Serv.-2kg.-Vanilla Ice Cream"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.416Z",
+      "lastUpdated": "2026-11-12T02:48:18.297Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -105854,7 +105828,7 @@
           "titleInStore": "Max Fit Whey Protein 930g (30 Servings) | Premium Protein for Muscle Growth & Recovery|In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:41.658Z",
+      "lastUpdated": "2026-11-12T02:48:17.604Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -113807,7 +113781,7 @@
           "titleInStore": "Universal Animal M-Stack 21Serv-21 Pack"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.903Z",
+      "lastUpdated": "2026-11-12T02:48:18.829Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -115525,7 +115499,7 @@
           "titleInStore": "Carnivor Protein Hydration MuscleMeds – Powerful Beef Protein Isolate for Recovery & Hydration"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:45.914Z",
+      "lastUpdated": "2026-11-12T02:48:22.732Z",
       "arabicSearchTerms": "ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -116222,7 +116196,7 @@
           "titleInStore": "Vertex Amino -V+Vertex Multvatmin+12 Bone Braker"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:45.905Z",
+      "lastUpdated": "2026-11-12T02:48:22.715Z",
       "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين",
       "externalCheaper": false
     },
@@ -117464,42 +117438,6 @@
       "externalCheaper": false
     },
     {
-      "id": "train_hard_omega_3_epa_dha_200_softgels_now_pure_mo",
-      "title": "Omega 3 EPA DHA 200 Softgels NOW – Pure Molecularly Distilled Fish Oil for Heart & Brain Health",
-      "brand": "ماركة معتمدة",
-      "weight": "200SOFTGELS",
-      "size": "200softgels",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Omega-3-EPA-DHA-200-Softgels-NOW-1.avif",
-      "lowestPrice": 1950,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1950,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1950,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1950,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/omega-3-epa-dha-200-softgels-now-pure-molecularly-distilled-fish-oil-for-heart-brain-health/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Omega-3-EPA-DHA-200-Softgels-NOW-1.avif",
-          "titleInStore": "Omega 3 EPA DHA 200 Softgels NOW – Pure Molecularly Distilled Fish Oil for Heart & Brain Health"
-        }
-      },
-      "lastUpdated": "2026-11-10T19:45:56.947Z",
-      "arabicSearchTerms": "اوميجا 3 اوميجا زيت سمك صحة القلب مفاصل",
-      "externalCheaper": false
-    },
-    {
       "id": "train_hard_nutriversum_basic_creatine_monohydrate_b",
       "title": "Nutriversum Basic Creatine Monohydrate – Boost Strength, Power & Recovery",
       "brand": "Nutriversum",
@@ -118397,7 +118335,7 @@
           "titleInStore": "Muscle Tech Alpha Test - 120 Capsules 60 Servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:45.918Z",
+      "lastUpdated": "2026-11-12T02:48:22.736Z",
       "arabicSearchTerms": "ماسل تك ماسيل تك ماستك",
       "externalCheaper": false
     },
@@ -123910,7 +123848,7 @@
           "titleInStore": "سيفور – C4 30srv"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:50.704Z",
+      "lastUpdated": "2026-11-12T02:48:27.792Z",
       "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين",
       "externalCheaper": false
     },
@@ -125458,7 +125396,7 @@
           "titleInStore": "شداد إنفنتي لوجو Under Armour"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:50.700Z",
+      "lastUpdated": "2026-11-12T02:48:27.788Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -126496,10 +126434,10 @@
       "cheapestStore": "Fitness Tech",
       "lowestCorePrice": 1444,
       "cheapestCoreStore": "Fitness Tech",
-      "highestPrice": 1444,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "highestPrice": 2000,
+      "maxSavings": 556,
+      "isExclusive": false,
+      "availableCount": 3,
       "storeBreakdown": {
         "fitness_tech": {
           "storeId": "fitness_tech",
@@ -126513,9 +126451,35 @@
           "url": "https://fitnesstechsupplements.com/product/nutrex-lipo-6-hardcore/",
           "image": "https://i0.wp.com/fitnesstechsupplements.com/wp-content/uploads/2026/07/libo6-hard-core-850005755654.png?fit=600%2C600&ssl=1",
           "titleInStore": "ليبو 6 هاردكور – Nutrex Lipo-6 Hardcore"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1500,
+          "originalPrice": 1700,
+          "url": "https://mfsupps.com/product/nutrex-research-lipo-6-hardcore-60-capsules-60-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Nutrex-Research-Lipo-6-Hardcore-60-Capsules-60-Servings.png",
+          "titleInStore": "Nutrex Research, Lipo-6 Hardcore, 60 Capsules, 60 Servings"
+        },
+        "max_muscle": {
+          "storeId": "max_muscle",
+          "storeName": "Max Muscle Elite",
+          "storeNameEn": "Max Muscle Elite",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": false,
+          "price": 2000,
+          "originalPrice": null,
+          "url": "https://maxmuscleelite.com/products/lipo-6-hardcore-60serv-60caps-nutrex-research",
+          "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/nutrex-research-lipo-6-hardcore-60serv-60caps-850005755654.jpg?v=1791016595",
+          "titleInStore": "Lipo 6 Hardcore.-60Serv.-60Caps | Nutrex Research"
         }
       },
-      "lastUpdated": "2026-11-11T13:58:21.367Z",
+      "lastUpdated": "2026-11-12T02:48:16.302Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 نيوتركس نوتركس نيوتريكس",
       "externalCheaper": false
     },
@@ -132543,16 +132507,16 @@
       "id": "ox_muscle_evolve_clear_whey_isolate",
       "title": "Evolve Clear-Whey Isolate",
       "brand": "Evolve",
-      "weight": "",
-      "size": "",
+      "weight": "20SERV",
+      "size": "20serv",
       "form": "powder",
       "category": "Isolate (معزول)",
       "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/c3d26952-bced-437f-b371-efe452ae7d97.webp?v=1788451157",
-      "lowestPrice": 1550,
+      "lowestPrice": 2690,
       "cheapestStore": "Ox Muscle",
-      "lowestCorePrice": 1550,
+      "lowestCorePrice": 2690,
       "cheapestCoreStore": "Ox Muscle",
-      "highestPrice": 1550,
+      "highestPrice": 2690,
       "maxSavings": 0,
       "isExclusive": true,
       "availableCount": 1,
@@ -132563,52 +132527,16 @@
           "storeNameEn": "Ox Muscle",
           "platform": "Shopify",
           "available": true,
-          "inStock": false,
-          "price": 1550,
+          "inStock": true,
+          "price": 2690,
           "originalPrice": null,
           "url": "https://oxmuscleeg.com/products/evolve-clear-whey-isolate",
           "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/c3d26952-bced-437f-b371-efe452ae7d97.webp?v=1788451157",
-          "titleInStore": "Evolve Clear-Whey Isolate"
+          "titleInStore": "Evolve Clear-Whey Isolate, 20 Servings"
         }
       },
-      "lastUpdated": "2026-11-10T19:46:03.491Z",
+      "lastUpdated": "2026-11-12T02:48:29.476Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
-      "externalCheaper": false
-    },
-    {
-      "id": "ox_muscle_evolve_whey_protein",
-      "title": "Evolve Whey Protein",
-      "brand": "Evolve",
-      "weight": "",
-      "size": "",
-      "form": "powder",
-      "category": "Whey Protein",
-      "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/90bb8d8e-262c-452c-8707-d03906928994.webp?v=1788451156",
-      "lowestPrice": 1550,
-      "cheapestStore": "Ox Muscle",
-      "lowestCorePrice": 1550,
-      "cheapestCoreStore": "Ox Muscle",
-      "highestPrice": 1550,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "ox_muscle": {
-          "storeId": "ox_muscle",
-          "storeName": "Ox Muscle",
-          "storeNameEn": "Ox Muscle",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": false,
-          "price": 1550,
-          "originalPrice": null,
-          "url": "https://oxmuscleeg.com/products/evolve-whey-protein",
-          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/90bb8d8e-262c-452c-8707-d03906928994.webp?v=1788451156",
-          "titleInStore": "Evolve Whey Protein"
-        }
-      },
-      "lastUpdated": "2026-11-10T19:46:03.491Z",
-      "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
@@ -133399,7 +133327,7 @@
           "titleInStore": "Muscle Tech Creactor Creatine HCL, 120 Servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.258Z",
+      "lastUpdated": "2026-11-12T02:48:29.479Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية ماسل تك ماسيل تك ماستك",
       "externalCheaper": false
     },
@@ -141795,7 +141723,7 @@
           "titleInStore": "Zoomad labs MOONSTRUCK Pre-workout"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.270Z",
+      "lastUpdated": "2026-11-12T02:48:29.517Z",
       "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
       "externalCheaper": false
     },
@@ -148178,42 +148106,6 @@
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_evolve_hardcore_pre_workout_goat_40_serv",
-      "title": "evolve hardcore pre-workout goat 40 servings",
-      "brand": "Evolve",
-      "weight": "40SERV",
-      "size": "40serv",
-      "form": "powder",
-      "category": "Pre-Workout",
-      "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/e9b893a4-3961-4cb0-abde-09923e80ad2e.webp?v=1788452145",
-      "lowestPrice": 1150,
-      "cheapestStore": "Ox Muscle",
-      "lowestCorePrice": 1150,
-      "cheapestCoreStore": "Ox Muscle",
-      "highestPrice": 1150,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "ox_muscle": {
-          "storeId": "ox_muscle",
-          "storeName": "Ox Muscle",
-          "storeNameEn": "Ox Muscle",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": false,
-          "price": 1150,
-          "originalPrice": null,
-          "url": "https://oxmuscleeg.com/products/evolve-hardcore-pre-workout-goat-40-servings",
-          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/e9b893a4-3961-4cb0-abde-09923e80ad2e.webp?v=1788452145",
-          "titleInStore": "evolve hardcore pre-workout goat 40 servings"
-        }
-      },
-      "lastUpdated": "2026-11-10T19:46:03.542Z",
-      "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
-      "externalCheaper": false
-    },
-    {
       "id": "ox_muscle_evogen_creatine_monohydrate_micronized",
       "title": "evogen creatine monohydrate micronized",
       "brand": "Evogen",
@@ -149713,7 +149605,7 @@
           "storeNameEn": "Ox Muscle",
           "platform": "Shopify",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 1500,
           "originalPrice": null,
           "url": "https://oxmuscleeg.com/products/nutrex-research-lipo-6-black-intense-new-edition-60-capsules",
@@ -149721,7 +149613,7 @@
           "titleInStore": "Nutrex Research Lipo 6 Black Intense, 60 Capsules"
         }
       },
-      "lastUpdated": "2026-11-10T23:06:46.228Z",
+      "lastUpdated": "2026-11-12T02:48:29.529Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 نيوتركس نوتركس نيوتريكس",
       "externalCheaper": false
     },
@@ -164423,7 +164315,7 @@
           "titleInStore": "Centrum with Lutein 30 Tablets"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:07.799Z",
+      "lastUpdated": "2026-11-12T02:48:44.216Z",
       "arabicSearchTerms": "سنترم مع لوتين 30 قرص ايطالي سنتروم لوتين، سعودي",
       "externalCheaper": false
     },
@@ -164603,7 +164495,7 @@
           "titleInStore": "Moroccan Soap by Moroccan Oil 250 ml (نسخ)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:07.772Z",
+      "lastUpdated": "2026-11-12T02:48:44.193Z",
       "arabicSearchTerms": "الصابون المغربي من موروكان أويل 250 مل",
       "externalCheaper": false
     },
@@ -165071,7 +164963,7 @@
           "titleInStore": "Nicorette 4 mg – 105 Fruit-Flavored Chewing Gums"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:07.781Z",
+      "lastUpdated": "2026-11-12T02:48:44.199Z",
       "arabicSearchTerms": "نيكوريت 4 ملغ – 105 لبانة بنكهة الفواكه مللي بالنعناع",
       "externalCheaper": false
     },
@@ -165539,7 +165431,7 @@
           "titleInStore": "Ginkgo Biloba 120 mg – 100 Capsules | Puritan's Pride"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:07.800Z",
+      "lastUpdated": "2026-11-12T02:48:44.217Z",
       "arabicSearchTerms": "جينكو بيلوبا بيورتنز برايد 120 مجم 100 كبسولة",
       "externalCheaper": false
     },
@@ -168301,7 +168193,7 @@
           "titleInStore": "Puritan's Pride Vitamin E -1000 IU"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.601Z",
+      "lastUpdated": "2026-11-12T02:48:53.046Z",
       "arabicSearchTerms": "فيتامين هـ 1000 – 100 كبسولة من بيورتنز برايد فيتامينات ملتي زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -177739,7 +177631,7 @@
           "titleInStore": "Euthyrox 100 mcg – 100 Tablets (German)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:07.816Z",
+      "lastUpdated": "2026-11-12T02:48:44.229Z",
       "arabicSearchTerms": "يوثيركس 50 مجم 100 قرص الماني",
       "externalCheaper": false
     },
@@ -177847,7 +177739,7 @@
           "titleInStore": "Eltroxin 50 mcg – 100 Tablets (Imported)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:07.817Z",
+      "lastUpdated": "2026-11-12T02:48:44.230Z",
       "arabicSearchTerms": "التروكسين 50 ميكروجرام – 100 قرص (مستورد) مستورد",
       "externalCheaper": false
     },
@@ -179467,7 +179359,7 @@
           "titleInStore": "Marvelous – Lean A.F whey protein Isolate 88 servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.584Z",
+      "lastUpdated": "2026-11-12T02:48:53.030Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -181280,7 +181172,7 @@
           "titleInStore": "Waterkind Sparkling Water (250ml Can)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.543Z",
+      "lastUpdated": "2026-11-12T02:48:52.990Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -181352,7 +181244,7 @@
           "titleInStore": "Waterkind Acai Electrolyte Drink Mix"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.541Z",
+      "lastUpdated": "2026-11-12T02:48:52.988Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -181676,7 +181568,7 @@
           "titleInStore": "Natrol High Absorption Magnesium Glycinate"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.595Z",
+      "lastUpdated": "2026-11-12T02:48:53.040Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -181892,7 +181784,7 @@
           "titleInStore": "Nature's Way Alive! Zero Sugar Women's Gummy Multivitamin"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.592Z",
+      "lastUpdated": "2026-11-12T02:48:53.038Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -182432,7 +182324,7 @@
           "titleInStore": "MYVI My Energy Gummies"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.555Z",
+      "lastUpdated": "2026-11-12T02:48:52.999Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -191723,7 +191615,7 @@
           "titleInStore": "Puritan's Pride Ginseng Complex"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:17.601Z",
+      "lastUpdated": "2026-11-12T02:48:53.046Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -197640,7 +197532,7 @@
           "titleInStore": "MyProtein Stainless Steel Metal Shaker 750ml"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:19.014Z",
+      "lastUpdated": "2026-11-12T02:48:54.448Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -198144,7 +198036,7 @@
           "titleInStore": "MyProtein Impact Whey Protein - White Chocolate / 1kg"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:18.976Z",
+      "lastUpdated": "2026-11-12T02:48:54.404Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -203726,7 +203618,7 @@
           "titleInStore": "QUEST PEANUT BUTTER CHOCOLATE CHIP PROTEIN COOKIE (60g)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:19.004Z",
+      "lastUpdated": "2026-11-12T02:48:54.441Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -215583,7 +215475,7 @@
           "titleInStore": "CLA + CARNITINE - لتحويل الدهون الي طاقة - 50 جرعة"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:19.683Z",
+      "lastUpdated": "2026-11-12T02:48:55.266Z",
       "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 ملح هيمالايا ملح الهيمالايا ملح وردي هيمالايا",
       "externalCheaper": false
     },
@@ -217347,7 +217239,7 @@
           "titleInStore": "حبل قفز رياضي"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:19.682Z",
+      "lastUpdated": "2026-11-12T02:48:55.264Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -219759,7 +219651,7 @@
           "titleInStore": "بروتين ايزوليت ماصل ادد - خالي من اللاكتوز - 30 جرعة - وزن 1 كيلو"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:19.682Z",
+      "lastUpdated": "2026-11-12T02:48:55.265Z",
       "arabicSearchTerms": "ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -223611,7 +223503,7 @@
           "titleInStore": "Nutrex ISOFIT Protein Powder | Premium Whey Isolate | 30 Servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:25.304Z",
+      "lastUpdated": "2026-11-12T02:49:00.795Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات نيوتركس نوتركس نيوتريكس",
       "externalCheaper": false
     },
@@ -223909,10 +223801,10 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-b-50-100-veg-capsules/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Foods-B-50-100-Veg-Capsules.avif",
-          "titleInStore": "B-50 Nervous System Support Now , 100 Veg Capsules"
+          "titleInStore": "Now B-50 Nervous System Support , 100 Veg Capsules"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:45.908Z",
+      "lastUpdated": "2026-11-12T02:48:22.725Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -224022,78 +223914,6 @@
       },
       "lastUpdated": "2026-11-10T23:06:39.161Z",
       "arabicSearchTerms": "ناو فودز ناو",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_zinc_picolinate_immune_support_now_60_ve",
-      "title": "Zinc Picolinate Immune Support NOW , 60 Veg Capsules",
-      "brand": "ماركة معتمدة",
-      "weight": "",
-      "size": "",
-      "form": "capsules",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Zinc-Picolinate-NOW-1.webp",
-      "lowestPrice": 1000,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1000,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1000,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1000,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/zinc-picolinate-now-highly-absorbable-zinc-supplement-for-immune-skin-health/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Zinc-Picolinate-NOW-1.webp",
-          "titleInStore": "Zinc Picolinate Immune Support NOW , 60 Veg Capsules"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.162Z",
-      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_vitamin_d_3_immune_bone_support_now_120_",
-      "title": "Vitamin D-3 Immune & Bone Support Now , 120 Softgels",
-      "brand": "ماركة معتمدة",
-      "weight": "120SOFTGELS",
-      "size": "120softgels",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Vitamin-D3-10000-IU-120-Softgels-Now-Foods-1.webp",
-      "lowestPrice": 1200,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1200,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1200,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1200,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/vitamin-d3-10000-iu-120-softgels-now-foods/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Vitamin-D3-10000-IU-120-Softgels-Now-Foods-1.webp",
-          "titleInStore": "Vitamin D-3 Immune & Bone Support Now , 120 Softgels"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.162Z",
-      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
     {
@@ -224313,42 +224133,6 @@
       "externalCheaper": false
     },
     {
-      "id": "train_hard_zinc_immune_support_now_250_tablets",
-      "title": "Zinc Immune Support Now , 250 Tablets",
-      "brand": "ماركة معتمدة",
-      "weight": "250TABS",
-      "size": "250tabs",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Now-Zinc-50mg-250-Tablets-1.avif",
-      "lowestPrice": 1500,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1500,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1500,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1500,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-zinc-50mg-250-tablets/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Now-Zinc-50mg-250-Tablets-1.avif",
-          "titleInStore": "Zinc Immune Support Now , 250 Tablets"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.167Z",
-      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
-      "externalCheaper": false
-    },
-    {
       "id": "train_hard_water_out_urinary_tract_health_now_100_v",
       "title": "Water Out Urinary Tract Health Now , 100 Veg Capsules",
       "brand": "ماركة معتمدة",
@@ -224377,7 +224161,7 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-water-out-100-veg-capsules/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Water-Out-100-Veg-Capsules-1.avif",
-          "titleInStore": "Water Out Urinary Tract Health Now , 100 Veg Capsules"
+          "titleInStore": "Now Water Out Urinary Tract Health , 100 Veg Capsules"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.167Z",
@@ -224413,7 +224197,7 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-vitamin-e-100-softgels/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Now-Vitamin-E-100-Softgels-1.webp",
-          "titleInStore": "E-400 Antioxidant Protection Now , 100 Softgels"
+          "titleInStore": "Now E-400 Antioxidant Protection , 100 Softgels"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.167Z",
@@ -224449,47 +224233,11 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-vitamin-c-1000-complex-buffered-90-tablets/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Now-Vitamin-C-1000-Complex-1.avif",
-          "titleInStore": "Buffered C-1000 Complex Antioxidant Protection Now , 90 Tablets"
+          "titleInStore": "Now Buffered C-1000 Complex Antioxidant Protection , 90 Tablets"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.168Z",
       "arabicSearchTerms": "",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_vitamin_a_essential_nutrition_now_100_so",
-      "title": "Vitamin A Essential Nutrition Now , 100 Softgels",
-      "brand": "ماركة معتمدة",
-      "weight": "100SOFTGELS",
-      "size": "100softgels",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Vitamin-A-3000mcg-100-Softgels-1.avif",
-      "lowestPrice": 1300,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1300,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1300,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1300,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-vitamin-a-3000mcg-100-softgels/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Vitamin-A-3000mcg-100-Softgels-1.avif",
-          "titleInStore": "Vitamin A Essential Nutrition Now , 100 Softgels"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.168Z",
-      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
     {
@@ -224521,118 +224269,10 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-ultra-omega-3-fish-oil-1gm-epa-500mg-dha-250mg-180-fish-softgels/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Ultra-Omega-3-Fish-Oil-1gm-EPA-500mg-DHA-250MG-180-Fish-Softgels-1.avif",
-          "titleInStore": "Ultra Omega-3 Fish Oil Cardiovascular Support Now , 180 Fish Softgels"
+          "titleInStore": "Now Ultra Omega-3 Fish Oil Cardiovascular Support , 180 Fish Softgels"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.168Z",
-      "arabicSearchTerms": "اوميجا 3 اوميجا زيت سمك صحة القلب مفاصل",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_l_arginine_powder_amino_acid_now_sports_",
-      "title": "L-Arginine Powder Amino Acid Now Sports , 6g Per Serv , 76 Serving",
-      "brand": "NOW Foods",
-      "weight": "6G",
-      "size": "6g",
-      "form": "powder",
-      "category": "Amino & BCAA",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Sports-L-Arginine-Powder-1.avif",
-      "lowestPrice": 2300,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 2300,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 2300,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 2300,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-sports-l-arginine-powder-pure-arginine-for-nitric-oxide-support/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Sports-L-Arginine-Powder-1.avif",
-          "titleInStore": "L-Arginine Powder Amino Acid Now Sports , 6g Per Serv , 76 Serving"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.169Z",
-      "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين ناو فودز ناو",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_omega_3_fish_oil_cardiovascular_support_",
-      "title": "Omega 3 Fish Oil Cardiovascular Support Now , 90 Softgels",
-      "brand": "ماركة معتمدة",
-      "weight": "90SOFTGELS",
-      "size": "90softgels",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Omega-3-Fish-Oil-1000mg-EPA-180mg-DHA-120mg-90-Softgels-1.webp",
-      "lowestPrice": 1250,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1250,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1250,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1250,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-omega-3-fish-oil-1000mg-epa-180mg-dha-120mg-90-softgels/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Omega-3-Fish-Oil-1000mg-EPA-180mg-DHA-120mg-90-Softgels-1.webp",
-          "titleInStore": "Omega 3 Fish Oil Cardiovascular Support Now , 90 Softgels"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.169Z",
-      "arabicSearchTerms": "اوميجا 3 اوميجا زيت سمك صحة القلب مفاصل",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_omega_3_6_9_essential_fatty_acids_now_10",
-      "title": "Omega 3-6-9 Essential Fatty Acids Now , 100 Softgels",
-      "brand": "ماركة معتمدة",
-      "weight": "100SOFTGELS",
-      "size": "100softgels",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Omega-3-6-9-1000mg-100-Softgels-1.avif",
-      "lowestPrice": 1350,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1350,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1350,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1350,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-omega-3-6-9-1000mg-100-softgels/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Omega-3-6-9-1000mg-100-Softgels-1.avif",
-          "titleInStore": "Omega 3-6-9 Essential Fatty Acids Now , 100 Softgels"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.169Z",
       "arabicSearchTerms": "اوميجا 3 اوميجا زيت سمك صحة القلب مفاصل",
       "externalCheaper": false
     },
@@ -224665,155 +224305,11 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-niacin-vitamin-b-500mg-100-veg-capsules/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Niacin-Vitamin-B-500mg-100-Veg-Capsules-1.avif",
-          "titleInStore": "Niacin Nutritional Health Now , 100 Veg Capsules"
+          "titleInStore": "Now Niacin Nutritional Health , 100 Veg Capsules"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.169Z",
       "arabicSearchTerms": "",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_magnesium_malate_nervous_system_suppport",
-      "title": "Magnesium Malate Nervous System Suppport Now , 180 Tablets",
-      "brand": "ماركة معتمدة",
-      "weight": "180TABS",
-      "size": "180tabs",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Malate-1000-mg-180-Tablets-1.webp",
-      "lowestPrice": 2250,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 2250,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 2250,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 2250,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-magnesium-malate-1000-mg-180-tablets/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Malate-1000-mg-180-Tablets-1.webp",
-          "titleInStore": "Magnesium Malate Nervous System Suppport Now , 180 Tablets"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.170Z",
-      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_magnesium_glycinate_nervous_system_suppo",
-      "title": "Magnesium Glycinate Nervous System Support Now , 180 Tablets",
-      "brand": "ماركة معتمدة",
-      "weight": "180TABS",
-      "size": "180tabs",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Glycinate-200mg-180-Tablet-1.webp",
-      "lowestPrice": 2600,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 2600,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 2600,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 2600,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-magnesium-glycinate-200mg-180-tablet/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Glycinate-200mg-180-Tablet-1.webp",
-          "titleInStore": "Magnesium Glycinate Nervous System Support Now , 180 Tablets"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.170Z",
-      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_magnesium_citrate_nervous_system_support",
-      "title": "Magnesium Citrate Nervous System Support Now , 120 Veg Capsules",
-      "brand": "ماركة معتمدة",
-      "weight": "",
-      "size": "",
-      "form": "capsules",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Citrate-400mg-120-Veg-Capsules-1.avif",
-      "lowestPrice": 1800,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1800,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1800,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1800,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-magnesium-citrate-400mg-120-veg-capsules/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Citrate-400mg-120-Veg-Capsules-1.avif",
-          "titleInStore": "Magnesium Citrate Nervous System Support Now , 120 Veg Capsules"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.170Z",
-      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_liquid_chlorophyll_internal_deodorizer_m",
-      "title": "Liquid Chlorophyll Internal Deodorizer Mint Flavor Now Foods",
-      "brand": "NOW Foods",
-      "weight": "",
-      "size": "",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Liquid-Chlorophyll-Super-Concentrated-1.webp",
-      "lowestPrice": 2200,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 2200,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 2200,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 2200,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-liquid-chlorophyll-super-concentrated-mint-flavor/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Liquid-Chlorophyll-Super-Concentrated-1.webp",
-          "titleInStore": "Liquid Chlorophyll Internal Deodorizer Mint Flavor Now Foods"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.170Z",
-      "arabicSearchTerms": "ناو فودز ناو",
       "externalCheaper": false
     },
     {
@@ -224845,7 +224341,7 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-l-arginine-500-mg-100-veg-capsule/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-L-Arginine-500-mg-100-Veg-Capsule-1.avif",
-          "titleInStore": "L-Arginine Amino Acid Now , 100 Veg Capsule"
+          "titleInStore": "Now L-Arginine Amino Acid , 100 Veg Capsule"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.171Z",
@@ -224881,7 +224377,7 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-iron-36mg-double-strength-90-veg-capsules/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Iron-36mg-Double-Strength-90-Veg-Capsules-1.webp",
-          "titleInStore": "Double Strength Iron Essential Mineral Now , 90 Veg Capsules"
+          "titleInStore": "Now Double Strength Iron Essential Mineral , 90 Veg Capsules"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.171Z",
@@ -224917,7 +224413,7 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-foods-vitamin-c-1000-veg-capsules/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Foods-Vitamin-C-1000-Veg-Capsules-1.avif",
-          "titleInStore": "C-1000 Immune System Support Now , 100 Veg Capsules"
+          "titleInStore": "Now C-1000 Immune System Support , 100 Veg Capsules"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.171Z",
@@ -224953,7 +224449,7 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-foods-vitamin-b6-100-mg-powerful-support-for-metabolism-immune-brain-health/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Foods-Vitamin-B6-100-mg-1.webp",
-          "titleInStore": "B-6 Cardiovascular Health Now , 100 Veg Capsules"
+          "titleInStore": "Now B-6 Cardiovascular Health , 100 Veg Capsules"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.172Z",
@@ -225025,46 +224521,10 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-foods-gaba-500-mg-100-veg-capsules/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Foods-GABA-500-mg-100-Veg-Capsules-1.avif",
-          "titleInStore": "GABA Neurotransmitter Support Now , 100 Veg Capsules"
+          "titleInStore": "Now GABA Neurotransmitter Support , 100 Veg Capsules"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.172Z",
-      "arabicSearchTerms": "",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_ashwagandha_ayurvedic_adaptogen_now_90_v",
-      "title": "Ashwagandha Ayurvedic Adaptogen Now , 90 Veg Capsules",
-      "brand": "ماركة معتمدة",
-      "weight": "",
-      "size": "",
-      "form": "capsules",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Ashwagandha-450mg-90-Veg-Capsules-1.webp",
-      "lowestPrice": 1450,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1450,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1450,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1450,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/now-ashwagandha-450mg-90-veg-capsules/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Ashwagandha-450mg-90-Veg-Capsules-1.webp",
-          "titleInStore": "Ashwagandha Ayurvedic Adaptogen Now , 90 Veg Capsules"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.173Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -225100,7 +224560,7 @@
           "titleInStore": "XPEL Diuretic With 75mg Caffeine MHP , 80 Capsules"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:45.909Z",
+      "lastUpdated": "2026-11-12T02:48:22.726Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -225138,42 +224598,6 @@
       },
       "lastUpdated": "2026-11-10T23:06:39.174Z",
       "arabicSearchTerms": "",
-      "externalCheaper": false
-    },
-    {
-      "id": "train_hard_magnesium_glycinate_with_bioperine_nervo",
-      "title": "Magnesium Glycinate with BioPerine Nervous System Support Now , 60 Veg Capsules",
-      "brand": "ماركة معتمدة",
-      "weight": "",
-      "size": "",
-      "form": "capsules",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Magnesium-Glycinate-with-BioPerine-Now-Foods-1.webp",
-      "lowestPrice": 1360,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1360,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1360,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1360,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/magnesium-glycinate-with-bioperine-now-foods/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Magnesium-Glycinate-with-BioPerine-Now-Foods-1.webp",
-          "titleInStore": "Magnesium Glycinate with BioPerine Nervous System Support Now , 60 Veg Capsules"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.174Z",
-      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
     {
@@ -225349,7 +224773,7 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/gtf-chromium-200-mcg-100-tablets-now-foods-powerful-supports-healthy-blood-sugar-metabolic-function/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/GTF-Chromium-200-mcg-100-Tablets-NOW-Foods-1.avif",
-          "titleInStore": "GTF Chromium Insulin Co-Factor , 100 Tablets NOW"
+          "titleInStore": "Now GTF Chromium Insulin Co-Factor , 100 Tablets"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.177Z",
@@ -225478,42 +224902,6 @@
       "externalCheaper": false
     },
     {
-      "id": "train_hard_coq10_cardiovascular_health_now_60_veg_c",
-      "title": "CoQ10 Cardiovascular Health NOW , 60 Veg Capsules",
-      "brand": "ماركة معتمدة",
-      "weight": "",
-      "size": "",
-      "form": "capsules",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/CoQ10-NOW-Foods-200mg-1.avif",
-      "lowestPrice": 1300,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 1300,
-      "cheapestCoreStore": "Train Hard",
-      "highestPrice": 1300,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1300,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/coq10-now-foods-supplement-for-heart-health-energy/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/CoQ10-NOW-Foods-200mg-1.avif",
-          "titleInStore": "CoQ10 Cardiovascular Health NOW , 60 Veg Capsules"
-        }
-      },
-      "lastUpdated": "2026-11-10T23:06:39.179Z",
-      "arabicSearchTerms": "",
-      "externalCheaper": false
-    },
-    {
       "id": "train_hard_commandos_hellfire_creatine_monohydrate__2",
       "title": "Commandos Hellfire Creatine Monohydrate Micronized 5g Per Serv , 100 Servings – Unflavored",
       "brand": "ماركة معتمدة",
@@ -225614,7 +225002,7 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-calcium-magnesium-with-vitamin-d-3-and-zinc-supports-bone-health/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Calcium-Magnesium-with-Vitamin-D-3-and-Zinc-Now-Foods-Supports-Bone-Health-120-1.avif",
-          "titleInStore": "Calcium & Magnesium Supports Bone Health Now , 120 Softgels"
+          "titleInStore": "Now Calcium & Magnesium Supports Bone Health , 120 Softgels"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.180Z",
@@ -225938,7 +225326,7 @@
           "originalPrice": null,
           "url": "https://trainhardeg.com/product/now-adam-superior-mens-multivitamin-90-softgels-advanced-daily-multivitamin-for-mens-health-energy/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/ADAM-Superior-Mens-MultiVitamin-90-Softgels-NOW-Foods-1.avif",
-          "titleInStore": "ADAM Superior Men MultiVitamin Now , 90 Softgels"
+          "titleInStore": "Now ADAM Superior Men MultiVitamin , 90 Softgels"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.197Z",
@@ -226010,7 +225398,7 @@
           "originalPrice": 2000,
           "url": "https://trainhardeg.com/product/now-valerian-root-500mg-250-veg-capsules/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Valerian-Root-500mg-250-Veg-Capsules.avif",
-          "titleInStore": "Valerian Root Herbal Supplement Now , 250 Veg Capsules"
+          "titleInStore": "Now Valerian Root Herbal Supplement , 250 Veg Capsules"
         }
       },
       "lastUpdated": "2026-11-10T23:06:39.200Z",
@@ -226630,7 +226018,43 @@
       "externalCheaper": false
     },
     {
-      "id": "max_muscle_liquid_build_protein._1serv._330ml_muscl",
+      "id": "galaxy_supps_grassfed_collagen_peptide_270_tablets",
+      "title": "Grassfed Collagen Peptide – 270 Tablets",
+      "brand": "ماركة معتمدة",
+      "weight": "270TABS",
+      "size": "270tabs",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://galaxysupps.com/wp-content/uploads/2025/10/ليك-أفينيو-للتغذية،-PEA-بالميتويليثانولاميد،-30-كبسولة-نباتية-بيا-تركيز-600-ملغ-20.webp",
+      "lowestPrice": 2500,
+      "cheapestStore": "Galaxy Supps",
+      "lowestCorePrice": 2500,
+      "cheapestCoreStore": "Galaxy Supps",
+      "highestPrice": 2500,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "galaxy_supps": {
+          "storeId": "galaxy_supps",
+          "storeName": "Galaxy Supps",
+          "storeNameEn": "Galaxy Supps",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 2500,
+          "originalPrice": null,
+          "url": "https://galaxysupps.com/en/product/collagen-peptide-270-tablets/",
+          "image": "https://galaxysupps.com/wp-content/uploads/2025/10/ليك-أفينيو-للتغذية،-PEA-بالميتويليثانولاميد،-30-كبسولة-نباتية-بيا-تركيز-600-ملغ-20.webp",
+          "titleInStore": "Grassfed Collagen Peptide – 270 Tablets"
+        }
+      },
+      "lastUpdated": "2026-11-11T21:17:07.764Z",
+      "arabicSearchTerms": "كولاجين بيبتايد 270 ق فيتامين فيتامينات ملتي زنك ماغنيسيوم مناعة",
+      "externalCheaper": false
+    },
+    {
+      "id": "max_muscle_liquid_build_protein._1serv._330ml_muscl_2",
       "title": "Liquid Build Protein.-1Serv.-330ML | Muscle Add",
       "brand": "Muscle Add",
       "weight": "330ML",
@@ -226661,12 +226085,12 @@
           "titleInStore": "Liquid Build Protein.-1Serv.-330ML | Muscle Add"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:39.719Z",
+      "lastUpdated": "2026-11-12T02:48:16.259Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "max_muscle_guilt_free_cashew_spread._200g_organic_n",
+      "id": "max_muscle_guilt_free_cashew_spread._200g_organic_n_2",
       "title": "Guilt Free Cashew Spread.-200G | Organic Nation",
       "brand": "Organic Nation",
       "weight": "200G",
@@ -226697,12 +226121,12 @@
           "titleInStore": "Guilt Free Cashew Spread.-200G | Organic Nation"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:39.728Z",
+      "lastUpdated": "2026-11-12T02:48:16.269Z",
       "arabicSearchTerms": "بروتين بار سناك صحي شوكولاته صحية سناكس تريجو بار اورجانيك نيشن أورجانيك نيشن",
       "externalCheaper": false
     },
     {
-      "id": "max_muscle_mass_tech_extreme_2000._5serv._2.72kg_mu",
+      "id": "max_muscle_mass_tech_extreme_2000._5serv._2.72kg_mu_2",
       "title": "Mass Tech Extreme 2000.-5Serv.-2.72Kg | MuscleTech",
       "brand": "MuscleTech",
       "weight": "2.72KG",
@@ -226746,12 +226170,12 @@
           "titleInStore": "MuscleTech Mass Tech Extreme 2000 2.72kg"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.376Z",
+      "lastUpdated": "2026-11-12T02:48:18.263Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة ماسل تك ماسيل تك ماستك",
       "externalCheaper": false
     },
     {
-      "id": "max_muscle_protein_isolate_hyper_trophy_blend._30se_3",
+      "id": "max_muscle_protein_isolate_hyper_trophy_blend._30se_2",
       "title": "Protein Isolate Hyper Trophy Blend.-30Serv.-908G | Marvelous Nutrition",
       "brand": "Marvelous Nutrition",
       "weight": "908G",
@@ -226782,12 +226206,12 @@
           "titleInStore": "Protein Isolate Hyper Trophy Blend.-30Serv.-908G | Marvelous Nutrition"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:39.774Z",
+      "lastUpdated": "2026-11-12T02:48:16.309Z",
       "arabicSearchTerms": "ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "power_fit_marvelous_isolate_lean_a.f_2kg_80_servin",
+      "id": "power_fit_marvelous_isolate_lean_a.f_2kg_80_servin_2",
       "title": "Marvelous Isolate Lean A.F 2kg (80 Servings) | Ultra-Lean Whey Isolate for Muscle Growth & Fat Loss|In Power Fit Supplements Egypt",
       "brand": "Marvelous Nutrition",
       "weight": "2KG",
@@ -226818,12 +226242,12 @@
           "titleInStore": "Marvelous Isolate Lean A.F 2kg (80 Servings) | Ultra-Lean Whey Isolate for Muscle Growth & Fat Loss|In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:41.633Z",
+      "lastUpdated": "2026-11-12T02:48:17.578Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "power_fit_farah_secrets_iso_whey_protein_2.3kg_77_",
+      "id": "power_fit_farah_secrets_iso_whey_protein_2.3kg_77__2",
       "title": "Farah Secrets ISO Whey Protein 2.3kg – 77 Servings Isolate in Egypt",
       "brand": "ماركة معتمدة",
       "weight": "2.27KG",
@@ -226854,12 +226278,12 @@
           "titleInStore": "Farah Secrets ISO Whey Protein 2.3kg – 77 Servings Isolate in Egypt"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:41.648Z",
+      "lastUpdated": "2026-11-12T02:48:17.596Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "power_fit_bad_ass_mass_gainer_7kg_high_calorie_mus",
+      "id": "power_fit_bad_ass_mass_gainer_7kg_high_calorie_mus_2",
       "title": "BAD ASS Mass Gainer – 7kg High Calorie Muscle Mass Builder (70 Servings) | Egypt",
       "brand": "ماركة معتمدة",
       "weight": "7KG",
@@ -226890,12 +226314,12 @@
           "titleInStore": "BAD ASS Mass Gainer – 7kg High Calorie Muscle Mass Builder (70 Servings) | Egypt"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:41.651Z",
+      "lastUpdated": "2026-11-12T02:48:17.598Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة",
       "externalCheaper": false
     },
     {
-      "id": "power_fit_yava_labs_pure_iso_whey_2kg_66_servings_",
+      "id": "power_fit_yava_labs_pure_iso_whey_2kg_66_servings__2",
       "title": "Yava Labs Pure Iso Whey 2kg (66 Servings) | Ultra-Pure Whey Isolate for Lean Muscle & Fast Recovery |In Power Fit Supplements Egypt",
       "brand": "Yava Labs",
       "weight": "2KG",
@@ -226926,12 +226350,12 @@
           "titleInStore": "Yava Labs Pure Iso Whey 2kg (66 Servings) | Ultra-Pure Whey Isolate for Lean Muscle & Fast Recovery |In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:41.659Z",
+      "lastUpdated": "2026-11-12T02:48:17.605Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "the_coach_dy_whey_protein_shadowhey_isolate_2kg_66",
+      "id": "the_coach_dy_whey_protein_shadowhey_isolate_2kg_66_2",
       "title": "DY Whey Protein Shadowhey ISOLATE 2kg 66 Servings",
       "brand": "DY Nutrition",
       "weight": "2KG",
@@ -226962,12 +226386,12 @@
           "titleInStore": "DY Whey Protein Shadowhey ISOLATE 2kg 66 Servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.373Z",
+      "lastUpdated": "2026-11-12T02:48:18.262Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "the_coach_marvelous_muscles_lean_af_2kg",
+      "id": "the_coach_marvelous_muscles_lean_af_2kg_2",
       "title": "Marvelous Muscles Lean AF 2kg",
       "brand": "Marvelous Nutrition",
       "weight": "2KG",
@@ -226998,12 +226422,12 @@
           "titleInStore": "Marvelous Muscles Lean AF 2kg"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.418Z",
+      "lastUpdated": "2026-11-12T02:48:18.300Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
     {
-      "id": "power_store_azgard_nutrition_100_whey_high_quality_c",
+      "id": "power_store_azgard_nutrition_100_whey_high_quality_c_2",
       "title": "Azgard Nutrition 100% Whey High Quality CFM Whey Protein-65Serv.-2270G",
       "brand": "Azgard Nutrition",
       "weight": "2.27KG",
@@ -227034,12 +226458,12 @@
           "titleInStore": "Azgard Nutrition 100% Whey High Quality CFM Whey Protein-65Serv.-2270G"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.895Z",
+      "lastUpdated": "2026-11-12T02:48:18.823Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "power_store_dymatize_iso100_76serv._2.3kg",
+      "id": "power_store_dymatize_iso100_76serv._2.3kg_2",
       "title": "Dymatize ISO100-76Serv.-2.3KG-",
       "brand": "Dymatize",
       "weight": "2.27KG",
@@ -227070,12 +226494,12 @@
           "titleInStore": "Dymatize ISO100-76Serv.-2.3KG-"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.900Z",
+      "lastUpdated": "2026-11-12T02:48:18.826Z",
       "arabicSearchTerms": "ديماتايز دايماتايز",
       "externalCheaper": false
     },
     {
-      "id": "power_store_marvelous_nutrition_bulk_whey_protein_is_4",
+      "id": "power_store_marvelous_nutrition_bulk_whey_protein_is_3",
       "title": "Marvelous Nutrition Bulk Whey Protein Isolate.-67Serv.-2KG",
       "brand": "Marvelous Nutrition",
       "weight": "2KG",
@@ -227106,12 +226530,12 @@
           "titleInStore": "Marvelous Nutrition Bulk Whey Protein Isolate.-67Serv.-2KG"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.905Z",
+      "lastUpdated": "2026-11-12T02:48:18.831Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "power_store_yava_labs_pure_iso_whey_protein._66serv._3",
+      "id": "power_store_yava_labs_pure_iso_whey_protein._66serv._2",
       "title": "Yava Labs Pure iso Whey Protein.-66Serv.-2kg",
       "brand": "Yava Labs",
       "weight": "2KG",
@@ -227142,12 +226566,624 @@
           "titleInStore": "Yava Labs Pure iso Whey Protein.-66Serv.-2kg"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:42.907Z",
+      "lastUpdated": "2026-11-12T02:48:18.833Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_azgard_nutrition_hulk_mass_extreme_8.1kg_3",
+      "id": "train_hard_now_zinc_picolinate_immune_support_60_ve",
+      "title": "Now Zinc Picolinate Immune Support , 60 Veg Capsules",
+      "brand": "NOW Foods",
+      "weight": "",
+      "size": "",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Zinc-Picolinate-NOW-1.webp",
+      "lowestPrice": 1000,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1000,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1000,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1000,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/zinc-picolinate-now-highly-absorbable-zinc-supplement-for-immune-skin-health/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Zinc-Picolinate-NOW-1.webp",
+          "titleInStore": "Now Zinc Picolinate Immune Support , 60 Veg Capsules"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.711Z",
+      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_vitamin_d_3_immune_bone_support_120_",
+      "title": "Now Vitamin D-3 Immune & Bone Support , 120 Softgels",
+      "brand": "NOW Foods",
+      "weight": "120SOFTGELS",
+      "size": "120softgels",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Vitamin-D3-10000-IU-120-Softgels-Now-Foods-1.webp",
+      "lowestPrice": 1200,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1200,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1200,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1200,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/vitamin-d3-10000-iu-120-softgels-now-foods/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Vitamin-D3-10000-IU-120-Softgels-Now-Foods-1.webp",
+          "titleInStore": "Now Vitamin D-3 Immune & Bone Support , 120 Softgels"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.713Z",
+      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_omega_3_epa_dha_200_softgels_pure_mo",
+      "title": "Now Omega 3 EPA DHA 200 Softgels – Pure Molecularly Distilled Fish Oil for Heart & Brain Health",
+      "brand": "NOW Foods",
+      "weight": "200SOFTGELS",
+      "size": "200softgels",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Omega-3-EPA-DHA-200-Softgels-NOW-1.avif",
+      "lowestPrice": 1950,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1950,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1950,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1950,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/omega-3-epa-dha-200-softgels-now-pure-molecularly-distilled-fish-oil-for-heart-brain-health/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Omega-3-EPA-DHA-200-Softgels-NOW-1.avif",
+          "titleInStore": "Now Omega 3 EPA DHA 200 Softgels – Pure Molecularly Distilled Fish Oil for Heart & Brain Health"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.716Z",
+      "arabicSearchTerms": "اوميجا 3 اوميجا زيت سمك صحة القلب مفاصل ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_zinc_immune_support_250_tablets",
+      "title": "Now Zinc Immune Support , 250 Tablets",
+      "brand": "NOW Foods",
+      "weight": "250TABS",
+      "size": "250tabs",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Now-Zinc-50mg-250-Tablets-1.avif",
+      "lowestPrice": 1500,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1500,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1500,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1500,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-zinc-50mg-250-tablets/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Now-Zinc-50mg-250-Tablets-1.avif",
+          "titleInStore": "Now Zinc Immune Support , 250 Tablets"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.717Z",
+      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_vitamin_a_essential_nutrition_100_so",
+      "title": "Now Vitamin A Essential Nutrition , 100 Softgels",
+      "brand": "NOW Foods",
+      "weight": "100SOFTGELS",
+      "size": "100softgels",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Vitamin-A-3000mcg-100-Softgels-1.avif",
+      "lowestPrice": 1300,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1300,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1300,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1300,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-vitamin-a-3000mcg-100-softgels/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Vitamin-A-3000mcg-100-Softgels-1.avif",
+          "titleInStore": "Now Vitamin A Essential Nutrition , 100 Softgels"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.719Z",
+      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_l_arginine_powder_amino_acid_6g_per_",
+      "title": "Now L-Arginine Powder Amino Acid , 6g Per Serv , 76 Serving",
+      "brand": "ماركة معتمدة",
+      "weight": "6G",
+      "size": "6g",
+      "form": "powder",
+      "category": "Amino & BCAA",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Sports-L-Arginine-Powder-1.avif",
+      "lowestPrice": 2300,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 2300,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 2300,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 2300,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-sports-l-arginine-powder-pure-arginine-for-nitric-oxide-support/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Sports-L-Arginine-Powder-1.avif",
+          "titleInStore": "Now L-Arginine Powder Amino Acid , 6g Per Serv , 76 Serving"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.720Z",
+      "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_omega_3_fish_oil_cardiovascular_supp",
+      "title": "Now Omega 3 Fish Oil Cardiovascular Support , 90 Softgels",
+      "brand": "NOW Foods",
+      "weight": "90SOFTGELS",
+      "size": "90softgels",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Omega-3-Fish-Oil-1000mg-EPA-180mg-DHA-120mg-90-Softgels-1.webp",
+      "lowestPrice": 1250,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1250,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1250,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1250,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-omega-3-fish-oil-1000mg-epa-180mg-dha-120mg-90-softgels/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Omega-3-Fish-Oil-1000mg-EPA-180mg-DHA-120mg-90-Softgels-1.webp",
+          "titleInStore": "Now Omega 3 Fish Oil Cardiovascular Support , 90 Softgels"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.720Z",
+      "arabicSearchTerms": "اوميجا 3 اوميجا زيت سمك صحة القلب مفاصل ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_omega_3_6_9_essential_fatty_acids_10",
+      "title": "Now Omega 3-6-9 Essential Fatty Acids , 100 Softgels",
+      "brand": "NOW Foods",
+      "weight": "100SOFTGELS",
+      "size": "100softgels",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Omega-3-6-9-1000mg-100-Softgels-1.avif",
+      "lowestPrice": 1350,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1350,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1350,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1350,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-omega-3-6-9-1000mg-100-softgels/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Omega-3-6-9-1000mg-100-Softgels-1.avif",
+          "titleInStore": "Now Omega 3-6-9 Essential Fatty Acids , 100 Softgels"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.720Z",
+      "arabicSearchTerms": "اوميجا 3 اوميجا زيت سمك صحة القلب مفاصل ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_magnesium_malate_nervous_system_supp",
+      "title": "Now Magnesium Malate Nervous System Suppport , 180 Tablets",
+      "brand": "NOW Foods",
+      "weight": "180TABS",
+      "size": "180tabs",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Malate-1000-mg-180-Tablets-1.webp",
+      "lowestPrice": 2250,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 2250,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 2250,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 2250,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-magnesium-malate-1000-mg-180-tablets/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Malate-1000-mg-180-Tablets-1.webp",
+          "titleInStore": "Now Magnesium Malate Nervous System Suppport , 180 Tablets"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.721Z",
+      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_magnesium_glycinate_nervous_system_s",
+      "title": "Now Magnesium Glycinate Nervous System Support , 180 Tablets",
+      "brand": "NOW Foods",
+      "weight": "180TABS",
+      "size": "180tabs",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Glycinate-200mg-180-Tablet-1.webp",
+      "lowestPrice": 2600,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 2600,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 2600,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 2600,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-magnesium-glycinate-200mg-180-tablet/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Glycinate-200mg-180-Tablet-1.webp",
+          "titleInStore": "Now Magnesium Glycinate Nervous System Support , 180 Tablets"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.721Z",
+      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_magnesium_citrate_nervous_system_sup",
+      "title": "Now Magnesium Citrate Nervous System Support , 120 Veg Capsules",
+      "brand": "NOW Foods",
+      "weight": "",
+      "size": "",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Citrate-400mg-120-Veg-Capsules-1.avif",
+      "lowestPrice": 1800,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1800,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1800,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1800,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-magnesium-citrate-400mg-120-veg-capsules/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Magnesium-Citrate-400mg-120-Veg-Capsules-1.avif",
+          "titleInStore": "Now Magnesium Citrate Nervous System Support , 120 Veg Capsules"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.721Z",
+      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_liquid_chlorophyll_internal_deodoriz",
+      "title": "Now Liquid Chlorophyll Internal Deodorizer Mint Flavor",
+      "brand": "ماركة معتمدة",
+      "weight": "",
+      "size": "",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Liquid-Chlorophyll-Super-Concentrated-1.webp",
+      "lowestPrice": 2200,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 2200,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 2200,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 2200,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-liquid-chlorophyll-super-concentrated-mint-flavor/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Liquid-Chlorophyll-Super-Concentrated-1.webp",
+          "titleInStore": "Now Liquid Chlorophyll Internal Deodorizer Mint Flavor"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.721Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_ashwagandha_ayurvedic_adaptogen_90_v",
+      "title": "Now Ashwagandha Ayurvedic Adaptogen , 90 Veg Capsules",
+      "brand": "NOW Foods",
+      "weight": "",
+      "size": "",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Ashwagandha-450mg-90-Veg-Capsules-1.webp",
+      "lowestPrice": 1450,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1450,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1450,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1450,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/now-ashwagandha-450mg-90-veg-capsules/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/NOW-Ashwagandha-450mg-90-Veg-Capsules-1.webp",
+          "titleInStore": "Now Ashwagandha Ayurvedic Adaptogen , 90 Veg Capsules"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.725Z",
+      "arabicSearchTerms": "ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_magnesium_glycinate_with_bioperine_n",
+      "title": "Now Magnesium Glycinate with BioPerine Nervous System Support , 60 Veg Capsules",
+      "brand": "NOW Foods",
+      "weight": "",
+      "size": "",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Magnesium-Glycinate-with-BioPerine-Now-Foods-1.webp",
+      "lowestPrice": 1360,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1360,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1360,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1360,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/magnesium-glycinate-with-bioperine-now-foods/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Magnesium-Glycinate-with-BioPerine-Now-Foods-1.webp",
+          "titleInStore": "Now Magnesium Glycinate with BioPerine Nervous System Support , 60 Veg Capsules"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.727Z",
+      "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "train_hard_now_coq10_cardiovascular_health_60_veg_c",
+      "title": "Now CoQ10 Cardiovascular Health , 60 Veg Capsules",
+      "brand": "NOW Foods",
+      "weight": "",
+      "size": "",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://trainhardeg.com/wp-content/uploads/2026/10/CoQ10-NOW-Foods-200mg-1.avif",
+      "lowestPrice": 1300,
+      "cheapestStore": "Train Hard",
+      "lowestCorePrice": 1300,
+      "cheapestCoreStore": "Train Hard",
+      "highestPrice": 1300,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1300,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/coq10-now-foods-supplement-for-heart-health-energy/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/CoQ10-NOW-Foods-200mg-1.avif",
+          "titleInStore": "Now CoQ10 Cardiovascular Health , 60 Veg Capsules"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:22.732Z",
+      "arabicSearchTerms": "ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "ox_muscle_evolve_sleep_goat_40_servings",
+      "title": "Evolve SLEEP GOAT, 40 Servings",
+      "brand": "Evolve",
+      "weight": "40SERV",
+      "size": "40serv",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/get-image_39496567-da04-43af-ba6d-ccad325036fe.png?v=1794445708",
+      "lowestPrice": 1200,
+      "cheapestStore": "Ox Muscle",
+      "lowestCorePrice": 1200,
+      "cheapestCoreStore": "Ox Muscle",
+      "highestPrice": 1200,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "ox_muscle": {
+          "storeId": "ox_muscle",
+          "storeName": "Ox Muscle",
+          "storeNameEn": "Ox Muscle",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": true,
+          "price": 1200,
+          "originalPrice": null,
+          "url": "https://oxmuscleeg.com/products/evolve-sleep-goat-40-servings",
+          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/get-image_39496567-da04-43af-ba6d-ccad325036fe.png?v=1794445708",
+          "titleInStore": "Evolve SLEEP GOAT, 40 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:29.466Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "ox_muscle_evolve_creatine_all_you_need_40_servings",
+      "title": "Evolve Creatine + All You Need, 40 Servings",
+      "brand": "Evolve",
+      "weight": "40SERV",
+      "size": "40serv",
+      "form": "powder",
+      "category": "Creatine (كرياتين)",
+      "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/get-image_c6452839-6bd8-4ff0-8906-3003f465239b.png?v=1794445706",
+      "lowestPrice": 800,
+      "cheapestStore": "Ox Muscle",
+      "lowestCorePrice": 800,
+      "cheapestCoreStore": "Ox Muscle",
+      "highestPrice": 800,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "ox_muscle": {
+          "storeId": "ox_muscle",
+          "storeName": "Ox Muscle",
+          "storeNameEn": "Ox Muscle",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": true,
+          "price": 800,
+          "originalPrice": null,
+          "url": "https://oxmuscleeg.com/products/evolve-creatine-all-you-need-40-servings",
+          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/get-image_c6452839-6bd8-4ff0-8906-3003f465239b.png?v=1794445706",
+          "titleInStore": "Evolve Creatine + All You Need, 40 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:29.466Z",
+      "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
+      "externalCheaper": false
+    },
+    {
+      "id": "ox_muscle_azgard_nutrition_hulk_mass_extreme_8.1kg_2",
       "title": "Azgard Nutrition Hulk Mass Extreme 8.1kg - 54 servings",
       "brand": "Azgard Nutrition",
       "weight": "8.1KG",
@@ -227178,12 +227214,48 @@
           "titleInStore": "Azgard Nutrition Hulk Mass Extreme 8.1kg - 54 servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.252Z",
+      "lastUpdated": "2026-11-12T02:48:29.470Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_applied_nutrition_critical_whey_2kg_67_s_3",
+      "id": "ox_muscle_evolve_whey_protein_1kg_30_servings",
+      "title": "Evolve Whey Protein, 1kg, 30 Servings",
+      "brand": "Evolve",
+      "weight": "1KG",
+      "size": "1kg",
+      "form": "powder",
+      "category": "Whey Protein",
+      "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/get-image_68f8103e-6e0d-410f-89f8-3e219050739e.png?v=1794444629",
+      "lowestPrice": 2900,
+      "cheapestStore": "Ox Muscle",
+      "lowestCorePrice": 2900,
+      "cheapestCoreStore": "Ox Muscle",
+      "highestPrice": 2900,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "ox_muscle": {
+          "storeId": "ox_muscle",
+          "storeName": "Ox Muscle",
+          "storeNameEn": "Ox Muscle",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": true,
+          "price": 2900,
+          "originalPrice": null,
+          "url": "https://oxmuscleeg.com/products/evolve-whey-protein",
+          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/get-image_68f8103e-6e0d-410f-89f8-3e219050739e.png?v=1794444629",
+          "titleInStore": "Evolve Whey Protein, 1kg, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:29.476Z",
+      "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
+      "externalCheaper": false
+    },
+    {
+      "id": "ox_muscle_applied_nutrition_critical_whey_2kg_67_s_2",
       "title": "Applied Nutrition Critical Whey 2kg - 67 serv",
       "brand": "Applied Nutrition",
       "weight": "2KG",
@@ -227214,12 +227286,48 @@
           "titleInStore": "Applied Nutrition Critical Whey 2kg - 67 serv"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.267Z",
+      "lastUpdated": "2026-11-12T02:48:29.506Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ابلايد نيوتريشن ابلايد",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_zoomad_labs_moonstruck_whey_protein_1kg_",
+      "id": "ox_muscle_evolve_pre_workout_goat_40_servings",
+      "title": "Evolve Pre-Workout Goat, 40 Servings",
+      "brand": "Evolve",
+      "weight": "40SERV",
+      "size": "40serv",
+      "form": "powder",
+      "category": "Pre-Workout",
+      "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/e9b893a4-3961-4cb0-abde-09923e80ad2e.webp?v=1788452145",
+      "lowestPrice": 1200,
+      "cheapestStore": "Ox Muscle",
+      "lowestCorePrice": 1200,
+      "cheapestCoreStore": "Ox Muscle",
+      "highestPrice": 1200,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "ox_muscle": {
+          "storeId": "ox_muscle",
+          "storeName": "Ox Muscle",
+          "storeNameEn": "Ox Muscle",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": true,
+          "price": 1200,
+          "originalPrice": null,
+          "url": "https://oxmuscleeg.com/products/evolve-hardcore-pre-workout-goat-40-servings",
+          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/e9b893a4-3961-4cb0-abde-09923e80ad2e.webp?v=1788452145",
+          "titleInStore": "Evolve Pre-Workout Goat, 40 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-12T02:48:29.525Z",
+      "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
+      "externalCheaper": false
+    },
+    {
+      "id": "ox_muscle_zoomad_labs_moonstruck_whey_protein_1kg__2",
       "title": "Zoomad Labs Moonstruck Whey Protein - 1kg - 33 servings",
       "brand": "Moons Truck",
       "weight": "1KG",
@@ -227250,12 +227358,12 @@
           "titleInStore": "Zoomad Labs Moonstruck Whey Protein - 1kg - 33 servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.284Z",
+      "lastUpdated": "2026-11-12T02:48:29.532Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_yava_labs_whey_elite_2kg_66_serv",
+      "id": "ox_muscle_yava_labs_whey_elite_2kg_66_serv_2",
       "title": "Yava Labs Whey Elite 2kg - 66 serv",
       "brand": "Yava Labs",
       "weight": "2KG",
@@ -227286,12 +227394,12 @@
           "titleInStore": "Yava Labs Whey Elite 2kg - 66 serv"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.293Z",
+      "lastUpdated": "2026-11-12T02:48:29.541Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_marvelous_lean_a.f_protein_isolate_2kg_8",
+      "id": "ox_muscle_marvelous_lean_a.f_protein_isolate_2kg_8_2",
       "title": "Marvelous LEAN A.F Protein Isolate, 2kg, 80 servings",
       "brand": "Marvelous Nutrition",
       "weight": "2KG",
@@ -227322,48 +227430,12 @@
           "titleInStore": "Marvelous LEAN A.F Protein Isolate, 2kg, 80 servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:16:52.296Z",
+      "lastUpdated": "2026-11-12T02:48:29.543Z",
       "arabicSearchTerms": "ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "galaxy_supps_grassfed_collagen_peptide_270_tablets",
-      "title": "Grassfed Collagen Peptide – 270 Tablets",
-      "brand": "ماركة معتمدة",
-      "weight": "270TABS",
-      "size": "270tabs",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://galaxysupps.com/wp-content/uploads/2025/10/ليك-أفينيو-للتغذية،-PEA-بالميتويليثانولاميد،-30-كبسولة-نباتية-بيا-تركيز-600-ملغ-20.webp",
-      "lowestPrice": 2500,
-      "cheapestStore": "Galaxy Supps",
-      "lowestCorePrice": 2500,
-      "cheapestCoreStore": "Galaxy Supps",
-      "highestPrice": 2500,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "galaxy_supps": {
-          "storeId": "galaxy_supps",
-          "storeName": "Galaxy Supps",
-          "storeNameEn": "Galaxy Supps",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 2500,
-          "originalPrice": null,
-          "url": "https://galaxysupps.com/en/product/collagen-peptide-270-tablets/",
-          "image": "https://galaxysupps.com/wp-content/uploads/2025/10/ليك-أفينيو-للتغذية،-PEA-بالميتويليثانولاميد،-30-كبسولة-نباتية-بيا-تركيز-600-ملغ-20.webp",
-          "titleInStore": "Grassfed Collagen Peptide – 270 Tablets"
-        }
-      },
-      "lastUpdated": "2026-11-11T21:17:07.764Z",
-      "arabicSearchTerms": "كولاجين بيبتايد 270 ق فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم مناعة",
-      "externalCheaper": false
-    },
-    {
-      "id": "fit_spot_applied_nutrition_l_carnitine_liquid_sho",
+      "id": "fit_spot_applied_nutrition_l_carnitine_liquid_sho_2",
       "title": "Applied Nutrition L-Carnitine Liquid Shot",
       "brand": "Applied Nutrition",
       "weight": "",
@@ -227394,12 +227466,12 @@
           "titleInStore": "Applied Nutrition L-Carnitine Liquid Shot"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:18.949Z",
+      "lastUpdated": "2026-11-12T02:48:54.376Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 ابلايد نيوتريشن ابلايد",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_raw_cream_of_rice_850g_25_servings",
+      "id": "fit_spot_raw_cream_of_rice_850g_25_servings_2",
       "title": "RAW CREAM OF RICE - 850g | 25 servings",
       "brand": "RAW",
       "weight": "850G",
@@ -227430,12 +227502,12 @@
           "titleInStore": "RAW CREAM OF RICE - 850g | 25 servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:18.949Z",
+      "lastUpdated": "2026-11-12T02:48:54.376Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_mutant_whey_2kg",
+      "id": "fit_spot_mutant_whey_2kg_2",
       "title": "Mutant Whey 2kg",
       "brand": "Mutant",
       "weight": "2KG",
@@ -227466,12 +227538,12 @@
           "titleInStore": "Mutant Whey 2kg"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:18.953Z",
+      "lastUpdated": "2026-11-12T02:48:54.383Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_ryse_loaded_protein_900g_27_servings",
+      "id": "fit_spot_ryse_loaded_protein_900g_27_servings_2",
       "title": "RYSE Loaded Protein 900G (27 Servings)",
       "brand": "RYSE",
       "weight": "908G",
@@ -227502,12 +227574,12 @@
           "titleInStore": "RYSE Loaded Protein 900G (27 Servings)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:18.979Z",
+      "lastUpdated": "2026-11-12T02:48:54.405Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_dy_shadow_whey_protein_2kg_66_servings",
+      "id": "fit_spot_dy_shadow_whey_protein_2kg_66_servings_2",
       "title": "DY Shadow Whey Protein 2KG (66 Servings)",
       "brand": "DY Nutrition",
       "weight": "2KG",
@@ -227538,12 +227610,12 @@
           "titleInStore": "DY Shadow Whey Protein 2KG (66 Servings)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:18.984Z",
+      "lastUpdated": "2026-11-12T02:48:54.410Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_dy_shadowhey_isolate_2kg_66_servings",
+      "id": "fit_spot_dy_shadowhey_isolate_2kg_66_servings_2",
       "title": "DY Shadowhey Isolate 2KG (66 Servings)",
       "brand": "DY Nutrition",
       "weight": "2KG",
@@ -227574,12 +227646,12 @@
           "titleInStore": "DY Shadowhey Isolate 2KG (66 Servings)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:18.985Z",
+      "lastUpdated": "2026-11-12T02:48:54.411Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_muscletech_mass_tech_extreme_2000_mass_g",
+      "id": "fit_spot_muscletech_mass_tech_extreme_2000_mass_g_2",
       "title": "MuscleTech Mass Tech Extreme 2000 Mass Gainer 5.5kg (10 Servings)",
       "brand": "MuscleTech",
       "weight": "5.5KG",
@@ -227610,12 +227682,12 @@
           "titleInStore": "MuscleTech Mass Tech Extreme 2000 Mass Gainer 5.5kg (10 Servings)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:18.994Z",
+      "lastUpdated": "2026-11-12T02:48:54.424Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة ماسل تك ماسيل تك ماستك",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_applied_nutrition_critical_oats_protein_",
+      "id": "fit_spot_applied_nutrition_critical_oats_protein__2",
       "title": "Applied Nutrition Critical Oats Protein Porridge 600g",
       "brand": "Applied Nutrition",
       "weight": "600G",
@@ -227646,12 +227718,12 @@
           "titleInStore": "Applied Nutrition Critical Oats Protein Porridge 600g"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:18.999Z",
+      "lastUpdated": "2026-11-12T02:48:54.433Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ابلايد نيوتريشن ابلايد",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_myprotein_pop_rolls_pistachio_27g",
+      "id": "fit_spot_myprotein_pop_rolls_pistachio_27g_2",
       "title": "MyProtein Pop Rolls Pistachio | 27g",
       "brand": "MyProtein",
       "weight": "27G",
@@ -227682,12 +227754,12 @@
           "titleInStore": "MyProtein Pop Rolls Pistachio | 27g"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:19.004Z",
+      "lastUpdated": "2026-11-12T02:48:54.440Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_fitcrunch_peanut_butter_jelly_46g",
+      "id": "fit_spot_fitcrunch_peanut_butter_jelly_46g_2",
       "title": "FITCRUNCH Peanut Butter & Jelly (46g)",
       "brand": "FitCrunch",
       "weight": "46G",
@@ -227718,12 +227790,12 @@
           "titleInStore": "FITCRUNCH Peanut Butter & Jelly (46g)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:19.007Z",
+      "lastUpdated": "2026-11-12T02:48:54.443Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_fitcrunch_mint_chocolate_chip_46g",
+      "id": "fit_spot_fitcrunch_mint_chocolate_chip_46g_2",
       "title": "FITCRUNCH Mint Chocolate Chip (46g)",
       "brand": "FitCrunch",
       "weight": "46G",
@@ -227754,12 +227826,12 @@
           "titleInStore": "FITCRUNCH Mint Chocolate Chip (46g)"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:19.007Z",
+      "lastUpdated": "2026-11-12T02:48:54.444Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_myprotein_origin_pre_workout_dry_scoop_1",
+      "id": "fit_spot_myprotein_origin_pre_workout_dry_scoop_1_2",
       "title": "MyProtein Origin Pre-Workout Dry Scoop | 18 Servings",
       "brand": "MyProtein",
       "weight": "18SERV",
@@ -227790,7 +227862,7 @@
           "titleInStore": "MyProtein Origin Pre-Workout Dry Scoop | 18 Servings"
         }
       },
-      "lastUpdated": "2026-11-11T21:17:19.013Z",
+      "lastUpdated": "2026-11-12T02:48:54.447Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
       "externalCheaper": false
     }
