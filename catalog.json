@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "lastCatalogSync": "2026-11-25T14:08:07.196Z",
-    "lastUpdated": "2026-11-25T14:08:07.196Z",
-    "totalProducts": 5961,
-    "totalComparedItems": 5961,
+    "lastCatalogSync": "2026-11-26T00:09:00.483Z",
+    "lastUpdated": "2026-11-26T00:09:00.483Z",
+    "totalProducts": 5989,
+    "totalComparedItems": 5989,
     "externalDealsFound": 95,
-    "exclusiveItemsCount": 5273,
+    "exclusiveItemsCount": 5291,
     "monitoredCoreStores": 11,
     "syncEngineStatus": "24/7 Live Active",
     "stats": {
       "storesChecked": 14,
       "storesSuccessful": 13,
-      "totalOffersCollected": 6327,
-      "pricesUpdatedCount": 140,
-      "newProductsAddedCount": 31,
-      "durationSeconds": 133
+      "totalOffersCollected": 6372,
+      "pricesUpdatedCount": 129,
+      "newProductsAddedCount": 60,
+      "durationSeconds": 74
     }
   },
   "products": [
@@ -14170,8 +14170,8 @@
       "id": "super_supplement_neocell_collagen_beauty_bursts_60_soft_c",
       "title": "Neocell collagen beauty bursts 60 soft chews",
       "brand": "ماركة معتمدة",
-      "weight": "",
-      "size": "",
+      "weight": "60CHEWS",
+      "size": "60chews",
       "form": "powder",
       "category": "مكملات غذائية متنوعة",
       "image": "https://super-eg.com/wp-content/uploads/2026/02/Neocell-collagen-beauty-bursts-fruit-punch-flavor-60-tasty-soft-chews-m12939.png",
@@ -14181,8 +14181,8 @@
       "cheapestCoreStore": "Super Supplement",
       "highestPrice": 1950,
       "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -14196,9 +14196,22 @@
           "url": "https://super-eg.com/product/neocell-collagen-beauty-bursts-60-soft-chews/",
           "image": "https://super-eg.com/wp-content/uploads/2026/02/Neocell-collagen-beauty-bursts-fruit-punch-flavor-60-tasty-soft-chews-m12939.png",
           "titleInStore": "Neocell collagen beauty bursts 60 soft chews"
+        },
+        "ifit_egypt": {
+          "storeId": "ifit_egypt",
+          "storeName": "iFIT Egypt",
+          "storeNameEn": "iFIT Egypt",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1950,
+          "originalPrice": null,
+          "url": "https://ifit-eg.com/product/neocell-collagen-beauty-bursts-fruit-punch-60-chews/",
+          "image": "https://ifit-eg.com/wp-content/uploads/2026/11/neocell-beauty-bursts-fruit-punch-60-chews-1.webp",
+          "titleInStore": "NeoCell Collagen Beauty Bursts Soft Chews, Fruit Punch (60 Chews)"
         }
       },
-      "lastUpdated": "2026-11-10T19:45:16.803Z",
+      "lastUpdated": "2026-11-26T00:08:53.972Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -14518,7 +14531,7 @@
           "titleInStore": "Yava Labs Fat Burner Extreme 60 capsules"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.425Z",
+      "lastUpdated": "2026-11-26T00:08:13.145Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6",
       "externalCheaper": false
     },
@@ -18127,8 +18140,8 @@
       "cheapestCoreStore": "Super Supplement",
       "highestPrice": 1600,
       "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -18142,9 +18155,22 @@
           "url": "https://super-eg.com/product/now-foods-vitamin-c-1000-complex-buffered-tablets/",
           "image": "https://super-eg.com/wp-content/uploads/2025/09/Now-foods-vitamin-c-1000-complex.png",
           "titleInStore": "Now Foods Vitamin C-1000 Complex, Buffered Tablets"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1600,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/now-foods-vitamin-c-1000-100-tablets-100-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Now-Foods-Vitamin-C-1000-100-Tablets-100-Servings.png",
+          "titleInStore": "Now Foods, Vitamin C-1000, 100 Tablets, 100 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.683Z",
+      "lastUpdated": "2026-11-26T00:08:09.780Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة ناو فودز ناو",
       "externalCheaper": false
     },
@@ -19513,7 +19539,7 @@
           "titleInStore": "Challenger Nutrition 100% Whey Protein"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:59.994Z",
+      "lastUpdated": "2026-11-26T00:08:54.039Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": {
         "storeId": "ifit_egypt",
@@ -20218,7 +20244,7 @@
           "titleInStore": "Universal Nutrition Animal Flex 44 Packs"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:14.879Z",
+      "lastUpdated": "2026-11-26T00:08:16.538Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -22279,7 +22305,7 @@
           "titleInStore": "Rule One Energized Amino 30 servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.711Z",
+      "lastUpdated": "2026-11-26T00:08:23.125Z",
       "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين",
       "externalCheaper": false
     },
@@ -25345,7 +25371,7 @@
           "titleInStore": "Marvelous Nutrition Creatine Monohydrate | 60 Servings | New Edition"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:06.648Z",
+      "lastUpdated": "2026-11-26T00:08:09.771Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -25665,12 +25691,12 @@
       "form": "powder",
       "category": "Amino & BCAA",
       "image": "https://super-eg.com/wp-content/uploads/2024/08/352494_Optimum_Nutrition_Essential_Amino_Energy_Plus_Electrolytes_Tangerine_Wave_tub_Front-e1756336087391.webp",
-      "lowestPrice": 1600,
-      "cheapestStore": "Fit Spot",
-      "lowestCorePrice": 1600,
+      "lowestPrice": 1500,
+      "cheapestStore": "Power Fit",
+      "lowestCorePrice": 1500,
       "cheapestCoreStore": "Power Fit",
       "highestPrice": 1800,
-      "maxSavings": 200,
+      "maxSavings": 300,
       "isExclusive": false,
       "availableCount": 4,
       "storeBreakdown": {
@@ -25720,14 +25746,14 @@
           "platform": "Shopify",
           "available": true,
           "inStock": true,
-          "price": 1600,
+          "price": 1500,
           "originalPrice": 1700,
           "url": "https://powerfitsupplements.com/products/optimum-nutrition-essential-amino-energy-electrolytes-285g-30-servings-hydration-energy-recovery-in-power-fit-supplements-egypt",
           "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/NewTemplate_73f9c18a-0f66-4310-b8b6-4c584d2a0045.jpg?v=1759437272",
           "titleInStore": "Optimum Nutrition Essential Amino Energy + Electrolytes 285g (30 Servings) | Hydration, Energy & Recovery| In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-23T20:04:54.922Z",
+      "lastUpdated": "2026-11-26T00:08:12.431Z",
       "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين اوبتيموم اوبتيمم جولد ستاندرد اون",
       "externalCheaper": false
     },
@@ -27481,8 +27507,8 @@
       "cheapestCoreStore": "Super Supplement",
       "highestPrice": 1900,
       "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -27496,9 +27522,22 @@
           "url": "https://super-eg.com/product/bad-ass-eaabcaa-390-gm/",
           "image": "https://super-eg.com/wp-content/uploads/2024/04/Bad-Ass-EaaBcaa-main.jpg",
           "titleInStore": "Bad Ass EAA+BCAA 390 gm"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1500,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/bad-ass-eaa-bcaa-390g-62-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Bad-Ass-Eaa-Bcaa-390g-62-Serving-1.png",
+          "titleInStore": "Bad Ass, Eaa + Bcaa, 390g, 62 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.690Z",
+      "lastUpdated": "2026-11-26T00:08:09.791Z",
       "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين",
       "externalCheaper": false
     },
@@ -27890,7 +27929,7 @@
           "titleInStore": "Nutrex Lipo-6 Black Hers Ultra Concentrate"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.718Z",
+      "lastUpdated": "2026-11-26T00:08:21.821Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 نيوتركس نوتركس نيوتريكس",
       "externalCheaper": false
     },
@@ -30251,8 +30290,8 @@
       "cheapestCoreStore": "Super Supplement",
       "highestPrice": 50,
       "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -30266,9 +30305,22 @@
           "url": "https://super-eg.com/product/buildingblox-bolt-pre-workout-shot-60-ml/",
           "image": "https://super-eg.com/wp-content/uploads/2023/07/6224010248359-Building-Blox-Bolt-Pre-workout-60Ml.-1Serv.jpg",
           "titleInStore": "Buildingblox BOLT Pre-Workout Shot 60 ml"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 40,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/building-blox-bolt-pre-workout-shot-60ml-1-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Building-Blox-BOLT-Pre-workout-Shot-60ml-1-Servings-Icy-Blueberry.png",
+          "titleInStore": "Building Blox, BOLT Pre-workout Shot, 60ml, 1 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.714Z",
+      "lastUpdated": "2026-11-26T00:08:09.819Z",
       "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
       "externalCheaper": false
     },
@@ -31193,7 +31245,7 @@
           "storeNameEn": "MF Supplement",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 1800,
           "originalPrice": 2400,
           "url": "https://mfsupps.com/product/novogen-whey-protein-1kg-egypt/",
@@ -31279,7 +31331,7 @@
           "titleInStore": "Novogen Whey Protein 1KG"
         }
       },
-      "lastUpdated": "2026-11-23T20:04:54.918Z",
+      "lastUpdated": "2026-11-26T00:08:09.769Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -33250,7 +33302,7 @@
           "titleInStore": "Universal Nutrition Animal Pak, 30 Packs"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.717Z",
+      "lastUpdated": "2026-11-26T00:08:23.133Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -34586,7 +34638,7 @@
       "highestPrice": 1200,
       "maxSavings": 0,
       "isExclusive": false,
-      "availableCount": 2,
+      "availableCount": 3,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -34613,9 +34665,22 @@
           "url": "https://oxmuscleeg.com/products/21st-century-chromium-picolinate-200mcg-100-tablets",
           "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/404313db-1fdb-4af4-9a78-0a71525182e6.webp?v=1788451310",
           "titleInStore": "21ST CENTURY® Chromium Picolinate 200mcg 100 Tablets"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1200,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/21st-century-chromium-picolinate-200mcg-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/21st-Century-Chromium-Picolinate-200mcg-100-Tablets.png",
+          "titleInStore": "21st Century, Chromium Picolinate, 200mcg, 100 Tablets"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.693Z",
+      "lastUpdated": "2026-11-26T00:08:09.794Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -35687,7 +35752,7 @@
           "available": true,
           "inStock": true,
           "price": 3500,
-          "originalPrice": 3800,
+          "originalPrice": 4000,
           "url": "https://powerfitsupplements.com/products/optimum-nutrition-gold-standard-100-whey-strawberry-907g-2-lbs-29-servings",
           "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/vanilla_5.jpg?v=1770319939",
           "titleInStore": "Optimum Nutrition Gold Standard Whey 907g (29 Servings) | Premium Protein for Muscle Growth & Recovery|In Power Fit Supplements Egypt"
@@ -35723,10 +35788,10 @@
       "cheapestStore": "Super Supplement",
       "lowestCorePrice": 1899,
       "cheapestCoreStore": "Super Supplement",
-      "highestPrice": 1900,
-      "maxSavings": 1,
+      "highestPrice": 3500,
+      "maxSavings": 1601,
       "isExclusive": false,
-      "availableCount": 2,
+      "availableCount": 4,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -35753,9 +35818,35 @@
           "url": "https://ifit-eg.com/product/novogen-pharma-whey-protein-isolate/",
           "image": "https://ifit-eg.com/wp-content/uploads/2023/07/NOVOGEN-WHEY-PROTIEN-ISOLATE-CHOCOLATE1KG.webp",
           "titleInStore": "Novogen Pharma Whey Protein Isolate"
+        },
+        "max_muscle": {
+          "storeId": "max_muscle",
+          "storeName": "Max Muscle Elite",
+          "storeNameEn": "Max Muscle Elite",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": false,
+          "price": 2200,
+          "originalPrice": null,
+          "url": "https://maxmuscleelite.com/products/whey-protein-isolate-novogen",
+          "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/novogen-pharma-whey-isolate-60serv-2kg-double-chocolate-6224009328017.jpg?v=1791016594",
+          "titleInStore": "Whey Protein Isolate | Novogen - 30Serv / Double Chocolate"
+        },
+        "train_hard": {
+          "storeId": "train_hard",
+          "storeName": "Train Hard",
+          "storeNameEn": "Train Hard",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 3500,
+          "originalPrice": null,
+          "url": "https://trainhardeg.com/product/novogen-whey-protein-isolate-2kg-premium-whey-isolate-for-lean-muscle-growth/",
+          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Novogen-Whey-Protein-Isolate-2KG-1.webp",
+          "titleInStore": "Novogen Whey Protein Isolate 2KG"
         }
       },
-      "lastUpdated": "2026-11-25T02:11:13.214Z",
+      "lastUpdated": "2026-11-26T00:08:16.522Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -36591,10 +36682,10 @@
       "cheapestStore": "Super Supplement",
       "lowestCorePrice": 899,
       "cheapestCoreStore": "Super Supplement",
-      "highestPrice": 2000,
-      "maxSavings": 1101,
+      "highestPrice": 1500,
+      "maxSavings": 601,
       "isExclusive": false,
-      "availableCount": 7,
+      "availableCount": 5,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -36660,32 +36751,6 @@
           "url": "https://fitspot-eg.com/products/nutrex-reserch-lipo6-hardcore",
           "image": "https://cdn.shopify.com/s/files/1/0812/9816/1913/files/Lipo6-HC_png.webp?v=1779499356",
           "titleInStore": "Nutrex Reserch Lipo-6 Hardcore | 60 Capsules - 60 Capsules (60 serving)"
-        },
-        "mf_supplement": {
-          "storeId": "mf_supplement",
-          "storeName": "MF Supplement",
-          "storeNameEn": "MF Supplement",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": false,
-          "price": 1500,
-          "originalPrice": 1700,
-          "url": "https://mfsupps.com/product/nutrex-research-lipo-6-hardcore-60-capsules-60-servings/",
-          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Nutrex-Research-Lipo-6-Hardcore-60-Capsules-60-Servings.png",
-          "titleInStore": "Nutrex Research, Lipo-6 Hardcore, 60 Capsules, 60 Servings"
-        },
-        "max_muscle": {
-          "storeId": "max_muscle",
-          "storeName": "Max Muscle Elite",
-          "storeNameEn": "Max Muscle Elite",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": true,
-          "price": 2000,
-          "originalPrice": null,
-          "url": "https://maxmuscleelite.com/products/lipo-6-hardcore-60serv-60caps-nutrex-research",
-          "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/nutrex-research-lipo-6-hardcore-60serv-60caps-850005755654.jpg?v=1791016595",
-          "titleInStore": "Lipo 6 Hardcore.-60Serv.-60Caps | Nutrex Research"
         }
       },
       "lastUpdated": "2026-11-25T14:07:07.480Z",
@@ -38919,7 +38984,7 @@
           "titleInStore": "Universal Nutrition Animal M-Stak - 21 Packs (21 Servings)"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.731Z",
+      "lastUpdated": "2026-11-26T00:08:23.148Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -39570,21 +39635,21 @@
           "image": "https://cdn.shopify.com/s/files/1/0812/9816/1913/files/Untitled-2-04.jpg?v=1779499350",
           "titleInStore": "bpi Sports Cla+Carnitine 50 Servings"
         },
-        "power_store": {
-          "storeId": "power_store",
-          "storeName": "Power Store",
-          "storeNameEn": "Power Store",
-          "platform": "Shopify",
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
           "available": true,
           "inStock": true,
-          "price": 1850,
-          "originalPrice": 1950,
-          "url": "https://powerstore-eg.com/products/bpi-sports-cla-carnitine-320g",
-          "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/BPI_Sports_CLA_Carnitine_Snow_Cone.png?v=1794914179",
-          "titleInStore": "Bpi Sports Cla+Carnitine-50Serv.-320G"
+          "price": 1750,
+          "originalPrice": 1900,
+          "url": "https://mfsupps.com/product/bpi-sports-cla-plus-carnitine/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Bpi-sports-Cla-Carnitine-385g-50-Serving-fruit-punch.png",
+          "titleInStore": "Bpi sports, Cla + Carnitine, 385g, 50 Servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.718Z",
+      "lastUpdated": "2026-11-26T00:08:09.788Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6",
       "externalCheaper": false
     },
@@ -39774,7 +39839,7 @@
       "highestPrice": 2099,
       "maxSavings": 0,
       "isExclusive": false,
-      "availableCount": 2,
+      "availableCount": 3,
       "storeBreakdown": {
         "super_supplement": {
           "storeId": "super_supplement",
@@ -39801,9 +39866,22 @@
           "url": "https://oxmuscleeg.com/products/bpi-sports-creatine-micronized-600-gm-120-servings",
           "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/b932de35-53b5-4fd6-a41c-906cc3044ed4.webp?v=1788451536",
           "titleInStore": "Bpi Sports Creatine Micronized 600 gm -120 servings"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 2000,
+          "originalPrice": 2500,
+          "url": "https://mfsupps.com/product/bpi-sports-micronized-creatine-600g-120-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Bpi-Sports-Micronized-Creatine-600g-120-Servings.png",
+          "titleInStore": "Bpi Sports, Micronized Creatine, 600g, 120 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.690Z",
+      "lastUpdated": "2026-11-26T00:08:09.790Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -44084,7 +44162,7 @@
           "titleInStore": "DR.Mohamed Mahmoud, Evolution Preworkout DECAF, 660g, 30 Servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:06.576Z",
+      "lastUpdated": "2026-11-26T00:08:09.685Z",
       "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
       "externalCheaper": false
     },
@@ -57008,7 +57086,7 @@
           "titleInStore": "NeoCell Super Collagen Peptides"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:59.991Z",
+      "lastUpdated": "2026-11-26T00:08:54.037Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -57253,7 +57331,7 @@
           "titleInStore": "Guilt Free Chocolate Spread | Organic Nation - High Protein / 370G"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:06.625Z",
+      "lastUpdated": "2026-11-26T00:08:09.743Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين اورجانيك نيشن أورجانيك نيشن",
       "externalCheaper": false
     },
@@ -59205,10 +59283,10 @@
       "cheapestStore": "MF Supplement",
       "lowestCorePrice": 2000,
       "cheapestCoreStore": "MF Supplement",
-      "highestPrice": 2200,
-      "maxSavings": 200,
-      "isExclusive": false,
-      "availableCount": 2,
+      "highestPrice": 2000,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
       "storeBreakdown": {
         "mf_supplement": {
           "storeId": "mf_supplement",
@@ -59216,28 +59294,15 @@
           "storeNameEn": "MF Supplement",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 2000,
           "originalPrice": 2200,
           "url": "https://mfsupps.com/product/novogen-whey-protein-isolate/",
           "image": "https://mfsupps.com/wp-content/uploads/2025/04/Novogen-Pharma-Whey-Isolate-1kg-30-Servings-chocolate-ice-cream.png",
           "titleInStore": "Novogen Pharma, Whey Isolate, 1kg, 30 Servings"
-        },
-        "max_muscle": {
-          "storeId": "max_muscle",
-          "storeName": "Max Muscle Elite",
-          "storeNameEn": "Max Muscle Elite",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": false,
-          "price": 2200,
-          "originalPrice": null,
-          "url": "https://maxmuscleelite.com/products/whey-protein-isolate-novogen",
-          "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/novogen-pharma-whey-isolate-60serv-2kg-double-chocolate-6224009328017.jpg?v=1791016594",
-          "titleInStore": "Whey Protein Isolate | Novogen - 30Serv / Double Chocolate"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:07.484Z",
+      "lastUpdated": "2026-11-26T00:08:09.748Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -62457,7 +62522,7 @@
           "storeNameEn": "MF Supplement",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 400,
           "originalPrice": null,
           "url": "https://mfsupps.com/product/novogen-carb-plus-minerals/",
@@ -62465,7 +62530,7 @@
           "titleInStore": "Novogen Pharma, Carb+, 1KG, 25 Serving"
         }
       },
-      "lastUpdated": "2026-11-13T12:02:14.463Z",
+      "lastUpdated": "2026-11-26T00:08:09.755Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -63451,7 +63516,7 @@
           "storeNameEn": "MF Supplement",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": true,
+          "inStock": false,
           "price": 295,
           "originalPrice": null,
           "url": "https://mfsupps.com/product/organic-nation-potassium-blend-egypt/",
@@ -63459,7 +63524,7 @@
           "titleInStore": "Organic Nation, Potassium Blend, 60 Tablets, 60 Servings"
         }
       },
-      "lastUpdated": "2026-11-10T19:45:49.436Z",
+      "lastUpdated": "2026-11-26T00:08:09.757Z",
       "arabicSearchTerms": "اورجانيك نيشن أورجانيك نيشن",
       "externalCheaper": false
     },
@@ -64923,12 +64988,12 @@
       "form": "powder",
       "category": "Creatine (كرياتين)",
       "image": "https://mfsupps.com/wp-content/uploads/2024/09/Optimum-Nutrition-Creatine-Micronized-600g-120-Servings.png",
-      "lowestPrice": 3400,
-      "cheapestStore": "Power Fit",
-      "lowestCorePrice": 3400,
-      "cheapestCoreStore": "Power Fit",
+      "lowestPrice": 3450,
+      "cheapestStore": "Fit Spot",
+      "lowestCorePrice": 3450,
+      "cheapestCoreStore": "Fit Spot",
       "highestPrice": 3450,
-      "maxSavings": 50,
+      "maxSavings": 0,
       "isExclusive": false,
       "availableCount": 5,
       "storeBreakdown": {
@@ -64951,7 +65016,7 @@
           "storeNameEn": "Power Fit",
           "platform": "Shopify",
           "available": true,
-          "inStock": true,
+          "inStock": false,
           "price": 3400,
           "originalPrice": 3450,
           "url": "https://powerfitsupplements.com/products/optimum-nutrition-micronized-creatine-powder-pure-creatine-for-enhanced-muscle-performance",
@@ -64998,7 +65063,7 @@
           "titleInStore": "Optimum Nutrition Micronized Creatine - 600g (120 serving)"
         }
       },
-      "lastUpdated": "2026-11-24T05:52:29.690Z",
+      "lastUpdated": "2026-11-26T00:08:12.457Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية اوبتيموم اوبتيمم جولد ستاندرد اون",
       "externalCheaper": false
     },
@@ -67114,7 +67179,7 @@
           "storeNameEn": "MF Supplement",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 700,
           "originalPrice": 750,
           "url": "https://mfsupps.com/product/novogen-pharma-carb-2-1kg-50-serving/",
@@ -67122,7 +67187,7 @@
           "titleInStore": "Novogen pharma, Carb+, 2.1kg, 50 Serving"
         }
       },
-      "lastUpdated": "2026-11-19T12:45:32.533Z",
+      "lastUpdated": "2026-11-26T00:08:09.766Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -67580,7 +67645,7 @@
           "titleInStore": "Animal, M-Stak, Pill Packs, 21 Packs"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:06.646Z",
+      "lastUpdated": "2026-11-26T00:08:09.767Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -69052,7 +69117,7 @@
       "highestPrice": 6900,
       "maxSavings": 700,
       "isExclusive": false,
-      "availableCount": 4,
+      "availableCount": 5,
       "storeBreakdown": {
         "mf_supplement": {
           "storeId": "mf_supplement",
@@ -69075,7 +69140,7 @@
           "available": true,
           "inStock": true,
           "price": 6900,
-          "originalPrice": 7000,
+          "originalPrice": 7500,
           "url": "https://powerfitsupplements.com/products/optimum-nutrition-100-gold-standard-whey-the-world-s-best-selling-protein",
           "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/st_wa_2.jpg?v=1770835674",
           "titleInStore": "Optimum Nutrition Gold Standard 100% Whey Protein – Double Rich Chocolate, 5lb (2.27kg)"
@@ -69105,9 +69170,22 @@
           "url": "https://fitspot-eg.com/products/optimum-nutrition-gold-standard-100-whey-2-3kg-74-servings",
           "image": "https://cdn.shopify.com/s/files/1/0812/9816/1913/files/gsw-5lbs-choco-2.png?v=1781887797",
           "titleInStore": "Optimum Nutrition Gold Standard 100% Whey - Double Rich Chocolate / 2.3kg"
+        },
+        "ox_muscle": {
+          "storeId": "ox_muscle",
+          "storeName": "Ox Muscle",
+          "storeNameEn": "Ox Muscle",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": false,
+          "price": 6500,
+          "originalPrice": 7000,
+          "url": "https://oxmuscleeg.com/products/optimum-nutrition-gold-standard-100-whey-2-27kg",
+          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/844642ae-802c-4dc7-84de-f17a69911065.webp?v=1788451038",
+          "titleInStore": "Optimum Nutrition Gold Standard 100% Whey 2.27kg"
         }
       },
-      "lastUpdated": "2026-11-18T21:46:54.956Z",
+      "lastUpdated": "2026-11-26T00:08:23.155Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين اوبتيموم اوبتيمم جولد ستاندرد اون",
       "externalCheaper": {
         "storeId": "fit_spot",
@@ -69587,14 +69665,14 @@
       "form": "powder",
       "category": "Isolate (معزول)",
       "image": "https://mfsupps.com/wp-content/uploads/2024/06/Novogen-pharma-Whey-protein-Isolate-2kg-60-Serving-front.png",
-      "lowestPrice": 3500,
-      "cheapestStore": "Train Hard",
-      "lowestCorePrice": 3500,
-      "cheapestCoreStore": "Train Hard",
+      "lowestPrice": 3750,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 3750,
+      "cheapestCoreStore": "MF Supplement",
       "highestPrice": 4300,
-      "maxSavings": 800,
+      "maxSavings": 550,
       "isExclusive": false,
-      "availableCount": 4,
+      "availableCount": 3,
       "storeBreakdown": {
         "mf_supplement": {
           "storeId": "mf_supplement",
@@ -69602,7 +69680,7 @@
           "storeNameEn": "MF Supplement",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 3750,
           "originalPrice": 4300,
           "url": "https://mfsupps.com/product/novogen-whey-isolate-egypt/",
@@ -69634,22 +69712,9 @@
           "url": "https://powerstore-eg.com/products/novogen-pharma-whey-isolate-2kg",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/Novogen-Pharma-Whey-Isolate-60Serv.-2Kg-Double-Chocolate.jpg?v=1748549898",
           "titleInStore": "Novogen Pharma Whey Isolate-60Serv.-2Kg"
-        },
-        "train_hard": {
-          "storeId": "train_hard",
-          "storeName": "Train Hard",
-          "storeNameEn": "Train Hard",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 3500,
-          "originalPrice": null,
-          "url": "https://trainhardeg.com/product/novogen-whey-protein-isolate-2kg-premium-whey-isolate-for-lean-muscle-growth/",
-          "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Novogen-Whey-Protein-Isolate-2KG-1.webp",
-          "titleInStore": "Novogen Whey Protein Isolate 2KG"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:14.866Z",
+      "lastUpdated": "2026-11-26T00:08:09.769Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -69662,12 +69727,12 @@
       "form": "powder",
       "category": "Mass Gainer",
       "image": "https://mfsupps.com/wp-content/uploads/2025/11/Novogen-pharma-Mass-Gainer-5.4kg-16-Serving-Double-Rich-Chocolate.png",
-      "lowestPrice": 2850,
-      "cheapestStore": "The Coach",
-      "lowestCorePrice": 2850,
-      "cheapestCoreStore": "The Coach",
+      "lowestPrice": 2600,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 2600,
+      "cheapestCoreStore": "MF Supplement",
       "highestPrice": 3250,
-      "maxSavings": 400,
+      "maxSavings": 650,
       "isExclusive": false,
       "availableCount": 5,
       "storeBreakdown": {
@@ -69677,7 +69742,7 @@
           "storeNameEn": "MF Supplement",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 2600,
           "originalPrice": 3250,
           "url": "https://mfsupps.com/product/novogen-pharma-mass-gainer-16-serv/",
@@ -69737,7 +69802,7 @@
           "titleInStore": "Novogen Pharma Mass Gainer 5.4 kg - 16 Serv"
         }
       },
-      "lastUpdated": "2026-11-22T16:08:48.477Z",
+      "lastUpdated": "2026-11-26T00:08:09.769Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة",
       "externalCheaper": false
     },
@@ -69765,7 +69830,7 @@
           "storeNameEn": "MF Supplement",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 1500,
           "originalPrice": 1600,
           "url": "https://mfsupps.com/product/novogen-mass-gainer-2-7kg-egypt/",
@@ -69838,7 +69903,7 @@
           "titleInStore": "Mass Gainer | Novogen - 8Serv / Double Chocolate"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:07.484Z",
+      "lastUpdated": "2026-11-26T00:08:09.769Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة",
       "externalCheaper": false
     },
@@ -71957,14 +72022,14 @@
       "form": "powder",
       "category": "Amino & BCAA",
       "image": "https://mfsupps.com/wp-content/uploads/2024/06/Kevin-Levrone-Gold-EAAmino-390g-30-Servings-1.png",
-      "lowestPrice": 1800,
-      "cheapestStore": "The Coach",
-      "lowestCorePrice": 1800,
-      "cheapestCoreStore": "The Coach",
+      "lowestPrice": 1500,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1500,
+      "cheapestCoreStore": "MF Supplement",
       "highestPrice": 1800,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "maxSavings": 300,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "the_coach": {
           "storeId": "the_coach",
@@ -71978,9 +72043,22 @@
           "url": "https://www.thecoachsupp.com/products/kevin-levrone-gold-eaamino-390g-30-servings",
           "image": "https://cdn.shopify.com/s/files/1/0997/6024/2978/files/Kevin_Levrone_Gold_EAAmino_390g_-_30_Serv_-_Citrus_Peach.png?v=1777997674",
           "titleInStore": "Kevin Levrone Gold EAAmino 390g - 30 Servings"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1500,
+          "originalPrice": 2000,
+          "url": "https://mfsupps.com/product/gold-eaamino-390g-kevin-levrone-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Kevin-Levrone-Gold-EAAmino-390g-30-Servings-1.png",
+          "titleInStore": "Kevin Levrone, Gold EAAmino, 390g, 30 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.681Z",
+      "lastUpdated": "2026-11-26T00:08:09.777Z",
       "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين كيفين ليفرون ليفرون",
       "externalCheaper": false
     },
@@ -71997,10 +72075,10 @@
       "cheapestStore": "Galaxy Supps",
       "lowestCorePrice": 1300,
       "cheapestCoreStore": "Galaxy Supps",
-      "highestPrice": 1300,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "highestPrice": 1500,
+      "maxSavings": 200,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "galaxy_supps": {
           "storeId": "galaxy_supps",
@@ -72014,9 +72092,22 @@
           "url": "https://galaxysupps.com/en/product/gaba-500-mg/",
           "image": "https://galaxysupps.com/wp-content/uploads/2025/02/ليك-أفينيو-للتغذية،-PEA-بالميتويليثانولاميد،-30-كبسولة-نباتية-بيا-تركيز-600-ملغ-127.webp",
           "titleInStore": "GABA 500 mg, 100 Vegetarian Capsules – by NOW Foods"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1500,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/now-foods-gaba-500-mg-100-capsules-100-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Now-Foods-GABA-500-mg-100-Capsules-100-Servings.png",
+          "titleInStore": "Now Foods, GABA, 500 mg, 100 Capsules, 100 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.682Z",
+      "lastUpdated": "2026-11-26T00:08:09.778Z",
       "arabicSearchTerms": "ناو فودز جابا 500 مجم، 100 كبسولة نباتية من ناو.",
       "externalCheaper": false
     },
@@ -72033,10 +72124,10 @@
       "cheapestStore": "Ox Muscle",
       "lowestCorePrice": 1000,
       "cheapestCoreStore": "Ox Muscle",
-      "highestPrice": 1000,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "highestPrice": 1200,
+      "maxSavings": 200,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "ox_muscle": {
           "storeId": "ox_muscle",
@@ -72050,9 +72141,22 @@
           "url": "https://oxmuscleeg.com/products/kevin-levrone-anabolic-tribulus",
           "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/92d66e7c-eca1-4a62-be91-b2be1147be19.webp?v=1788451869",
           "titleInStore": "Kevin Levrone Anabolic Tribulus - 120 Tablets 120 Servings"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1200,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/kevin-levrone-anabolic-tribulus-120-tablets-120-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Kevin-Levrone-Anabolic-Tribulus-120-Tablets-120-Servings.png",
+          "titleInStore": "Kevin Levrone, Anabolic Tribulus, 120 Tablets, 120 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.684Z",
+      "lastUpdated": "2026-11-26T00:08:09.780Z",
       "arabicSearchTerms": "انابول انابوليك بناء عضلات محفز بنائي هاردكور نيوتركس nutrex كيفين ليفرون ليفرون",
       "externalCheaper": false
     },
@@ -72072,7 +72176,7 @@
       "highestPrice": 1800,
       "maxSavings": 300,
       "isExclusive": false,
-      "availableCount": 3,
+      "availableCount": 4,
       "storeBreakdown": {
         "power_fit": {
           "storeId": "power_fit",
@@ -72112,9 +72216,22 @@
           "url": "https://trainhardeg.com/product/blood-guts-dy-nutrition-pre-workout/",
           "image": "https://trainhardeg.com/wp-content/uploads/2026/10/Blood-Guts-DY-Nutrition-1.webp",
           "titleInStore": "Blood & Guts Pre-Workout DY Nutrition"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1550,
+          "originalPrice": 2200,
+          "url": "https://mfsupps.com/product/dy-nutrition-blood-and-guts-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Dy-Nutrition-Blood-Guts-Pre-workout-380g-20-Serving-blueberry.png",
+          "titleInStore": "Dy Nutrition, Blood & Guts Pre-workout, 380g, 20 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.692Z",
+      "lastUpdated": "2026-11-26T00:08:09.793Z",
       "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
       "externalCheaper": false
     },
@@ -72133,8 +72250,8 @@
       "cheapestCoreStore": "Max Muscle Elite",
       "highestPrice": 550,
       "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "max_muscle": {
           "storeId": "max_muscle",
@@ -72148,9 +72265,22 @@
           "url": "https://maxmuscleelite.com/products/creatine-monohydrate-60serv-300g-challenger-nutrition",
           "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/challenger-nutrition-creatine-60serv-6224009363636.jpg?v=1790869515",
           "titleInStore": "Creatine Monohydrate | Challenger Nutrition - 30Serv"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 450,
+          "originalPrice": 500,
+          "url": "https://mfsupps.com/product/challenger-nutrition-creatine-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Challenger-nutrition-Creatine-Monohydrate-150g-30-Serving.png",
+          "titleInStore": "Challenger nutrition, Creatine Monohydrate, 150g, 30 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.692Z",
+      "lastUpdated": "2026-11-26T00:08:09.793Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -72170,7 +72300,7 @@
       "highestPrice": 500,
       "maxSavings": 100,
       "isExclusive": false,
-      "availableCount": 3,
+      "availableCount": 4,
       "storeBreakdown": {
         "train_hard": {
           "storeId": "train_hard",
@@ -72210,9 +72340,22 @@
           "url": "https://powerfitsupplements.com/products/vertex-nutrition-creatine-monohydrate-150g-100-pure-creatine-30-servings-unflavored",
           "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/1-1-2-scaled.jpg?v=1783870297",
           "titleInStore": "Vertex Nutrition Creatine Monohydrate 150g – 100% Pure Creatine | 30 Servings | Unflavored"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 400,
+          "originalPrice": 500,
+          "url": "https://mfsupps.com/product/vertex-creatine-monohydrate-150g-30serv/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Vertex-Nutrition-Creatine-Monohydrate-150g-30-Serving-front.png",
+          "titleInStore": "Vertex Nutrition, Creatine Monohydrate, 150g, 30 Serving"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.695Z",
+      "lastUpdated": "2026-11-26T00:08:09.796Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -72231,8 +72374,8 @@
       "cheapestCoreStore": "Max Muscle Elite",
       "highestPrice": 999,
       "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "max_muscle": {
           "storeId": "max_muscle",
@@ -72246,9 +72389,22 @@
           "url": "https://maxmuscleelite.com/products/creatine-monohydrate-60serv-300g-challenger-nutrition",
           "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/challenger-nutrition-creatine-60serv-6224009363636.jpg?v=1790869515",
           "titleInStore": "Creatine Monohydrate | Challenger Nutrition - 60Serv"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 750,
+          "originalPrice": 850,
+          "url": "https://mfsupps.com/product/challenger-nutrition-creatine/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Challenger-nutrition-Creatine-Monohydrate-300g-60-Serving.png",
+          "titleInStore": "Challenger nutrition, Creatine Monohydrate, 300g, 60 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.703Z",
+      "lastUpdated": "2026-11-26T00:08:09.803Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -72263,12 +72419,12 @@
       "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-Chromium-Picolinate-200MCG-100-Coated-Tablets-100-serving.png",
       "lowestPrice": 250.75,
       "cheapestStore": "GoFit Egypt",
-      "lowestCorePrice": 295,
-      "cheapestCoreStore": "Max Muscle Elite",
+      "lowestCorePrice": 275,
+      "cheapestCoreStore": "MF Supplement",
       "highestPrice": 295,
       "maxSavings": 44.25,
       "isExclusive": false,
-      "availableCount": 4,
+      "availableCount": 5,
       "storeBreakdown": {
         "max_muscle": {
           "storeId": "max_muscle",
@@ -72321,9 +72477,22 @@
           "url": "https://gofit-eg.com/product/organic-nation-chromium-picolinate-200mcg-100-tablets/",
           "image": "https://gofit-eg.com/wp-content/uploads/2026/02/Organic-Nation-Chromium-Picolinate-14235-200MCG-100Serv.-100Tablets_1.webp",
           "titleInStore": "Organic Nation Chromium Picolinate 200mcg | 100 Tablets"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 275,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/organic-nation-chromium-picolinate-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-Chromium-Picolinate-200MCG-100-Coated-Tablets-100-serving.png",
+          "titleInStore": "Organic Nation, Chromium Picolinate, 200MCG, 100 Coated Tablets, 100 servings"
         }
       },
-      "lastUpdated": "2026-11-25T02:11:04.765Z",
+      "lastUpdated": "2026-11-26T00:08:09.812Z",
       "arabicSearchTerms": "اورجانيك نيشن أورجانيك نيشن",
       "externalCheaper": {
         "storeId": "gofit_egypt",
@@ -72333,7 +72502,7 @@
         "originalPrice": 295,
         "url": "https://gofit-eg.com/product/organic-nation-chromium-picolinate-200mcg-100-tablets/",
         "image": "https://gofit-eg.com/wp-content/uploads/2026/02/Organic-Nation-Chromium-Picolinate-14235-200MCG-100Serv.-100Tablets_1.webp",
-        "savingsVsCore": 44.25
+        "savingsVsCore": 24.25
       }
     },
     {
@@ -72349,10 +72518,10 @@
       "cheapestStore": "GoFit Egypt",
       "lowestCorePrice": 212.5,
       "cheapestCoreStore": "GoFit Egypt",
-      "highestPrice": 212.5,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "highestPrice": 250,
+      "maxSavings": 37.5,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "gofit_egypt": {
           "storeId": "gofit_egypt",
@@ -72366,9 +72535,22 @@
           "url": "https://gofit-eg.com/product/organic-nation-caffeine-200-30-capsules-fast-acting-energy-boost/",
           "image": "https://gofit-eg.com/wp-content/uploads/2026/02/Organic-Nation-Caffeine-200-30Serv.-14234-30Hard-Gelatin-Capsules_1.webp",
           "titleInStore": "Organic Nation Caffeine 200 | 30 Capsules, Fast-Acting Energy Boost"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 250,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/organic-nation-caffeine-200-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-Caffeine-200-Fast-Acting-30-Capsules.png",
+          "titleInStore": "Organic Nation, Caffeine 200 Fast Acting, 30 Capsules"
         }
       },
-      "lastUpdated": "2026-11-24T05:52:34.179Z",
+      "lastUpdated": "2026-11-26T00:08:09.812Z",
       "arabicSearchTerms": "اورجانيك نيشن أورجانيك نيشن",
       "externalCheaper": false
     },
@@ -72388,7 +72570,7 @@
       "highestPrice": 250,
       "maxSavings": 25,
       "isExclusive": false,
-      "availableCount": 3,
+      "availableCount": 4,
       "storeBreakdown": {
         "max_muscle": {
           "storeId": "max_muscle",
@@ -72428,9 +72610,22 @@
           "url": "https://galaxysupps.com/en/product/ginkgo-biloba-organic/",
           "image": "https://galaxysupps.com/wp-content/uploads/2025/02/ليك-أفينيو-للتغذية،-PEA-بالميتويليثانولاميد،-30-كبسولة-نباتية-بيا-تركيز-600-ملغ-19-2.webp",
           "titleInStore": "Ginkgo Biloba Organic Nation – 60 Servings – 60 Tablets"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 225,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/organic-nation-ginkgo-biloba-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-Ginkgo-Biloba-60MG-60-Tablets-60-Servings.png",
+          "titleInStore": "Organic Nation, Ginkgo Biloba, 60MG, 60 Tablets, 60 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.711Z",
+      "lastUpdated": "2026-11-26T00:08:09.814Z",
       "arabicSearchTerms": "اورجانيك نيشن أورجانيك جنكو بيلوبا 60 جرعة _60 قرص",
       "externalCheaper": false
     },
@@ -72450,7 +72645,7 @@
       "highestPrice": 1750,
       "maxSavings": 0,
       "isExclusive": false,
-      "availableCount": 2,
+      "availableCount": 3,
       "storeBreakdown": {
         "power_fit": {
           "storeId": "power_fit",
@@ -72477,9 +72672,22 @@
           "url": "https://oxmuscleeg.com/products/limitless-alpha-whey-protein-concentrate-1000-g-30-serv",
           "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/44fec284-bd42-4443-b276-797d1ea0283a.webp?v=1788451042",
           "titleInStore": "Limitless Alpha Whey Protein Concentrate - 1000 g - 30 Serv"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1350,
+          "originalPrice": 1500,
+          "url": "https://mfsupps.com/product/limitless-alpha-whey-protein-concentrate-1kg-30-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Limitless-Alpha-Whey-Protein-Concentrate-1kg-30-Servings-Vanilla.png",
+          "titleInStore": "Limitless Alpha, Whey Protein Concentrate, 1kg, 30 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.714Z",
+      "lastUpdated": "2026-11-26T00:08:09.819Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -78763,7 +78971,7 @@
           "titleInStore": "Syntrax Goliath Protein Gainer, 5.44kg, 41 Servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.733Z",
+      "lastUpdated": "2026-11-26T00:08:23.151Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة",
       "externalCheaper": false
     },
@@ -79488,7 +79696,7 @@
           "storeNameEn": "Max Muscle Elite",
           "platform": "Shopify",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 1000,
           "originalPrice": null,
           "url": "https://maxmuscleelite.com/products/ripped-burn-30vegan-capsules-self-omninutrition",
@@ -79496,7 +79704,7 @@
           "titleInStore": "Ripped Burn.-30Vegan Capsules | Self Omninutrition"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:07.476Z",
+      "lastUpdated": "2026-11-26T00:08:10.817Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -83266,7 +83474,7 @@
           "storeNameEn": "Max Muscle Elite",
           "platform": "Shopify",
           "available": true,
-          "inStock": true,
+          "inStock": false,
           "price": 100,
           "originalPrice": null,
           "url": "https://maxmuscleelite.com/products/novogen-whey-protein-isolate-1serv-chocolatewhey-protein-isolate-1serv-novogen",
@@ -83274,7 +83482,7 @@
           "titleInStore": "Whey Protein Isolate.-1Serv | Novogen"
         }
       },
-      "lastUpdated": "2026-11-10T19:45:50.787Z",
+      "lastUpdated": "2026-11-26T00:08:10.827Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -83840,12 +84048,12 @@
       "form": "powder",
       "category": "مكملات غذائية متنوعة",
       "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/muscletech-performance-series-cell-tech-56serv-2-72kg-fruit-punch-631656703214.jpg?v=1791016590",
-      "lowestPrice": 2600,
-      "cheapestStore": "Ox Muscle",
-      "lowestCorePrice": 2600,
-      "cheapestCoreStore": "Ox Muscle",
+      "lowestPrice": 1550,
+      "cheapestStore": "iFIT Egypt",
+      "lowestCorePrice": 1550,
+      "cheapestCoreStore": "iFIT Egypt",
       "highestPrice": 2600,
-      "maxSavings": 0,
+      "maxSavings": 1050,
       "isExclusive": false,
       "availableCount": 3,
       "storeBreakdown": {
@@ -83868,7 +84076,7 @@
           "storeNameEn": "Ox Muscle",
           "platform": "Shopify",
           "available": true,
-          "inStock": true,
+          "inStock": false,
           "price": 2600,
           "originalPrice": null,
           "url": "https://oxmuscleeg.com/products/muscle-tech-cell-tech-creatine",
@@ -83889,7 +84097,7 @@
           "titleInStore": "Muscletech Performance Series Cell Tech"
         }
       },
-      "lastUpdated": "2026-11-10T19:46:32.843Z",
+      "lastUpdated": "2026-11-26T00:08:23.133Z",
       "arabicSearchTerms": "ماسل تك ماسيل تك ماستك",
       "externalCheaper": false
     },
@@ -86553,7 +86761,7 @@
           "titleInStore": "Arm Blaster Biceps | Max Muscle"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:07.487Z",
+      "lastUpdated": "2026-11-26T00:08:10.830Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -86733,7 +86941,7 @@
           "titleInStore": "Creatine HCL 750 | Max Muscle - 120Serv"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:07.486Z",
+      "lastUpdated": "2026-11-26T00:08:10.830Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -91683,11 +91891,11 @@
       "form": "powder",
       "category": "Whey Protein",
       "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/vanilla_14.jpg?v=1774557184",
-      "lowestPrice": 6100,
+      "lowestPrice": 6900,
       "cheapestStore": "Power Fit",
-      "lowestCorePrice": 6100,
+      "lowestCorePrice": 6900,
       "cheapestCoreStore": "Power Fit",
-      "highestPrice": 6100,
+      "highestPrice": 6900,
       "maxSavings": 0,
       "isExclusive": true,
       "availableCount": 1,
@@ -91699,14 +91907,14 @@
           "platform": "Shopify",
           "available": true,
           "inStock": true,
-          "price": 6100,
-          "originalPrice": 6500,
+          "price": 6900,
+          "originalPrice": 7500,
           "url": "https://powerfitsupplements.com/products/optimum-nutrition-hydro-whey-1-6kg-40-servings-fast-digesting-protein-in-power-fit-supplements-egypt-1",
           "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/vanilla_14.jpg?v=1774557184",
           "titleInStore": "Optimum Nutrition Hydro Whey 1.6kg (40 Servings) | Fast-Digesting Protein| In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-10T19:45:51.385Z",
+      "lastUpdated": "2026-11-26T00:08:12.445Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين اوبتيموم اوبتيمم جولد ستاندرد اون",
       "externalCheaper": false
     },
@@ -91734,7 +91942,7 @@
           "storeNameEn": "Power Fit",
           "platform": "Shopify",
           "available": true,
-          "inStock": true,
+          "inStock": false,
           "price": 1500,
           "originalPrice": 1600,
           "url": "https://powerfitsupplements.com/products/optimum-nutrition-amino-2222-160-tablets-essential-amino-acids-for-muscle-recovery-growth-in-power-fit-supplements-egypt",
@@ -91742,7 +91950,7 @@
           "titleInStore": "Optimum Nutrition Amino 2222 – 160 Tablets | Essential Amino Acids for Muscle Recovery & Growth|In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-10T19:45:51.385Z",
+      "lastUpdated": "2026-11-26T00:08:12.445Z",
       "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين اوبتيموم اوبتيمم جولد ستاندرد اون",
       "externalCheaper": false
     },
@@ -95431,7 +95639,7 @@
           "storeNameEn": "Power Fit",
           "platform": "Shopify",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 2000,
           "originalPrice": null,
           "url": "https://powerfitsupplements.com/products/ronnie-coleman-l-carnitine-xs-4000-high-potency-liquid-l-carnitine-tropical-passion-fruit-weight-management-energy-support-31-servings",
@@ -95439,7 +95647,7 @@
           "titleInStore": "Ronnie Coleman L-Carnitine XS 4000 – High-Potency Liquid L-Carnitine | Tropical Passion Fruit | Weight Management & Energy Support | 31 Servings"
         }
       },
-      "lastUpdated": "2026-11-23T20:02:54.360Z",
+      "lastUpdated": "2026-11-26T00:08:12.455Z",
       "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6",
       "externalCheaper": false
     },
@@ -95467,7 +95675,7 @@
           "storeNameEn": "Power Fit",
           "platform": "Shopify",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 1050,
           "originalPrice": 1800,
           "url": "https://powerfitsupplements.com/products/rule1-creatine-pure-micronized-monohydrate-for-superior-absorption",
@@ -95475,7 +95683,7 @@
           "titleInStore": "Rule One Creatine Monohydrate 390g (75 Servings) | Pure Micronized Creatine for Strength & Power"
         }
       },
-      "lastUpdated": "2026-11-25T02:11:07.908Z",
+      "lastUpdated": "2026-11-26T00:08:12.456Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
       "externalCheaper": false
     },
@@ -101497,10 +101705,10 @@
       "cheapestStore": "The Coach",
       "lowestCorePrice": 2950,
       "cheapestCoreStore": "The Coach",
-      "highestPrice": 4250,
-      "maxSavings": 1300,
+      "highestPrice": 3800,
+      "maxSavings": 850,
       "isExclusive": false,
-      "availableCount": 3,
+      "availableCount": 2,
       "storeBreakdown": {
         "the_coach": {
           "storeId": "the_coach",
@@ -101527,22 +101735,9 @@
           "url": "https://powerstore-eg.com/products/yava-labs-elite-whey-protein-66serv-2kg-vanilla-ice-cream",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/yava_elite_vanilla_01.png?v=1748549188",
           "titleInStore": "Yava Labs Elite Whey Protein.-66Serv.-2kg.-Vanilla Ice Cream"
-        },
-        "power_fit": {
-          "storeId": "power_fit",
-          "storeName": "Power Fit",
-          "storeNameEn": "Power Fit",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": true,
-          "price": 4250,
-          "originalPrice": 4550,
-          "url": "https://powerfitsupplements.com/products/yava-labs-elite-whey-protein-is-a-premium-supplement-crafted-to-support-muscle-growth-enhance-recovery-and-improve-overall-athletic-performance",
-          "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/cpb_be0559aa-bf6f-45d0-9dc3-337d38d6ff48.jpg?v=1770659876",
-          "titleInStore": "Yava Labs Elite Whey Protein 2kg (66 Servings) | Premium Whey for Muscle Growth & Fast Recovery|In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.424Z",
+      "lastUpdated": "2026-11-26T00:08:13.141Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -101650,7 +101845,7 @@
           "titleInStore": "Max Fit Whey Protein 930g (30 Servings) | Premium Protein for Muscle Growth & Recovery|In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:08.915Z",
+      "lastUpdated": "2026-11-26T00:08:12.484Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -103380,10 +103575,10 @@
       "cheapestStore": "Power Store",
       "lowestCorePrice": 1100,
       "cheapestCoreStore": "Power Store",
-      "highestPrice": 1181.5,
-      "maxSavings": 81.5,
+      "highestPrice": 1100,
+      "maxSavings": 0,
       "isExclusive": false,
-      "availableCount": 3,
+      "availableCount": 2,
       "storeBreakdown": {
         "power_fit": {
           "storeId": "power_fit",
@@ -103410,19 +103605,6 @@
           "url": "https://powerstore-eg.com/products/nutrex-research-lipo-6-hers-ultra-concentrate-women-s-fat-burner-60-capsules",
           "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/853237000721_NutrexResearchLipo6BlackHersUltraConcentrate-60Serv.jpg?v=1748549257",
           "titleInStore": "Nutrex Research Lipo-6 Hers Ultra Concentrate – Women’s Fat Burner – 60 Capsules - unflavored / 60 Servings"
-        },
-        "gofit_egypt": {
-          "storeId": "gofit_egypt",
-          "storeName": "GoFit Egypt",
-          "storeNameEn": "GoFit Egypt",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 1181.5,
-          "originalPrice": 1390,
-          "url": "https://gofit-eg.com/product/lipo-6-hers-ultra-concentrate-womens-fat-burner-60-capsules/",
-          "image": "https://gofit-eg.com/wp-content/uploads/2026/02/1-5.jpg",
-          "titleInStore": "Lipo6 Hers Ultra Concentrate – Women's Fat Burner – 60 capsules"
         }
       },
       "lastUpdated": "2026-11-24T05:52:34.182Z",
@@ -106469,10 +106651,10 @@
       "cheapestStore": "The Coach",
       "lowestCorePrice": 6000,
       "cheapestCoreStore": "The Coach",
-      "highestPrice": 6500,
-      "maxSavings": 500,
-      "isExclusive": false,
-      "availableCount": 2,
+      "highestPrice": 6000,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
       "storeBreakdown": {
         "the_coach": {
           "storeId": "the_coach",
@@ -106486,19 +106668,6 @@
           "url": "https://www.thecoachsupp.com/products/optimum-gold-standard-whey",
           "image": "https://cdn.shopify.com/s/files/1/0997/6024/2978/files/Optimum_-_Whey_Gold_2.27kg_French_Vanilla_Creme.png?v=1778017376",
           "titleInStore": "Optimum Gold Standard Whey - Cookies&cream / 2.27kg - 74 Servings"
-        },
-        "ox_muscle": {
-          "storeId": "ox_muscle",
-          "storeName": "Ox Muscle",
-          "storeNameEn": "Ox Muscle",
-          "platform": "Shopify",
-          "available": true,
-          "inStock": true,
-          "price": 6500,
-          "originalPrice": 7000,
-          "url": "https://oxmuscleeg.com/products/optimum-nutrition-gold-standard-100-whey-2-27kg",
-          "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/844642ae-802c-4dc7-84de-f17a69911065.webp?v=1788451038",
-          "titleInStore": "Optimum Nutrition Gold Standard 100% Whey 2.27kg"
         }
       },
       "lastUpdated": "2026-11-20T16:54:27.182Z",
@@ -109239,7 +109408,7 @@
           "titleInStore": "Universal Animal M-Stack 21Serv-21 Pack"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.717Z",
+      "lastUpdated": "2026-11-26T00:08:13.474Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -110643,7 +110812,7 @@
           "titleInStore": "Carnivor Protein Hydration MuscleMeds – Powerful Beef Protein Isolate for Recovery & Hydration"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:14.875Z",
+      "lastUpdated": "2026-11-26T00:08:16.533Z",
       "arabicSearchTerms": "ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -111304,7 +111473,7 @@
           "titleInStore": "Vertex Amino -V+Vertex Multvatmin+12 Bone Braker"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:14.857Z",
+      "lastUpdated": "2026-11-26T00:08:16.512Z",
       "arabicSearchTerms": "امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين",
       "externalCheaper": false
     },
@@ -113358,7 +113527,7 @@
           "titleInStore": "Muscle Tech Alpha Test - 120 Capsules 60 Servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:14.880Z",
+      "lastUpdated": "2026-11-26T00:08:16.539Z",
       "arabicSearchTerms": "ماسل تك ماسيل تك ماستك",
       "externalCheaper": false
     },
@@ -118871,7 +119040,7 @@
           "titleInStore": "سيفور – C4 30srv"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:20.745Z",
+      "lastUpdated": "2026-11-26T00:08:21.821Z",
       "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين",
       "externalCheaper": false
     },
@@ -120419,7 +120588,7 @@
           "titleInStore": "شداد إنفنتي لوجو Under Armour"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:20.741Z",
+      "lastUpdated": "2026-11-26T00:08:21.816Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -121457,10 +121626,10 @@
       "cheapestStore": "Fitness Tech",
       "lowestCorePrice": 1444,
       "cheapestCoreStore": "Fitness Tech",
-      "highestPrice": 1444,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "highestPrice": 2000,
+      "maxSavings": 556,
+      "isExclusive": false,
+      "availableCount": 3,
       "storeBreakdown": {
         "fitness_tech": {
           "storeId": "fitness_tech",
@@ -121474,9 +121643,35 @@
           "url": "https://fitnesstechsupplements.com/product/nutrex-lipo-6-hardcore/",
           "image": "https://i0.wp.com/fitnesstechsupplements.com/wp-content/uploads/2026/07/libo6-hard-core-850005755654.png?fit=600%2C600&ssl=1",
           "titleInStore": "ليبو 6 هاردكور – Nutrex Lipo-6 Hardcore"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1500,
+          "originalPrice": 1700,
+          "url": "https://mfsupps.com/product/nutrex-research-lipo-6-hardcore-60-capsules-60-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Nutrex-Research-Lipo-6-Hardcore-60-Capsules-60-Servings.png",
+          "titleInStore": "Nutrex Research, Lipo-6 Hardcore, 60 Capsules, 60 Servings"
+        },
+        "max_muscle": {
+          "storeId": "max_muscle",
+          "storeName": "Max Muscle Elite",
+          "storeNameEn": "Max Muscle Elite",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": true,
+          "price": 2000,
+          "originalPrice": null,
+          "url": "https://maxmuscleelite.com/products/lipo-6-hardcore-60serv-60caps-nutrex-research",
+          "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/nutrex-research-lipo-6-hardcore-60serv-60caps-850005755654.jpg?v=1791016595",
+          "titleInStore": "Lipo 6 Hardcore.-60Serv.-60Caps | Nutrex Research"
         }
       },
-      "lastUpdated": "2026-11-25T02:11:05.944Z",
+      "lastUpdated": "2026-11-26T00:08:10.822Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 نيوتركس نوتركس نيوتريكس",
       "externalCheaper": false
     },
@@ -128284,7 +128479,7 @@
           "titleInStore": "Muscle Tech Creactor Creatine HCL, 120 Servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.692Z",
+      "lastUpdated": "2026-11-26T00:08:23.104Z",
       "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية ماسل تك ماسيل تك ماستك",
       "externalCheaper": false
     },
@@ -136680,7 +136875,7 @@
           "titleInStore": "Zoomad labs MOONSTRUCK Pre-workout"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.706Z",
+      "lastUpdated": "2026-11-26T00:08:23.120Z",
       "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
       "externalCheaper": false
     },
@@ -158790,7 +158985,7 @@
           "titleInStore": "Centrum with Lutein 30 Tablets"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.923Z",
+      "lastUpdated": "2026-11-26T00:08:46.059Z",
       "arabicSearchTerms": "سنترم مع لوتين 30 قرص ايطالي سنتروم لوتين، سعودي",
       "externalCheaper": false
     },
@@ -158826,7 +159021,7 @@
           "titleInStore": "Ginkgo Biloba 120 mg – 100 Capsules | Puritan's Pride"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.925Z",
+      "lastUpdated": "2026-11-26T00:08:46.062Z",
       "arabicSearchTerms": "جينكو بيلوبا بيورتنز برايد 120 مجم 100 كبسولة",
       "externalCheaper": false
     },
@@ -158924,7 +159119,7 @@
           "titleInStore": "Vitamin E 1000 – 100 Softgels from Puritan's Pride"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:59.989Z",
+      "lastUpdated": "2026-11-26T00:08:54.034Z",
       "arabicSearchTerms": "فيتامين هـ 1000 – 100 كبسولة من بيورتنز برايد فيتامينات ملتي زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -159009,7 +159204,7 @@
           "titleInStore": "Vitamin B12 – 500 mcg – 100 Tablets (Puritan’s Pride)"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.919Z",
+      "lastUpdated": "2026-11-26T00:08:46.053Z",
       "arabicSearchTerms": "فيتامين بي 12-500 مجم بيورتنز برايد 100 قرص فيتامينات ملتي زنك ماغنيسيوم كولاجين مناعة ب12 500 مكجم – من بيوريتانز",
       "externalCheaper": false
     },
@@ -160979,7 +161174,7 @@
           "titleInStore": "Moov Fast Pain Relief Cream – 50g"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.922Z",
+      "lastUpdated": "2026-11-26T00:08:46.057Z",
       "arabicSearchTerms": "كريم موف لتخفيف الألم السريع 50 جرام سبراي بسرعة",
       "externalCheaper": false
     },
@@ -167759,7 +167954,7 @@
           "titleInStore": "Euthyrox 100 mcg – 100 Tablets (German)"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.937Z",
+      "lastUpdated": "2026-11-26T00:08:46.073Z",
       "arabicSearchTerms": "يوثيركس 50 مجم 100 قرص الماني",
       "externalCheaper": false
     },
@@ -167867,7 +168062,7 @@
           "titleInStore": "Eltroxin 50 mcg – 100 Tablets (Imported)"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.938Z",
+      "lastUpdated": "2026-11-26T00:08:46.074Z",
       "arabicSearchTerms": "التروكسين 50 ميكروجرام – 100 قرص (مستورد) مستورد",
       "externalCheaper": false
     },
@@ -169487,7 +169682,7 @@
           "titleInStore": "Marvelous – Lean A.F whey protein Isolate 88 servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:59.978Z",
+      "lastUpdated": "2026-11-26T00:08:54.021Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -171313,7 +171508,7 @@
           "titleInStore": "Waterkind Sparkling Water (250ml Can)"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:59.953Z",
+      "lastUpdated": "2026-11-26T00:08:53.981Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -171709,7 +171904,7 @@
           "titleInStore": "Natrol High Absorption Magnesium Glycinate"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:59.985Z",
+      "lastUpdated": "2026-11-26T00:08:54.029Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -171925,7 +172120,7 @@
           "titleInStore": "Nature's Way Alive! Zero Sugar Women's Gummy Multivitamin"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:59.983Z",
+      "lastUpdated": "2026-11-26T00:08:54.027Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -172487,7 +172682,7 @@
           "titleInStore": "MYVI My Energy Gummies"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:59.963Z",
+      "lastUpdated": "2026-11-26T00:08:53.997Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -174796,7 +174991,7 @@
           "storeNameEn": "iFIT Egypt",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": true,
+          "inStock": false,
           "price": 1558,
           "originalPrice": 1640,
           "url": "https://ifit-eg.com/product/alive-hair-skin-60-gum/",
@@ -174804,7 +174999,7 @@
           "titleInStore": "ALIVE HAIR SKIN 60 GUM"
         }
       },
-      "lastUpdated": "2026-11-10T19:46:32.775Z",
+      "lastUpdated": "2026-11-26T00:08:54.007Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -176581,11 +176776,11 @@
       "form": "capsules",
       "category": "مكملات غذائية متنوعة",
       "image": "https://ifit-eg.com/wp-content/uploads/2024/12/life-extension.webp",
-      "lowestPrice": 1200,
+      "lowestPrice": 1250,
       "cheapestStore": "iFIT Egypt",
-      "lowestCorePrice": 1200,
+      "lowestCorePrice": 1250,
       "cheapestCoreStore": "iFIT Egypt",
-      "highestPrice": 1200,
+      "highestPrice": 1250,
       "maxSavings": 0,
       "isExclusive": true,
       "availableCount": 1,
@@ -176596,15 +176791,15 @@
           "storeNameEn": "iFIT Egypt",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
-          "price": 1200,
+          "inStock": true,
+          "price": 1250,
           "originalPrice": null,
           "url": "https://ifit-eg.com/product/life-extension-ashwagandha/",
           "image": "https://ifit-eg.com/wp-content/uploads/2024/12/life-extension.webp",
           "titleInStore": "Life Extension, Optimized Ashwagandha, 125 mg, 60 Vegetarian Capsules"
         }
       },
-      "lastUpdated": "2026-11-10T19:46:32.789Z",
+      "lastUpdated": "2026-11-26T00:08:54.019Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -176653,11 +176848,11 @@
       "form": "powder",
       "category": "مكملات غذائية متنوعة",
       "image": "https://ifit-eg.com/wp-content/uploads/2024/12/SuperCollagenPowder-200gUnflavored-ezgif.com-resize.webp",
-      "lowestPrice": 2080,
+      "lowestPrice": 1890,
       "cheapestStore": "iFIT Egypt",
-      "lowestCorePrice": 2080,
+      "lowestCorePrice": 1890,
       "cheapestCoreStore": "iFIT Egypt",
-      "highestPrice": 2080,
+      "highestPrice": 1890,
       "maxSavings": 0,
       "isExclusive": true,
       "availableCount": 1,
@@ -176668,15 +176863,15 @@
           "storeNameEn": "iFIT Egypt",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
-          "price": 2080,
+          "inStock": true,
+          "price": 1890,
           "originalPrice": null,
           "url": "https://ifit-eg.com/product/neocell-super-collagen-powder/",
           "image": "https://ifit-eg.com/wp-content/uploads/2024/12/SuperCollagenPowder-200gUnflavored-ezgif.com-resize.webp",
           "titleInStore": "NEOCELL Super Collagen Powder"
         }
       },
-      "lastUpdated": "2026-11-10T19:46:32.789Z",
+      "lastUpdated": "2026-11-26T00:08:54.019Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -181376,7 +181571,7 @@
           "available": true,
           "inStock": true,
           "price": 2574,
-          "originalPrice": 2860,
+          "originalPrice": 2600,
           "url": "https://ifit-eg.com/product/neocell-collagen-marine-powder/",
           "image": "https://ifit-eg.com/wp-content/uploads/2023/12/NEOCELL-Collagen-Marine-Powder.webp",
           "titleInStore": "NEOCELL Collagen Marine Powder"
@@ -181706,7 +181901,7 @@
           "titleInStore": "Puritan's Pride Ginseng Complex"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:59.990Z",
+      "lastUpdated": "2026-11-26T00:08:54.035Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -182096,10 +182291,10 @@
       "cheapestStore": "iFIT Egypt",
       "lowestCorePrice": 1620,
       "cheapestCoreStore": "iFIT Egypt",
-      "highestPrice": 2300,
-      "maxSavings": 680,
+      "highestPrice": 2800,
+      "maxSavings": 1180,
       "isExclusive": false,
-      "availableCount": 2,
+      "availableCount": 3,
       "storeBreakdown": {
         "ifit_egypt": {
           "storeId": "ifit_egypt",
@@ -182126,9 +182321,22 @@
           "url": "https://oxmuscleeg.com/products/limitless-alpha-whey-protein-concentrate-2000-g-60-serv",
           "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/83470e83-5ca0-4a07-a06c-0b6b740e38f4.webp?v=1788451043",
           "titleInStore": "Limitless Alpha Whey Protein Concentrate - 2000 g - 60 Serv"
+        },
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 2800,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/limitless-alpha-whey-concentrate-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Limitless-Alpha-Whey-Concentrate-2kg-60-Servings-strawberry.png",
+          "titleInStore": "Limitless Alpha, Whey Concentrate, 2kg, 60 Servings"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:23.715Z",
+      "lastUpdated": "2026-11-26T00:08:09.821Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -182429,11 +182637,11 @@
       "form": "capsules",
       "category": "مكملات غذائية متنوعة",
       "image": "https://ifit-eg.com/wp-content/uploads/2023/07/NeoCell-Marine-Collagen-With-Hyaluronic-Acid-120-Capsules.webp",
-      "lowestPrice": 1751.75,
+      "lowestPrice": 1750,
       "cheapestStore": "iFIT Egypt",
-      "lowestCorePrice": 1751.75,
+      "lowestCorePrice": 1750,
       "cheapestCoreStore": "iFIT Egypt",
-      "highestPrice": 1751.75,
+      "highestPrice": 1750,
       "maxSavings": 0,
       "isExclusive": true,
       "availableCount": 1,
@@ -182445,14 +182653,14 @@
           "platform": "WooCommerce",
           "available": true,
           "inStock": true,
-          "price": 1751.75,
-          "originalPrice": 1925,
+          "price": 1750,
+          "originalPrice": null,
           "url": "https://ifit-eg.com/product/neocell-marine-collagen/",
           "image": "https://ifit-eg.com/wp-content/uploads/2023/07/NeoCell-Marine-Collagen-With-Hyaluronic-Acid-120-Capsules.webp",
           "titleInStore": "NeoCell, Marine Collagen With Hyaluronic Acid, 120 Capsules"
         }
       },
-      "lastUpdated": "2026-11-23T20:04:54.919Z",
+      "lastUpdated": "2026-11-26T00:08:54.032Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -187600,7 +187808,7 @@
           "titleInStore": "MyProtein Stainless Steel Metal Shaker 750ml"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.868Z",
+      "lastUpdated": "2026-11-26T00:08:55.102Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -188104,7 +188312,7 @@
           "titleInStore": "MyProtein Impact Whey Protein - White Chocolate / 1kg"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.840Z",
+      "lastUpdated": "2026-11-26T00:08:55.081Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -193686,7 +193894,7 @@
           "titleInStore": "QUEST PEANUT BUTTER CHOCOLATE CHIP PROTEIN COOKIE (60g)"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.858Z",
+      "lastUpdated": "2026-11-26T00:08:55.092Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
@@ -205543,7 +205751,7 @@
           "titleInStore": "CLA + CARNITINE - لتحويل الدهون الي طاقة - 50 جرعة"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:01.286Z",
+      "lastUpdated": "2026-11-26T00:08:55.611Z",
       "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 ملح هيمالايا ملح الهيمالايا ملح وردي هيمالايا",
       "externalCheaper": false
     },
@@ -207307,7 +207515,7 @@
           "titleInStore": "حبل قفز رياضي"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:01.285Z",
+      "lastUpdated": "2026-11-26T00:08:55.610Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -209719,7 +209927,7 @@
           "titleInStore": "بروتين ايزوليت ماصل ادد - خالي من اللاكتوز - 30 جرعة - وزن 1 كيلو"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:01.285Z",
+      "lastUpdated": "2026-11-26T00:08:55.610Z",
       "arabicSearchTerms": "ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
@@ -211560,42 +211768,6 @@
       "externalCheaper": false
     },
     {
-      "id": "gofit_egypt_organic_nation_korean_red_ginseng_dietar",
-      "title": "Organic Nation Korean Red Ginseng Dietary Supplement – Energy, Circulation & Immunity Support – 60 Tablets",
-      "brand": "Organic Nation",
-      "weight": "60TABS",
-      "size": "60tabs",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://gofit-eg.com/wp-content/uploads/2026/02/Untitled-design-5.png",
-      "lowestPrice": 331.5,
-      "cheapestStore": "GoFit Egypt",
-      "lowestCorePrice": 331.5,
-      "cheapestCoreStore": "GoFit Egypt",
-      "highestPrice": 331.5,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "gofit_egypt": {
-          "storeId": "gofit_egypt",
-          "storeName": "GoFit Egypt",
-          "storeNameEn": "GoFit Egypt",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 331.5,
-          "originalPrice": 390,
-          "url": "https://gofit-eg.com/product/organic-nation-korean-red-ginseng-dietary-supplement-energy-circulation-immunity-support-60-tablets/",
-          "image": "https://gofit-eg.com/wp-content/uploads/2026/02/Untitled-design-5.png",
-          "titleInStore": "Organic Nation Korean Red Ginseng Dietary Supplement – Energy, Circulation & Immunity Support – 60 Tablets"
-        }
-      },
-      "lastUpdated": "2026-11-24T05:52:34.172Z",
-      "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين اورجانيك نيشن أورجانيك نيشن",
-      "externalCheaper": false
-    },
-    {
       "id": "gofit_egypt_organic_nation_optimum_digest_dietary_su",
       "title": "Organic Nation Optimum Digest Dietary Supplement – Blend of Digestive Enzymes – 30 Capsules",
       "brand": "Organic Nation",
@@ -212851,7 +213023,7 @@
           "titleInStore": "Nutrex ISOFIT Protein Powder | Premium Whey Isolate | 30 Servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:07.183Z",
+      "lastUpdated": "2026-11-26T00:09:00.466Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات نيوتركس نوتركس نيوتريكس",
       "externalCheaper": false
     },
@@ -213080,7 +213252,7 @@
           "titleInStore": "Now B-50 Nervous System Support , 100 Veg Capsules"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:14.865Z",
+      "lastUpdated": "2026-11-26T00:08:16.521Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -213836,7 +214008,7 @@
           "titleInStore": "XPEL Diuretic With 75mg Caffeine MHP , 80 Capsules"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:14.868Z",
+      "lastUpdated": "2026-11-26T00:08:16.524Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -216027,42 +216199,6 @@
       "externalCheaper": false
     },
     {
-      "id": "gofit_egypt_organic_nation_tribulus_1000_men_s_healt",
-      "title": "Organic Nation Tribulus 1000 Men's Health Support 60 Tablets",
-      "brand": "Organic Nation",
-      "weight": "60TABS",
-      "size": "60tabs",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://gofit-eg.com/wp-content/uploads/2026/05/Organic-Nation-Tribulus-1000-Mens-Health-Support-60-Tablets-1.jpg",
-      "lowestPrice": 658.75,
-      "cheapestStore": "GoFit Egypt",
-      "lowestCorePrice": 658.75,
-      "cheapestCoreStore": "GoFit Egypt",
-      "highestPrice": 658.75,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "gofit_egypt": {
-          "storeId": "gofit_egypt",
-          "storeName": "GoFit Egypt",
-          "storeNameEn": "GoFit Egypt",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 658.75,
-          "originalPrice": 775,
-          "url": "https://gofit-eg.com/product/organic-nation-tribulus-1000-mens-health-support-60-tablets/",
-          "image": "https://gofit-eg.com/wp-content/uploads/2026/05/Organic-Nation-Tribulus-1000-Mens-Health-Support-60-Tablets-1.jpg",
-          "titleInStore": "Organic Nation Tribulus 1000 Men's Health Support 60 Tablets"
-        }
-      },
-      "lastUpdated": "2026-11-24T05:52:34.156Z",
-      "arabicSearchTerms": "اورجانيك نيشن أورجانيك نيشن",
-      "externalCheaper": false
-    },
-    {
       "id": "max_muscle_c4_original_cellucor_30serv_green_apple",
       "title": "C4 Original | Cellucor - 30Serv / Green Apple",
       "brand": "Cellucor",
@@ -216302,7 +216438,7 @@
           "storeNameEn": "Power Fit",
           "platform": "Shopify",
           "available": true,
-          "inStock": true,
+          "inStock": false,
           "price": 1200,
           "originalPrice": 1300,
           "url": "https://powerfitsupplements.com/products/evolve-pre-goat-hardcore-pre-workout-565g-40-servings-green-apple-flavor-energy-focus-muscle-pump",
@@ -216310,7 +216446,7 @@
           "titleInStore": "Evolve Pre-GOAT Hardcore Pre-Workout – 565g | 40 Servings | Green Apple Flavor | Energy, Focus & Muscle Pump"
         }
       },
-      "lastUpdated": "2026-11-12T21:23:58.268Z",
+      "lastUpdated": "2026-11-26T00:08:12.440Z",
       "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين بري وورك اوت بري ورك اوت ضخ دم عروق تركيز",
       "externalCheaper": false
     },
@@ -219442,7 +219578,7 @@
           "titleInStore": "Moroccan Soap by Moroccan Oil 250 ml (نسخ)"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.903Z",
+      "lastUpdated": "2026-11-26T00:08:46.033Z",
       "arabicSearchTerms": "الصابون المغربي من موروكان أويل 250 مل",
       "externalCheaper": false
     },
@@ -219910,7 +220046,7 @@
           "titleInStore": "Nicorette 4 mg – 105 Fruit-Flavored Chewing Gums"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.908Z",
+      "lastUpdated": "2026-11-26T00:08:46.040Z",
       "arabicSearchTerms": "نيكوريت 4 ملغ – 105 لبانة بنكهة الفواكه مللي بالنعناع",
       "externalCheaper": false
     },
@@ -221386,7 +221522,7 @@
           "titleInStore": "Mass Maker Protein 2.6 kg – Chocolate Flavor"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.912Z",
+      "lastUpdated": "2026-11-26T00:08:46.045Z",
       "arabicSearchTerms": "ماس ميكر بروتين 2.6 كيلو – نكهة الفراولة واي مصل اللبن بودر عضلات صافية وي جينر تضخيم زيادة وزن كالوري عالي ضخامة الشوكولاتة الفانيليا",
       "externalCheaper": false
     },
@@ -222610,7 +222746,7 @@
           "titleInStore": "Whey Protein Isolate Limitless – 30 Servings – Creamy Chocolate"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:48.918Z",
+      "lastUpdated": "2026-11-26T00:08:46.052Z",
       "arabicSearchTerms": "واي بروتين ايزوليت ليمت ليس 30 جرعة فانليا مصل اللبن بودر عضلات صافية وي ايزو أيزو معزول سريع الامتصاص صفر سكر فات كريمي شوكليت",
       "externalCheaper": false
     },
@@ -224042,7 +224178,7 @@
           "storeNameEn": "Max Muscle Elite",
           "platform": "Shopify",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 1000,
           "originalPrice": 2000,
           "url": "https://maxmuscleelite.com/products/self-omninutrition-ripped-burn-bundle",
@@ -224050,7 +224186,7 @@
           "titleInStore": "Self Omninutrition Ripped Burn Bundle"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:07.425Z",
+      "lastUpdated": "2026-11-26T00:08:10.751Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
@@ -228362,7 +228498,7 @@
           "storeNameEn": "iFIT Egypt",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
+          "inStock": true,
           "price": 3300,
           "originalPrice": null,
           "url": "https://ifit-eg.com/product/neocell-liquid-collagen-pomegranate/",
@@ -228370,7 +228506,7 @@
           "titleInStore": "NeoCell Liquid Collagen Peptides, Pomegranate (473 ml)"
         }
       },
-      "lastUpdated": "2026-11-23T20:04:54.887Z",
+      "lastUpdated": "2026-11-26T00:08:53.969Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
       "externalCheaper": false
     },
@@ -228671,14 +228807,14 @@
       "form": "powder",
       "category": "Fat Burners & حوارق",
       "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/bpi-sports-cla-carnitine-50serv-320g-watermelon-811213028305.jpg?v=1791123096",
-      "lowestPrice": 1975,
-      "cheapestStore": "Max Muscle Elite",
-      "lowestCorePrice": 1975,
-      "cheapestCoreStore": "Max Muscle Elite",
+      "lowestPrice": 1850,
+      "cheapestStore": "Power Store",
+      "lowestCorePrice": 1850,
+      "cheapestCoreStore": "Power Store",
       "highestPrice": 1975,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
+      "maxSavings": 125,
+      "isExclusive": false,
+      "availableCount": 2,
       "storeBreakdown": {
         "max_muscle": {
           "storeId": "max_muscle",
@@ -228692,9 +228828,22 @@
           "url": "https://maxmuscleelite.com/products/cla-carnitine-50serv-320g-bpi-sports",
           "image": "https://cdn.shopify.com/s/files/1/0887/2729/0162/files/bpi-sports-cla-carnitine-50serv-320g-watermelon-811213028305.jpg?v=1791123096",
           "titleInStore": "Cla+Carnitine.-50Serv.-320G | Bpi Sports"
+        },
+        "power_store": {
+          "storeId": "power_store",
+          "storeName": "Power Store",
+          "storeNameEn": "Power Store",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": true,
+          "price": 1850,
+          "originalPrice": 1950,
+          "url": "https://powerstore-eg.com/products/bpi-sports-cla-carnitine-320g",
+          "image": "https://cdn.shopify.com/s/files/1/0651/2515/4867/files/BPI_Sports_CLA_Carnitine_Snow_Cone.png?v=1794914179",
+          "titleInStore": "Bpi Sports Cla+Carnitine-50Serv.-320G"
         }
       },
-      "lastUpdated": "2026-11-24T05:51:27.619Z",
+      "lastUpdated": "2026-11-26T00:08:13.474Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6",
       "externalCheaper": false
     },
@@ -229175,11 +229324,11 @@
       "form": "powder",
       "category": "مكملات غذائية متنوعة",
       "image": "https://ifit-eg.com/wp-content/uploads/2024/12/liguid-collagen.webp",
-      "lowestPrice": 2970,
+      "lowestPrice": 3300,
       "cheapestStore": "iFIT Egypt",
-      "lowestCorePrice": 2970,
+      "lowestCorePrice": 3300,
       "cheapestCoreStore": "iFIT Egypt",
-      "highestPrice": 2970,
+      "highestPrice": 3300,
       "maxSavings": 0,
       "isExclusive": true,
       "availableCount": 1,
@@ -229190,52 +229339,16 @@
           "storeNameEn": "iFIT Egypt",
           "platform": "WooCommerce",
           "available": true,
-          "inStock": false,
-          "price": 2970,
+          "inStock": true,
+          "price": 3300,
           "originalPrice": null,
           "url": "https://ifit-eg.com/product/neocell-liquid-collagen/",
           "image": "https://ifit-eg.com/wp-content/uploads/2024/12/liguid-collagen.webp",
           "titleInStore": "NeoCell Collagen C Pomegranate Liquid – 4g Collagen Types 1 & 3 with Vitamin C"
         }
       },
-      "lastUpdated": "2026-11-24T17:26:52.062Z",
+      "lastUpdated": "2026-11-26T00:08:54.019Z",
       "arabicSearchTerms": "فيتامين فيتامينات ملتي فيتامين زنك ماغنيسيوم كولاجين مناعة",
-      "externalCheaper": false
-    },
-    {
-      "id": "gofit_egypt_l_arginine_1000_essential_vasodilator_fo",
-      "title": "L-Arginine 1000 – Essential Vasodilator for Peak Performance by Nutrex",
-      "brand": "Nutrex Research",
-      "weight": "",
-      "size": "",
-      "form": "powder",
-      "category": "مكملات غذائية متنوعة",
-      "image": "https://gofit-eg.com/wp-content/uploads/2026/02/L-Arginine.webp",
-      "lowestPrice": 890,
-      "cheapestStore": "GoFit Egypt",
-      "lowestCorePrice": 890,
-      "cheapestCoreStore": "GoFit Egypt",
-      "highestPrice": 890,
-      "maxSavings": 0,
-      "isExclusive": true,
-      "availableCount": 1,
-      "storeBreakdown": {
-        "gofit_egypt": {
-          "storeId": "gofit_egypt",
-          "storeName": "GoFit Egypt",
-          "storeNameEn": "GoFit Egypt",
-          "platform": "WooCommerce",
-          "available": true,
-          "inStock": true,
-          "price": 890,
-          "originalPrice": 1490,
-          "url": "https://gofit-eg.com/product/l-arginine-1000-essential-vasodilator-for-peak-performance-by-nutrex/",
-          "image": "https://gofit-eg.com/wp-content/uploads/2026/02/L-Arginine.webp",
-          "titleInStore": "L-Arginine 1000 – Essential Vasodilator for Peak Performance by Nutrex"
-        }
-      },
-      "lastUpdated": "2026-11-24T17:26:58.458Z",
-      "arabicSearchTerms": "نيوتركس نوتركس نيوتريكس",
       "externalCheaper": false
     },
     {
@@ -229275,7 +229388,1087 @@
       "externalCheaper": false
     },
     {
-      "id": "max_muscle_guilt_free_cashew_spread._200g_organic_n",
+      "id": "ox_muscle_azgard_nutrition_hulk_mass_extreme_8.1kg_3",
+      "title": "Azgard Nutrition Hulk Mass Extreme 8.1kg - 54 servings",
+      "brand": "Azgard Nutrition",
+      "weight": "8.1KG",
+      "size": "8.1kg",
+      "form": "powder",
+      "category": "Mass Gainer",
+      "image": "https://cdn.shopify.com/s/files/1/0665/3804/5525/files/6b57c5fa-317c-4f0e-8ff6-6cd1187ac589.webp?v=1788452096",
+      "lowestPrice": 5000,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 5000,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 5000,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 5000,
+          "originalPrice": 5500,
+          "url": "https://mfsupps.com/product/azgard-hulk-mass-extreme-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Azgard-Nutrition-Hulk-Mass-Extreme-8.1KG-54-Servings.png",
+          "titleInStore": "Azgard Nutrition, Hulk Mass Extreme, 8.1KG, 54 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.793Z",
+      "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_core_champs_testro_gen_60_tablets_30_ser",
+      "title": "Core Champs, Testro Gen, 60 Tablets, 30 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "60TABS",
+      "size": "60tabs",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Core-Champs-Testro-Gen-60-Tablets-30-Servings.png",
+      "lowestPrice": 1000,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1000,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1000,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1000,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/core-champs-testro-gen-60-tablets-30-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Core-Champs-Testro-Gen-60-Tablets-30-Servings.png",
+          "titleInStore": "Core Champs, Testro Gen, 60 Tablets, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.772Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_core_champs_l_carnitine_1000mg_90_tablet",
+      "title": "Core Champs, L-Carnitine, 1000Mg, 90 Tablets, 90 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "90TABS",
+      "size": "90tabs",
+      "form": "powder",
+      "category": "Fat Burners & حوارق",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Core-Champs-L-Carnitine-1000Mg-90-Tablets-90-Servings.png",
+      "lowestPrice": 1350,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1350,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1350,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1350,
+          "originalPrice": 1600,
+          "url": "https://mfsupps.com/product/core-champs-l-carnitine-1000mg-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Core-Champs-L-Carnitine-1000Mg-90-Tablets-90-Servings.png",
+          "titleInStore": "Core Champs, L-Carnitine, 1000Mg, 90 Tablets, 90 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.773Z",
+      "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_condemned_labz_dna_dispatch_180_capsules",
+      "title": "Condemned labz, DNA Dispatch, 180 Capsules, 30 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "180CAPS",
+      "size": "180caps",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Condemned-labz-DNA-Dispatch-180-Capsules-30-Servings.png",
+      "lowestPrice": 1500,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1500,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1500,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1500,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/condemned-labz-dna-dispatch-180-capsules-30-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Condemned-labz-DNA-Dispatch-180-Capsules-30-Servings.png",
+          "titleInStore": "Condemned labz, DNA Dispatch, 180 Capsules, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.775Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_cloma_pharma_asia_black_25_ephedra_100_c",
+      "title": "Cloma Pharma, Asia Black 25 Ephedra, 100 Capsules",
+      "brand": "ماركة معتمدة",
+      "weight": "100CAPS",
+      "size": "100caps",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Cloma-Pharma-Asia-Black-25-Ephedra-100-Capsules.png",
+      "lowestPrice": 1500,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1500,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1500,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1500,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/cloma-pharma-asia-black-25-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Cloma-Pharma-Asia-Black-25-Ephedra-100-Capsules.png",
+          "titleInStore": "Cloma Pharma, Asia Black 25 Ephedra, 100 Capsules"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.777Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_cloma_pharma_methyledrene_100_capsules_1",
+      "title": "Cloma Pharma, Methyledrene, 100 Capsules, 100 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "100CAPS",
+      "size": "100caps",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Cloma-Pharma-Methyledrene-100-Capsules-100-Serving.png",
+      "lowestPrice": 1500,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1500,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1500,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1500,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/cloma-pharma-methyldrene-25-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Cloma-Pharma-Methyledrene-100-Capsules-100-Serving.png",
+          "titleInStore": "Cloma Pharma, Methyledrene, 100 Capsules, 100 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.778Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_kevin_levrone_levromono_300g_66_servings",
+      "title": "Kevin Levrone, LevroMono, 300g, 66 Servings",
+      "brand": "Kevin Levrone",
+      "weight": "300G",
+      "size": "300g",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Kevin-Levrone-LevroMono-300g-66-Servings.png",
+      "lowestPrice": 1000,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1000,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1000,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1000,
+          "originalPrice": 1300,
+          "url": "https://mfsupps.com/product/kevin-levrone-levromono-300g-66-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Kevin-Levrone-LevroMono-300g-66-Servings.png",
+          "titleInStore": "Kevin Levrone, LevroMono, 300g, 66 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.778Z",
+      "arabicSearchTerms": "كيفين ليفرون ليفرون",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_cellucor_super_hd_60_capsules_60_serving",
+      "title": "Cellucor, Super HD, 60 Capsules, 60 Servings",
+      "brand": "Cellucor",
+      "weight": "60CAPS",
+      "size": "60caps",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Cellucor-Super-HD-60-Capsules-60-Servings.png",
+      "lowestPrice": 1800,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1800,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1800,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1800,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/cellucor-super-hd-60-capsules-60-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Cellucor-Super-HD-60-Capsules-60-Servings.png",
+          "titleInStore": "Cellucor, Super HD, 60 Capsules, 60 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.781Z",
+      "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_kevin_levrone_anabolic_beef_amino_600_ta",
+      "title": "Kevin Levrone, Anabolic Beef Amino, 600 Tablets, 300 Servings",
+      "brand": "Kevin Levrone",
+      "weight": "600TABS",
+      "size": "600tabs",
+      "form": "powder",
+      "category": "Amino & BCAA",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Kevin-Levrone-Anabolic-Beef-Amino-600-Tablets-300-Servings.png",
+      "lowestPrice": 1600,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1600,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1600,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1600,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/kevin-levrone-anabolic-beef-amino-600-tablets-300-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Kevin-Levrone-Anabolic-Beef-Amino-600-Tablets-300-Servings.png",
+          "titleInStore": "Kevin Levrone, Anabolic Beef Amino, 600 Tablets, 300 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.783Z",
+      "arabicSearchTerms": "انابول انابوليك بناء عضلات محفز بنائي هاردكور نيوتركس nutrex امينو بي سي ايه احماض امينية استشفاء عضلي ريكفري جلوتامين كيفين ليفرون ليفرون",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_cellucor_c4_original_275g_30_servings",
+      "title": "Cellucor, C4 Original, 275g, 30 Servings",
+      "brand": "Cellucor",
+      "weight": "275G",
+      "size": "275g",
+      "form": "powder",
+      "category": "مشروبات طاقة & C4 ⚡",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Cellucor-C4-Original-275g-30-Servings-Watermelon.png",
+      "lowestPrice": 1700,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1700,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1700,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1700,
+          "originalPrice": 1800,
+          "url": "https://mfsupps.com/product/cellucor-c4-original-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Cellucor-C4-Original-275g-30-Servings-Watermelon.png",
+          "titleInStore": "Cellucor, C4 Original, 275g, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.783Z",
+      "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_now_foods_ashwagandha_450_mg_90_veg_caps",
+      "title": "Now Foods, Ashwagandha, 450 mg, 90 Veg Capsules, 45 Servings",
+      "brand": "NOW Foods",
+      "weight": "45SERV",
+      "size": "45serv",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Now-Foods-Ashwagandha-450-mg-90-Veg-Capsules-45-Servings.png",
+      "lowestPrice": 1700,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1700,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1700,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 1700,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/now-foods-ashwagandha-450mg-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Now-Foods-Ashwagandha-450-mg-90-Veg-Capsules-45-Servings.png",
+          "titleInStore": "Now Foods, Ashwagandha, 450 mg, 90 Veg Capsules, 45 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.785Z",
+      "arabicSearchTerms": "ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_now_foods_coq10_200mg_60_capsules_60_ser",
+      "title": "Now Foods, CoQ10, 200mg, 60 Capsules, 60 Servings",
+      "brand": "NOW Foods",
+      "weight": "60CAPS",
+      "size": "60caps",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Now-Foods-CoQ10-200mg-60-Capsules-60-Servings.png",
+      "lowestPrice": 900,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 900,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 900,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 900,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/now-foods-coq10-200mg-60-capsules-60-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Now-Foods-CoQ10-200mg-60-Capsules-60-Servings.png",
+          "titleInStore": "Now Foods, CoQ10, 200mg, 60 Capsules, 60 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.787Z",
+      "arabicSearchTerms": "ناو فودز ناو",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_biotechusa_shaper_90_capsules_30_serving",
+      "title": "BioTechUSA, Shaper, 90 Capsules, 30 Servings",
+      "brand": "BioTechUSA",
+      "weight": "90CAPS",
+      "size": "90caps",
+      "form": "capsules",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/BioTechUSA-Shaper-90-Capsules-30-Servings.png",
+      "lowestPrice": 1100,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1100,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1100,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1100,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/biotechusa-shaper-90-capsules-30-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/BioTechUSA-Shaper-90-Capsules-30-Servings.png",
+          "titleInStore": "BioTechUSA, Shaper, 90 Capsules, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.790Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_badass_nutrition_beta_alanine_300g_100_s",
+      "title": "Badass Nutrition, Beta-Alanine, 300g, 100 Servings",
+      "brand": "Badass Nutrition",
+      "weight": "300G",
+      "size": "300g",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Badass-Nutrition-Beta-Alanine-300g-100-Servings.png",
+      "lowestPrice": 1350,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1350,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1350,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1350,
+          "originalPrice": 1500,
+          "url": "https://mfsupps.com/product/badass-nutrition-beta-alanine-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Badass-Nutrition-Beta-Alanine-300g-100-Servings.png",
+          "titleInStore": "Badass Nutrition, Beta-Alanine, 300g, 100 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.792Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_badass_nutrition_citruline_malate_300g_1",
+      "title": "Badass Nutrition, Citruline Malate 300g, 100 Servings",
+      "brand": "Badass Nutrition",
+      "weight": "300G",
+      "size": "300g",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Badass-Nutrition-Citruline-Malate-300g-100-Servings-.png",
+      "lowestPrice": 1000,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 1000,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 1000,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 1000,
+          "originalPrice": 1500,
+          "url": "https://mfsupps.com/product/badass-nutrition-citruline-malate-300g-100-serving/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Badass-Nutrition-Citruline-Malate-300g-100-Servings-.png",
+          "titleInStore": "Badass Nutrition, Citruline Malate 300g, 100 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.793Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_hard_lab_arginine_citruline_beta_alanine",
+      "title": "Hard Lab, Arginine + Citruline + Beta Alanine, 150g, 30 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "150G",
+      "size": "150g",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Hard-Lab-Arginine-Citruline-Beta-Alanine-150g-30-Servings.png",
+      "lowestPrice": 575,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 575,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 575,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 575,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/hard-lab-arginine-citruline-beta-alanine-150g-30-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Hard-Lab-Arginine-Citruline-Beta-Alanine-150g-30-Servings.png",
+          "titleInStore": "Hard Lab, Arginine + Citruline + Beta Alanine, 150g, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.796Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_muscle_add_carb_add_1.5kg_30_servings",
+      "title": "Muscle Add, Carb Add, 1.5kg, 30 Servings",
+      "brand": "Muscle Add",
+      "weight": "1.5KG",
+      "size": "1.5kg",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Muscle-Add-Carb-Add-1.5kg-30-Servings-Pineapple.png",
+      "lowestPrice": 550,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 550,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 550,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 550,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/muscle-add-carb-add-1-5kg-30-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Muscle-Add-Carb-Add-1.5kg-30-Servings-Pineapple.png",
+          "titleInStore": "Muscle Add, Carb Add, 1.5kg, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.796Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_vertex_nutrition_carb_powder_1.5kg_45_se",
+      "title": "Vertex Nutrition, Carb powder, 1.5kg, 45 Servings",
+      "brand": "Vertex Nutrition",
+      "weight": "1.5KG",
+      "size": "1.5kg",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/07/Vertex-Nutrition-Carb-powder-1.5kg-34-Servings-mango.png",
+      "lowestPrice": 425,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 425,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 425,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 425,
+          "originalPrice": 500,
+          "url": "https://mfsupps.com/product/vertex-carb-powder/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/07/Vertex-Nutrition-Carb-powder-1.5kg-34-Servings-mango.png",
+          "titleInStore": "Vertex Nutrition, Carb powder, 1.5kg, 45 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.796Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_run_alone_nutrition_carb_run_1.5kg_50_se",
+      "title": "Run Alone Nutrition, Carb Run, 1.5kg, 50 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "1.5KG",
+      "size": "1.5kg",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Run-Alone-Nutrition-Carb-Run-1.5kg-50-Servings-Cola.png",
+      "lowestPrice": 500,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 500,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 500,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 500,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/run-a-lone-carb-run-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Run-Alone-Nutrition-Carb-Run-1.5kg-50-Servings-Cola.png",
+          "titleInStore": "Run Alone Nutrition, Carb Run, 1.5kg, 50 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.798Z",
+      "arabicSearchTerms": "",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_run_alone_nutrition_creatine_monohydrate",
+      "title": "Run Alone Nutrition, Creatine Monohydrate, 300g, 60 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "300G",
+      "size": "300g",
+      "form": "powder",
+      "category": "Creatine (كرياتين)",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Run-Alone-Nutrition-Creatine-Monohydrate-300g-60-Servings.png",
+      "lowestPrice": 800,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 800,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 800,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 800,
+          "originalPrice": 850,
+          "url": "https://mfsupps.com/product/run-a-lone-pure-creatine-egypt-2/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Run-Alone-Nutrition-Creatine-Monohydrate-300g-60-Servings.png",
+          "titleInStore": "Run Alone Nutrition, Creatine Monohydrate, 300g, 60 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.801Z",
+      "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_run_alone_nutrition_creatine_monohydrate_2",
+      "title": "Run Alone Nutrition, Creatine Monohydrate, 150g, 30 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "150G",
+      "size": "150g",
+      "form": "powder",
+      "category": "Creatine (كرياتين)",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Run-Alone-Nutrition-Creatine-Monohydrate-150g-30-Serving.png",
+      "lowestPrice": 450,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 450,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 450,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 450,
+          "originalPrice": 500,
+          "url": "https://mfsupps.com/product/run-a-lone-pure-creatine-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Run-Alone-Nutrition-Creatine-Monohydrate-150g-30-Serving.png",
+          "titleInStore": "Run Alone Nutrition, Creatine Monohydrate, 150g, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.803Z",
+      "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_hard_lab_creatine_monohydrate_300g_60_se",
+      "title": "Hard Lab, Creatine Monohydrate, 300g, 60 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "300G",
+      "size": "300g",
+      "form": "powder",
+      "category": "Creatine (كرياتين)",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Hard-Lab-Creatine-Monohydrate-300g-60-Servings.png",
+      "lowestPrice": 750,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 750,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 750,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 750,
+          "originalPrice": 850,
+          "url": "https://mfsupps.com/product/hard-lab-nutrition-creatine-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Hard-Lab-Creatine-Monohydrate-300g-60-Servings.png",
+          "titleInStore": "Hard Lab, Creatine Monohydrate, 300g, 60 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.806Z",
+      "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_hard_lab_creatine_monohydrate_150g_30_se",
+      "title": "Hard Lab, Creatine Monohydrate, 150g, 30 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "150G",
+      "size": "150g",
+      "form": "powder",
+      "category": "Creatine (كرياتين)",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Hard-Lab-Creatine-Monohydrate-150g-30-Servings.png",
+      "lowestPrice": 450,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 450,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 450,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 450,
+          "originalPrice": 550,
+          "url": "https://mfsupps.com/product/hard-lab-creatine-monohydrate-150g-30-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Hard-Lab-Creatine-Monohydrate-150g-30-Servings.png",
+          "titleInStore": "Hard Lab, Creatine Monohydrate, 150g, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.808Z",
+      "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_organic_nation_b_complex_60_coated_table",
+      "title": "Organic Nation, B-Complex, 60 Coated Tablets, 60 Servings",
+      "brand": "Organic Nation",
+      "weight": "60SERV",
+      "size": "60serv",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-B-Complex-60-Coated-Tablets-60-Servings-1.webp",
+      "lowestPrice": 325,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 325,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 325,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 325,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/organic-nation-b-complex/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-B-Complex-60-Coated-Tablets-60-Servings-1.webp",
+          "titleInStore": "Organic Nation, B-Complex, 60 Coated Tablets, 60 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.810Z",
+      "arabicSearchTerms": "اورجانيك نيشن أورجانيك نيشن",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_liger_nutrition_creatine_monohydrate_150",
+      "title": "Liger Nutrition, Creatine Monohydrate, 150g, 30 Servings",
+      "brand": "ماركة معتمدة",
+      "weight": "150G",
+      "size": "150g",
+      "form": "powder",
+      "category": "Creatine (كرياتين)",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Liger-Nutrition-Creatine-Monohydrate-150g-30-Serving.png",
+      "lowestPrice": 400,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 400,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 400,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 400,
+          "originalPrice": 550,
+          "url": "https://mfsupps.com/product/liger-nutrition-creatine-monohydrate-150g-30-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Liger-Nutrition-Creatine-Monohydrate-150g-30-Serving.png",
+          "titleInStore": "Liger Nutrition, Creatine Monohydrate, 150g, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.812Z",
+      "arabicSearchTerms": "كرياتين كراتين كريتين مونو مونوهايدريت مونوهيدرات ضخامة قوة عضلية",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_organic_nation_vitanation_30_coated_tabl",
+      "title": "Organic Nation, VitaNation, 30 Coated Tablets, 30 Servings",
+      "brand": "Organic Nation",
+      "weight": "30SERV",
+      "size": "30serv",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-VitaNation-30-Coated-Tablets-30-Serving.png",
+      "lowestPrice": 225,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 225,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 225,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 225,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/organic-nation-vita-nation-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-VitaNation-30-Coated-Tablets-30-Serving.png",
+          "titleInStore": "Organic Nation, VitaNation, 30 Coated Tablets, 30 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.814Z",
+      "arabicSearchTerms": "اورجانيك نيشن أورجانيك نيشن",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_cellucor_c4_performance_energy_carbonate",
+      "title": "Cellucor, C4 Performance Energy Carbonated Drink, 473ml",
+      "brand": "Cellucor",
+      "weight": "473ML",
+      "size": "473ml",
+      "form": "powder",
+      "category": "مشروبات طاقة & C4 ⚡",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/07/Cellucor-C4-Performance-Energy-Carbonated-Drink-473ml-strawberry-watermelon-ice.png",
+      "lowestPrice": 100,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 100,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 100,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 100,
+          "originalPrice": 200,
+          "url": "https://mfsupps.com/product/cellucor-c4-can-orange-slice-473ml/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/07/Cellucor-C4-Performance-Energy-Carbonated-Drink-473ml-strawberry-watermelon-ice.png",
+          "titleInStore": "Cellucor, C4 Performance Energy Carbonated Drink, 473ml"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.815Z",
+      "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_organic_nation_biotin_10000mcg_60_coated",
+      "title": "Organic Nation, Biotin 10000MCG, 60 Coated Tablets, 60 Servings",
+      "brand": "Organic Nation",
+      "weight": "60SERV",
+      "size": "60serv",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-Biotin-10000MCG-60-Coated-Tablets-60-Servings.png",
+      "lowestPrice": 225,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 225,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 225,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 225,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/organic-nation-biotin-10000-egypt/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Organic-Nation-Biotin-10000MCG-60-Coated-Tablets-60-Servings.png",
+          "titleInStore": "Organic Nation, Biotin 10000MCG, 60 Coated Tablets, 60 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.817Z",
+      "arabicSearchTerms": "اورجانيك نيشن أورجانيك نيشن",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_wellness_nutrition_pump_pre_workout_shot",
+      "title": "Wellness Nutrition, Pump Pre-Workout Shot, 60ml, 1 Serving",
+      "brand": "Wellness Nutrition",
+      "weight": "60ML",
+      "size": "60ml",
+      "form": "powder",
+      "category": "Pre-Workout",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Wellness-Nutrition-Pump-Pre-Workout-Shot-60ml-1-Serving.png",
+      "lowestPrice": 60,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 60,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 60,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": true,
+          "price": 60,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/pump-pre-workout-shot-60ml/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Wellness-Nutrition-Pump-Pre-Workout-Shot-60ml-1-Serving.png",
+          "titleInStore": "Wellness Nutrition, Pump Pre-Workout Shot, 60ml, 1 Serving"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.818Z",
+      "arabicSearchTerms": "بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
+      "externalCheaper": false
+    },
+    {
+      "id": "mf_supplement_building_blox_on_energy_shot_60ml_1_serv",
+      "title": "Building Blox, On Energy Shot, 60ml, 1 Servings",
+      "brand": "BuildingBlox",
+      "weight": "60ML",
+      "size": "60ml",
+      "form": "powder",
+      "category": "مكملات غذائية متنوعة",
+      "image": "https://mfsupps.com/wp-content/uploads/2024/06/Building-Blox-On-Energy-Shot-60ml-1-Servings-Mixed-Berries.png",
+      "lowestPrice": 40,
+      "cheapestStore": "MF Supplement",
+      "lowestCorePrice": 40,
+      "cheapestCoreStore": "MF Supplement",
+      "highestPrice": 40,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "mf_supplement": {
+          "storeId": "mf_supplement",
+          "storeName": "MF Supplement",
+          "storeNameEn": "MF Supplement",
+          "platform": "WooCommerce",
+          "available": true,
+          "inStock": false,
+          "price": 40,
+          "originalPrice": null,
+          "url": "https://mfsupps.com/product/building-blox-on-energy-shot-60ml-1-servings/",
+          "image": "https://mfsupps.com/wp-content/uploads/2024/06/Building-Blox-On-Energy-Shot-60ml-1-Servings-Mixed-Berries.png",
+          "titleInStore": "Building Blox, On Energy Shot, 60ml, 1 Servings"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:09.818Z",
+      "arabicSearchTerms": "سي فور سيفور طاقة مشروب طاقة بمب باور قبل التمرين",
+      "externalCheaper": false
+    },
+    {
+      "id": "max_muscle_guilt_free_cashew_spread._200g_organic_n_2",
       "title": "Guilt Free Cashew Spread.-200G | Organic Nation",
       "brand": "Organic Nation",
       "weight": "200G",
@@ -229306,12 +230499,12 @@
           "titleInStore": "Guilt Free Cashew Spread.-200G | Organic Nation"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:07.451Z",
+      "lastUpdated": "2026-11-26T00:08:10.782Z",
       "arabicSearchTerms": "بروتين بار سناك صحي شوكولاته صحية سناكس تريجو بار اورجانيك نيشن أورجانيك نيشن",
       "externalCheaper": false
     },
     {
-      "id": "max_muscle_mass_tech_extreme_2000._5serv._2.72kg_mu",
+      "id": "max_muscle_mass_tech_extreme_2000._5serv._2.72kg_mu_2",
       "title": "Mass Tech Extreme 2000.-5Serv.-2.72Kg | MuscleTech",
       "brand": "MuscleTech",
       "weight": "2.72KG",
@@ -229355,12 +230548,12 @@
           "titleInStore": "MuscleTech Mass Tech Extreme 2000 2.72kg"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.389Z",
+      "lastUpdated": "2026-11-26T00:08:13.101Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة ماسل تك ماسيل تك ماستك",
       "externalCheaper": false
     },
     {
-      "id": "max_muscle_protein_isolate_hyper_trophy_blend._30se_3",
+      "id": "max_muscle_protein_isolate_hyper_trophy_blend._30se_2",
       "title": "Protein Isolate Hyper Trophy Blend.-30Serv.-908G | Marvelous Nutrition",
       "brand": "Marvelous Nutrition",
       "weight": "908G",
@@ -229391,12 +230584,12 @@
           "titleInStore": "Protein Isolate Hyper Trophy Blend.-30Serv.-908G | Marvelous Nutrition"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:07.487Z",
+      "lastUpdated": "2026-11-26T00:08:10.831Z",
       "arabicSearchTerms": "ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "power_fit_marvelous_isolate_lean_a.f_2kg_80_servin",
+      "id": "power_fit_marvelous_isolate_lean_a.f_2kg_80_servin_2",
       "title": "Marvelous Isolate Lean A.F 2kg (80 Servings) | Ultra-Lean Whey Isolate for Muscle Growth & Fat Loss|In Power Fit Supplements Egypt",
       "brand": "Marvelous Nutrition",
       "weight": "2KG",
@@ -229427,12 +230620,12 @@
           "titleInStore": "Marvelous Isolate Lean A.F 2kg (80 Servings) | Ultra-Lean Whey Isolate for Muscle Growth & Fat Loss|In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:08.891Z",
+      "lastUpdated": "2026-11-26T00:08:12.453Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "power_fit_farah_secrets_iso_whey_protein_2.3kg_77_",
+      "id": "power_fit_farah_secrets_iso_whey_protein_2.3kg_77__2",
       "title": "Farah Secrets ISO Whey Protein 2.3kg – 77 Servings Isolate in Egypt",
       "brand": "ماركة معتمدة",
       "weight": "2.27KG",
@@ -229463,12 +230656,12 @@
           "titleInStore": "Farah Secrets ISO Whey Protein 2.3kg – 77 Servings Isolate in Egypt"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:08.908Z",
+      "lastUpdated": "2026-11-26T00:08:12.474Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "power_fit_bad_ass_mass_gainer_7kg_high_calorie_mus",
+      "id": "power_fit_bad_ass_mass_gainer_7kg_high_calorie_mus_2",
       "title": "BAD ASS Mass Gainer – 7kg High Calorie Muscle Mass Builder (70 Servings) | Egypt",
       "brand": "ماركة معتمدة",
       "weight": "7KG",
@@ -229499,12 +230692,48 @@
           "titleInStore": "BAD ASS Mass Gainer – 7kg High Calorie Muscle Mass Builder (70 Servings) | Egypt"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:08.909Z",
+      "lastUpdated": "2026-11-26T00:08:12.475Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة",
       "externalCheaper": false
     },
     {
-      "id": "power_fit_yava_labs_pure_iso_whey_2kg_66_servings_",
+      "id": "power_fit_yava_labs_elite_whey_protein_2kg_66_serv_2",
+      "title": "Yava Labs Elite Whey Protein 2kg (66 Servings) | Premium Whey for Muscle Growth & Fast Recovery|In Power Fit Supplements Egypt",
+      "brand": "Yava Labs",
+      "weight": "2KG",
+      "size": "2kg",
+      "form": "powder",
+      "category": "Whey Protein",
+      "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/cpb_be0559aa-bf6f-45d0-9dc3-337d38d6ff48.jpg?v=1770659876",
+      "lowestPrice": 4250,
+      "cheapestStore": "Power Fit",
+      "lowestCorePrice": 4250,
+      "cheapestCoreStore": "Power Fit",
+      "highestPrice": 4250,
+      "maxSavings": 0,
+      "isExclusive": true,
+      "availableCount": 1,
+      "storeBreakdown": {
+        "power_fit": {
+          "storeId": "power_fit",
+          "storeName": "Power Fit",
+          "storeNameEn": "Power Fit",
+          "platform": "Shopify",
+          "available": true,
+          "inStock": true,
+          "price": 4250,
+          "originalPrice": 4550,
+          "url": "https://powerfitsupplements.com/products/yava-labs-elite-whey-protein-is-a-premium-supplement-crafted-to-support-muscle-growth-enhance-recovery-and-improve-overall-athletic-performance",
+          "image": "https://cdn.shopify.com/s/files/1/0632/8215/1478/files/cpb_be0559aa-bf6f-45d0-9dc3-337d38d6ff48.jpg?v=1770659876",
+          "titleInStore": "Yava Labs Elite Whey Protein 2kg (66 Servings) | Premium Whey for Muscle Growth & Fast Recovery|In Power Fit Supplements Egypt"
+        }
+      },
+      "lastUpdated": "2026-11-26T00:08:12.477Z",
+      "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
+      "externalCheaper": false
+    },
+    {
+      "id": "power_fit_yava_labs_pure_iso_whey_2kg_66_servings__2",
       "title": "Yava Labs Pure Iso Whey 2kg (66 Servings) | Ultra-Pure Whey Isolate for Lean Muscle & Fast Recovery |In Power Fit Supplements Egypt",
       "brand": "Yava Labs",
       "weight": "2KG",
@@ -229535,12 +230764,12 @@
           "titleInStore": "Yava Labs Pure Iso Whey 2kg (66 Servings) | Ultra-Pure Whey Isolate for Lean Muscle & Fast Recovery |In Power Fit Supplements Egypt"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:08.916Z",
+      "lastUpdated": "2026-11-26T00:08:12.485Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "the_coach_dy_whey_protein_shadowhey_isolate_2kg_66",
+      "id": "the_coach_dy_whey_protein_shadowhey_isolate_2kg_66_2",
       "title": "DY Whey Protein Shadowhey ISOLATE 2kg 66 Servings",
       "brand": "DY Nutrition",
       "weight": "2KG",
@@ -229571,12 +230800,12 @@
           "titleInStore": "DY Whey Protein Shadowhey ISOLATE 2kg 66 Servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.387Z",
+      "lastUpdated": "2026-11-26T00:08:13.099Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "the_coach_marvelous_muscles_lean_af_2kg",
+      "id": "the_coach_marvelous_muscles_lean_af_2kg_2",
       "title": "Marvelous Muscles Lean AF 2kg",
       "brand": "Marvelous Nutrition",
       "weight": "2KG",
@@ -229607,12 +230836,12 @@
           "titleInStore": "Marvelous Muscles Lean AF 2kg"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.428Z",
+      "lastUpdated": "2026-11-26T00:08:13.149Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
     {
-      "id": "power_store_azgard_nutrition_100_whey_high_quality_c",
+      "id": "power_store_azgard_nutrition_100_whey_high_quality_c_2",
       "title": "Azgard Nutrition 100% Whey High Quality CFM Whey Protein-65Serv.-2270G",
       "brand": "Azgard Nutrition",
       "weight": "2.27KG",
@@ -229643,12 +230872,12 @@
           "titleInStore": "Azgard Nutrition 100% Whey High Quality CFM Whey Protein-65Serv.-2270G"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.711Z",
+      "lastUpdated": "2026-11-26T00:08:13.467Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "power_store_dymatize_iso100_76serv._2.3kg",
+      "id": "power_store_dymatize_iso100_76serv._2.3kg_2",
       "title": "Dymatize ISO100-76Serv.-2.3KG-",
       "brand": "Dymatize",
       "weight": "2.27KG",
@@ -229679,12 +230908,12 @@
           "titleInStore": "Dymatize ISO100-76Serv.-2.3KG-"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.715Z",
+      "lastUpdated": "2026-11-26T00:08:13.471Z",
       "arabicSearchTerms": "ديماتايز دايماتايز",
       "externalCheaper": false
     },
     {
-      "id": "power_store_marvelous_nutrition_bulk_whey_protein_is_3",
+      "id": "power_store_marvelous_nutrition_bulk_whey_protein_is_2",
       "title": "Marvelous Nutrition Bulk Whey Protein Isolate.-67Serv.-2KG",
       "brand": "Marvelous Nutrition",
       "weight": "2KG",
@@ -229715,12 +230944,12 @@
           "titleInStore": "Marvelous Nutrition Bulk Whey Protein Isolate.-67Serv.-2KG"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.721Z",
+      "lastUpdated": "2026-11-26T00:08:13.477Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "power_store_yava_labs_pure_iso_whey_protein._66serv._3",
+      "id": "power_store_yava_labs_pure_iso_whey_protein._66serv._2",
       "title": "Yava Labs Pure iso Whey Protein.-66Serv.-2kg",
       "brand": "Yava Labs",
       "weight": "2KG",
@@ -229751,12 +230980,12 @@
           "titleInStore": "Yava Labs Pure iso Whey Protein.-66Serv.-2kg"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:09.723Z",
+      "lastUpdated": "2026-11-26T00:08:13.480Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_azgard_nutrition_hulk_mass_extreme_8.1kg_3",
+      "id": "ox_muscle_azgard_nutrition_hulk_mass_extreme_8.1kg",
       "title": "Azgard Nutrition Hulk Mass Extreme 8.1kg - 54 servings",
       "brand": "Azgard Nutrition",
       "weight": "8.1KG",
@@ -229787,12 +231016,12 @@
           "titleInStore": "Azgard Nutrition Hulk Mass Extreme 8.1kg - 54 servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.684Z",
+      "lastUpdated": "2026-11-26T00:08:23.092Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_applied_nutrition_critical_whey_2kg_67_s_3",
+      "id": "ox_muscle_applied_nutrition_critical_whey_2kg_67_s_2",
       "title": "Applied Nutrition Critical Whey 2kg - 67 serv",
       "brand": "Applied Nutrition",
       "weight": "2KG",
@@ -229823,12 +231052,12 @@
           "titleInStore": "Applied Nutrition Critical Whey 2kg - 67 serv"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.702Z",
+      "lastUpdated": "2026-11-26T00:08:23.115Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ابلايد نيوتريشن ابلايد",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_zoomad_labs_moonstruck_whey_protein_1kg_",
+      "id": "ox_muscle_zoomad_labs_moonstruck_whey_protein_1kg__2",
       "title": "Zoomad Labs Moonstruck Whey Protein - 1kg - 33 servings",
       "brand": "Moons Truck",
       "weight": "1KG",
@@ -229859,12 +231088,12 @@
           "titleInStore": "Zoomad Labs Moonstruck Whey Protein - 1kg - 33 servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.722Z",
+      "lastUpdated": "2026-11-26T00:08:23.138Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_yava_labs_whey_elite_2kg_66_serv",
+      "id": "ox_muscle_yava_labs_whey_elite_2kg_66_serv_2",
       "title": "Yava Labs Whey Elite 2kg - 66 serv",
       "brand": "Yava Labs",
       "weight": "2KG",
@@ -229895,12 +231124,12 @@
           "titleInStore": "Yava Labs Whey Elite 2kg - 66 serv"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.732Z",
+      "lastUpdated": "2026-11-26T00:08:23.150Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "ox_muscle_marvelous_lean_a.f_protein_isolate_2kg_8",
+      "id": "ox_muscle_marvelous_lean_a.f_protein_isolate_2kg_8_2",
       "title": "Marvelous LEAN A.F Protein Isolate, 2kg, 80 servings",
       "brand": "Marvelous Nutrition",
       "weight": "2KG",
@@ -229931,12 +231160,12 @@
           "titleInStore": "Marvelous LEAN A.F Protein Isolate, 2kg, 80 servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:07:21.735Z",
+      "lastUpdated": "2026-11-26T00:08:23.153Z",
       "arabicSearchTerms": "ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_applied_nutrition_l_carnitine_liquid_sho",
+      "id": "fit_spot_applied_nutrition_l_carnitine_liquid_sho_2",
       "title": "Applied Nutrition L-Carnitine Liquid Shot",
       "brand": "Applied Nutrition",
       "weight": "",
@@ -229967,12 +231196,12 @@
           "titleInStore": "Applied Nutrition L-Carnitine Liquid Shot"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.817Z",
+      "lastUpdated": "2026-11-26T00:08:55.071Z",
       "arabicSearchTerms": "حارق دهون حوارق تخسيس تنحيف سد شهية كارنتين ليبو 6 ابلايد نيوتريشن ابلايد",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_raw_cream_of_rice_850g_25_servings",
+      "id": "fit_spot_raw_cream_of_rice_850g_25_servings_2",
       "title": "RAW CREAM OF RICE - 850g | 25 servings",
       "brand": "RAW",
       "weight": "850G",
@@ -230003,12 +231232,12 @@
           "titleInStore": "RAW CREAM OF RICE - 850g | 25 servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.817Z",
+      "lastUpdated": "2026-11-26T00:08:55.071Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_mutant_whey_2kg",
+      "id": "fit_spot_mutant_whey_2kg_2",
       "title": "Mutant Whey 2kg",
       "brand": "Mutant",
       "weight": "2KG",
@@ -230039,12 +231268,12 @@
           "titleInStore": "Mutant Whey 2kg"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.818Z",
+      "lastUpdated": "2026-11-26T00:08:55.072Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_ryse_loaded_protein_900g_27_servings",
+      "id": "fit_spot_ryse_loaded_protein_900g_27_servings_2",
       "title": "RYSE Loaded Protein 900G (27 Servings)",
       "brand": "RYSE",
       "weight": "908G",
@@ -230075,12 +231304,12 @@
           "titleInStore": "RYSE Loaded Protein 900G (27 Servings)"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.841Z",
+      "lastUpdated": "2026-11-26T00:08:55.081Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_dy_shadow_whey_protein_2kg_66_servings",
+      "id": "fit_spot_dy_shadow_whey_protein_2kg_66_servings_2",
       "title": "DY Shadow Whey Protein 2KG (66 Servings)",
       "brand": "DY Nutrition",
       "weight": "2KG",
@@ -230111,12 +231340,12 @@
           "titleInStore": "DY Shadow Whey Protein 2KG (66 Servings)"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.844Z",
+      "lastUpdated": "2026-11-26T00:08:55.082Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_dy_shadowhey_isolate_2kg_66_servings",
+      "id": "fit_spot_dy_shadowhey_isolate_2kg_66_servings_2",
       "title": "DY Shadowhey Isolate 2KG (66 Servings)",
       "brand": "DY Nutrition",
       "weight": "2KG",
@@ -230147,12 +231376,12 @@
           "titleInStore": "DY Shadowhey Isolate 2KG (66 Servings)"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.845Z",
+      "lastUpdated": "2026-11-26T00:08:55.083Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ايزو ايزوليت أيزو معزول سريع الامتصاص صفر سكر صفر فات",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_muscletech_mass_tech_extreme_2000_mass_g",
+      "id": "fit_spot_muscletech_mass_tech_extreme_2000_mass_g_2",
       "title": "MuscleTech Mass Tech Extreme 2000 Mass Gainer 5.5kg (10 Servings)",
       "brand": "MuscleTech",
       "weight": "5.5KG",
@@ -230183,12 +231412,12 @@
           "titleInStore": "MuscleTech Mass Tech Extreme 2000 Mass Gainer 5.5kg (10 Servings)"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.848Z",
+      "lastUpdated": "2026-11-26T00:08:55.085Z",
       "arabicSearchTerms": "ماس ماس جينر جينر تضخيم زيادة وزن كالوري عالي ضخامة ماسل تك ماسيل تك ماستك",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_applied_nutrition_critical_oats_protein_",
+      "id": "fit_spot_applied_nutrition_critical_oats_protein__2",
       "title": "Applied Nutrition Critical Oats Protein Porridge 600g",
       "brand": "Applied Nutrition",
       "weight": "600G",
@@ -230219,12 +231448,12 @@
           "titleInStore": "Applied Nutrition Critical Oats Protein Porridge 600g"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.853Z",
+      "lastUpdated": "2026-11-26T00:08:55.088Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين ابلايد نيوتريشن ابلايد",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_myprotein_pop_rolls_pistachio_27g",
+      "id": "fit_spot_myprotein_pop_rolls_pistachio_27g_2",
       "title": "MyProtein Pop Rolls Pistachio | 27g",
       "brand": "MyProtein",
       "weight": "27G",
@@ -230255,12 +231484,12 @@
           "titleInStore": "MyProtein Pop Rolls Pistachio | 27g"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.857Z",
+      "lastUpdated": "2026-11-26T00:08:55.092Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_fitcrunch_peanut_butter_jelly_46g",
+      "id": "fit_spot_fitcrunch_peanut_butter_jelly_46g_2",
       "title": "FITCRUNCH Peanut Butter & Jelly (46g)",
       "brand": "FitCrunch",
       "weight": "46G",
@@ -230291,12 +231520,12 @@
           "titleInStore": "FITCRUNCH Peanut Butter & Jelly (46g)"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.861Z",
+      "lastUpdated": "2026-11-26T00:08:55.096Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_fitcrunch_mint_chocolate_chip_46g",
+      "id": "fit_spot_fitcrunch_mint_chocolate_chip_46g_2",
       "title": "FITCRUNCH Mint Chocolate Chip (46g)",
       "brand": "FitCrunch",
       "weight": "46G",
@@ -230327,12 +231556,12 @@
           "titleInStore": "FITCRUNCH Mint Chocolate Chip (46g)"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.862Z",
+      "lastUpdated": "2026-11-26T00:08:55.096Z",
       "arabicSearchTerms": "",
       "externalCheaper": false
     },
     {
-      "id": "fit_spot_myprotein_origin_pre_workout_dry_scoop_1",
+      "id": "fit_spot_myprotein_origin_pre_workout_dry_scoop_1_2",
       "title": "MyProtein Origin Pre-Workout Dry Scoop | 18 Servings",
       "brand": "MyProtein",
       "weight": "18SERV",
@@ -230363,7 +231592,7 @@
           "titleInStore": "MyProtein Origin Pre-Workout Dry Scoop | 18 Servings"
         }
       },
-      "lastUpdated": "2026-11-25T14:08:00.866Z",
+      "lastUpdated": "2026-11-26T00:08:55.101Z",
       "arabicSearchTerms": "واي واي بروتين بروتين مصل اللبن بودر عضلات صافية وي بروتين بري وورك اوت بري ورك اوت طاقة بمب ضخ دم عروق تركيز",
       "externalCheaper": false
     }
